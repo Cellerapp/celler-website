@@ -8,9 +8,24 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        hero: "url('/src/assets/images/bg-texture1.svg')",
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        primary: "#3A66FF",
+        secondary: "#9C9DCE"
+      },
+      screens: {
+        xxs: "400px",
+        xs: "480px",
+        mds: "600px",
+        md: "800px",
+        lgss: "976px",
+        lg: "1200px",
+        xxl: "1300px",
+        xxxl: "1650px",
       },
     },
   },
