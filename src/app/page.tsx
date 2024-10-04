@@ -23,6 +23,7 @@ import {
 } from "@/assets/images";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import { SIGNUP_URL } from "@/constants";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { FaStar } from "react-icons/fa";
@@ -366,9 +367,12 @@ export default function Home() {
               confidence.
             </h4>
             <div className="flex justify-center items-center lgss:justify-start w-full">
-              <button className="mt-8 mx-auto lgss:mx-0 bg-primary px-6 py-4 rounded-lg text-white">
+              <a
+                href={SIGNUP_URL}
+                className="mt-8 mx-auto lgss:mx-0 bg-primary px-6 py-4 rounded-lg text-white"
+              >
                 Get Started
-              </button>
+              </a>
             </div>
           </div>
           <div className="w-full lgss:w-[45%]">

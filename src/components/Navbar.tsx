@@ -5,6 +5,7 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { LOGIN_URL, SIGNUP_URL } from "@/constants";
 
 export default function Navbar() {
   const currentPath = usePathname(); // Get router object
@@ -51,12 +52,18 @@ export default function Navbar() {
         </Link>
       </div>
       <div className="flex w-1/2 items-center justify-end lgss:w-[22%] gap-4">
-        <button className="w-1/2 hidden lgss:flex justify-center items-center  h-[46px] rounded-lg border border-secondary text-secondary text-[16px]">
+        <a
+          href={LOGIN_URL}
+          className="w-1/2 hidden lgss:flex justify-center items-center  h-[46px] rounded-lg border border-secondary text-secondary text-[16px]"
+        >
           Sign In
-        </button>
-        <button className="w-1/2  h-[46px] rounded-lg bg-primary text-white text-[16px]">
+        </a>
+        <a
+          href={SIGNUP_URL}
+          className="w-1/2 flex justify-center items-center h-[46px] rounded-lg bg-primary text-white text-[16px]"
+        >
           Sign Up
-        </button>
+        </a>
       </div>
     </div>
   );

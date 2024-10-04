@@ -11,11 +11,75 @@ import Image from "next/image";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import { useState } from "react";
+import toast from "react-hot-toast";
+import { API_URL } from "@/constants";
+import axios from "axios";
+import { ClipLoader } from "react-spinners";
 
 export default function Contact() {
   const [message, setMessage] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [fullName, setFullName] = useState<string>("");
+  const [loading, setLoading] = useState(false);
+
+  const validateEmail = (name: string, email: string, message: string) => {
+    // check if email is empty
+    if (!name) {
+      toast.error("Name field cannot be empty");
+
+      return false;
+    }
+    if (!email) {
+      toast.error("Email field cannot be empty");
+
+      return false;
+    }
+    if (!message) {
+      toast.error("Message field cannot be empty");
+
+      return false;
+    }
+
+    // check if email is in the correct format using a regular expression
+    const emailRegex =
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$/;
+    if (!emailRegex.test(email)) {
+      toast.error("Email is not in the correct format");
+
+      return false;
+    }
+
+    return true;
+  };
+
+  const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+    if (!validateEmail(fullName, email, message)) {
+      return;
+    }
+
+    if (!loading) {
+      setLoading(true);
+      axios
+        .post(`${API_URL}/api/contact`, {
+          full_name: fullName,
+          email,
+          body: message,
+        })
+        .then((r) => {
+          toast.success(r.data.message);
+          setLoading(false);
+          setEmail("");
+          setFullName("");
+          setMessage("");
+        })
+        .catch((e) => {
+          toast.error(e.response.data.message);
+          setLoading(false);
+        });
+    }
+  };
 
   return (
     <div className="w-full">
@@ -33,7 +97,10 @@ export default function Contact() {
           <div className="w-2/5 hidden lgss:flex">
             <Image src={contact} alt="" />
           </div>
-          <div className="w-full lgss:w-2/5 mt-8 lgss:mt-24">
+          <form
+            onSubmit={handleSubmit}
+            className="w-full lgss:w-2/5 mt-8 lgss:mt-24"
+          >
             <h4 className="text-[20px] lgss:text-[24px] text-white font-bold ">
               Submit a Form
             </h4>
@@ -75,10 +142,13 @@ export default function Contact() {
                 className="w-full text-white border-[#2E304A] bg-[#191A27] h-[180px] pt-2 mt-2 placeholder:text-[#929292]  outline-none text-[14px] border  px-4 spin-button-none rounded-xl "
               />
             </div>
-            <button className="w-full h-[52px] rounded-full mt-6 bg-primary text-[16px] text-white">
-              Continue
+            <button
+              type="submit"
+              className="w-full h-[52px] rounded-full mt-6 bg-primary text-[16px] text-white"
+            >
+              {loading ? <ClipLoader color="#FFFFFF" size={30} /> : "Send"}
             </button>
-          </div>
+          </form>
         </div>
         <div
           style={{
