@@ -5,7 +5,7 @@ import Image from "next/image";
 import { logo } from "@/assets/images";
 import { MdLocationPin } from "react-icons/md";
 import Link from "next/link";
-import { FaInstagram, FaTiktok, FaTwitter, FaYoutube } from "react-icons/fa";
+import { FaInstagram, FaTwitter } from "react-icons/fa";
 import { API_URL } from "@/constants";
 import axios from "axios";
 import toast from "react-hot-toast";
