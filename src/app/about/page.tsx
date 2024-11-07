@@ -48,7 +48,7 @@ export default function AboutUs() {
               supporting a wide range of payment methods including debit and
               credit cards, bank transfers, and digital wallets
             </h4>
-            <div className="w-full border border-[#2D2D2D] bg-gradient-to-tl p-6 lgss:p-8  from-[#0F2B63] via-[#1845A3]   to-[#101226] mt-16 gap-5 lgss:gap-4 rounded-xl grid grid-cols-2 lgss:grid-cols-4">
+            {/* <div className="w-full border border-[#2D2D2D] bg-gradient-to-tl p-6 lgss:p-8  from-[#0F2B63] via-[#1845A3]   to-[#101226] mt-16 gap-5 lgss:gap-4 rounded-xl grid grid-cols-2 lgss:grid-cols-4">
               <div className="flex flex-col justify-center items-center">
                 <h4 className="font-bold text-[30px] lgss:text-[40px] text-white">
                   10
@@ -77,7 +77,7 @@ export default function AboutUs() {
                   Registered Users
                 </h4>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>
@@ -88,12 +88,10 @@ export default function AboutUs() {
               Our Mission
             </h4>
             <h4 className="text-[13px] mds:text-[15px] leading-[28px] tracking-wide lgss:text-[16px] text-white mt-4 text-left w-11/12 md:w-10/12 ">
-              Our mission at CryptPay is to simplify the world of cryptocurrency
-              by providing an intuitive, secure, and efficient platform for
-              users to manage their digital assets. We strive to make
-              cryptocurrency accessible to everyone, ensuring a seamless
-              experience through innovative technology and exceptional customer
-              service.{" "}
+              Our mission is to provide secure, user-friendly, and reliable
+              virtual cards and crypto solutions that help individuals and
+              businesses, seamlessly manage finances, grow assets, and connect
+              to global markets
             </h4>
           </div>
           <div className="w-full flex justify-end ">
@@ -106,12 +104,8 @@ export default function AboutUs() {
               Our Vision
             </h4>
             <h4 className="text-[13px] mds:text-[15px] leading-[28px] tracking-wide lgss:text-[16px] text-white mt-4 text-left w-11/12 md:w-10/12 ">
-              Our vision is to become the leading global gateway for
-              cryptocurrency transactions, empowering individuals and businesses
-              with the tools they need to thrive in the digital economy. We aim
-              to drive the mainstream adoption of cryptocurrencies by fostering
-              trust, enhancing security, and delivering unparalleled
-              convenience.
+              Our Vision is to ensure global financial freedom through secure,
+              accessible, and innovative virtual USD cards and crypto solutions.
             </h4>
           </div>
           <div className="w-full flex justify-end pt-4">

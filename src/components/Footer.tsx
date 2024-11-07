@@ -131,37 +131,43 @@ const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="w-full flex justify-start md:justify-end mt-12">
-            <form
-              onSubmit={handleSubmit}
-              className="flex w-full md:w-2/3 lgss:w-1/2  bg-white gap-4  rounded-full justify-between items-center h-[56px] px-4 "
-            >
-              <input
-                type="email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter mail"
-                className="outline-none  w-full text-[#3A3A3A] placeholder:text-[#3A3A3A] text-[15px]"
-              />
-              <button
-                type="submit"
-                className={
-                  loading
-                    ? "w-[100px] py-2 rounded-full bg-[#477AFF] flex justify-center items-center font-medium text-[15px] text-white"
-                    : "px-3 py-2 rounded-full bg-[#477AFF] flex justify-center items-center font-medium text-[15px] text-white"
-                }
+          <div className="w-full flex justify-start mds:justify-end  mt-12">
+            <div className="lgss:w-1/2 w-full ">
+              <h4 className="text-[20px] font-bold text-white ">
+                Sign up for our newsletter
+              </h4>
+
+              <form
+                onSubmit={handleSubmit}
+                className="flex w-full mt-4  bg-white gap-4  rounded-full justify-between items-center h-[56px] px-4 "
               >
-                {loading ? (
-                  <ClipLoader color="#FFFFFF" size={15} />
-                ) : (
-                  "Subscribe"
-                )}
-              </button>
-            </form>
+                <input
+                  type="email"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter mail"
+                  className="outline-none  w-full text-[#3A3A3A] placeholder:text-[#3A3A3A] text-[15px]"
+                />
+                <button
+                  type="submit"
+                  className={
+                    loading
+                      ? "w-[100px] py-2 rounded-full bg-[#477AFF] flex justify-center items-center font-medium text-[15px] text-white"
+                      : "px-3 py-2 rounded-full bg-[#477AFF] flex justify-center items-center font-medium text-[15px] text-white"
+                  }
+                >
+                  {loading ? (
+                    <ClipLoader color="#FFFFFF" size={15} />
+                  ) : (
+                    "Subscribe"
+                  )}
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </div>
-      <div className="w-full flex flex-col md:flex-row gap-8  justify-center items-center md:justify-between mt-12">
+      <div className="w-full flex flex-col md:flex-row gap-8  justify-center items-center md:justify-between mt-6">
         <div className="flex justify-center items-center md:justify-start gap-8">
           <a
             href="https://instagram.com/usecryptpay"

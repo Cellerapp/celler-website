@@ -3,19 +3,20 @@
 import {
   appStore,
   buyPhone,
+  customer,
   darkAppStore,
   darkPlayStore,
   dashboardPhone,
   dPhone,
   gumBg,
-  gumLogo,
-  hashLogo,
   hero1,
   iphoneHand,
   lock,
   map,
   playStore,
+  rateSwap,
   sellPhone,
+  thunder,
   transacting,
   transformBg,
   userIcon,
@@ -26,7 +27,6 @@ import Navbar from "@/components/Navbar";
 import { SIGNUP_URL } from "@/constants";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { FaStar } from "react-icons/fa";
 import { SlArrowDown, SlArrowUp } from "react-icons/sl";
 
 export default function Home() {
@@ -64,19 +64,19 @@ export default function Home() {
         <div className="mt-12 lgss:mt-32 w-full flex flex-col lgss:flex-row lgss:justify-between gap-16 lgss:gap-6">
           <div className="w-full lgss:w-[55%]">
             <h2 className="text-center lgss:text-left text-[30px] md:text-[38px] lgss:text-[60px] font-bold text-white">
-              Seamlessly Buy, Sell, Swap, and Manage Your Digital Assets
+              Trade and Manage Digital Assets That Coins Your Dreams.
             </h2>
             <h4 className="text-center lgss:text-left mt-3 text-[15px] mds:text-[17px] lgss:text-[18px] text-secondary mx-auto lgss:mx-0 w-11/12 lgss:w-10/12">
-              With CryptPay, seamlessly buy, sell, swap, and manage your digital
-              assets—all in one place. Experience effortless transactions and
-              unparalleled control over your portfolio.
+              Buy, sell, swap, and manage your digital asset — all in one app.
+              Enjoy seamless transactions, create and secure your dream
+              portfolio on Cryptpay.
             </h4>
             <div className="w-10/12 mds:w-1/2 gap-6 mt-10 flex items-center lgss:mx-0 mx-auto justify-center lgss:justify-start">
               <Image src={appStore} className="w-1/2 " alt="" />
               <Image src={playStore} className=" w-1/2" alt="" />
             </div>
           </div>
-          <div className="w-10/12 mx-auto lgss:mx-0 lgss:w-2/5">
+          <div className="w-10/12 mx-auto mds:w-9/12 md:w-8/12 lgss:mx-0 lgss:w-2/5 mb-16">
             <Image src={iphoneHand} className="w-full " alt="" />
           </div>
         </div>
@@ -87,9 +87,8 @@ export default function Home() {
             How It Works
           </h2>
           <h4 className="text-center  mt-3 text-[14px] lgss:text-[16px] text-secondary ">
-            Discover the simple, streamlined steps to start using CryptPay for
-            all your cryptocurrency needs. We make it easy to navigate the world
-            of digital assets.
+            Discover how easy it is to start your crypto journey in less than 10
+            minutes using these three simple steps.
           </h4>
         </div>
         <div className="grid grid-cols-1 lgss:grid-cols-3 w-full mt-12 mx-auto gap-6">
@@ -101,8 +100,8 @@ export default function Home() {
                 Sign In / Sign Up on Cryptpay
               </h4>
               <h4 className="text-center  text-[15px]  text-white px-4">
-                Get started by creating a new account or logging in to your
-                existing one to Access all the features of CryptPay.
+                Get started by signing up or loginning to explore Cryptpay
+                incredible benefits.
               </h4>
             </div>
           </div>
@@ -114,8 +113,8 @@ export default function Home() {
                 Verify Your Identity
               </h4>
               <h4 className="text-center  text-[15px]  text-white px-4">
-                Complete a quick and secure identity verification process. This
-                step enhances the safety of your account.
+                Secure your account with a quick and easy verification. This
+                helps to keep intrudes away from you account.
               </h4>
             </div>
           </div>
@@ -127,8 +126,8 @@ export default function Home() {
                 Start Transacting on Cryptpay
               </h4>
               <h4 className="text-center  text-[15px]  text-white px-4">
-                Begin trading with ease. Use CryptPay to buy, sell, & swap
-                cryptocurrencies quickly and securely.
+                Begin trading instantly. Buy, sell, and swap digital assets with
+                confidence and ease.
               </h4>
             </div>
           </div>
@@ -140,9 +139,8 @@ export default function Home() {
             Features
           </h2>
           <h4 className="text-center  mt-3 text-[14px] lgss:text-[16px] text-secondary ">
-            Discover the simple, streamlined steps to start using CryptPay for
-            all your cryptocurrency needs. We make it easy to navigate the world
-            of digital assets.
+            Cryptpay simplifies your journey, providing all the tools you need
+            to navigate digital assets with ease.
           </h4>
         </div>
         <div className="w-full flex-col lgss:flex-row flex justify-start items-center mt-20 lgss:mt-28  gap-6">
@@ -183,9 +181,8 @@ export default function Home() {
                   Buy Cryptocurrency
                 </h4>
                 <h4 className="text-left  text-[16px] mt-2 text-secondary pr-6 ">
-                  Easily purchase top cryptocurrencies with a few clicks. Secure
-                  transactions and real-time pricing ensure a seamless buying
-                  experience.
+                  Purchase digital assets in just a few clicks. Enjoy secure
+                  transactions and real-time pricing for a smooth experience.
                 </h4>
               </div>
               <div>
@@ -203,8 +200,8 @@ export default function Home() {
                   Swap Cryptocurrency (Coming Soon)
                 </h4>
                 <h4 className="text-left  text-[16px] mt-2 text-secondary pr-6 ">
-                  Effortlessly exchange one cryptocurrency or fiat currency for
-                  another with competitive rates and minimal fees.
+                  Exchange cryptocurrency or fiat seamlessly with the best rates
+                  and the lowest fees.
                 </h4>
               </div>
               <div>
@@ -212,9 +209,8 @@ export default function Home() {
                   Deposit/Withdraw (Coming Soon)
                 </h4>
                 <h4 className="text-left  text-[16px] mt-2 text-secondary pr-6 ">
-                  Easily add or remove funds from your account through secure
-                  and efficient transactions with with competitive rates and
-                  minimal fees.
+                  Top up or withdraw funds from your account with the best rates
+                  and low fees.
                 </h4>
               </div>
             </div>
@@ -279,13 +275,13 @@ export default function Home() {
               </h4>
               <h4 className="text-white mt-2 text-center text-[14px] w-9/11 mds:w-2/3 md:w-1/2 mx-auto">
                 {message == 1
-                  ? "Easily purchase top cryptocurrencies with a few clicks. Secure transactions and real-time pricing ensure a seamless buying experience."
+                  ? "Purchase digital assets in just a few clicks. Enjoy secure transactions and real-time pricing for a smooth experience. "
                   : message === 2
                   ? "Quickly convert your digital assets into cash or other currencies. Enjoy competitive rates and a straightforward selling process."
                   : message === 3
-                  ? "Effortlessly exchange one cryptocurrency or fiat currency for another with competitive rates and minimal fees."
+                  ? "Exchange cryptocurrency or fiat seamlessly with the best rates and the lowest fees."
                   : message === 4
-                  ? "Easily add or remove funds from your account through secure and efficient transactions with with competitive rates and minimal fees."
+                  ? "Top up or withdraw funds from your account with the best rates and low fees."
                   : ""}
               </h4>
             </div>
@@ -303,14 +299,14 @@ export default function Home() {
       >
         <div className="w-full lgss:w-[55%] mt-10 mx-auto lgss:mt-0">
           <h2 className="text-center  text-[24px] md:text-[30px] lgss:text-[42px] font-bold text-white">
-            Trade all your cryptocurrencies quickly and efficiently at
-            unbeatable rates with CryptPay.
+            Trade all your cryptocurrency seamlessly at competitive rates with
+            cryptpay
           </h2>
           <h4 className="text-center  mt-4 text-[15px] lgss:text-[16px] text-secondary mx-auto  w-11/12 lgss:w-10/12">
-            Experience seamless transactions with fast processing and minimal
-            fees, ensuring you get the most value from every trade.
+            Enjoy fast, seamless transactions with low fees, so you can get the
+            most out of every trade.
           </h4>
-          <div className="w-11/12 mds:w-1/2 gap-12 mt-10 flex items-center  mx-auto justify-center lgss:justify-center">
+          {/* <div className="w-11/12 mds:w-1/2 gap-12 mt-10 flex items-center  mx-auto justify-center lgss:justify-center">
             <div className="mt-4">
               <h4 className="text-secondary text-[14px]">Real Time Audit</h4>
               <Image src={gumLogo} className=" " alt="" />
@@ -333,7 +329,7 @@ export default function Home() {
                 <FaStar className="text-secondary text-[20px]" />
               </div>
             </div>
-          </div>
+          </div> */}
         </div>
         {/* <div className="w-10/12 mx-auto lgss:w-[35%] bg-[#1D1E27] h-[500px] rounded-xl"></div> */}
       </div>
@@ -343,9 +339,8 @@ export default function Home() {
             Why Use Cryptpay?
           </h2>
           <h4 className="text-center  mt-3 text-[14px] lgss:text-[16px] text-secondary ">
-            Discover the simple, streamlined steps to start using CryptPay for
-            all your cryptocurrency needs. We make it easy to navigate the world
-            of digital assets.
+            Cryptpay was built to make your journey easier, safer, and more
+            rewarding. Use Crytpay to enjoy the followimg
           </h4>
         </div>
         <div
@@ -357,14 +352,13 @@ export default function Home() {
           }}
           className="px-4 xs:px-6 mds:px-12 h-[400px] py-12 md:px-16 lgss:px-12 xl:px-16 flex flex-col lgss:flex-row gap-6 justify-center items-center lgss:justify-between  xxxl:px-[250px]  bg-gradient-to-bl mt-16 from-red-800 to-[#101226]"
         >
-          <div className="w-full lgss:w-[55%] ">
+          <div className="w-full lgss:w-[50%] ">
             <h2 className="text-center lgss:text-left text-[20px] md:text-[28px] lgss:text-[32px] font-bold text-white">
-              Complete and secure ownership of your crypto assets, giving you
-              full control and peace of mind.
+              Complete and secure ownership of your digital assets.
             </h2>
-            <h4 className="text-center lgss:text-left mt-4 text-[15px] lgss:text-[16px] text-secondary mx-auto lgss:mx-0 w-11/12 lgss:w-8/12">
-              Enjoy complete control and protection of your digital assets with
-              confidence.
+            <h4 className="text-center lgss:text-left mt-4 text-[15px] lgss:text-[16px] text-secondary mx-auto lgss:mx-0 w-11/12 lgss:w-10/12">
+              Control your assets with confidence and peace of mind because they
+              are locked in our multi layered security.
             </h4>
             <div className="flex justify-center items-center lgss:justify-start w-full">
               <a
@@ -383,7 +377,7 @@ export default function Home() {
           <div className="bg-gradient-to-tr from-[#101226] px-6 pt-6 pb-12 border border-[#2D2D2D] to-[#121F46] rounded-xl">
             {/* <h4 className="text-[28px] lgss:text-[40px] text-[#D9D9D9]">01</h4> */}
             <div className="flex flex-col items-center justify-center gap-4 mt-4 ">
-              <Image src={userIcon} alt="" />
+              <Image src={customer} alt="" />
               <h4 className="text-center  text-[20px] font-semibold text-white px-12">
                 24/7 Customer Support
               </h4>
@@ -396,7 +390,7 @@ export default function Home() {
           <div className=" bg-gradient-to-tr from-[#101226] px-6 pt-6 pb-12 border border-[#2D2D2D] to-[#121F46] rounded-xl">
             {/* <h4 className="text-[28px] lgss:text-[40px] text-[#D9D9D9]">02</h4> */}
             <div className="flex flex-col items-center justify-center gap-4 mt-4 ">
-              <Image src={verify} alt="" />
+              <Image src={thunder} alt="" />
               <h4 className="text-center  text-[20px] font-semibold text-white px-12">
                 Fast & Efficient Transactions
               </h4>
@@ -409,7 +403,7 @@ export default function Home() {
           <div className="bg-gradient-to-tr from-[#101226] px-6 pt-6 pb-12 border border-[#2D2D2D] to-[#121F46] rounded-xl">
             {/* <h4 className="text-[28px] lgss:text-[40px] text-[#D9D9D9]">03</h4> */}
             <div className="flex flex-col items-center justify-center gap-4 mt-4 ">
-              <Image src={transacting} alt="" />
+              <Image src={rateSwap} alt="" />
               <h4 className="text-center  text-[20px] font-semibold text-white px-12">
                 Competitive & Best Rates
               </h4>
@@ -583,19 +577,19 @@ export default function Home() {
             height: "100%",
             objectFit: "cover",
           }}
-          className="w-full rounded-xl bg-[#3A66FF] mt-24 flex flex-col pt-8 lgss:pt-0 justify-center lgss:flex-row items-center px-6 lgss:px-10 lgss:justify-between"
+          className="w-full rounded-xl bg-[#3A66FF] mt-24 flex flex-col pt-8 lgss:pt-0 justify-center lgss:flex-row items-start px-6 lgss:px-10 lgss:justify-between"
         >
-          <div className="w-full lgss:w-[55%] ">
+          <div className="w-full lgss:w-[55%] mt-8 lgss:mt-24">
             <h2 className="text-left text-[24px] md:text-[28px] lgss:text-[35px] w-10/12 lgss:w- font-bold text-white">
-              Transform your cryptocurrency transactions with ease at CryptPay.
+              Don’t Settle. Start Coining Your Dreams With Cryptpay.
             </h2>
 
-            <div className="w-full mds:w-1/2 gap-4 mt-8 flex items-center lgss:mx-0 mx-auto justify-start lgss:justify-start">
+            <div className="w-full md:w-2/3 gap-4 mt-8 flex items-center lgss:mx-0 mx-auto justify-center lgss:justify-start">
               <Image src={darkAppStore} className=" w-2/5 lgss:w-1/2" alt="" />
               <Image src={darkPlayStore} className=" w-2/5 lgss:w-1/2" alt="" />
             </div>
           </div>
-          <div className="w-full lgss:w-[45%] pt-8 px-6 lgss:px-0">
+          <div className="w-full lgss:w-[45%] pt-8 px-6 lgss:px-0 mt-12">
             <Image src={dPhone} className=" " alt="" />
           </div>
         </div>
