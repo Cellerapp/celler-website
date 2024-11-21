@@ -15,6 +15,7 @@ import toast from "react-hot-toast";
 import { API_URL } from "@/constants";
 import axios from "axios";
 import { ClipLoader } from "react-spinners";
+import { Fade, Zoom } from "react-awesome-reveal";
 
 export default function Contact() {
   const [message, setMessage] = useState<string>("");
@@ -84,72 +85,81 @@ export default function Contact() {
   return (
     <div className="w-full">
       <div className="w-full pt-8 px-4 xs:px-6 pb-16 bg-[#0C0D1D] mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px]">
-        <Navbar />
+        <Fade triggerOnce direction="down" duration={2000}>
+          <Navbar />
+        </Fade>
         <div className="w-4/5 lgss:w-1/2 mx-auto mt-24">
-          <h2 className="text-center text-[20px] md:text-[32px] lgss:text-[40px] font-bold text-white">
-            Contact our Support Team
-          </h2>
-          <h4 className="text-center  mt-1 text-[16px] lgss:text-[18px] text-secondary ">
-            Let us know how we can help
-          </h4>
+          <Fade triggerOnce direction="left">
+            <h2 className="text-center text-[20px] md:text-[32px] lgss:text-[40px] font-bold text-white">
+              Contact our Support Team
+            </h2>
+          </Fade>
+          <Fade triggerOnce direction="up">
+            <h4 className="text-center  mt-1 text-[16px] lgss:text-[18px] text-secondary ">
+              Let us know how we can help
+            </h4>
+          </Fade>
         </div>
         <div className="w-full flex mt-10 lgss:gap-4 justify-between items-start">
           <div className="w-2/5 hidden lgss:flex">
-            <Image src={contact} alt="" />
+            <Fade triggerOnce direction="left">
+              <Image src={contact} alt="" />
+            </Fade>
           </div>
-          <form
-            onSubmit={handleSubmit}
-            className="w-full lgss:w-2/5 mt-8 lgss:mt-24"
-          >
-            <h4 className="text-[20px] lgss:text-[24px] text-white font-bold ">
-              Submit a Form
-            </h4>
-            <h4 className="text-left  mt-1 text-[14px] lgss:text-[15px] text-secondary ">
-              Let us know how we can help
-            </h4>
-            <div className="w-full mt-8">
-              <h4 className="text-left   text-[14px] lgss:text-[15px] text-white ">
-                Full Name
+          <Fade triggerOnce direction="right" className="w-full lgss:w-2/5">
+            <form onSubmit={handleSubmit} className="w-full  mt-8 lgss:mt-24">
+              <h4 className="text-[20px] lgss:text-[24px] text-white font-bold ">
+                Submit a Form
               </h4>
-              <input
-                value={fullName}
-                type="text"
-                onChange={(e) => setFullName(e.target.value)}
-                placeholder="Enter your Full Name"
-                className="w-full text-white border-[#2E304A] bg-[#191A27] h-[52px]  mt-2 placeholder:text-[#929292]  outline-none text-[14px] border  px-4 spin-button-none rounded-xl "
-              />
-            </div>
-            <div className="w-full mt-8">
-              <h4 className="text-left   text-[14px] lgss:text-[15px] text-white ">
-                Email Address
+              <h4 className="text-left  mt-1 text-[14px] lgss:text-[15px] text-secondary ">
+                Let us know how we can help
               </h4>
-              <input
-                value={email}
-                type="email"
-                onChange={(e) => setEmail(e.target.value)}
-                placeholder="Enter your Email Address"
-                className="w-full text-white border-[#2E304A] bg-[#191A27] h-[52px]  mt-2 placeholder:text-[#929292]  outline-none text-[14px] border  px-4 spin-button-none rounded-xl "
-              />
-            </div>
-            <div className="w-full mt-8">
-              <h4 className="text-left   text-[14px] lgss:text-[15px] text-white ">
-                Message
-              </h4>
-              <textarea
-                value={message}
-                onChange={(e) => setMessage(e.target.value)}
-                placeholder="Enter Message"
-                className="w-full text-white border-[#2E304A] bg-[#191A27] h-[180px] pt-2 mt-2 placeholder:text-[#929292]  outline-none text-[14px] border  px-4 spin-button-none rounded-xl "
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full h-[52px] rounded-full mt-6 bg-primary text-[16px] text-white"
-            >
-              {loading ? <ClipLoader color="#FFFFFF" size={30} /> : "Send"}
-            </button>
-          </form>
+              <div className="w-full mt-8">
+                <h4 className="text-left   text-[14px] lgss:text-[15px] text-white ">
+                  Full Name
+                </h4>
+                <input
+                  value={fullName}
+                  type="text"
+                  onChange={(e) => setFullName(e.target.value)}
+                  placeholder="Enter your Full Name"
+                  className="w-full text-white border-[#2E304A] bg-[#191A27] h-[52px]  mt-2 placeholder:text-[#929292]  outline-none text-[14px] border  px-4 spin-button-none rounded-xl "
+                />
+              </div>
+              <div className="w-full mt-8">
+                <h4 className="text-left   text-[14px] lgss:text-[15px] text-white ">
+                  Email Address
+                </h4>
+                <input
+                  value={email}
+                  type="email"
+                  onChange={(e) => setEmail(e.target.value)}
+                  placeholder="Enter your Email Address"
+                  className="w-full text-white border-[#2E304A] bg-[#191A27] h-[52px]  mt-2 placeholder:text-[#929292]  outline-none text-[14px] border  px-4 spin-button-none rounded-xl "
+                />
+              </div>
+              <div className="w-full mt-8">
+                <h4 className="text-left   text-[14px] lgss:text-[15px] text-white ">
+                  Message
+                </h4>
+                <textarea
+                  value={message}
+                  onChange={(e) => setMessage(e.target.value)}
+                  placeholder="Enter Message"
+                  className="w-full text-white border-[#2E304A] bg-[#191A27] h-[180px] pt-2 mt-2 placeholder:text-[#929292]  outline-none text-[14px] border  px-4 spin-button-none rounded-xl "
+                />
+              </div>
+              <button
+                type="submit"
+                className="w-full h-[52px] rounded-full mt-6 bg-primary text-[16px] text-white"
+              >
+                {loading ? <ClipLoader color="#FFFFFF" size={30} /> : "Send"}
+              </button>
+            </form>
+          </Fade>
         </div>
+      </div>
+      <div className="w-full mt-10 pt-4 px-4 xs:px-6 pb-16 bg-[#0C0D1D] mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px]">
         <div
           style={{
             backgroundImage: `url(${transformBg.src})`,
@@ -160,21 +170,30 @@ export default function Contact() {
           className="w-full rounded-xl bg-[#3A66FF] mt-24 flex flex-col pt-8 lgss:pt-0 justify-center lgss:flex-row items-center px-6 lgss:px-10 lgss:justify-between"
         >
           <div className="w-full lgss:w-[55%] ">
-            <h2 className="text-left text-[24px] md:text-[28px] lgss:text-[35px] w-10/12 lgss:w- font-bold text-white">
-              Transform your cryptocurrency transactions with ease at CryptPay.
-            </h2>
+            <Fade triggerOnce direction="up">
+              <h2 className="text-left text-[24px] md:text-[28px] lgss:text-[35px] w-10/12 lgss:w- font-bold text-white">
+                Transform your cryptocurrency transactions with ease at
+                Cryptpay.
+              </h2>
+            </Fade>
 
             <div className="w-full mds:w-1/2 gap-4 mt-8 flex items-center lgss:mx-0 mx-auto justify-start lgss:justify-start">
-              <Image src={darkAppStore} className=" w-2/5 lgss:w-1/2" alt="" />
-              <Image src={darkPlayStore} className=" w-2/5 lgss:w-1/2" alt="" />
+              <Zoom className="w-2/5 lgss:w-1/2" triggerOnce>
+                <Image src={darkAppStore} className=" w-full" alt="" />
+                <Image src={darkPlayStore} className=" w-full" alt="" />
+              </Zoom>
             </div>
           </div>
           <div className="w-full lgss:w-[45%] pt-8 px-6 lgss:px-0">
-            <Image src={dPhone} className=" " alt="" />
+            <Fade triggerOnce direction="up">
+              <Image src={dPhone} className=" " alt="" />
+            </Fade>
           </div>
         </div>
       </div>
-      <Footer />
+      <Fade triggerOnce direction="up">
+        <Footer />
+      </Fade>
     </div>
   );
 }

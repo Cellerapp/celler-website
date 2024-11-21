@@ -1,5 +1,5 @@
 import logo from "./logo.svg"
-import iphoneHand from "./first-regroup.png"
+import iphoneHand from "./newww.png"
 import dashboardPhone from "./dashboard.png"
 import hero1 from "./bg-texture1.svg"
 import hero2 from "./policyLine.png"
@@ -28,9 +28,11 @@ import buyPhone from "./new-buy.png"
 import customer from "./customer.svg"
 import thunder from "./thunder.svg"
 import rateSwap from "./rate-swap.svg"
+import sellHand from "./sellHand.svg"
+import bagg from "./bagg.svg"
 
 export {
-    sellPhone,rateSwap,thunder,customer,
+    sellPhone,rateSwap,thunder,customer,bagg, sellHand,
     buyPhone,
     btcc,
     map,

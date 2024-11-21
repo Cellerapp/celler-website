@@ -8,7 +8,7 @@ const Terms = () => {
           1. Acceptance of Terms
         </h4>
         <h4 className="text-[14px] mt-2 lgss:mt-[16px] leading-[30px] tracking-wide">
-          By accessing or utilizing any service offered by CryptPay, you
+          By accessing or utilizing any service offered by Cryptpay, you
           acknowledge and agree to abide by these Terms of Service. If you
           disagree with any part of these terms, please refrain from using our
           services.
@@ -19,7 +19,7 @@ const Terms = () => {
           2. Service Description
         </h4>
         <h4 className="text-[14px] mt-2 lgss:mt-[16px] leading-[30px] tracking-wide">
-          CryptPay provides a range of cryptocurrency-related services,
+          Cryptpay provides a range of cryptocurrency-related services,
           including the buying, selling, swapping, and managing of digital
           assets. Our platform aims to offer a seamless and secure experience
           for cryptocurrency transactions and asset management.
@@ -53,7 +53,7 @@ const Terms = () => {
           5. Transactions and Payments
         </h4>
         <h4 className="text-[14px] mt-2 lgss:mt-[16px] leading-[30px] tracking-wide">
-          When performing transactions through CryptPay, users agree to provide
+          When performing transactions through Cryptpay, users agree to provide
           accurate and up-to-date information. All payments are subject to the
           terms and conditions specified during the transaction process.
         </h4>
@@ -64,7 +64,7 @@ const Terms = () => {
         </h4>
         <h4 className="text-[14px] mt-2 lgss:mt-[16px] leading-[30px] tracking-wide">
           Users may contribute content to our platform (such as reviews or
-          comments). By submitting content, users grant CryptPay a
+          comments). By submitting content, users grant Cryptpay a
           non-exclusive, royalty-free license to use, modify, and distribute
           such content as part of our services.
         </h4>
@@ -74,7 +74,7 @@ const Terms = () => {
           7. Limitation of Liability
         </h4>
         <h4 className="text-[14px] mt-2 lgss:mt-[16px] leading-[30px] tracking-wide">
-          CryptPay is not liable for any direct, indirect, incidental, or
+          Cryptpay is not liable for any direct, indirect, incidental, or
           consequential damages arising from the use or inability to use our
           services, including but not limited to loss of data, profits, or
           business opportunities.
@@ -85,7 +85,7 @@ const Terms = () => {
           8. Modification of Services
         </h4>
         <h4 className="text-[14px] mt-2 lgss:mt-[16px] leading-[30px] tracking-wide">
-          CryptPay reserves the right to modify, suspend, or discontinue any
+          Cryptpay reserves the right to modify, suspend, or discontinue any
           part of its services, including access to certain features or content,
           without prior notice or liability.
         </h4>
@@ -106,7 +106,7 @@ const Terms = () => {
         </h4>
         <h4 className="text-[14px] mt-2 lgss:mt-[16px] leading-[30px] tracking-wide">
           For questions or concerns regarding these Terms of Service, please
-          contact us at help@cryptpay.com or +234 501-801 9595
+          contact us at support@cryptpay.co or +234 501-801 9595
         </h4>
       </div>
     </div>

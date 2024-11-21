@@ -68,15 +68,9 @@ const Footer = () => {
               <Image src={logo} alt="logo" />
             </div>
           </Link>
-          <h4 className="text-white text-[14px] mt-6">
-            Wawa Municipal Office, 40 Broadway Avenue, Wawa, Ontario
-          </h4>
-          <div className="flex text-white mt-4 items-center">
-            <MdLocationPin className="text-[15px]" />
-            <h4 className="text-[13px]">Ontario, Canada </h4>
-          </div>
+
           <h4 className="text-white text-[14px] mt-4">
-            The Palms Shopping Mall, Lekki-Epe Expressway, Lekki, Lagos
+            14A Alternative Route, Chevron Close, Lekki, Eti-Osa, Lagos State.
           </h4>
           <div className="flex text-white mt-4 items-center">
             <MdLocationPin className="text-[15px]" />
@@ -93,12 +87,6 @@ const Footer = () => {
               <Link href={""} className="text-[16px] text-white ">
                 Sell Cryptocurrency
               </Link>
-              <Link href={""} className="text-[16px] text-white ">
-                Swap Cryptocurrency
-              </Link>
-              <Link href={""} className="text-[16px] text-white ">
-                Deposit/Withdraw
-              </Link>
             </div>
             <div className="flex flex-col gap-3">
               <h4 className="text-[20px] font-bold text-white ">Company</h4>
@@ -108,7 +96,7 @@ const Footer = () => {
               <Link href={"/contact"} className="text-[16px] text-white ">
                 Contact Us
               </Link>
-              <Link href={""} className="text-[16px] text-white ">
+              <Link href={"/#faq"} className="text-[16px] text-white ">
                 FAQs
               </Link>
             </div>
@@ -124,7 +112,7 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
               <h4 className="text-[20px] font-bold text-white ">Contact</h4>
               <Link href={""} className="text-[16px] text-white ">
-                help@crytpay.com
+                support@cryptpay.co
               </Link>
               <Link href={""} className="text-[16px] text-white ">
                 +234 501-801 9595

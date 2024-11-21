@@ -8,7 +8,7 @@ const Privacy = () => {
           1. Introduction
         </h4>
         <h4 className="text-[14px] mt-2 lgss:mt-[16px] leading-[30px] tracking-wide">
-          CryptPay, herein referred to as &quot;we,&quot; &quot;our,&quot; or
+          Cryptpay, herein referred to as &quot;we,&quot; &quot;our,&quot; or
           &quot;us,&quot; is dedicated to upholding the highest standards of
           confidentiality and security in protecting the privacy of our valued
           users and visitors to our digital platform. This Privacy Policy serves
@@ -50,7 +50,7 @@ const Privacy = () => {
         <h4 className="text-[14px] mt-2 lgss:mt-[16px] leading-[30px] tracking-wide">
           <strong>1. Service Delivery:</strong> We utilize collected information
           to facilitate transactions, manage accounts, process payments, and
-          support the overall functionality of CryptPay.
+          support the overall functionality of Cryptpay.
           <br />
           <br />
           <strong>2. Communication:</strong> Personal information may be used to
@@ -71,7 +71,7 @@ const Privacy = () => {
           <br />
           <strong>2. Legal Requirements:</strong> Personal information may be
           disclosed to comply with legal obligations or to protect the rights,
-          property, or safety of CryptPay, its users, or others.
+          property, or safety of Cryptpay, its users, or others.
         </h4>
       </div>
       <div className="w-full mt-8">
