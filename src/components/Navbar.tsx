@@ -23,9 +23,9 @@ export default function Navbar() {
         <Link
           href="/"
           className={
-            currentPath === "/"
-              ? "text-secondary border-b border-secondary text-[16px] py-3 "
-              : "text-secondary text-[16px] py-3 "
+            currentPath === "/" && !openDrop
+              ? "text-secondary border-b  border-secondary text-[16px] py-3 "
+              : "text-secondary text-[16px] py-3 hover:border-b border-secondary "
           }
         >
           Home
@@ -36,7 +36,7 @@ export default function Navbar() {
             className={
               openDrop
                 ? "text-secondary relative flex justify-center items-center gap-2 border-b border-secondary text-[16px] py-3 "
-                : "text-secondary flex justify-center items-center gap-2 text-[16px] py-3 "
+                : "text-secondary flex justify-center items-center gap-2 text-[16px] py-3 hover:border-b border-secondary"
             }
           >
             Features
@@ -56,14 +56,14 @@ export default function Navbar() {
                   onClick={() => setOpenDrop((prev) => !prev)}
                   className="w-full flex justify-center items-center gap-4"
                 >
-                  <div className="w-[100px] h-[52px] rounded-lg flex justify-center items-center border-2 border-[#161836] bg-[#101226]">
+                  <div className="w-[100px] h-[52px]  rounded-lg flex justify-center items-center border-2 border-[#161836] bg-[#101226]">
                     <Image src={bagg} alt="" />
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold text-[15px]">
+                    <h4 className="text-gray-200 hover:text-white font-semibold text-[15px]">
                       Buy Crypto
                     </h4>
-                    <h4 className="text-secondary mt-1 font-semibold text-[13px]">
+                    <h4 className="text-secondary hover:text-gray-300 mt-1 font-semibold text-[13px]">
                       Purchase your favorite cryptocurrencies in seconds.
                     </h4>
                   </div>
@@ -78,10 +78,10 @@ export default function Navbar() {
                     <Image src={sellHand} alt="" />
                   </div>
                   <div>
-                    <h4 className="text-white font-semibold text-[15px]">
+                    <h4 className="text-gray-200 hover:text-white font-semibold text-[15px]">
                       Sell Crypto
                     </h4>
-                    <h4 className="text-secondary mt-1 font-semibold text-[13px]">
+                    <h4 className="text-secondary hover:text-gray-300 mt-1 font-semibold text-[13px]">
                       Sell your crypto quickly and receive funds instantly.
                     </h4>
                   </div>
@@ -93,9 +93,9 @@ export default function Navbar() {
         <Link
           href="/about"
           className={
-            currentPath === "/about"
+            currentPath === "/about" && !openDrop
               ? "text-secondary border-b border-secondary text-[16px] py-3 "
-              : "text-secondary text-[16px] py-3 "
+              : "text-secondary text-[16px] py-3 hover:border-b border-secondary "
           }
         >
           About Us
@@ -103,9 +103,9 @@ export default function Navbar() {
         <Link
           href="/contact"
           className={
-            currentPath === "/contact"
+            currentPath === "/contact" && !openDrop
               ? "text-secondary border-b border-secondary text-[16px] py-3 "
-              : "text-secondary text-[16px] py-3 "
+              : "text-secondary text-[16px] py-3 hover:border-b border-secondary"
           }
         >
           Contact Us

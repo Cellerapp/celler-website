@@ -20,9 +20,9 @@ const Terms = () => {
         </h4>
         <h4 className="text-[14px] mt-2 lgss:mt-[16px] leading-[30px] tracking-wide">
           Cryptpay provides a range of cryptocurrency-related services,
-          including the buying, selling, swapping, and managing of digital
-          assets. Our platform aims to offer a seamless and secure experience
-          for cryptocurrency transactions and asset management.
+          including the buying, selling and managing of digital assets. Our
+          platform aims to offer a seamless and secure experience for
+          cryptocurrency transactions and asset management.
         </h4>
       </div>
       <div className="w-full mt-8">
