@@ -7,7 +7,6 @@ import {
   darkAppStore,
   darkPlayStore,
   dPhone,
-  gumBg,
   hero1,
   iphoneHand,
   lock,
@@ -70,9 +69,9 @@ export default function Home() {
             </h2>
             <Fade direction="left" duration={500} triggerOnce className="">
               <h4 className="text-center lgss:text-left mt-3 text-[15px] mds:text-[17px] lgss:text-[18px] text-secondary mx-auto lgss:mx-0 w-11/12 lgss:w-10/12">
-                Buy, sell, swap, and manage your digital asset — all in one app.
-                Enjoy seamless transactions, create and secure your dream
-                portfolio on Cryptpay.
+                Buy, sell and manage your digital asset — all in one app. Enjoy
+                seamless transactions, create and secure your dream portfolio on
+                Cryptpay.
               </h4>
             </Fade>
             <Fade direction="up" triggerOnce>
@@ -143,8 +142,8 @@ export default function Home() {
                   Start Transacting on Cryptpay
                 </h4>
                 <h4 className="text-center  text-[15px]  text-white px-4">
-                  Begin trading instantly. Buy, sell, and swap digital assets
-                  with confidence and ease.
+                  Begin trading instantly. Buy and sell digital assets with
+                  confidence and ease.
                 </h4>
               </Fade>
             </div>
@@ -182,23 +181,47 @@ export default function Home() {
               />
             </div>
             <div className="flex flex-col gap-20 justify-start mt-8 items-start">
-              <div>
+              <div className="cursor-pointer" onClick={() => setMessage(1)}>
                 <Fade triggerOnce direction="up">
-                  <h4 className="text-left  text-[20px] font-semibold text-white ">
+                  <h4
+                    className={
+                      message === 1
+                        ? "text-left  text-[20px] font-semibold text-white "
+                        : "text-left  text-[20px] font-semibold text-gray-500 "
+                    }
+                  >
                     Buy Cryptocurrency
                   </h4>
-                  <h4 className="text-left  text-[16px] mt-2 text-secondary pr-6 ">
+                  <h4
+                    className={
+                      message === 1
+                        ? "text-left  text-[16px] mt-2 text-secondary pr-6 "
+                        : "text-left  text-[16px] mt-2 text-gray-600 pr-6 "
+                    }
+                  >
                     Purchase digital assets in just a few clicks. Enjoy secure
                     transactions and real-time pricing for a smooth experience.
                   </h4>
                 </Fade>
               </div>
-              <div>
+              <div className="cursor-pointer" onClick={() => setMessage(2)}>
                 <Fade triggerOnce direction="up">
-                  <h4 className="text-left  text-[20px] font-semibold text-white ">
+                  <h4
+                    className={
+                      message === 2
+                        ? "text-left  text-[20px] font-semibold text-white "
+                        : "text-left  text-[20px] font-semibold text-gray-500 "
+                    }
+                  >
                     Sell Cryptocurrency
                   </h4>
-                  <h4 className="text-left  text-[16px] mt-2 text-secondary pr-6 ">
+                  <h4
+                    className={
+                      message === 2
+                        ? "text-left  text-[16px] mt-2 text-secondary pr-6 "
+                        : "text-left  text-[16px] mt-2 text-gray-600 pr-6 "
+                    }
+                  >
                     Quickly convert your digital assets into cash or other
                     currencies. Enjoy competitive rates and a straightforward
                     selling process.
@@ -254,7 +277,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div
+      {/* <div
         style={{
           backgroundImage: `url(${gumBg.src})`,
           width: "100%",
@@ -276,33 +299,9 @@ export default function Home() {
               the most out of every trade.
             </h4>
           </Fade>
-          {/* <div className="w-11/12 mds:w-1/2 gap-12 mt-10 flex items-center  mx-auto justify-center lgss:justify-center">
-            <div className="mt-4">
-              <h4 className="text-secondary text-[14px]">Real Time Audit</h4>
-              <Image src={gumLogo} className=" " alt="" />
-              <div className="flex items-center gap-2 mt-2">
-                <FaStar className="text-primary text-[20px]" />
-                <FaStar className="text-primary text-[20px]" />
-                <FaStar className="text-primary text-[20px]" />
-                <FaStar className="text-primary text-[20px]" />
-                <FaStar className="text-secondary text-[20px]" />
-              </div>
-            </div>
-            <div className="mt-4">
-              <h4 className="text-secondary text-[14px]">Positive review on</h4>
-              <Image src={hashLogo} className=" " alt="" />
-              <div className="flex items-center gap-2 mt-2">
-                <FaStar className="text-primary text-[20px]" />
-                <FaStar className="text-primary text-[20px]" />
-                <FaStar className="text-primary text-[20px]" />
-                <FaStar className="text-primary text-[20px]" />
-                <FaStar className="text-secondary text-[20px]" />
-              </div>
-            </div>
-          </div> */}
+          
         </div>
-        {/* <div className="w-10/12 mx-auto lgss:w-[35%] bg-[#1D1E27] h-[500px] rounded-xl"></div> */}
-      </div>
+      </div> */}
       <div className="bg-[#0C0D1D] py-24 px-4 xs:px-6 mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px]">
         <div className="w-4/5 lgss:w-2/5 mx-auto">
           <Fade triggerOnce direction="up">
@@ -370,11 +369,11 @@ export default function Home() {
             </div>
           </Fade>
           <Fade triggerOnce direction="up">
-            <div className=" bg-gradient-to-tr from-[#101226] px-6 pt-6 pb-12 border border-[#2D2D2D] to-[#121F46] rounded-xl">
+            <div className=" bg-gradient-to-tr from-[#101226] px-4 pt-6 pb-12 border border-[#2D2D2D] to-[#121F46] rounded-xl">
               {/* <h4 className="text-[28px] lgss:text-[40px] text-[#D9D9D9]">02</h4> */}
               <div className="flex flex-col items-center justify-center gap-4 mt-4 ">
                 <Image src={thunder} alt="" />
-                <h4 className="text-center  text-[20px] font-semibold text-white px-12">
+                <h4 className="text-center  text-[18px]  font-semibold text-white px-12">
                   Fast & Efficient Transactions
                 </h4>
                 <h4 className="text-center  text-[15px]  text-white px-4">
@@ -443,9 +442,9 @@ export default function Home() {
                   <Fade triggerOnce direction="up">
                     <h4 className="text-left text-secondary mt-4 text-[14px]">
                       Cryptpay is a comprehensive cryptocurrency platform that
-                      allows users to buy, sell, swap, and deposit various
-                      cryptocurrencies. It also provides advanced features for
-                      managing and tracking your digital assets.
+                      allows users to buy and sell various cryptocurrencies. It
+                      also provides advanced features for managing and tracking
+                      your digital assets.
                     </h4>
                   </Fade>
                 )}
