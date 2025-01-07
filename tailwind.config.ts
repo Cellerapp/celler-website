@@ -10,6 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         hero: "url('/src/assets/images/bg-texture1.svg')",
+        hero2: "url('/src/assets/images/Website.svg')",
       },
       colors: {
         background: "var(--background)",

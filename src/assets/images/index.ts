@@ -3,6 +3,7 @@ import iphoneHand from "./newww.png"
 import dashboardPhone from "./dashboard.png"
 import hero1 from "./bg-texture1.svg"
 import hero2 from "./policyLine.png"
+import hero3 from "./Website.svg"
 import darkAppStore from "./darkAppstore.png"
 import appStore from "./appStore.svg"
 import playStore from "./playStore.svg"
@@ -32,7 +33,7 @@ import sellHand from "./sellHand.svg"
 import bagg from "./bagg.svg"
 
 export {
-    sellPhone,rateSwap,thunder,customer,bagg, sellHand,
+    sellPhone,rateSwap,thunder,customer,bagg, sellHand, hero3,
     buyPhone,
     btcc,
     map,

@@ -8,28 +8,40 @@ const Privacy = () => {
           1. Introduction
         </h4>
         <h4 className="text-[14px] mt-2 lgss:mt-[16px] leading-[30px] tracking-wide">
-          Cryptpay, herein referred to as &quot;we,&quot; &quot;our,&quot; or
-          &quot;us,&quot; is dedicated to upholding the highest standards of
-          confidentiality and security in protecting the privacy of our valued
-          users and visitors to our digital platform. This Privacy Policy serves
-          as a comprehensive guide, outlining the procedures and practices
-          governing the collection, use, disclosure, and protection of personal
-          data provided to us through our website, services, and interactions.
-          <br />
-          <br />
-          Our commitment extends beyond mere compliance with standard
-          regulations; it is a fundamental aspect of our ethos, reflecting our
-          dedication to safeguarding the personal information entrusted to us.
-          We provide detailed information on how we gather, use, secure, and
-          ensure the confidentiality of personal data shared through our online
-          services, ensuring a culture of trust, transparency, and confidence
-          among our users and visitors.
+          This is our Privacy Policy! We value and respect your privacy, and we
+          are committed to transparently communicating how we handle your
+          Personal Data. Your privacy is of paramount importance to Tampay by Cq
+          Ltd, located at 14 A, Alternative route, Chevron Close, Lekki, with
+          company number 7430244 (referred to as Tampay, “we,” and “us“) which
+          operates the website (the “Website”) and Cryptpay application (both
+          together referred as the “Website”). We are a data controller of your
+          personal data, meaning we determine the purposes and means of the
+          processing when you visit our Website, our application, and/or use our
+          Services, This Privacy Policy (the “Policy”) provides information to
+          whom it applies, grounds for data processing, data processing
+          description, regulatory requirements and specifics, and other
+          information to transparently and comprehensively inform you about all
+          aspects of privacy, including your limitations and rights. If this
+          Policy does not meet your needs, we kindly ask you not to use our
+          Service. By continuing to visit our Website it will be considered that
+          you accept this Policy. As a user of our Services, you will be
+          informed about this Policy when registering. If you do not accept it,
+          you will not be able to register and/or use our Services. Should you
+          have any questions please reach out to our legal team at
+          <a href="mailto:compliance@tampay.co">compliance@tampay.co</a> or our
+          data privacy officer at{" "}
+          <a href="mailto:privacy@tampay.co">privacy@tampay.co</a>. This Privacy
+          Policy may be revised, modified, updated, or supplemented at any time,
+          without prior notice, at our sole discretion. When we make changes to
+          this Privacy Policy, we will notify all users on our Website, and make
+          the amended Privacy Policy available on our Website. By further using
+          our Services it will be considered you accept with the implied
+          changes. This privacy policy is an integral part of Cryptpay Terms of
+          Service and is of informative nature.
         </h4>
       </div>
       <div className="w-full mt-8">
-        <h4 className="text-[18px] md:text-[28px] font-bold ">
-          2. Information Collection and Use
-        </h4>
+        <h4 className="text-[18px] md:text-[28px] font-bold ">Definitions</h4>
         <h4 className="text-[14px] mt-2 lgss:mt-[16px] leading-[30px] tracking-wide">
           <strong>1. Personal Information:</strong> We collect personal
           information such as names, contact details, payment information,

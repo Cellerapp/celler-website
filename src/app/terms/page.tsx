@@ -28,12 +28,12 @@ export default function Termss() {
           className="w-full py-[170px] rounded-xl mt-6 lgss:mt-16 bg-[#B7D7FF] flex flex-col justify-center items-center"
         >
           <Fade triggerOnce direction="up">
-            <h4 className="text-[48px] text-[#141D57] font-bold">
+            <h4 className="text-[36px] mds:text-[48px] text-[#141D57] text-center font-bold">
               {screen === "privacy" ? "Privacy Policy" : "Terms of Service"}
             </h4>
           </Fade>
           <Fade triggerOnce direction="up">
-            <h4 className="text-[18px] text-[#141D57] ">
+            <h4 className="text-[15px] mds:text-[18px] text-[#141D57] ">
               Last Updated: August 8th 2024
             </h4>
           </Fade>
@@ -44,8 +44,8 @@ export default function Termss() {
               onClick={() => setScreen("privacy")}
               className={
                 screen === "privacy"
-                  ? "w-1/2 bg-[#3A66FF] py-2 rounded-full text-white font-semibold text-[18px]"
-                  : "w-1/2  py-2  text-white text-[18px]"
+                  ? "w-1/2 bg-[#3A66FF] py-2 rounded-full text-white font-semibold text-[15px] mds:text-[18px]"
+                  : "w-1/2  py-2  text-white text-[15px] mds:text-[18px]"
               }
             >
               Privacy Policy
@@ -54,8 +54,8 @@ export default function Termss() {
               onClick={() => setScreen("terms")}
               className={
                 screen === "terms"
-                  ? "w-1/2 bg-[#3A66FF] py-2 rounded-full text-white font-semibold text-[18px]"
-                  : "w-1/2  py-2  text-white text-[18px]"
+                  ? "w-1/2 bg-[#3A66FF] py-2 rounded-full text-white text-center font-semibold text-[15px] mds:text-[18px]"
+                  : "w-1/2  py-2  text-white text-[15px] mds:text-[18px]"
               }
             >
               Terms of Service

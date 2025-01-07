@@ -111,7 +111,7 @@ const Footer = () => {
             </div>
             <div className="flex flex-col gap-3">
               <h4 className="text-[20px] font-bold text-white ">Contact</h4>
-              <Link href={""} className="text-[16px] text-white ">
+              <Link href={""} className="text-[14px] text-white  ">
                 support@cryptpay.co
               </Link>
               <Link href={""} className="text-[16px] text-white ">
