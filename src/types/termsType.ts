@@ -9,3 +9,9 @@ export type SectionContent = {
   title: string;
   content: (string | SubSectionContent)[]; // Content can either be plain text or a subsection object
 };
+
+
+export type SectionpolContent = {
+  title: string;
+  content: (string | SubSectionContent)[]; // Content can either be plain text or a subsection object
+};

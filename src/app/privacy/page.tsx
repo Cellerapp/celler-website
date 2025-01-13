@@ -3,16 +3,24 @@
 import { hero2 } from "@/assets/images";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import PolicyTitle from "@/components/PolicyTitle";
 import Privacy from "@/components/Privacy";
-import Terms from "@/components/Terms";
+import { policyContent } from "@/constants";
 import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
 
 export default function Privacyy() {
-  const [screen, setScreen] = useState<string>("privacy");
+  const [activeTitle, setActiveTitle] = useState("");
+
+  const handleContentAtTop = (title: string) => {
+    setActiveTitle(title);
+  };
+
+  const allTitles = policyContent.map((section) => section.title);
+
   return (
-    <div className="w-full">
-      <div className="w-full pt-8 px-4 xs:px-6 bg-[#0C0D1D] mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px]">
+    <div className="w-full lgss:min-h-screen">
+      <div className="w-full pt-8 px-4 xs:px-6 bg-[#0C0D1D] mds:px-12 md:px-16 lgss:px-12 xl:px-16 xxxl:px-[250px]">
         <Fade triggerOnce direction="down" duration={2000}>
           <Navbar />
         </Fade>
@@ -28,41 +36,24 @@ export default function Privacyy() {
           className="w-full py-[170px] rounded-xl mt-6 lgss:mt-16 bg-[#B7D7FF] flex flex-col justify-center items-center"
         >
           <Fade triggerOnce direction="up">
-            <h4 className="text-[48px] text-[#141D57] font-bold">
-              {screen === "privacy" ? "Privacy Policy" : "Terms of Service"}
+            <h4 className="text-[36px] mds:text-[48px] text-[#141D57] text-center font-bold">
+              Privacy Policy
             </h4>
           </Fade>
           <Fade triggerOnce direction="up">
-            <h4 className="text-[18px] text-[#141D57] ">
-              Last Updated: August 8th 2024
+            <h4 className="text-[15px] mds:text-[18px] text-[#141D57]">
+              Last Updated: January 13th 2025.
             </h4>
           </Fade>
         </div>
-        <div className="w-full md:w-2/3 mx-auto mt-16">
-          <div className="w-full lgss:w-3/5 lg:w1/2 mx-auto bg-[#1B1D3A] rounded-full h-[68px] px-4 flex justify-between gap-4 items-center">
-            <button
-              onClick={() => setScreen("privacy")}
-              className={
-                screen === "privacy"
-                  ? "w-1/2 bg-[#3A66FF] py-2 rounded-full text-white font-semibold text-[18px]"
-                  : "w-1/2  py-2  text-white text-[18px]"
-              }
-            >
-              Privacy Policy
-            </button>
-            <button
-              onClick={() => setScreen("terms")}
-              className={
-                screen === "terms"
-                  ? "w-1/2 bg-[#3A66FF] py-2 rounded-full text-white font-semibold text-[18px]"
-                  : "w-1/2  py-2  text-white text-[18px]"
-              }
-            >
-              Terms of Service
-            </button>
-          </div>
-          <div className="w-full lgss:w-4/5 pb-24 mx-auto mt-16 text-white">
-            {screen === "privacy" ? <Privacy /> : <Terms />}
+        <div className="w-full  lgss:w-full mx-auto mt-16">
+          <div className="w-full pb-24 lgss:gap-12 flex gap-4 justify-center items-start mx-auto mt-16 text-white">
+            <div className="hidden lgss:flex w-[23%] bg-[#191A27] border border-[#484848] rounded-xl p-4">
+              <PolicyTitle titles={allTitles} activeTitle={activeTitle} />
+            </div>
+            <div className="lgss:w-[75%]">
+              <Privacy onContentAtTop={handleContentAtTop} />
+            </div>
           </div>
         </div>
       </div>

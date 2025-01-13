@@ -568,7 +568,7 @@ export const termsContent: SectionContent[] = [
     ]
   },
   {
-    title:"15. General Disclosures",
+    title:"16. Definitions",
     content:[
     `
     Any capitalized terms which are not defined in these Cryptocurrency Terms of Use shall have the meaning given in the Cryptpay Account Terms of Use.
@@ -593,4 +593,308 @@ export const termsContent: SectionContent[] = [
     `   
     ]
   },
+];
+export const policyContent: SectionContent[] = [
+  {
+    title: "1. Introduction",
+    content: [
+     
+     "This is our Privacy Policy!",
+
+"We value and respect your privacy, and we are committed to transparently communicating how we handle your Personal Data.",
+ 
+"Your privacy is of paramount importance to Tampay by Cq Ltd, located at 14 A, Alternative route, Chevron Close, Lekki, with company number 7430244 (referred to as Tampay, “we,” and “us“) which operates the website  (the “Website”) and Cryptpay application (both together referred as the “Website”). ",
+
+"We are a data controller of your personal data, meaning we determine the purposes and means of the processing when you visit our Website, our application, and/or use our Services,",
+"This Privacy Policy (the “Policy”) provides information to whom it applies, grounds for data processing, data processing description, regulatory requirements and specifics, and other information to transparently and comprehensively inform you about all aspects of privacy, including your limitations and rights. ",
+
+"If this Policy does not meet your needs, we kindly ask you not to use our Service. By continuing to visit our Website it will be considered that you accept this Policy. As a user of our Services, you will be informed about this Policy when registering. If you do not accept it, you will not be able to register and/or use our Services. Should you have any questions please reach out to our legal team at compliance@tampay.co or our data privacy officer at privacy@tampay.co. ",
+
+"This Privacy Policy may be revised, modified, updated, or supplemented at any time, without prior notice, at our sole discretion. When we make changes to this Privacy Policy, we will notify all users on our Website, and make the amended Privacy Policy available on our Website. By further using our Services it will be considered you accept with the implied changes. ",
+
+"This privacy policy is an integral part of Cryptpay Terms of Service and is of informative nature."
+     
+    ],
+  },
+  {
+    title: "2. What is Personal Data?",
+    content: [
+     
+     "This is our Privacy Policy!",
+
+"Personal data means any information relating to an identified or identifiable natural person (‘data subject’). An identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, and similar, or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.",
+
+"As we receive personal identification data, such as ID documents, as well as certain economic data, it is important for you to understand how we treat your data and the purposes for which we process it.",
+"Processing of personal data means any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.",
+     "Through this Policy, we aim to inform you about how we process the personal data collected through our website and application. This includes details about the personal data we collect, the reasons for collecting it, the legal grounds for the collection, how we use and disclose it, your choices, and your obligations and rights considering privacy matters. Through this Policy, we aim to inform you about how we process the personal data collected through our website and application. This includes details about the personal data we collect, the reasons for collecting it, the legal grounds for the collection, how we use and disclose it, your choices, and your obligations and rights considering privacy matters. "
+    ],
+  },
+ 
+  {
+    title: "3. Contact Information",
+    content: [
+     "If you have any questions concerning this Policy or the processing of your personal data, you can contact our Data Protection Officer via the email privacy@tampay.co."
+    ],
+  },
+  {
+    title: "4. Validity and Termination ",
+    content: [
+     "By confirming  “I confirm that I am at least 18 years old and I agree to the User Agreement and accept the Privacy Policy” during the registration process button you confirm you accept to this Policy which is mandatory for using our Services and becoming our customer.",
+     "This Policy applies to you either as an individual user or as a legal or authorised representative, or ultimate beneficial owner (and altogether “User”, and/or “You”). ",
+"In the scope of solely visiting the Website, our Cooky Policy applies to all Website visitors. Our Cooky Policy includes information on the different types of cookies we are using and your active consent will be required for all non-essential cookies.  We use cookies and other tracking technologies to ensure the Website and our application are working smoothly, and for other purposes, for example, to improve or enhance user experience, for marketing or analytical purposes, and similar.",
+"This policy is valid for as long as you use our Services, and ceases to be valid when you stop using our Services.",
+"Since we are subjected to Money Laundry Act, we have certain reporting and data retention obligations even after the termination of the business relationship with you, and some of your rights (e.g. to deletion) may also be limited."
+    ],
+  },
+  {
+    title: "5. About us ",
+    content: [
+    "Cryptpay is a crypto asset service provider, providing its business in Nigeria, across Africa, the globe and, a product of Tampay by cq ltd, a company registered in Nigeria by the Corporate Affairs Commission CAC for the provision of the following services (the “Services”):",
+    {
+      subTitle:"",
+      text:'',
+      bulletPoints:[
+        "Providing services for exchanging crypto assets against a fiat currency",
+"Providing services for exchanging crypto assets against other crypto assets;",
+"Providing a crypto asset wallet service;",
+"Providing a crypto asset transfer service."
+      ]
+    },
+    "Services are provided through our Website www.cryptpay.co  or mobile app (the “Services”). ",
+    "Any information received from you within using our Services is treated as confidential. All information is stored securely and is accessed by authorised personnel only. We implement and maintain appropriate technical, security, and organisational measures to protect personal data against unauthorised or unlawful use, and against accidental loss, destruction, damage, theft, or disclosure. "
+    ],
+  },
+  {
+    title: "6. Legal grounds for collecting personal data ",
+    content: [
+"We process your Personal Data on the following grounds:",
+    {
+      subTitle:"",
+      text:'',
+      bulletPoints:[
+      " Processing is necessary for the performance of Services and entering into a business relationship with us;",
+"To assure compliance with legal obligations to which we are subject, especially, but not exclusively, anti-money laundering and counter-terrorist financing legislation;",
+"We have a legitimate interest;",
+"You have given consent to the processing of your personal data for specific purposes."
+      ]
+    },
+    "We collect your Personal data  ",
+    {
+      subTitle:"",
+      text:'',
+      bulletPoints:[
+      " Directly from you during the registration and identification verification process (know-your-customer process), or when using our Services, and by communicating with you;",
+"From third-party sources (e.g. automatic data extraction regarding political exposure, reputation, sanctions …)",
+"By automatic collection when using our Services (device information, IP address, location detection.",
+      ]
+    },
+"Upon processing Personal Data we follow the following principles: ",
+{
+      subTitle:"",
+      text:'',
+      bulletPoints:[
+      " legality and fairness – personal data are processed legally and fairly;",
+"purposefulness – personal data are collected for specified, explicit, and legitimate purposes and they shall not be processed in any manner that is incompatible with these purposes;",
+"quality – personal data must be adequate and appropriate and must not be excessive given the purposes of the data processing;",
+"accuracy – personal data must be accurate and, if necessary, kept up to date;",
+"retention – personal data are retained in the format that enables identification of the data subject until this is necessary for the achievement of the purpose for which the personal data is processed;",
+"security – personal data are processed in a manner that ensures appropriate security thereof, including protection against unauthorised or unlawful processing and against accidental loss, destruction, or damage."
+      ]
+    },
+
+  ],
+  },
+
+  {
+    title: "7. Personal data processing for Website visitors",
+    content: [
+      "This section applies if you are visiting our Services as well as if you are a user of our Services in the scope of collecting personal data when visiting our Website. ",
+      "We may collect, record, and analyze information about our Website Visitors, the breakdown of the collected personal data, information on the purpose, and other important information on the processing of personal data collected during your Website visit. ",
+      {
+        subTitle:"",
+      text:'',
+      bulletPoints:[
+"Personal data: Your IP address geographical location browser type and version operating system referral source length of visit page views, and website navigation paths information about the timing, frequency, and pattern of using the Website personal data that was voluntarily and with your consent given to us through our Website’s forms, such as when you sign up for information and newsletters. The source of the usage data is our analytics tracking system. ",
+"Purpose of processing personal data: Analysing the use of the Website and improving users’ experience, performance, and future development communicating with Website visitors customize contents how ads on other websites improve our Website by analyzing how visitors navigate the Website",
+"Legal basis: Our legitimate interest in monitoring and improving our Website and Services and/or your consent ",
+"Sharing and storing personal data: We may also share information with service vendors or contractors to provide a requested service or transaction or to analyze the Visitor behaviour on its website.",
+
+      ]
+      },
+      "The source of the usage data is our analytics tracking system. ",
+      "You can unsubscribe from the newsletter anytime by clicking the unsubscribe button at the bottom of the email. You can also send us an e-mail to privacy@tampay.co and ask us to unsubscribe you or contact our customer support team via our Website directly.",
+      "If you provide us with your social media details, we may retrieve publicly available information about you from social media. We use such information for a better user experience, enabling a user to make a login to our Website with the user’s Facebook or Google profile.",
+
+      { subTitle:"Cookies",
+      text:'Cookies are files (small pieces of data) sent by web servers to web browsers that are downloaded to users` hard disks, serving to improve their experience and ensure the website and apps are working smoothly to provide you with the functionalities you need (necessary cookies) or select. Cookies cannot be used to run programs or deliver viruses to your computer. By using our Website, you agree to the placement of cookies on your device. If you choose not to accept our cookies, we cannot guarantee that your experience will be as fulfilling as it would otherwise be. We may also place cookies from third parties for functional and marketing purposes. The use of cookies is widespread and benefits the Website user. ',
+    
+    },
+
+      { subTitle:"Links to other websites",
+text:"Our Website may contain links to other websites, such as (but not limited to) Facebook, Instagram, Linkedin, Github, Twitter, and other third-party websites. If you click on such a link, you will be directed to that site. Note, that these external sites are not operated by us. We strongly advise you to review the Privacy Policy of the third-party websites that you visit. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.",
+
+    },
+
+    {
+      subTitle:"Geographical location of collection and storing Personal Data",
+      text:"We may share such information with service vendors or contractors to analyze the Visitor behaviour on the Website."
+    },
+   "Our Website runs on servers in Nigeria, Africa and other approved data regions where our users reside except for restricted regions not allowed to use Crytpo currencies. Our “Data Region” is a set of data centres located within a defined geographical area where user data is stored. Personal data is not transmitted to unapproved Data Regions where our users do not reside. For our Website visitors, all visitors’ personal data are located in the Nigeria Data Region, and all Personal Data is processed Nigeria. Automatically collected data (Google Analytics) by third parties may be stored outside Nigeria."
+
+    ],
+  },
+
+  {
+    title: "8. Personal data processing breakdown for users of our Services",
+    content: [
+       {
+      subTitle:"Personal data we collect during registration ",
+      text:"The first step in becoming our client is registering – creating an account. During the registration, you provide us with the following personal data:",
+      bulletPoints:[
+        "Name and Surname",
+        "Email address",
+        "Password (you create during the registration process)",
+        "Account actions activity log",
+        "IP address",
+        "Mobile phone number "
+      ]
+    },
+    "Our services are not intended for children under 18 and we do not knowingly collect data from minors.",
+    "Legal grounds for personal data processing: ",
+    "The Personal Data are obtained on the grounds of entering into a business relationship with us. ",
+
+    {
+      subTitle:"Personal data we collect during registration ",
+      text:"To be able to use our Services you are required to complete our identity verification process during which you provide us with the following Personal Data:",
+      bulletPoints:[
+        "Colour photo of a personal ID document and ID document details",
+        "Full name and address",
+        "Account actions activity log",
+        "Date of birth",
+        "Country and Place of Birth",
+        "Nationality ",
+        "Picture or Liveness video (biometric data)",
+        "Device IP address",
+        "Account actions activity log",
+        "Background screening check data performed by background check providers (outcome data from screening for identification with Politically Exposed Persons, their Relative and Close Associates, Persons and Entities of Special Interest, persons on Sanction list and Adverse Media)",
+        "Data from Client Information Questionnaire(among others the purpose of opening an account with us, estimated transaction value per certain period, source of funds.) "
+      ]
+    },
+    {
+      subTitle:"Legal grounds for Personal Data processing",
+      text:"The Personal Data are obtained to ensure compliance with legal requirements. "
+    }, 
+    {
+      subTitle:"Personal data we collect for account set-up, management purposes, and providing various features within the account ",
+      text: "In the scope of account set-up, account management, and providing various services/features within the account (such as price alert notification, auto buy and auto sell feature, vault, intelligent portfolios, and others as offered by Cryptpay from time to time), we process the following personal data:",
+      bulletPoints:[
+        "IP Address ",
+        "Email address",
+        "Logging into the Account",
+        "Two-factor authentication management ",
+        "Account functionality management (updating information, disabling and re-enabling account features",
+        "Account Termination",
+        "New device detection and new device confirmation process",
+        "Password reset "
+      ]
+    },
+    "The personal data are obtained on the grounds of providing our contractual obligations.",
+    {
+subTitle:"Personal data we collect for transaction implementation & monitoring",
+text:"In the framework of transaction implementation, either deposit and withdraw of fiat or crypto assets, and purchase or sell of crypto assets, we process the following Personal Data subject to the type of payment and transaction:",
+bulletPoints:[
+  "Name and surname",
+  "Bank account information (BVN etc)",
+  "Your dedicated Account reference number ",
+  "Deposit and withdrawal crypto wallet address",
+  "Transaction details",
+  "Credit card data (credit card holder name, credit card number, expiry date, CVC Code) ",
+  "ID confirmation photo (selfie photo in which you confirm you do not cooperate with third parties and that you are making the transaction on your initiative)",
+  "Data from the Client Information Questionnaire",
+  "Transaction information, including information obtained with Blockchain analytic transaction monitoring tools (Blockchain transaction reports)",
+  "Computer or mobile device information (IP address, operating system, browser type, settings)",
+  "Information on the geolocation ",
+  "Background check (managed through background check providers, ongoing monitoring)",
+  "ID device detection and new device detection",
+  "Remote access detection data",
+  "Birth date and age ",
+  "ID document, validity ",
+  "Address ",
+  "Source of income information ",
+  "Under the scope of monitoring, we process your personal data in the following way:",
+  "Data exchange with payment service providers",
+  "Withdrawal address whitelisting and blacklisting",
+  "Email address",
+  "Sending and receiving information from counterparty exchanges (travel rule)",
+  "Sending your full name or crypto wallet address to our blockchain analytical transaction monitoring partners for fraud prevention purposes (reporting fraud-related information for prevention and identification)",
+  "On-going monitoring for background checks, ID document validity  "
+]
+    }, 
+    {
+      subTitle:"Legal grounds for personal data processing",
+      text:"The personal data are obtained on the grounds of providing our contractual obligations and compliance with legal obligations. "},
+    {
+      subTitle:"Personal data we collect and process for Travel Rule",
+      text:"Following the Travel Rule, we are required to pass on the following information to the next crypto asset service provider: originator name, type (individual person or legal entity, transaction identified, and residential address. "
+    },
+    {
+      subTitle:"Personal data we collect for providing customer support and managing  complaints ",
+      text:"Under the scope of customer support and complaint management, we process data as required based on your support request or complaint, and thus we may process any personal data obtained from you based on a legal basis of providing contractual or legal obligations. "
+    },
+    {
+      subTitle:"Personal data we collect for internal control, fraud prevention, Internal and external audit",
+      text:"Following regulatory requirements as well as internal policies, we may process your personal data for the implementation of control measures, internal and external audits, and prevention of fraud and financial crime, and is based on legal requirements or legitimate interest. As part of an audit, we may do sample checks, in which case we might access your data on a random basis with the purpose of internal control or external audit. Under the scope above the following personal data are processed:",
+      bulletPoints:[
+        "Name and Surname",
+        "Address",
+        "Country",
+        "Transaction data",
+        "Device ID",
+        "Information on the crypto portfolio held with us",
+        "Login data ",
+        "All the data obtained during the know-your-customer process and ongoing monitoring",
+        "Transaction monitoring data",
+        "Computer or mobile device information (IP address, operating system, browser type, settings)",
+        "Information on the geolocation ",
+        "ID device detection and new device detection",
+        "Remote access detection data"
+      ]
+    },
+    {
+      subTitle:"Reporting to competent authorities and providing information based on disclosure requests",
+      text:"We are required to submit reports on suspicious transactions to the competent financial authority, as well as provide regular or ad-hoc reports as required by competent authorities. Further, we receive disclosure requests from law enforcement authorities and lawyers or others based on the power of authority. In the scope of the above the following Personal Data may be processed subject to individual reporting requirements or disclosure requests:",
+      bulletPoints:[
+        "Name and surname",
+        "Email address",
+        "Date of birth",
+        "Nationality ",
+        "Phone number",
+        "Selfies photo provided during the onboarding process",
+        "Copy of ID document",
+        "Bank account details",
+        "Deposit and withdrawal crypto wallet address",
+        "All the data obtained during the identification process ",
+        "Transaction data"
+      ]
+    },
+    {
+subTitle:"Legal grounds for personal data processing",
+text:"The personal data are obtained based on legitimate interest or consent. "
+    }, {
+      subTitle:"Internal Analytics ",
+      text:"To provide you with the best user experience and evaluate our services we are processing your data, where possible your data is pseudomized. "
+    }, {
+      subTitle:"Reporting to competent authorities and providing information based on disclosure requests",
+      text:"In cases where we do not have a legal basis for processing personal data, we will ask for your explicit consent, which shall be collected via our Website. Kindly note that any consent will be entirely voluntary. However, if you do not grant the requested consent to the processing of your Personal Data, the use of this website may not be possible or may be limited\nIn some cases disclosure of your personal data is requested from third parties, in such a case such consent is actively required to be given by you for that specific purpose and you can always revoke it. However, all such personal data is processed by those third parties in accordance with their Privacy Policy.",
+
+    },
+    {
+      subTitle:"Contractual obligation as the basis for processing personal data ",
+      text:"In case you wish to use certain services or products offered by third parties, your personal data may be processed on a contractual basis, namely, data will be processed in the course of implementing contractual obligations and for the purpose of delivering the agreed services."
+    },
+    "This includes transactions via banks and other financial institutions, and they might require disclosure of personal data involved in the transaction."
+
+    ]
+  },
+ 
 ];

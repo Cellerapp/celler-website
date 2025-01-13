@@ -1,12 +1,56 @@
 import { termsContent } from "@/constants";
 import { SectionContent } from "@/types/termsType";
-import React from "react";
+import React, { useEffect, useRef } from "react";
 
-const Terms = () => {
+const Terms: React.FC<{
+  onContentAtTop: (activeTitle: string) => void;
+}> = ({ onContentAtTop }) => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const sectionsRef = useRef<HTMLDivElement[]>([]);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      let activeTitle = "";
+      const containerRect = containerRef.current?.getBoundingClientRect();
+
+      if (!containerRect || !sectionsRef.current) return;
+
+      sectionsRef.current.forEach((section) => {
+        const rect = section.getBoundingClientRect();
+
+        if (
+          rect.top >= containerRect.top &&
+          rect.top <= containerRect.top + 50 // Adjust sensitivity
+        ) {
+          activeTitle = section.getAttribute("data-title") || "";
+        }
+      });
+
+      if (activeTitle) {
+        // Only update if there's a new active title
+        onContentAtTop(activeTitle);
+      }
+    };
+
+    const container = containerRef.current;
+    container?.addEventListener("scroll", handleScroll);
+    return () => container?.removeEventListener("scroll", handleScroll);
+  }, [onContentAtTop]);
+
   return (
-    <div className="w-full">
+    <div
+      ref={containerRef}
+      className="w-full lgss:h-[1400px] lgss:overflow-y-auto  "
+    >
       {termsContent.map((section: SectionContent, index: number) => (
-        <div key={index} className="w-full mt-8">
+        <div
+          key={index}
+          ref={(el) => {
+            if (el) sectionsRef.current[index] = el;
+          }}
+          data-title={section.title}
+          className="w-full mt-6"
+        >
           <h4 className="text-[18px] md:text-[28px] font-bold">
             {section.title}
           </h4>
