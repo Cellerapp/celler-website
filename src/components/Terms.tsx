@@ -40,7 +40,7 @@ const Terms: React.FC<{
   return (
     <div
       ref={containerRef}
-      className="w-full lgss:h-[600px] lgss:overflow-y-auto  "
+      className="w-full lgss:h-[900px] lgss:overflow-y-auto  "
     >
       {termsContent.map((section: SectionContent, index: number) => (
         <div

@@ -40,7 +40,7 @@ const Privacy: React.FC<{
   return (
     <div
       ref={containerRef}
-      className="w-full lgss:h-[1400px] lgss:overflow-y-auto  "
+      className="w-full lgss:h-[900px] lgss:overflow-y-auto  "
     >
       {policyContent.map((section: SectionpolContent, index: number) => (
         <div
