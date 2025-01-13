@@ -11,9 +11,15 @@ import { termsContent } from "@/constants";
 
 export default function Termss() {
   const [activeTitle, setActiveTitle] = useState("");
-
+  const [scrollToSectionFn, setScrollToSectionFn] = useState<
+    ((title: string) => void) | null
+  >(null);
   const handleContentAtTop = (title: string) => {
     setActiveTitle(title);
+  };
+
+  const handleScrollToSection = (fn: (title: string) => void) => {
+    setScrollToSectionFn(() => fn);
   };
 
   const allTitles = termsContent.map((section) => section.title);
@@ -49,10 +55,17 @@ export default function Termss() {
         <div className="w-full  lgss:w-full mx-auto mt-16">
           <div className="w-full pb-24 lgss:gap-12 flex gap-4 justify-center items-start mx-auto mt-8 text-white">
             <div className="hidden lgss:flex w-[23%] bg-[#191A27] border border-[#484848] rounded-xl p-4">
-              <TermsTitle titles={allTitles} activeTitle={activeTitle} />
+              <TermsTitle
+                titles={allTitles}
+                activeTitle={activeTitle}
+                onTitleClick={scrollToSectionFn!} // Pass scroll function
+              />
             </div>
             <div className="lgss:w-[75%]">
-              <Terms onContentAtTop={handleContentAtTop} />
+              <Terms
+                onContentAtTop={handleContentAtTop}
+                onScrollToSection={handleScrollToSection}
+              />
             </div>
           </div>
         </div>

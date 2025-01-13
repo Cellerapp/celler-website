@@ -68,6 +68,12 @@ const Footer = () => {
               <Image src={logo} alt="logo" />
             </div>
           </Link>
+          <h4 className="text-white text-[14px] mt-4">
+            Tampay by CQ LTD RC-7430244, owners the trademark Tampay, provides
+            Nigerian financial and digital assets management services. Tampay by
+            CQ LTD also operates Tampay App, a banking platform made for your
+            local and global needs.
+          </h4>
 
           <h4 className="text-white text-[14px] mt-4">
             14A Alternative Route, Chevron Close, Lekki, Eti-Osa, Lagos State.
@@ -103,10 +109,10 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
               <h4 className="text-[20px] font-bold text-white ">Legal</h4>
               <Link href={"/terms"} className="text-[16px] text-white ">
-                Terms & conditions
+                Terms of Service
               </Link>
               <Link href={"/privacy"} className="text-[16px] text-white ">
-                Privacy policy
+                Privacy Policy
               </Link>
             </div>
             <div className="flex flex-col gap-3">

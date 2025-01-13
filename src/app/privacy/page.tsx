@@ -1,19 +1,25 @@
-"use client"; // Add this at the very top of the file
+"use client";
 
 import { hero2 } from "@/assets/images";
 import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
-import PolicyTitle from "@/components/PolicyTitle";
-import Privacy from "@/components/Privacy";
-import { policyContent } from "@/constants";
 import React, { useState } from "react";
 import { Fade } from "react-awesome-reveal";
+import { policyContent } from "@/constants";
+import PolicyTitle from "@/components/PolicyTitle";
+import Privacy from "@/components/Privacy";
 
-export default function Privacyy() {
+export default function Termss() {
   const [activeTitle, setActiveTitle] = useState("");
-
+  const [scrollToSectionFn, setScrollToSectionFn] = useState<
+    ((title: string) => void) | null
+  >(null);
   const handleContentAtTop = (title: string) => {
     setActiveTitle(title);
+  };
+
+  const handleScrollToSection = (fn: (title: string) => void) => {
+    setScrollToSectionFn(() => fn);
   };
 
   const allTitles = policyContent.map((section) => section.title);
@@ -47,12 +53,19 @@ export default function Privacyy() {
           </Fade>
         </div>
         <div className="w-full  lgss:w-full mx-auto mt-16">
-          <div className="w-full pb-24 lgss:gap-12 flex gap-4 justify-center items-start mx-auto mt-16 text-white">
+          <div className="w-full pb-24 lgss:gap-12 flex gap-4 justify-center items-start mx-auto mt-8 text-white">
             <div className="hidden lgss:flex w-[23%] bg-[#191A27] border border-[#484848] rounded-xl p-4">
-              <PolicyTitle titles={allTitles} activeTitle={activeTitle} />
+              <PolicyTitle
+                titles={allTitles}
+                activeTitle={activeTitle}
+                onTitleClick={scrollToSectionFn!} // Pass scroll function
+              />
             </div>
             <div className="lgss:w-[75%]">
-              <Privacy onContentAtTop={handleContentAtTop} />
+              <Privacy
+                onContentAtTop={handleContentAtTop}
+                onScrollToSection={handleScrollToSection}
+              />
             </div>
           </div>
         </div>

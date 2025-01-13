@@ -3,7 +3,8 @@ import React from "react";
 const TermsTitle: React.FC<{
   titles: string[];
   activeTitle: string;
-}> = ({ titles, activeTitle }) => {
+  onTitleClick: (title: string) => void;
+}> = ({ titles, activeTitle, onTitleClick }) => {
   const removeNumberFromTitle = (title: string) => {
     // Remove leading numbers and periods (e.g., "1.", "2.", etc.)
     return title.replace(/^\d+\.\s*/, "");
@@ -18,6 +19,7 @@ const TermsTitle: React.FC<{
         return (
           <h4
             key={index}
+            onClick={() => onTitleClick(title)}
             className={` ${
               cleanedTitle === removeNumberFromTitle(activeTitle)
                 ? "text-blue-500 font-bold text-[15px]"

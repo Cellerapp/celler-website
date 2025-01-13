@@ -3,14 +3,15 @@ import { SectionpolContent } from "@/types/termsType";
 import React, { useEffect, useRef } from "react";
 
 const Privacy: React.FC<{
-  onContentAtTop: (activePrivacyTitle: string) => void;
-}> = ({ onContentAtTop }) => {
+  onContentAtTop: (activeTitle: string) => void;
+  onScrollToSection?: (scrollToSection: (title: string) => void) => void;
+}> = ({ onContentAtTop, onScrollToSection }) => {
   const containerRef = useRef<HTMLDivElement>(null);
   const sectionsRef = useRef<HTMLDivElement[]>([]);
 
   useEffect(() => {
     const handleScroll = () => {
-      let activePrivacyTitle = "";
+      let activeTitle = "";
       const containerRect = containerRef.current?.getBoundingClientRect();
 
       if (!containerRect || !sectionsRef.current) return;
@@ -22,13 +23,13 @@ const Privacy: React.FC<{
           rect.top >= containerRect.top &&
           rect.top <= containerRect.top + 50 // Adjust sensitivity
         ) {
-          activePrivacyTitle = section.getAttribute("data-title") || "";
+          activeTitle = section.getAttribute("data-title") || "";
         }
       });
 
-      if (activePrivacyTitle) {
+      if (activeTitle) {
         // Only update if there's a new active title
-        onContentAtTop(activePrivacyTitle);
+        onContentAtTop(activeTitle);
       }
     };
 
@@ -36,6 +37,27 @@ const Privacy: React.FC<{
     container?.addEventListener("scroll", handleScroll);
     return () => container?.removeEventListener("scroll", handleScroll);
   }, [onContentAtTop]);
+
+  // Function to scroll to the section when the title is clicked
+  const scrollToSection = (title: string) => {
+    const section = sectionsRef.current.find(
+      (el) => el.getAttribute("data-title") === title
+    );
+
+    if (section && containerRef.current) {
+      containerRef.current.scrollTo({
+        top: section.offsetTop - containerRef.current.offsetTop,
+        behavior: "smooth",
+      });
+    }
+  };
+
+  // Pass the scrollToSection function to the parent
+  useEffect(() => {
+    if (onScrollToSection) {
+      onScrollToSection(scrollToSection);
+    }
+  }, []);
 
   return (
     <div
