@@ -896,5 +896,123 @@ text:"The personal data are obtained based on legitimate interest or consent. "
 
     ]
   },
+  {
+    title: "9. Disclosing your personal data",
+    content: [
+      "We may disclose your data to the processors of personal data that are performing services on our behalf and that includes processing with personal data.  ",
+      "We cooperate with the following processors of personal data:",
+      {
+        subTitle:"",
+        text:"",
+        bulletPoints:[
+          "Companies performing know-your-customer verification processes, background checks, and adverse media checks;",
+          "Companies performing transaction monitoring services;",
+          "Companies performing payment processing (card acquiring, banking partners, payment orchestration)",
+          "Cloud service providers;",
+          "IT maintenance service providers;",
+          "Customer Support Software solution providers and other companies providing technical solutions, which involve the processing of Personal Data;",
+          "Audit service providers in the scope of implementing audit services."
+        ]
+      }
+    ]
+  },
+  {
+    title: "10. Retention and deletion of Personal Information",
+    content: [
+      "This Policy aligns with NDPA, detailing the types of personal data subject to retention and deletion and the processes involved. We will not retain data longer than is necessary to fulfil the purposes for which it was obtained or as required by applicable laws.  ",
+      "You can request the deletion of their personal data through specified channels such as email privacy@tampay.co or customer support platforms. The DPO will verify the identity of the requester and process the request within regulatory timeframes, typically 10 working days. Communication regarding the status of the request will be provided to the client, including reasons for any delays or partial deletions due to legal obligations.",
+      {
+        subTitle:"Data Retention Periods",
+        text:"The Company retains personal data only as long as necessary for the purposes for which it was collected, to comply with legal obligations, or to fulfil legitimate business interests. The retention periods for different categories of data are as follows:",
+        bulletPoints:[
+          "KYC Data: Retained for 5 years following the termination of the business relationship or until the resolution of any ongoing legal proceedings, whichever is longer.",
+          " Transactional Data: Retained for 10 years, aligning with the maximum statutory limitation period under the Laws.",
+          "Technical and Operational Data: Retained for 5 years following the end of the business relationship.",
+          "Marketing Data: Retained for 2 years for inactive clients and promptly deleted upon withdrawal of consent.",
+         
+        ]
+      },
+      {
+        subTitle:"Data Deletion Process",
+        text:"The Company will implement a process to ensure that all personal data is automatically deleted upon reaching the end of the specified data retention period. This automation will help ensure compliance with data protection regulations and minimise the risk of retaining data longer than necessary."
+      }
+    ]
+  },
+  {
+    title: "11. Location of your personal data",
+    content: [
+      "All Personal Data, which will be collected and processed within the KYC procedure are stored on servers in Nigeria data regions.",
+      "Our services are provided in accordance with Money Laundering Act,  meaning you will not be able to delete it or invoke the right to be forgotten. Your data are encrypted, meaning they are coded (anonymized). ",
+      "You acknowledge and expressly accept that by the nature of the blockchain technology, it is not possible to delete personal data from the blockchain and invoke the right to be forgotten. ",
+      "Information shared through our support channel is stored outside Africa, etc in accordance with requirements applicable to the transfer of data to third countries."
+      
+    ]
+  },
+  {
+    title: "12. Security of Personal Information",
+    content: [
+      "We use a variety of security measures to ensure the confidentiality, integrity, availability, and privacy of your Personal Information and to protect your Personal Information from loss, theft, unauthorised access, misuse, alteration, or destruction.\nThese security measures include, among others:",
+      {
+        subTitle:"",
+        text:"",
+        bulletPoints:[
+          "Password-protected directories and databases.",
+          "Secure Sockets Layered (SSL) technology to ensure that your information is fully encrypted and sent across the Internet securely.",
+          "Vulnerability Scanning to protect our servers from hackers and other vulnerabilities actively.",
+          "Regular penetration testing.",
+          "Secure coding principles.",
+          "Encryption of sensitive data during transfer and at rest.",
+          "2-factor authentication.",
+          "Logging of activities performed in the platform.",
+          "Access controls and",
+          "other measures to mitigate risks identified during the risk assessment process."
+        ]
+
+      },
+      "All financially sensitive and/or credit information is transmitted via SSL technology and encrypted in our database. Only authorized CRYPTPAY personnel are permitted access to your Personal Information, and this personnel is required to treat the information as highly confidential. The security measures will be reviewed regularly in light of new and relevant legal and technical developments."
+      
+    ]
+  },
+  {
+    title: "13. Access right to your personal information",
+    content: [
+      "You have the right to access your Personal Information to correct, update, and block inaccurate and/or incorrect data. To exercise this right, contact us at support@cryptpay.co."
+    ]
+  },
+  {
+    title: "14. Definitions",
+    content: [
+        "To help you understand this Privacy Policy, we have provided definitions for some of the terms used throughout the document:",
+  "Account: Your personalised interface on the Cryptpay platform, allowing you to access our Services.",
+  "Adverse Media: Negative news or information about an individual or entity that may indicate involvement in criminal activity or other risks.",
+  "Blockchain: A decentralised digital ledger that records transactions across a network of computers.",
+  "CCO: Chief Compliance Officer, the person responsible for ensuring that Cryptpay complies with relevant laws and regulations.",
+  "Cookies: Small text files placed on your device by websites to improve your experience and collect information about your usage.",
+  "Crypto Asset: A digital representation of value that uses cryptography for security and operates on a blockchain.",
+  "Data Controller: The entity (in this case, Cryptpay) that determines the purposes and means of processing your personal data.",
+  "Data Processor: A third-party entity that processes personal data on behalf of Cryptpay.",
+  "Data Region: A set of data centres located within a defined geographical area where user data is stored.",
+  "Data Subject: An identified or identifiable natural person (individual) to whom Personal Data relates and who has registered him/herself via the Website.",
+  "DPO: Data Protection Officer, the person responsible for overseeing Cryptpay’s data protection practices and ensuring compliance with NDPA.",
+  "Money Laundering Act: National legislation transposing the Nigeria’s anti-money laundering directives, which requires specific data retention and reporting obligations for financial institutions.",
+  "EFCC: Financial Intelligence Unit, the Nigeria Economic Financial Crimes Commission and authority responsible for combating money laundering and terrorist financing.",
+  "Fiat Currency: A government-issued currency which is supported by Cryptpay.",
+  "NDPA: The Nigeria Data Protection Act, the legal framework for data protection in Nigeria.",
+  "Identity Verification (KYC) Process: The process of verifying the identity of a customer to comply with anti-money laundering (AML) and counter-terrorism financing (CTF) regulations.",
+  "Cryptpay, We, Our: Tampay by Cq Ltd, the company operating the Cryptpay platform and providing the Services.",
+  "KYC: Know Your Customer, the process of verifying the identity of our customers to comply with anti-money laundering regulations.",
+  "Legitimate Interest: A lawful basis for processing Personal Data when it is necessary for the purposes of the legitimate interests pursued by Cryptpay or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the Data Subject.",
+  "Personal Data: Any information that can be used to directly or indirectly identify you as an individual. This includes your name, email address, identification documents, transaction history, and other information you provide while using our Services.",
+  "Politically Exposed Person (PEP): An individual who holds a prominent public function or has been entrusted with a prominent public position.",
+  "Processing: Any operation performed on Personal Data, such as collection, storage, use, disclosure, or deletion.",
+  "Sanctions List: A list of individuals or entities subject to restrictions or prohibitions due to their involvement in activities such as terrorism, money laundering, or human rights abuses.",
+  "Services: The services provided by Cryptpay, include the exchange of crypto assets for fiat currency or other crypto assets, the provision of a crypto-asset wallet, and crypto-asset transfer services.",
+  "Transaction Monitoring: The process of monitoring customer transactions to detect and prevent suspicious activity that may be indicative of money laundering or other financial crimes.",
+  "Travel Rule: A regulatory requirement that obliges us to share specific information about crypto-asset transfers with other service providers.",
+  "User, You: Refers to you as a user of Cryptpay’s services.",
+  "Website: The Cryptpay website and mobile application through which our Services are provided."
+
+    ]
+  },
  
 ];

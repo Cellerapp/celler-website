@@ -42,12 +42,12 @@ export default function Termss() {
           </Fade>
           <Fade triggerOnce direction="up">
             <h4 className="text-[15px] mds:text-[18px] text-[#141D57]">
-              Last Updated: August 8th 2024
+              Last Updated: January 13th, 2025.
             </h4>
           </Fade>
         </div>
         <div className="w-full  lgss:w-full mx-auto mt-16">
-          <div className="w-full pb-24 lgss:gap-12 flex gap-4 justify-center items-start mx-auto mt-16 text-white">
+          <div className="w-full pb-24 lgss:gap-12 flex gap-4 justify-center items-start mx-auto mt-8 text-white">
             <div className="hidden lgss:flex w-[23%] bg-[#191A27] border border-[#484848] rounded-xl p-4">
               <TermsTitle titles={allTitles} activeTitle={activeTitle} />
             </div>

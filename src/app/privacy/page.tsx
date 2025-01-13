@@ -42,7 +42,7 @@ export default function Privacyy() {
           </Fade>
           <Fade triggerOnce direction="up">
             <h4 className="text-[15px] mds:text-[18px] text-[#141D57]">
-              Last Updated: January 13th 2025.
+              Last Updated: January 13th, 2025.
             </h4>
           </Fade>
         </div>

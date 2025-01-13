@@ -16,18 +16,16 @@ const TermsTitle: React.FC<{
         const cleanedTitle = removeNumberFromTitle(title);
 
         return (
-          <>
-            <h4
-              key={index}
-              className={` ${
-                cleanedTitle === removeNumberFromTitle(activeTitle)
-                  ? "text-blue-500 font-bold text-[15px]"
-                  : "text-white text-[15px]"
-              }`}
-            >
-              {cleanedTitle}
-            </h4>
-          </>
+          <h4
+            key={index}
+            className={` ${
+              cleanedTitle === removeNumberFromTitle(activeTitle)
+                ? "text-blue-500 font-bold text-[15px]"
+                : "text-white text-[15px]"
+            }`}
+          >
+            {cleanedTitle}
+          </h4>
         );
       })}
     </div>
