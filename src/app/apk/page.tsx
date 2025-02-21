@@ -24,7 +24,7 @@ const Page = () => {
       const url = window.URL.createObjectURL(blob);
       const link = document.createElement("a");
       link.href = url;
-      link.download = "Cryptpay.apk"; // Replace with the desired file name
+      link.download = "Celler.apk"; // Replace with the desired file name
       document.body.appendChild(link);
       link.click();
       link.remove();

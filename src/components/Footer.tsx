@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import { logo } from "@/assets/images";
+import { footerBg, logo } from "@/assets/images";
 import { MdLocationPin } from "react-icons/md";
 import Link from "next/link";
 import { FaInstagram, FaTwitter } from "react-icons/fa";
@@ -60,7 +60,17 @@ const Footer = () => {
   };
 
   return (
-    <div className="w-full bg-[#04050F] mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px] pt-16 pb-8 px-4 xs:px-6">
+    <div
+      style={{
+        backgroundImage: `url(${footerBg.src})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        width: "100%",
+        height: "100%",
+      }}
+      className="w-full bg-[#04050F] footer-bg mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px] pt-16 pb-8 px-4 xs:px-6"
+    >
       <div className="flex justify-start flex-col lgss:gap-20 lgss:flex-row items-center lgss:items-start  ">
         <div className="w-full lgss:w-[25%]">
           <Link href="/">
@@ -68,7 +78,7 @@ const Footer = () => {
               <Image src={logo} alt="logo" />
             </div>
           </Link>
-          <h4 className="text-white text-[14px] mt-4">
+          <h4 className="text-white text-[14px] mt-6">
             Tampay by CQ LTD RC-7430244, owners the trademark Tampay, provides
             Nigerian financial and digital assets management services. Tampay by
             CQ LTD also operates Tampay App, a banking platform made for your
@@ -187,7 +197,7 @@ const Footer = () => {
           </div> */}
         </div>
         <h4 className="text-[14px] text-white">
-          © 2024, Cryptpay All Rights Reserved.
+          © 2024, Celler All Rights Reserved.
         </h4>
       </div>
     </div>

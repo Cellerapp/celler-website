@@ -11,8 +11,21 @@ const sora = Sora({
 });
 
 export const metadata: Metadata = {
-  title: "Cryptpay website",
-  description: "Cryptpay - Trade The Crypto That Coins Your Dreams",
+  title: "Celler website",
+  description: "Celler - Trade The Crypto That Coins Your Dreams",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    images: [
+      {
+        url: "../assets/images/thumbnail.png", // Update with the correct path to your thumbnail
+        width: 384,
+        height: 192,
+        alt: "Celler website thumbnail",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({

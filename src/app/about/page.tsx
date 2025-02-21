@@ -29,11 +29,13 @@ export default function AboutUs() {
       <div
         style={{
           backgroundImage: `url(${aboutBg.src})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat",
           width: "100%",
           height: "100%",
-          objectFit: "cover",
         }}
-        className="w-full pt-8 px-4 xs:px-6 pb-16 bg-[#0C0D1D] mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px]"
+        className="w-full pt-8 px-4 xs:px-6 pb-32 bg-[#0C0D1D]  mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px]"
       >
         <Fade triggerOnce direction="down" duration={2000}>
           <Navbar />
@@ -47,7 +49,7 @@ export default function AboutUs() {
             </Fade>
             <Fade triggerOnce direction="right">
               <h4 className="text-center  mt-6 text-[15px] xs:text-[16px] lgss:text-[18px] text-secondary lgss:w-10/12 lgss:mx-auto">
-                Cryptpay is a cutting-edge financial technology platform that
+                Celler is a cutting-edge financial technology platform that
                 provides advanced payment solutions for the cryptocurrency
                 ecosystem. Our comprehensive suite of products offers a seamless
                 experience for buying, selling, and managing cryptocurrencies,
@@ -88,7 +90,7 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <div className="w-full mt-10 pt-8 px-4 xs:px-6 pb-16 bg-[#0C0D1D] mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px] flex flex-col gap-6 lgss:gap-10 lgss:flex-row">
+      <div className="w-full  px-4 xs:px-6 pb-16 bg-[#0C0D1D] mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px] flex flex-col gap-6 justify-center items-start lgss:gap-10 lgss:flex-row">
         <div className="w-full lgss:w-1/2 bg-[#191B29] rounded-xl ">
           <div className="pt-4 px-4 mds:px-6 lgss:px-8 mds:pt-6 md:pt-8">
             <Fade triggerOnce direction="left">
@@ -97,7 +99,7 @@ export default function AboutUs() {
               </h4>
             </Fade>
             <Fade triggerOnce direction="left">
-              <h4 className="text-[13px] mds:text-[15px] leading-[28px] tracking-wide lgss:text-[16px] text-white mt-4 text-left w-11/12 md:w-10/12 ">
+              <h4 className="text-[13px] mds:text-[15px] leading-[28px] tracking-wide lgss:text-[16px] text-white mt-4 text-left ">
                 Our mission is to provide secure, user-friendly, and reliable
                 virtual cards and crypto solutions that help individuals and
                 businesses, seamlessly manage finances, grow assets, and connect
@@ -105,7 +107,7 @@ export default function AboutUs() {
               </h4>
             </Fade>
           </div>
-          <div className="w-full flex justify-end ">
+          <div className="w-full flex justify-end  lgss:pt-8 ">
             <Zoom triggerOnce className="w-2/3">
               <Image src={mission} alt="" className="w-full rounded-br-xl" />
             </Zoom>
@@ -119,16 +121,16 @@ export default function AboutUs() {
               </h4>
             </Fade>
             <Fade triggerOnce direction="right">
-              <h4 className="text-[13px] mds:text-[15px] leading-[28px] tracking-wide lgss:text-[16px] text-white mt-4 text-left w-11/12 md:w-10/12 ">
+              <h4 className="text-[13px] mds:text-[15px] leading-[28px] tracking-wide lgss:text-[16px] text-white mt-4 text-left  ">
                 Our Vision is to ensure global financial freedom through secure,
                 accessible, and innovative virtual USD cards and crypto
                 solutions.
               </h4>
             </Fade>
           </div>
-          <div className="w-full flex justify-end  pt-4">
+          <div className="w-full flex justify-end  pt-16 lgss:pt-20">
             <Zoom triggerOnce className="w-2/3">
-              <Image src={vision} alt="" className="w-ful rounded-br-xl" />
+              <Image src={vision} alt="" className="w-full rounded-br-xl" />
             </Zoom>
           </div>
         </div>
@@ -193,9 +195,9 @@ export default function AboutUs() {
               </div>
               {activeQuestion === 2 && (
                 <h4 className="text-left text-white mt-4 text-[14px]">
-                  Your safety is paramount. Cryptpay uses advanced encryption
-                  and multi-layered protection to keep your transactions and
-                  assets secure.
+                  Your safety is paramount. Celler uses advanced encryption and
+                  multi-layered protection to keep your transactions and assets
+                  secure.
                 </h4>
               )}
             </div>
@@ -221,7 +223,7 @@ export default function AboutUs() {
               </div>
               {activeQuestion === 3 && (
                 <h4 className="text-left text-white mt-4 text-[14px]">
-                  Cryptpay is designed to be easy to use and accessible to
+                  Celler is designed to be easy to use and accessible to
                   everyone, regardless of where you are or your level of crypto
                   expertise.
                 </h4>
@@ -297,8 +299,7 @@ export default function AboutUs() {
           <div className="w-full lgss:w-[55%] ">
             <Fade triggerOnce direction="up">
               <h2 className="text-left text-[24px] md:text-[28px] lgss:text-[35px] w-10/12 lgss:w- font-bold text-white">
-                Transform your cryptocurrency transactions with ease at
-                Cryptpay.
+                Transform your cryptocurrency transactions with ease at Celler.
               </h2>
             </Fade>
 

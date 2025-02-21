@@ -84,7 +84,7 @@ export default function Contact() {
 
   return (
     <div className="w-full">
-      <div className="w-full pt-8 px-4 xs:px-6 pb-16 bg-[#0C0D1D] mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px]">
+      <div className="w-full pt-8 px-4 xs:px-6 pb-16 bg-[#0C0D1D] mds:px-12 md:px-16 lgss:px-18 xl:px-16  xxxl:px-[250px]">
         <Fade triggerOnce direction="down" duration={2000}>
           <Navbar />
         </Fade>
@@ -100,14 +100,14 @@ export default function Contact() {
             </h4>
           </Fade>
         </div>
-        <div className="w-full flex mt-10 lgss:gap-4 justify-between items-start">
-          <div className="w-2/5 hidden lgss:flex">
+        <div className="w-full flex mt-16 lgss:mt-20 lgss:gap-4 justify-between items-start">
+          <div className="w-2/5 hidden bg-[#B7D7FFE5] h-[400px] justify-center items-center rounded-3xl lgss:flex">
             <Fade triggerOnce direction="left">
               <Image src={contact} alt="" />
             </Fade>
           </div>
           <Fade triggerOnce direction="right" className="w-full lgss:w-2/5">
-            <form onSubmit={handleSubmit} className="w-full  mt-8 lgss:mt-24">
+            <form onSubmit={handleSubmit} className="w-full  mt-8 lgss:mt-8">
               <h4 className="text-[20px] lgss:text-[24px] text-white font-bold ">
                 Submit a Form
               </h4>
@@ -172,8 +172,7 @@ export default function Contact() {
           <div className="w-full lgss:w-[55%] ">
             <Fade triggerOnce direction="up">
               <h2 className="text-left text-[24px] md:text-[28px] lgss:text-[35px] w-10/12 lgss:w- font-bold text-white">
-                Transform your cryptocurrency transactions with ease at
-                Cryptpay.
+                Transform your cryptocurrency transactions with ease at Celler.
               </h2>
             </Fade>
 

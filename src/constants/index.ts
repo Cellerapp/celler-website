@@ -2,11 +2,38 @@ import { SectionContent } from "@/types/termsType";
 
 export const API_URL = process.env.NEXT_PUBLIC_API_URL;
 const BASE_URL = API_URL?.includes("staging")
-  ? "https://staging.app.cryptpay.co"
-  : "https://app.cryptpay.co";
+  ? "https://web.celler.app"
+  : "https://web.celler.app";
 
 export const LOGIN_URL = `${BASE_URL}/login`;
 export const SIGNUP_URL = `${BASE_URL}/sign-up`;
+export const messages = [
+  {
+    id: 1,
+    title: "Buy Digital assets",
+    description:
+      "Purchase digital assets in just a few clicks. Enjoy secure transactions and real-time pricing for a smooth experience.",
+  },
+  {
+    id: 2,
+    title: "Sell Digital assets",
+    description:
+      "Quickly convert your digital assets into cash or other currencies. Enjoy competitive rates and a straightforward selling process.",
+  },
+  {
+    id: 3,
+    title: "Swift PayOut Transaction",
+    description:
+      "Experience instant payouts with lightning-fast transaction processing, ensuring your funds reach you in no time.",
+  },
+  {
+    id: 4,
+    title: "Enhanced Security with Built-in KYC",
+    description:
+      "Our safety is our priority. Complete our trusted KYC process to protect your account and enable secure transactions.",
+  },
+];
+
 
 export const termsContent: SectionContent[] = [
   {
@@ -15,7 +42,7 @@ export const termsContent: SectionContent[] = [
       "BEFORE YOU START, IT IS IMPORTANT TO NOTE THAT BUYING AND SELLING CRYPTO ASSETS IS INHERENTLY RISKY. YOU SHOULD CONSIDER THE RISKS BEFORE DECIDING TO BUY OR SELL CRYPTO ASSETS.",
       "IF YOU HAVE QUESTIONS OR CONCERNS REGARDING YOUR CRYPTO CURRENCIES SERVICES, YOUR CRYPTO ASSETS, OUR SERVICE PROVIDER(S), OR RELATED TRANSACTIONS OR ACCOUNT ACTIVITY, PLEASE CONTACT CRYPTPAY CUSTOMER SUPPORT AT SUPPORT@CRYPTPAY.CO YOU CAN ALSO ACCESS SUPPORT VIA IN-APP CHAT.",
       "PLEASE NOTE THAT THERE MAY BE TAX CONSEQUENCES FROM ANY GAIN OR LOSS YOU INCUR WHEN YOU SELL YOUR CRYPTO ASSETS. WE DO NOT PROVIDE FINANCIAL, INVESTMENT, LEGAL OR TAX ADVICE. PLEASE SEEK ASSISTANCE FROM A QUALIFIED PROFESSIONAL.",
-      'This Terms of Use (“Cryptocurrency Terms of Use”) is a contract between you and Tampay by Cq Ltd and the owner of the product and application Cryptpay Application (“Cryptpay”) and governs your use of the portion of your Cryptpay App balance where you can buy, sell, hold, and learn about cryptocurrency (your "Cryptocurrency Services").',
+      'This Terms of Use (“Cryptocurrency Terms of Use”) is a contract between you and Tampay by Cq Ltd and the owner of the product and application Celler Application (“Celler”) and governs your use of the portion of your Celler App balance where you can buy, sell, hold, and learn about cryptocurrency (your "Cryptocurrency Services").',
     ],
   },
   {
@@ -23,11 +50,11 @@ export const termsContent: SectionContent[] = [
     content: [
       {
         subTitle: "1. The Cryptocurrency Services",
-        text: "1.1 The “Cryptocurrency Services” are additional services which permit eligible Cryptpay Account holders to buy, sell, or hold interests in certain Supported Cryptocurrencies using funds held in their Cryptpay Accounts.",
+        text: "1.1 The “Cryptocurrency Services” are additional services which permit eligible Celler Account holders to buy, sell, or hold interests in certain Supported Cryptocurrencies using funds held in their Celler Accounts.",
       },
       {
         subTitle: "",
-        text: "1.2. We will automatically link your Cryptocurrencies Account to your personal Cryptpay Account. Your login credentials for your personal Cryptpay account act as the credentials to access your Cryptocurrencies Account Balance.",
+        text: "1.2. We will automatically link your Cryptocurrencies Account to your personal Celler Account. Your login credentials for your personal Celler account act as the credentials to access your Cryptocurrencies Account Balance.",
       },
       {
         subTitle: "",
@@ -43,7 +70,7 @@ export const termsContent: SectionContent[] = [
       {
         subTitle: "",
         text: "1.4. Before you can obtain exposure to the Cryptocurrency Services you are required to read these Cryptocurrency Terms and the various associated risk warnings contained herein. By accessing and using the Cryptocurrencies Services, you agree to comply with all aspects of these Cryptocurrency Terms. You also agree to comply with the following additional policies as applicable by jurisdiction:",
-        bulletPoints: ["Cryptpay Privacy Policy", "Terms of use Nigeria"],
+        bulletPoints: ["Celler Privacy Policy", "Terms of use Nigeria"],
       },
       {
         subTitle: "",
@@ -51,11 +78,11 @@ export const termsContent: SectionContent[] = [
       },
       {
         subTitle: "",
-        text: "1.6. We may revise these Cryptocurrency Terms and any of the agreements and policies listed above from time to time. The revised version will be effective at the time we post it, unless otherwise noted. If our changes to these Cryptocurrency Terms reduce your rights or increase your responsibilities, we will provide you at least 21 days' advance notice, or such longer period as required by law. By continuing to use the services, including by holding Crypto Assets (as defined below), after any change to these Cryptocurrency Terms, you agree to abide by and be bound by those changes. If you do not agree with any changes to these Cryptocurrency Terms, you must sell your Crypto Assets and stop accessing your Cryptocurrencies Services through Cryptpay. ",
+        text: "1.6. We may revise these Cryptocurrency Terms and any of the agreements and policies listed above from time to time. The revised version will be effective at the time we post it, unless otherwise noted. If our changes to these Cryptocurrency Terms reduce your rights or increase your responsibilities, we will provide you at least 21 days' advance notice, or such longer period as required by law. By continuing to use the services, including by holding Crypto Assets (as defined below), after any change to these Cryptocurrency Terms, you agree to abide by and be bound by those changes. If you do not agree with any changes to these Cryptocurrency Terms, you must sell your Crypto Assets and stop accessing your Cryptocurrencies Services through Celler. ",
       },
       {
         subTitle: "",
-        text: "1.7. Although Cryptpay is a regulated entity, it is important to note that the Cryptocurrency Services we provide in relation to these Cryptocurrency Terms, as with the majority of cryptocurrency services across the world, are currently unregulated in some Territories not permitted. ",
+        text: "1.7. Although Celler is a regulated entity, it is important to note that the Cryptocurrency Services we provide in relation to these Cryptocurrency Terms, as with the majority of cryptocurrency services across the world, are currently unregulated in some Territories not permitted. ",
       },
       {
         subTitle: "",
@@ -67,20 +94,20 @@ export const termsContent: SectionContent[] = [
       },
       {
         subTitle: "",
-        text: "1.10. Supported Cryptocurrencies. Your Cryptpay Account is intended solely for proper use of Supported Cryptocurrencies as designated by Cryptpay on our app or website. Any attempt to transfer any cryptocurrency or other digital or virtual assets that Cryptpay does not formally recognize, whether through forks, airdrops, user error, OMNI layer protocols or otherwise, will not be accepted by Cryptpay on behalf of any user, and, subject to the sole discretion of Cryptpay, you will not receive any value with respect to any such Unsupported Assets. Under no circumstances should you attempt to use your Cryptocurrencies Account to store, send, request, or receive any assets other than Supported Cryptocurrencies. Cryptpay assumes no responsibility in connection with any attempt to use your Cryptocurrencies Account with digital currencies that we do not support. SENDING INCOMPATIBLE CRYPTOCURRENCIES RESULTS IN A COMPLETE LOSS OF THE FUNDS AND THESE FUNDS CANNOT BE RECOVERED.",
+        text: "1.10. Supported Cryptocurrencies. Your Celler Account is intended solely for proper use of Supported Cryptocurrencies as designated by Celler on our app or website. Any attempt to transfer any cryptocurrency or other digital or virtual assets that Celler does not formally recognize, whether through forks, airdrops, user error, OMNI layer protocols or otherwise, will not be accepted by Celler on behalf of any user, and, subject to the sole discretion of Celler, you will not receive any value with respect to any such Unsupported Assets. Under no circumstances should you attempt to use your Cryptocurrencies Account to store, send, request, or receive any assets other than Supported Cryptocurrencies. Celler assumes no responsibility in connection with any attempt to use your Cryptocurrencies Account with digital currencies that we do not support. SENDING INCOMPATIBLE CRYPTOCURRENCIES RESULTS IN A COMPLETE LOSS OF THE FUNDS AND THESE FUNDS CANNOT BE RECOVERED.",
       },
       {
         subTitle: "",
-        text: "1.11. In the event that an Unsupported Asset is sent to Cryptpay by a third party or user, by error or otherwise, it is effectively lost to such third parties or users. Any such Unsupported Assets will be treated as property of Cryptpay. CRYPTPAY IS NOT RESPONSIBLE FOR THE RECOVERY OR RETURN OF ANY UNSUPPORTED ASSET SENT TO CRYPTPAY BY ANY THIRD PARTY OR USER, REGARDLESS OF THE INTENTION OF THE PERSON SENDING SUCH UNSUPPORTED ASSET OR ATTEMPTS BY CRYPTPAY TO RETURN SUCH UNSUPPORTED ASSET. Cryptpay will not be responsible for or be required to attempt to recover or provide any value with respect to any Unsupported Assets sent to the platform unless it decides to do so in its sole and absolute discretion. Any Asset not listed within the Cryptpay App or website is an Unsupported Asset.",
+        text: "1.11. In the event that an Unsupported Asset is sent to Celler by a third party or user, by error or otherwise, it is effectively lost to such third parties or users. Any such Unsupported Assets will be treated as property of Celler. CRYPTPAY IS NOT RESPONSIBLE FOR THE RECOVERY OR RETURN OF ANY UNSUPPORTED ASSET SENT TO CRYPTPAY BY ANY THIRD PARTY OR USER, REGARDLESS OF THE INTENTION OF THE PERSON SENDING SUCH UNSUPPORTED ASSET OR ATTEMPTS BY CRYPTPAY TO RETURN SUCH UNSUPPORTED ASSET. Celler will not be responsible for or be required to attempt to recover or provide any value with respect to any Unsupported Assets sent to the platform unless it decides to do so in its sole and absolute discretion. Any Asset not listed within the Celler App or website is an Unsupported Asset.",
       },
     ],
   },
   {
-    title: "2. About Cryptpay and these Cryptocurrency Terms",
+    title: "2. About Celler and these Cryptocurrency Terms",
     content: [
       {
         subTitle: "",
-        text: "2.1. Cryptpay is a trading name and product of Tampay by Cq Ltd a registered company incorporated under the Laws of the Federal Republic of Nigeria. ",
+        text: "2.1. Celler is a trading name and product of Tampay by Cq Ltd a registered company incorporated under the Laws of the Federal Republic of Nigeria. ",
       },
       {
         subTitle: "",
@@ -96,16 +123,16 @@ export const termsContent: SectionContent[] = [
         text: "3.1. You may only access the Cryptocurrency Services if:",
         bulletPoints: [
           " you are at least 18 years old, or the age of majority in your state or territory of residence;",
-          "you register and create a Cryptpay Account;",
-          "you have not breached the Cryptpay Terms of Use;",
+          "you register and create a Celler Account;",
+          "you have not breached the Celler Terms of Use;",
           "you have provided the required identifying information including: name, physical address, date of birth and taxpayer identification number. We may require additional information from you from time to time in order to verify the required identifying information, such as a copy of your government issued photo ID or evidence of your residency, like a utility bill;",
-          "your Cryptpay Account has not been locked or suspended by Cryptpay; and",
+          "your Celler Account has not been locked or suspended by Celler; and",
           "you are a resident in a Supported Country.",
         ],
       },
       {
         subTitle: "",
-        text: "3.2. If you do not have a Cryptpay, you can register by following the instructions on our Website, as set out in the Terms of Use.",
+        text: "3.2. If you do not have a Celler, you can register by following the instructions on our Website, as set out in the Terms of Use.",
       },
       {
         subTitle: "",
@@ -119,8 +146,8 @@ export const termsContent: SectionContent[] = [
         subTitle: "",
         text: "3.4. By using the Cryptocurrency Services, you confirm that:",
         bulletPoints: [
-          " you will not use the Cryptocurrency Services in a manner which is contrary to the general prohibitions regarding your Cryptpay Account according to the Cryptpay Terms of Use.",
-          " you will maintain adequate security and control of any and all IDs, passwords, personal identification numbers, or any other codes that you use to access your Cryptocurrencies Account and the Cryptpay services. You agree to keep your physical address, mailing address, email address and other personal information current in your Cryptpay profile.",
+          " you will not use the Cryptocurrency Services in a manner which is contrary to the general prohibitions regarding your Celler Account according to the Celler Terms of Use.",
+          " you will maintain adequate security and control of any and all IDs, passwords, personal identification numbers, or any other codes that you use to access your Cryptocurrencies Account and the Celler services. You agree to keep your physical address, mailing address, email address and other personal information current in your Celler profile.",
         ],
       },
     ],
@@ -130,11 +157,11 @@ export const termsContent: SectionContent[] = [
     content: [
       {
         subTitle: "",
-        text: "4.1. We make no guarantee that you will be able to use the Cryptocurrency Services at all times. While we will try to complete purchases and sales of Crypto Assets that you authorize and that comply with these Cryptocurrency Terms, we do not guarantee your ability to buy or sell Crypto Assets. Your ability to buy or sell Crypto Assets may be delayed or unavailable due to the availability of the Crypto Asset or funds from your funding source, issues with the trading network or our ability to interface with our Service Provider(s), system downtime, limitations or suspensions we impose on your Cryptocurrencies Services in our sole discretion, for required safety, security, or legal reasons, or for other reasons outside Cryptpay's or any Service Provider's control, and we are not liable to you if we are unable or delayed in executing your transactions. We will only reflect a Cryptocurrency Transaction in your Cryptpay Account if we have been able to fulfill the Order with a cryptocurrency service provider.",
+        text: "4.1. We make no guarantee that you will be able to use the Cryptocurrency Services at all times. While we will try to complete purchases and sales of Crypto Assets that you authorize and that comply with these Cryptocurrency Terms, we do not guarantee your ability to buy or sell Crypto Assets. Your ability to buy or sell Crypto Assets may be delayed or unavailable due to the availability of the Crypto Asset or funds from your funding source, issues with the trading network or our ability to interface with our Service Provider(s), system downtime, limitations or suspensions we impose on your Cryptocurrencies Services in our sole discretion, for required safety, security, or legal reasons, or for other reasons outside Celler's or any Service Provider's control, and we are not liable to you if we are unable or delayed in executing your transactions. We will only reflect a Cryptocurrency Transaction in your Celler Account if we have been able to fulfill the Order with a cryptocurrency service provider.",
       },
       {
         subTitle: "",
-        text: `4.2. All custody of and trading in Crypto Assets is performed for us by our licensed service providers or other appropriately licensed provider of trading and/or custody services that we identify from time to time ("Service Provider"). You can only use the Cryptocurrencies Account if you have a personal Cryptpay account in good standing. If you are a Hawaii resident, we will not allow you to establish a Cryptocurrency Account at this time.`,
+        text: `4.2. All custody of and trading in Crypto Assets is performed for us by our licensed service providers or other appropriately licensed provider of trading and/or custody services that we identify from time to time ("Service Provider"). You can only use the Cryptocurrencies Account if you have a personal Celler account in good standing. If you are a Hawaii resident, we will not allow you to establish a Cryptocurrency Account at this time.`,
       },
       {
         subTitle: "",
@@ -142,7 +169,7 @@ export const termsContent: SectionContent[] = [
       },
       {
         subTitle: "",
-        text: "4.4. The underlying protocols of the Supported Cryptocurrencies are subject to sudden changes in operating rules (‘forks’). If a fork occurs within the underlying system, we will liaise with the relevant Cryptocurrency Exchange in order to determine the best approach for Cryptpay members in relation to such an event. Any decision made on behalf of Cryptpay members will be made at Cryptpay’s sole discretion.",
+        text: "4.4. The underlying protocols of the Supported Cryptocurrencies are subject to sudden changes in operating rules (‘forks’). If a fork occurs within the underlying system, we will liaise with the relevant Cryptocurrency Exchange in order to determine the best approach for Celler members in relation to such an event. Any decision made on behalf of Celler members will be made at Celler’s sole discretion.",
       },
       {
         subTitle: "",
@@ -150,7 +177,7 @@ export const termsContent: SectionContent[] = [
       },
       {
         subTitle: "",
-        text: "4.6. We will use reasonable endeavors to ensure that the Cryptocurrency Services can normally be accessed by you in accordance with these Cryptocurrency Terms of Use. However, Cryptpay will not be responsible for losses due to fluctuations in value that may occur if an order cannot be placed during a technical (or other type of failure) whether at Cryptpay or a third-party.",
+        text: "4.6. We will use reasonable endeavors to ensure that the Cryptocurrency Services can normally be accessed by you in accordance with these Cryptocurrency Terms of Use. However, Celler will not be responsible for losses due to fluctuations in value that may occur if an order cannot be placed during a technical (or other type of failure) whether at Celler or a third-party.",
       },
       {
         subTitle: "",
@@ -158,7 +185,7 @@ export const termsContent: SectionContent[] = [
       },
       {
         subTitle: "",
-        text: "4.8. Cryptpay may not make all of the Cryptocurrency Services available in all markets and jurisdictions and may restrict or prohibit use of all or a portion of the Cryptocurrency Services from certain states, territories, or jurisdictions (“Restricted Locations”). You must not attempt to use the Cryptocurrency Services if you are in any of those Restricted Locations. You must not attempt to circumvent any restrictions imposed via the Cryptocurrency Services, such as by obscuring your IP address or submitting any inaccurate information regarding your location. ",
+        text: "4.8. Celler may not make all of the Cryptocurrency Services available in all markets and jurisdictions and may restrict or prohibit use of all or a portion of the Cryptocurrency Services from certain states, territories, or jurisdictions (“Restricted Locations”). You must not attempt to use the Cryptocurrency Services if you are in any of those Restricted Locations. You must not attempt to circumvent any restrictions imposed via the Cryptocurrency Services, such as by obscuring your IP address or submitting any inaccurate information regarding your location. ",
       },
     ],
   },
@@ -173,13 +200,13 @@ export const termsContent: SectionContent[] = [
         subTitle: "",
         text: "5.1. Our Buy/Sell service enables you to:",
         bulletPoints: [
-          "purchase interests in one or more Supported Cryptocurrencies using e-money in your Cryptpay Account;",
+          "purchase interests in one or more Supported Cryptocurrencies using e-money in your Celler Account;",
           "sell your interests in one or more Supported Cryptocurrencies in exchange for e-money;",
         ],
       },
       {
         subTitle: "",
-        text: "5.2. We do not currently allow use of a credit card or other credit products to purchase Crypto Assets. When you buy Crypto Assets, you agree that you have enough available funds in your selected funding source to complete your purchase. If we are not able to collect the required funds to complete your purchase from your selected funding source, you authorize us to:stop your purchase so that you are not able to buy Crypto Assets in that transaction,debit any other balance you hold in your Cryptpay Account,debit any other funding source you have linked to your Cryptpay account,remove the Crypto Assets from your Cryptocurrency Account for which we did not receive payment; and/ortake any other action that we deem necessary to collect payment for your transaction, as allowed or required by relevant laws and regulations.",
+        text: "5.2. We do not currently allow use of a credit card or other credit products to purchase Crypto Assets. When you buy Crypto Assets, you agree that you have enough available funds in your selected funding source to complete your purchase. If we are not able to collect the required funds to complete your purchase from your selected funding source, you authorize us to:stop your purchase so that you are not able to buy Crypto Assets in that transaction,debit any other balance you hold in your Celler Account,debit any other funding source you have linked to your Celler account,remove the Crypto Assets from your Cryptocurrency Account for which we did not receive payment; and/ortake any other action that we deem necessary to collect payment for your transaction, as allowed or required by relevant laws and regulations.",
       },
       {
         subTitle: "",
@@ -196,15 +223,15 @@ export const termsContent: SectionContent[] = [
       },
       {
         subTitle: "",
-        text: "5.5. When you buy, sell, or hold digital assets which are not supported for blockchain settlements, you may only buy, sell, or hold said digital assets in your Cryptpay digital wallet. You may not transfer said digital assets to another digital wallet with a different service provider.",
+        text: "5.5. When you buy, sell, or hold digital assets which are not supported for blockchain settlements, you may only buy, sell, or hold said digital assets in your Celler digital wallet. You may not transfer said digital assets to another digital wallet with a different service provider.",
       },
       {
         subTitle: "",
-        text: "5.6. When you receive or deposit a stablecoin digital asset where Cryptpay provides an automated conversion function, you grant Cryptpay the authority to execute said conversion without your consent or notice. The conversion value shall be governed by the local market rate, where Cryptpay will make a reasonable effort at maintaining a 1-to-1 conversion rate. At this time, only BUSD to USDC automated conversion will be supported or honored.",
+        text: "5.6. When you receive or deposit a stablecoin digital asset where Celler provides an automated conversion function, you grant Celler the authority to execute said conversion without your consent or notice. The conversion value shall be governed by the local market rate, where Celler will make a reasonable effort at maintaining a 1-to-1 conversion rate. At this time, only BUSD to USDC automated conversion will be supported or honored.",
       },
       {
         subTitle: "",
-        text: "5.7. Recurring Buy: You may create recurring purchases of Supported Cryptocurrencies on a daily, weekly, or monthly basis on the Cryptpay in order to take advantage of dollar cost averaging. ",
+        text: "5.7. Recurring Buy: You may create recurring purchases of Supported Cryptocurrencies on a daily, weekly, or monthly basis on the Celler in order to take advantage of dollar cost averaging. ",
       },
       {
         subTitle: "",
@@ -212,7 +239,7 @@ export const termsContent: SectionContent[] = [
       },
       {
         subTitle: "",
-        text: "5.9. Payment Methods: You can set up recurring crypto purchases using fiat within your Cryptpay App wallet. If you do not have sufficient fiat in your Cryptpay App wallet on the date of a scheduled recurring buy your transaction will not be completed and Cryptpay will not be responsible for losses due to fluctuations in value when a crypto buy is not executed.",
+        text: "5.9. Payment Methods: You can set up recurring crypto purchases using fiat within your Celler App wallet. If you do not have sufficient fiat in your Celler App wallet on the date of a scheduled recurring buy your transaction will not be completed and Celler will not be responsible for losses due to fluctuations in value when a crypto buy is not executed.",
       },
       {
         subTitle: "",
@@ -245,17 +272,17 @@ export const termsContent: SectionContent[] = [
     content: [
       {
         subTitle: "",
-        text: "6.1. We may elect to add cryptocurrencies as Supported Cryptocurrencies for the Buy/Sell service from time to time. We may also elect to remove cryptocurrencies as Supported Cryptocurrencies for the Buy/Sell service from time to time (“Removed Cryptocurrencies”). When we remove a cryptocurrency as a Supported Cryptocurrency we will update the Cryptpay App. You shall be obliged to sell any interest you have in the Removed Cryptocurrency within 14 calendar days or such shorter period as is required in the following circumstances:",
+        text: "6.1. We may elect to add cryptocurrencies as Supported Cryptocurrencies for the Buy/Sell service from time to time. We may also elect to remove cryptocurrencies as Supported Cryptocurrencies for the Buy/Sell service from time to time (“Removed Cryptocurrencies”). When we remove a cryptocurrency as a Supported Cryptocurrency we will update the Celler App. You shall be obliged to sell any interest you have in the Removed Cryptocurrency within 14 calendar days or such shorter period as is required in the following circumstances:",
         bulletPoints: [
           "a Cryptocurrency Exchange withdraws a Supported Cryptocurrency from trading;",
           "where a regulator so specifies; or",
           "as otherwise required to comply with applicable laws.",
-          "If you have not sold all your interests in the Removed Cryptocurrency within 14 calendar days, you authorize us to buy back your interest in the Removed Cryptocurrency at the best available price (as calculated by reference to prices listed on the relevant Cryptocurrency Exchange). The proceeds of such buy back will be credited to the e-money balance in your Cryptpay.",
+          "If you have not sold all your interests in the Removed Cryptocurrency within 14 calendar days, you authorize us to buy back your interest in the Removed Cryptocurrency at the best available price (as calculated by reference to prices listed on the relevant Cryptocurrency Exchange). The proceeds of such buy back will be credited to the e-money balance in your Celler.",
         ],
       },
       {
         subTitle: "",
-        text: "6.2. We may elect to add cryptocurrencies as Supported Cryptocurrencies for the Buy/Sell service from time to time. We may also elect to remove cryptocurrencies as Supported Cryptocurrencies for the Buy/Sell service from time to time (“Removed Cryptocurrencies”). When we remove a cryptocurrency as a Supported Cryptocurrency we will update the Cryptpay App.",
+        text: "6.2. We may elect to add cryptocurrencies as Supported Cryptocurrencies for the Buy/Sell service from time to time. We may also elect to remove cryptocurrencies as Supported Cryptocurrencies for the Buy/Sell service from time to time (“Removed Cryptocurrencies”). When we remove a cryptocurrency as a Supported Cryptocurrency we will update the Celler App.",
       },
     ],
   },
@@ -264,7 +291,7 @@ export const termsContent: SectionContent[] = [
     content: [
       {
         subTitle: "",
-        text: "7.1. To buy Crypto Assets, Cryptpay will first show you the amount of Crypto Assets you would receive in exchange for the amount of money that you wish to spend. Because the price of Crypto Assets fluctuates, the price we provide will only be valid for a limited time. If the price we provided expires, you won't be able to complete your transaction at that price. If you still want to buy Crypto Assets, we will provide you with updated pricing information. The updated price you see may be much higher than a price that just expired. This is because Crypto Assets are inherently volatile. Once you confirm your transaction, we will then execute your purchase with our trading Service Provider.",
+        text: "7.1. To buy Crypto Assets, Celler will first show you the amount of Crypto Assets you would receive in exchange for the amount of money that you wish to spend. Because the price of Crypto Assets fluctuates, the price we provide will only be valid for a limited time. If the price we provided expires, you won't be able to complete your transaction at that price. If you still want to buy Crypto Assets, we will provide you with updated pricing information. The updated price you see may be much higher than a price that just expired. This is because Crypto Assets are inherently volatile. Once you confirm your transaction, we will then execute your purchase with our trading Service Provider.",
       },
       {
         subTitle: "",
@@ -279,14 +306,14 @@ export const termsContent: SectionContent[] = [
         text: "7.4. When you submit an Order Instruction to purchase interests in a Supported Cryptocurrency:",
         bulletPoints: [
           "we will buy the Supported Cryptocurrency via a Cryptocurrency Exchange;",
-          "once we have bought the Supported Cryptocurrency via a Cryptocurrency Exchange we will redeem an amount of e-money equivalent to the Buy Price from your Cryptpay Account; and",
+          "once we have bought the Supported Cryptocurrency via a Cryptocurrency Exchange we will redeem an amount of e-money equivalent to the Buy Price from your Celler Account; and",
           "the redeemed funds will be deemed to be paid by you to us, in consideration of which we will assign to you our beneficial interest (including any rights, title and benefits arising therefrom) in the Supported Cryptocurrency.",
           "Note. Following fulfillment of a Buy Order, a Cryptocurrency Exchange shall hold the Supported Cryptocurrency in a pooled account on an “omnibus” basis. This means that it may be held alongside cryptocurrency belonging to other Cryptocurrency Exchange customers (as well as cryptocurrency belonging to the Cryptocurrency Exchange itself). ",
         ],
       },
       {
         subTitle: "",
-        text: "7.5. In order for us to fulfill your Cryptocurrency Transaction, you must have sufficient funds in your Cryptpay Account or your Cryptocurrency Account. If you do not have sufficient funds, you cannot submit an Order Instruction (unless you upload additional funds).",
+        text: "7.5. In order for us to fulfill your Cryptocurrency Transaction, you must have sufficient funds in your Celler Account or your Cryptocurrency Account. If you do not have sufficient funds, you cannot submit an Order Instruction (unless you upload additional funds).",
       },
       {
         subTitle: "",
@@ -294,11 +321,11 @@ export const termsContent: SectionContent[] = [
       },
       {
         subTitle: "",
-        text: "7.7. The value of interests held in your Cryptocurrency Account will be displayed on your Cryptpay Account invest dashboard.",
+        text: "7.7. The value of interests held in your Cryptocurrency Account will be displayed on your Celler Account invest dashboard.",
       },
       {
         subTitle: "",
-        text: "7.8. To sell Crypto Assets, Cryptpay will first show you the amount of money for which the Crypto Assets would be sold. You cannot choose which Crypto Assets will be sold for each transaction. ",
+        text: "7.8. To sell Crypto Assets, Celler will first show you the amount of money for which the Crypto Assets would be sold. You cannot choose which Crypto Assets will be sold for each transaction. ",
       },
       {
         subTitle: "",
@@ -309,8 +336,8 @@ export const termsContent: SectionContent[] = [
         text: "7.10. When you submit an Order Instruction to sell a specified amount of interests in one or more Supported Cryptocurrencies, you will assign to us your interest in the Supported Cryptocurrency and authorise us to:",
         bulletPoints: [
           "sell your beneficial interest in the Supported Cryptocurrency back to a Cryptocurrency Exchange; and",
-          "credit the Sell Price to your Cryptpay Account.",
-          "Once you confirm your sale, your transaction is not reversible. If we cannot complete your sale for any reason, we will notify you. You may also see your transaction history within the Cryptpay App.",
+          "credit the Sell Price to your Celler Account.",
+          "Once you confirm your sale, your transaction is not reversible. If we cannot complete your sale for any reason, we will notify you. You may also see your transaction history within the Celler App.",
         ],
       },
     ],
@@ -333,7 +360,7 @@ export const termsContent: SectionContent[] = [
     content: [
       {
         subTitle: "",
-        text: "9.1. You may only use your e-money balance in your Cryptpay Account to buy and sell interests in Supported Cryptocurrencies. You may not use your Cryptpay Account or Cryptocurrency Account to buy interests via any cryptocurrency exchange that we do not partner with.",
+        text: "9.1. You may only use your e-money balance in your Celler Account to buy and sell interests in Supported Cryptocurrencies. You may not use your Celler Account or Cryptocurrency Account to buy interests via any cryptocurrency exchange that we do not partner with.",
       },
       {
         subTitle: "",
@@ -349,7 +376,7 @@ export const termsContent: SectionContent[] = [
       },
       {
         subTitle: "",
-        text: "9.4. Any limits as described in subsection 12.3 above will be communicated to you within your Cryptpay Account while using the Buy/Sell service prior to any proposed transaction being confirmed by you.",
+        text: "9.4. Any limits as described in subsection 12.3 above will be communicated to you within your Celler Account while using the Buy/Sell service prior to any proposed transaction being confirmed by you.",
       },
     ],
   },
@@ -387,23 +414,23 @@ export const termsContent: SectionContent[] = [
       },
          {
         subTitle: "",
-        text: "11.2. Customers that send cryptocurrency out of the Cryptpay ecosystem are charged a fee to facilitate the transaction on the blockchain. Cryptpay does not set the fee and the customer is informed of the fee before sending their cryptocurrency out."
+        text: "11.2. Customers that send cryptocurrency out of the Celler ecosystem are charged a fee to facilitate the transaction on the blockchain. Celler does not set the fee and the customer is informed of the fee before sending their cryptocurrency out."
      },
          {
         subTitle: "",
-        text: "11.3. Fees which are not charged, credited or paid by Cryptpay shall be announced at the time of buy or sell. "
+        text: "11.3. Fees which are not charged, credited or paid by Celler shall be announced at the time of buy or sell. "
      },
          {
         subTitle: "",
-        text: "11.4. Cryptpay is not responsible for fees which are charged by a third party or network."
+        text: "11.4. Celler is not responsible for fees which are charged by a third party or network."
      },
          {
         subTitle: "",
-        text: "11.5. Cryptpay is not responsible for fees which, by error, are not charged or credited to the customer. "
+        text: "11.5. Celler is not responsible for fees which, by error, are not charged or credited to the customer. "
      },
          {
         subTitle: "",
-        text: "11.6. Cryptpay reserves the right to amend or cancel any cryptocurrency fees at any time. "
+        text: "11.6. Celler reserves the right to amend or cancel any cryptocurrency fees at any time. "
      },
     ]
   },
@@ -429,8 +456,8 @@ export const termsContent: SectionContent[] = [
             "it is reasonably necessary for us to do so to prevent you or us contravening any applicable law or regulatory requirements;",
             "it is necessary for security reasons; or",
             "if we reasonably suspect the Cryptocurrency Services have been or are being used without your authorisation or fraudulently; and we shall notify you either prior to the suspension or, if prior notification is not possible under the circumstances, promptly after the suspension unless we are prohibited by law to notify you; or",
-            "if the direct or indirect inherent risk attributed to your crypto activity falls outside of Cryptpay’s risk appetite.",
-            "Cryptpay retains the right to determine the appropriate risk level it is willing to accept in regards to any Crypto Currency activity."
+            "if the direct or indirect inherent risk attributed to your crypto activity falls outside of Celler’s risk appetite.",
+            "Celler retains the right to determine the appropriate risk level it is willing to accept in regards to any Crypto Currency activity."
         ]
      },
        {
@@ -438,7 +465,7 @@ export const termsContent: SectionContent[] = [
         text: "12.4. We may refuse to submit an Order Instruction where:",
         bulletPoints:[
             "we are, in our reasonable opinion, required to do so by applicable law, regulation or any court or other authority to which we are subject in any jurisdiction; and",
-            "We have concerns about the security of your Cryptpay Account or we suspect the Cryptocurrency Services are being used in a fraudulent or unauthorized manner.",
+            "We have concerns about the security of your Celler Account or we suspect the Cryptocurrency Services are being used in a fraudulent or unauthorized manner.",
             ""
         ]
      },
@@ -453,70 +480,70 @@ export const termsContent: SectionContent[] = [
         bulletPoints:[
             "if you fail to provide any information we have requested or any warranty/representation you have given us is or becomes, in our opinion, materially inaccurate, incorrect or misleading;",
             "if you take some action (or refrain from doing something) which places us in breach of our legal or regulatory obligations;",
-            "if you breach these Cryptocurrency Terms of Use or those of your Cryptpay Account; or",
+            "if you breach these Cryptocurrency Terms of Use or those of your Celler Account; or",
             "for any other reason which we may specify in our notice to you."
         ]
      },
       {
         subTitle: "",
-        text: "12.7. If we sell off your interests in Supported Cryptocurrencies, we will buy back the interest(s) at prevailing market rates. If the value of the Supported Cryptocurrency has weakened, this means that you may incur a loss relative to the amount you initially paid. We will credit the sale proceeds (in your preferred currency) to your Cryptpay Account."
+        text: "12.7. If we sell off your interests in Supported Cryptocurrencies, we will buy back the interest(s) at prevailing market rates. If the value of the Supported Cryptocurrency has weakened, this means that you may incur a loss relative to the amount you initially paid. We will credit the sale proceeds (in your preferred currency) to your Celler Account."
      },
       {
         subTitle: "",
         text: "12.8. On termination, unless prohibited by applicable law or by any court or other order to which we are subject in any jurisdiction, for a period of 10 days following the date of termination:",
         bulletPoints:[
-            "you will continue to be able to view the balance of your interest(s) in Supported Cryptocurrencies on your Cryptpay Account dashboard;",
+            "you will continue to be able to view the balance of your interest(s) in Supported Cryptocurrencies on your Celler Account dashboard;",
             "you will not be permitted to buy any further interests in Supported Cryptocurrencies; and",
             "you may – at our sole discretion – sell your interests in Supported Cryptocurrencies back to us."
         ]
       },
       {
         subTitle: "",
-        text: "12.9. If at the end of the 14 day period you have not sold down all your interests in Supported Cryptocurrencies, you authorise us to buy back your interests at the best available price via the relevant Cryptocurrency Exchange. The proceeds of such buy back will be credited to the e-money balance in your Cryptpay Account."
+        text: "12.9. If at the end of the 14 day period you have not sold down all your interests in Supported Cryptocurrencies, you authorise us to buy back your interests at the best available price via the relevant Cryptocurrency Exchange. The proceeds of such buy back will be credited to the e-money balance in your Celler Account."
      },
       {
         subTitle: "",
-        text: "12.10. For the avoidance of doubt, if your Cryptpay Account is terminated or suspended your access to the Cryptocurrency Services will also be terminated or suspended (as applicable)."
+        text: "12.10. For the avoidance of doubt, if your Celler Account is terminated or suspended your access to the Cryptocurrency Services will also be terminated or suspended (as applicable)."
     },
       {
         subTitle: "",
-        text: "12.11. Except where prohibited by law or regulation, as security for the performance of your obligations under these Cryptocurrency Terms, you grant to Cryptpay a lien on, and security interest in and to, your Crypto Assets."
+        text: "12.11. Except where prohibited by law or regulation, as security for the performance of your obligations under these Cryptocurrency Terms, you grant to Celler a lien on, and security interest in and to, your Crypto Assets."
      },
       {
         subTitle: "",
-        text: "12.12. If the balance in your Cryptpay Account (including your Cryptocurrencies Services) becomes negative for any reason, that negative balance represents an amount that you owe to Cryptpay. In addition to any rights we have under the Cryptpay Terms of Use, you authorize Cryptpay to sell your Crypto Assets and use the proceeds to pay a negative balance you owe to us in any Cryptpay account you own at our sole discretion."
+        text: "12.12. If the balance in your Celler Account (including your Cryptocurrencies Services) becomes negative for any reason, that negative balance represents an amount that you owe to Celler. In addition to any rights we have under the Celler Terms of Use, you authorize Celler to sell your Crypto Assets and use the proceeds to pay a negative balance you owe to us in any Celler account you own at our sole discretion."
      },
       {
         subTitle: "",
-        text: "12.13. If we sell your Crypto Assets to pay amounts you owe to us, we will value the Crypto Assets using the price that otherwise applies to the sale of Crypto Assets at that time, or another reasonable price determined by Cryptpay in its reasonable discretion. You understand that the value of Crypto Assets may rise or fall quickly and that we have no obligation to sell at a time that provides the best price for you. While Cryptpay will notify you if you have a negative balance, regardless of how quickly we sell your Crypto Assets, we have no obligation to give you notice before we sell."
+        text: "12.13. If we sell your Crypto Assets to pay amounts you owe to us, we will value the Crypto Assets using the price that otherwise applies to the sale of Crypto Assets at that time, or another reasonable price determined by Celler in its reasonable discretion. You understand that the value of Crypto Assets may rise or fall quickly and that we have no obligation to sell at a time that provides the best price for you. While Celler will notify you if you have a negative balance, regardless of how quickly we sell your Crypto Assets, we have no obligation to give you notice before we sell."
     },
       {
         subTitle: "",
-        text: "12.14. Error in Receiving Cryptocurrency. In the event of an error, you give Company permission, subject to Company’s compliance with applicable law, to make appropriate corrections by debiting or crediting your Cryptpay balance, or debiting or crediting your primary or alternate funding sources as applicable. We may also, in our sole discretion, block, freeze, or deny access to these funds, associated wallets, or services."
+        text: "12.14. Error in Receiving Cryptocurrency. In the event of an error, you give Company permission, subject to Company’s compliance with applicable law, to make appropriate corrections by debiting or crediting your Celler balance, or debiting or crediting your primary or alternate funding sources as applicable. We may also, in our sole discretion, block, freeze, or deny access to these funds, associated wallets, or services."
     },
      
       {
         subTitle: "",
-        text: "12.15. If your account is dormant for a period of (12) consecutive months, Cryptpay reserves the right to terminate the relationship to include selling your crypto assets into your local currency and/or transferring funds to a verified payment method. "
+        text: "12.15. If your account is dormant for a period of (12) consecutive months, Celler reserves the right to terminate the relationship to include selling your crypto assets into your local currency and/or transferring funds to a verified payment method. "
     },
       {
         subTitle: "",
-        text: "12.16. Prior to the termination of your account due to dormancy, Cryptpay will make an honest best effort to contact you in regards to your Crypto assets."
+        text: "12.16. Prior to the termination of your account due to dormancy, Celler will make an honest best effort to contact you in regards to your Crypto assets."
     },
       {
         subTitle: "",
-        text: "12.17. Cryptpay reserves the right to liquidate all crypto positions after (12) consecutive months of dormancy at current market rates. Any gain or loss of value due to this action is the responsibility of the User. Cryptpay is not liable for any lost value nor any tax implication which may arise. "
+        text: "12.17. Celler reserves the right to liquidate all crypto positions after (12) consecutive months of dormancy at current market rates. Any gain or loss of value due to this action is the responsibility of the User. Celler is not liable for any lost value nor any tax implication which may arise. "
     },
       {
         subTitle: "",
-        text: "12.18. Liquidation of Crypto Positions, In addition to the termination rights outlined in above, Cryptpay reserves the right, at its sole discretion, to liquidate all crypto positions held in your account at the prevailing market rate under the following circumstances:",
+        text: "12.18. Liquidation of Crypto Positions, In addition to the termination rights outlined in above, Celler reserves the right, at its sole discretion, to liquidate all crypto positions held in your account at the prevailing market rate under the following circumstances:",
         bulletPoints:[
             "Failure to Comply with Applicable Laws: If we, in our reasonable judgment, determine that your actions or use of our services violate Applicable Laws, or if you fail to comply with any legal obligations as specified in this Agreement.",
             " Failure to Provide Necessary Information: In the event that you fail to provide information or documentation necessary for us to perform due diligence measures to our full satisfaction, including but not limited to identifying the purpose of using our services, verifying your identity, and obtaining relevant information about the origin of your funds or wealth.",
             "Suspicion of Illegal Activities: If we reasonably suspect your involvement in money laundering, terrorist financing, fraud, or any other illegal activities, and we are unable to alleviate such suspicions through further investigation.",
             "Risk Assessment: If circumstances related to you or a person affiliated with you indicate a higher risk of money laundering, terrorist financing, fraud, or any other illegal activity, and providing services to you is deemed undesirable by us.",
             "International Sanctions: If you or a person affiliated with you is or has been the subject of an international financial sanction.",
-            "Overdue Payables: In the event of overdue payables to Cryptpay for which we have the right to claim interest for late payment.",
+            "Overdue Payables: In the event of overdue payables to Celler for which we have the right to claim interest for late payment.",
             "Lawful Orders: Upon receipt of a lawful order from a competent public authority or another competent authority, including but not limited to law enforcement, supervision, tax authority, court, bailiff, or any international clearing system administrator, demanding termination of your account or restriction of services provided to you.",
             "Non-Compliance with Applicable Law: If we determine that, under Applicable Law, we are prohibited from providing services to you or have the right to refuse services or terminate the Agreement with you."
         ]
@@ -548,7 +575,7 @@ export const termsContent: SectionContent[] = [
      },
        {
         subTitle: "",
-        text: "13.3. No Liability for Liquidation: If Cryptpay exercises its right to liquidate crypto positions under Section 12.18, we shall not be liable to you for any costs, losses, claims, or expenses incurred as a result of such liquidation." 
+        text: "13.3. No Liability for Liquidation: If Celler exercises its right to liquidate crypto positions under Section 12.18, we shall not be liable to you for any costs, losses, claims, or expenses incurred as a result of such liquidation." 
     },
     ]
   },
@@ -564,31 +591,31 @@ export const termsContent: SectionContent[] = [
   {
     title:"15. General Disclosures",
     content:[
-        "Legislative and regulatory changes or actions at the state, federal, or international level may adversely affect the use, transfer, exchange and value of cryptocurrency.Transactions in cryptocurrency may be irreversible, and accordingly, losses due to fraudulent or accidental transactions may not be recoverable.Some cryptocurrency transactions shall be deemed to be made when recorded on the public ledger, which is not necessarily the date or time the customer initiates the transaction.The volatility and unpredictability of the price of cryptocurrency relative to fiat currency may result in significant loss over a short period of time.The nature of cryptocurrency may lead to an increased risk of fraud or cyberattack.The nature of cryptocurrency means that any technical difficulties experienced by Cryptpay may prevent the access or use of a customer's cryptocurrency.Any bond or trust account maintained by Cryptpay for the benefit of its customers may not be sufficient to cover all losses incurred by customers.Rhode Island Disclosures Information on fees and pricing can be obtained upon request to …… Your Crypto Assets are not insured or guaranteed by the FDIC, Securities Investor Protection Corporation (SIPC) or any other public or private insurer, including against cyber theft or theft by other means.The transfer, purchase and sale of cryptocurrency is irrevocable.Information about unauthorized transactions and error-resolution can be obtained from ……..You may update your contact information through your personal Cryptpay account.The date or time when a transaction is executed, and your funding device is charged may differ from the date or time when you provided the instruction to authorize the transaction.You will receive an email receipt with respect to your purchase and sale of Crypto Assets.You have the right to at least thirty (30) days' prior notice of a change in our fee schedule or changes to these terms and conditions.Cryptocurrency is not legal tender Washington Disclosures Information on fees and pricing can be obtained upon request to…………………..Your Crypto Assets are not insured or guaranteed by the FDIC, Securities Investor Protection Corporation (SIPC) or any other public or private insurer, including against cyber theft or theft by other means.The transfer, purchase and sale of cryptocurrency is irrevocable.Information about unauthorized transactions and error-resolution can be obtained from ……...The nature of cryptocurrency may lead to an increased risk of fraud or cyber-attack and your cryptocurrency value may be irretrievably stolen."
+        "Legislative and regulatory changes or actions at the state, federal, or international level may adversely affect the use, transfer, exchange and value of cryptocurrency.Transactions in cryptocurrency may be irreversible, and accordingly, losses due to fraudulent or accidental transactions may not be recoverable.Some cryptocurrency transactions shall be deemed to be made when recorded on the public ledger, which is not necessarily the date or time the customer initiates the transaction.The volatility and unpredictability of the price of cryptocurrency relative to fiat currency may result in significant loss over a short period of time.The nature of cryptocurrency may lead to an increased risk of fraud or cyberattack.The nature of cryptocurrency means that any technical difficulties experienced by Celler may prevent the access or use of a customer's cryptocurrency.Any bond or trust account maintained by Celler for the benefit of its customers may not be sufficient to cover all losses incurred by customers.Rhode Island Disclosures Information on fees and pricing can be obtained upon request to …… Your Crypto Assets are not insured or guaranteed by the FDIC, Securities Investor Protection Corporation (SIPC) or any other public or private insurer, including against cyber theft or theft by other means.The transfer, purchase and sale of cryptocurrency is irrevocable.Information about unauthorized transactions and error-resolution can be obtained from ……..You may update your contact information through your personal Celler account.The date or time when a transaction is executed, and your funding device is charged may differ from the date or time when you provided the instruction to authorize the transaction.You will receive an email receipt with respect to your purchase and sale of Crypto Assets.You have the right to at least thirty (30) days' prior notice of a change in our fee schedule or changes to these terms and conditions.Cryptocurrency is not legal tender Washington Disclosures Information on fees and pricing can be obtained upon request to…………………..Your Crypto Assets are not insured or guaranteed by the FDIC, Securities Investor Protection Corporation (SIPC) or any other public or private insurer, including against cyber theft or theft by other means.The transfer, purchase and sale of cryptocurrency is irrevocable.Information about unauthorized transactions and error-resolution can be obtained from ……...The nature of cryptocurrency may lead to an increased risk of fraud or cyber-attack and your cryptocurrency value may be irretrievably stolen."
     ]
   },
   {
     title:"16. Definitions",
     content:[
     `
-    Any capitalized terms which are not defined in these Cryptocurrency Terms of Use shall have the meaning given in the Cryptpay Account Terms of Use.
+    Any capitalized terms which are not defined in these Cryptocurrency Terms of Use shall have the meaning given in the Celler Account Terms of Use.
 “Buy Order” means an instruction submitted by us to a Cryptocurrency Exchange to buy Supported Cryptocurrencies in accordance with an Order Instruction.
 “Buy Price” means the price payable by you to us (plus applicable Fees) for the purchase of interests in Supported Cryptocurrencies;
 “Cryptocurrency Account” means the interests in Supported Cryptocurrencies held by a customer of the Cryptocurrency Service.
 “Cryptocurrency Exchange” means a cryptocurrency exchange which we partner with.
-“Cryptocurrency Services” means the functionality within your Cryptpay Account as described at subsection 1.1.
+“Cryptocurrency Services” means the functionality within your Celler Account as described at subsection 1.1.
 “Cryptocurrency Transaction” means a purchase or sale of an interest in a Supported Cryptocurrency by us on your behalf, including a Crypto to Crypto Transaction;
 “Cryptocurrency Wallet” means any third-party custodian wallet which enables the receipt and storage of at least the Supported Cryptocurrencies.
 “Crypto to Crypto Transaction” is a Cryptocurrency Transaction where the Buy Price is payable in interests of a Supported Cryptocurrency.
-“Existing Member” means a person who is a user of the Cryptpay Cryptocurrency Service at the time you wish to make a P2P Transfer and who fulfils the eligibility criteria at section 3.
-“Fiat Currency” means a government-issued currency which is supported by the Cryptpay Account.
-“Holding Crypto Assets'' means the balance reflected in your cryptocurrency account represents your ownership of the amount of each type of Crypto Asset shown. Cryptpay combines your Crypto Asset balance with the Crypto Asset balances of other Cryptpay account holders and holds those Crypto Assets in an omnibus account through our custodial Service Provider. We keep a record of your interest in that omnibus account based on the amount of each type of Crypto Asset that is reflected in your balance. You do not own any specific, identifiable, Crypto Asset. These Crypto Assets are held apart from Cryptpay’s corporate assets and Cryptpay will neither use these assets for its operating expenses or any other corporate or business purposes, nor will it voluntarily make these Crypto Assets available to its creditors in the event of bankruptcy.
+“Existing Member” means a person who is a user of the Celler Cryptocurrency Service at the time you wish to make a P2P Transfer and who fulfils the eligibility criteria at section 3.
+“Fiat Currency” means a government-issued currency which is supported by the Celler Account.
+“Holding Crypto Assets'' means the balance reflected in your cryptocurrency account represents your ownership of the amount of each type of Crypto Asset shown. Celler combines your Crypto Asset balance with the Crypto Asset balances of other Celler account holders and holds those Crypto Assets in an omnibus account through our custodial Service Provider. We keep a record of your interest in that omnibus account based on the amount of each type of Crypto Asset that is reflected in your balance. You do not own any specific, identifiable, Crypto Asset. These Crypto Assets are held apart from Celler’s corporate assets and Celler will neither use these assets for its operating expenses or any other corporate or business purposes, nor will it voluntarily make these Crypto Assets available to its creditors in the event of bankruptcy.
 “Order” means an instruction submitted by us to a Cryptocurrency Exchange to buy or sell Supported Cryptocurrencies, in accordance with an Order Instruction.
 “Order Instruction” means an instruction – submitted by you to us – to buy or sell a specified quantity of interests in Supported Cryptocurrencies at a specified price;
 “Sell Order” an instruction submitted by us to a Cryptocurrency Exchange to sell Supported Cryptocurrencies in accordance with an Order Instruction.
 “Sell Price” means the price (net of applicable Fees) payable to you by us for the sale of your nominated interests in Supported Cryptocurrencies;
 “Supported Country” means a country in which we currently offer the Cryptocurrency Service.
-“Supported Cryptocurrencies” means the cryptocurrencies listed in the Cryptpay App (as may be amended by us in our sole discretion from time to time). 
+“Supported Cryptocurrencies” means the cryptocurrencies listed in the Celler App (as may be amended by us in our sole discretion from time to time). 
 
     `   
     ]
@@ -603,7 +630,7 @@ export const policyContent: SectionContent[] = [
 
 "We value and respect your privacy, and we are committed to transparently communicating how we handle your Personal Data.",
  
-"Your privacy is of paramount importance to Tampay by Cq Ltd, located at 14 A, Alternative route, Chevron Close, Lekki, with company number 7430244 (referred to as Tampay, “we,” and “us“) which operates the website  (the “Website”) and Cryptpay application (both together referred as the “Website”). ",
+"Your privacy is of paramount importance to Tampay by Cq Ltd, located at 14 A, Alternative route, Chevron Close, Lekki, with company number 7430244 (referred to as Tampay, “we,” and “us“) which operates the website  (the “Website”) and Celler application (both together referred as the “Website”). ",
 
 "We are a data controller of your personal data, meaning we determine the purposes and means of the processing when you visit our Website, our application, and/or use our Services,",
 "This Privacy Policy (the “Policy”) provides information to whom it applies, grounds for data processing, data processing description, regulatory requirements and specifics, and other information to transparently and comprehensively inform you about all aspects of privacy, including your limitations and rights. ",
@@ -612,7 +639,7 @@ export const policyContent: SectionContent[] = [
 
 "This Privacy Policy may be revised, modified, updated, or supplemented at any time, without prior notice, at our sole discretion. When we make changes to this Privacy Policy, we will notify all users on our Website, and make the amended Privacy Policy available on our Website. By further using our Services it will be considered you accept with the implied changes. ",
 
-"This privacy policy is an integral part of Cryptpay Terms of Service and is of informative nature."
+"This privacy policy is an integral part of Celler Terms of Service and is of informative nature."
      
     ],
   },
@@ -649,7 +676,7 @@ export const policyContent: SectionContent[] = [
   {
     title: "5. About us ",
     content: [
-    "Cryptpay is a crypto asset service provider, providing its business in Nigeria, across Africa, the globe and, a product of Tampay by cq ltd, a company registered in Nigeria by the Corporate Affairs Commission CAC for the provision of the following services (the “Services”):",
+    "Celler is a crypto asset service provider, providing its business in Nigeria, across Africa, the globe and, a product of Tampay by cq ltd, a company registered in Nigeria by the Corporate Affairs Commission CAC for the provision of the following services (the “Services”):",
     {
       subTitle:"",
       text:'',
@@ -786,7 +813,7 @@ text:"Our Website may contain links to other websites, such as (but not limited 
     }, 
     {
       subTitle:"Personal data we collect for account set-up, management purposes, and providing various features within the account ",
-      text: "In the scope of account set-up, account management, and providing various services/features within the account (such as price alert notification, auto buy and auto sell feature, vault, intelligent portfolios, and others as offered by Cryptpay from time to time), we process the following personal data:",
+      text: "In the scope of account set-up, account management, and providing various services/features within the account (such as price alert notification, auto buy and auto sell feature, vault, intelligent portfolios, and others as offered by Celler from time to time), we process the following personal data:",
       bulletPoints:[
         "IP Address ",
         "Email address",
@@ -983,34 +1010,34 @@ text:"The personal data are obtained based on legitimate interest or consent. "
     title: "14. Definitions",
     content: [
         "To help you understand this Privacy Policy, we have provided definitions for some of the terms used throughout the document:",
-  "Account: Your personalised interface on the Cryptpay platform, allowing you to access our Services.",
+  "Account: Your personalised interface on the Celler platform, allowing you to access our Services.",
   "Adverse Media: Negative news or information about an individual or entity that may indicate involvement in criminal activity or other risks.",
   "Blockchain: A decentralised digital ledger that records transactions across a network of computers.",
-  "CCO: Chief Compliance Officer, the person responsible for ensuring that Cryptpay complies with relevant laws and regulations.",
+  "CCO: Chief Compliance Officer, the person responsible for ensuring that Celler complies with relevant laws and regulations.",
   "Cookies: Small text files placed on your device by websites to improve your experience and collect information about your usage.",
   "Crypto Asset: A digital representation of value that uses cryptography for security and operates on a blockchain.",
-  "Data Controller: The entity (in this case, Cryptpay) that determines the purposes and means of processing your personal data.",
-  "Data Processor: A third-party entity that processes personal data on behalf of Cryptpay.",
+  "Data Controller: The entity (in this case, Celler) that determines the purposes and means of processing your personal data.",
+  "Data Processor: A third-party entity that processes personal data on behalf of Celler.",
   "Data Region: A set of data centres located within a defined geographical area where user data is stored.",
   "Data Subject: An identified or identifiable natural person (individual) to whom Personal Data relates and who has registered him/herself via the Website.",
-  "DPO: Data Protection Officer, the person responsible for overseeing Cryptpay’s data protection practices and ensuring compliance with NDPA.",
+  "DPO: Data Protection Officer, the person responsible for overseeing Celler’s data protection practices and ensuring compliance with NDPA.",
   "Money Laundering Act: National legislation transposing the Nigeria’s anti-money laundering directives, which requires specific data retention and reporting obligations for financial institutions.",
   "EFCC: Financial Intelligence Unit, the Nigeria Economic Financial Crimes Commission and authority responsible for combating money laundering and terrorist financing.",
-  "Fiat Currency: A government-issued currency which is supported by Cryptpay.",
+  "Fiat Currency: A government-issued currency which is supported by Celler.",
   "NDPA: The Nigeria Data Protection Act, the legal framework for data protection in Nigeria.",
   "Identity Verification (KYC) Process: The process of verifying the identity of a customer to comply with anti-money laundering (AML) and counter-terrorism financing (CTF) regulations.",
-  "Cryptpay, We, Our: Tampay by Cq Ltd, the company operating the Cryptpay platform and providing the Services.",
+  "Celler, We, Our: Tampay by Cq Ltd, the company operating the Celler platform and providing the Services.",
   "KYC: Know Your Customer, the process of verifying the identity of our customers to comply with anti-money laundering regulations.",
-  "Legitimate Interest: A lawful basis for processing Personal Data when it is necessary for the purposes of the legitimate interests pursued by Cryptpay or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the Data Subject.",
+  "Legitimate Interest: A lawful basis for processing Personal Data when it is necessary for the purposes of the legitimate interests pursued by Celler or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the Data Subject.",
   "Personal Data: Any information that can be used to directly or indirectly identify you as an individual. This includes your name, email address, identification documents, transaction history, and other information you provide while using our Services.",
   "Politically Exposed Person (PEP): An individual who holds a prominent public function or has been entrusted with a prominent public position.",
   "Processing: Any operation performed on Personal Data, such as collection, storage, use, disclosure, or deletion.",
   "Sanctions List: A list of individuals or entities subject to restrictions or prohibitions due to their involvement in activities such as terrorism, money laundering, or human rights abuses.",
-  "Services: The services provided by Cryptpay, include the exchange of crypto assets for fiat currency or other crypto assets, the provision of a crypto-asset wallet, and crypto-asset transfer services.",
+  "Services: The services provided by Celler, include the exchange of crypto assets for fiat currency or other crypto assets, the provision of a crypto-asset wallet, and crypto-asset transfer services.",
   "Transaction Monitoring: The process of monitoring customer transactions to detect and prevent suspicious activity that may be indicative of money laundering or other financial crimes.",
   "Travel Rule: A regulatory requirement that obliges us to share specific information about crypto-asset transfers with other service providers.",
-  "User, You: Refers to you as a user of Cryptpay’s services.",
-  "Website: The Cryptpay website and mobile application through which our Services are provided."
+  "User, You: Refers to you as a user of Celler’s services.",
+  "Website: The Celler website and mobile application through which our Services are provided."
 
     ]
   },

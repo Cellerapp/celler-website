@@ -6,26 +6,29 @@ import Image from "next/image";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { LOGIN_URL, SIGNUP_URL } from "@/constants";
-import { MdArrowDropDown } from "react-icons/md";
+import { IoIosArrowDown } from "react-icons/io";
 import { Fade } from "react-awesome-reveal";
 
 export default function Navbar() {
   const currentPath = usePathname(); // Get router object
   const [openDrop, setOpenDrop] = useState<boolean>(false);
   return (
-    <div className=" justify-between items-center w-full flex">
-      <Link href="/">
+    <div className=" justify-start lgss:justify-center lgss:gap-24 xxxl:gap-44 items-center w-full flex">
+      <Link
+        href="/"
+        className=" p-[18px] rounded-full lgss:border-2  lgss:border-[#3D3D3D] lgss:bg-[#141414] w-1/3 lgss:w-1/6 flex justify-center items-center"
+      >
         <div>
-          <Image src={logo} alt="logo" />
+          <Image src={logo} alt="logo" width={148} height={42} />
         </div>
       </Link>
-      <div className="hidden lgss:flex  gap-12 justify-center items-start">
+      <div className="hidden lgss:flex lgss:border-2 lgss:border-[#3D3D3D] lgss:bg-[#141414] py-3 px-6 rounded-full  gap-12 justify-center items-center">
         <Link
           href="/"
           className={
             currentPath === "/" && !openDrop
-              ? "text-secondary border-b  border-secondary text-[16px] py-3 "
-              : "text-secondary text-[16px] py-3 hover:border-b border-secondary "
+              ? "text-secondary    text-[16px]  "
+              : "text-white text-[14px]  "
           }
         >
           Home
@@ -35,12 +38,12 @@ export default function Navbar() {
             onClick={() => setOpenDrop((prev) => !prev)}
             className={
               openDrop
-                ? "text-secondary relative flex justify-center items-center gap-2 border-b border-secondary text-[16px] py-3 "
-                : "text-secondary flex justify-center items-center gap-2 text-[16px] py-3 hover:border-b border-secondary"
+                ? "text-secondary relative flex justify-center items-center gap-2  text-[16px]  "
+                : "text-white flex justify-center items-center gap-2 text-[14px]  "
             }
           >
             Features
-            <MdArrowDropDown />
+            <IoIosArrowDown />
           </button>
           {openDrop && (
             <Fade
@@ -61,10 +64,10 @@ export default function Navbar() {
                   </div>
                   <div>
                     <h4 className="text-gray-200 hover:text-white font-semibold text-[15px]">
-                      Buy Crypto
+                      Buy Digital assets
                     </h4>
                     <h4 className="text-secondary hover:text-gray-300 mt-1 font-semibold text-[13px]">
-                      Purchase your favorite cryptocurrencies in seconds.
+                      Purchase your favorite digital assets in seconds.
                     </h4>
                   </div>
                 </a>
@@ -79,10 +82,11 @@ export default function Navbar() {
                   </div>
                   <div>
                     <h4 className="text-gray-200 hover:text-white font-semibold text-[15px]">
-                      Sell Crypto
+                      Sell Digital assets
                     </h4>
                     <h4 className="text-secondary hover:text-gray-300 mt-1 font-semibold text-[13px]">
-                      Sell your crypto quickly and receive funds instantly.
+                      Sell your digital assets quickly and receive funds
+                      instantly.
                     </h4>
                   </div>
                 </a>
@@ -94,8 +98,8 @@ export default function Navbar() {
           href="/about"
           className={
             currentPath === "/about" && !openDrop
-              ? "text-secondary border-b border-secondary text-[16px] py-3 "
-              : "text-secondary text-[16px] py-3 hover:border-b border-secondary "
+              ? "text-secondary  text-[16px]  "
+              : "text-white text-[14px]   "
           }
         >
           About Us
@@ -104,30 +108,30 @@ export default function Navbar() {
           href="/contact"
           className={
             currentPath === "/contact" && !openDrop
-              ? "text-secondary border-b border-secondary text-[16px] py-3 "
-              : "text-secondary text-[16px] py-3 hover:border-b border-secondary"
+              ? "text-secondary  text-[16px]  "
+              : "text-white text-[14px]  "
           }
         >
           Contact Us
         </Link>
-      </div>
-      <div className="flex w-1/2 items-center justify-end lgss:w-[22%] gap-4">
-        <a
-          href={LOGIN_URL}
-          target="_blank"
-          rel="noreferrer"
-          className="w-1/2 hidden lgss:flex justify-center items-center  h-[46px] rounded-lg border border-secondary text-secondary text-[16px]"
-        >
-          Sign In
-        </a>
-        <a
-          href={SIGNUP_URL}
-          target="_blank"
-          rel="noreferrer"
-          className="w-1/2 flex justify-center items-center h-[46px] rounded-lg bg-primary text-white text-[16px]"
-        >
-          Sign Up
-        </a>
+        <div className="hidden px-4 lgss:flex bg-[#454545] rounded-full py-3 items-center justify-center gap-4">
+          <a
+            href={LOGIN_URL}
+            target="_blank"
+            rel="noreferrer"
+            className=" hidden lgss:flex justify-center items-center  font-semibold     text-white text-[14px]"
+          >
+            Sign In
+          </a>
+          <a
+            href={SIGNUP_URL}
+            target="_blank"
+            rel="noreferrer"
+            className=" flex justify-center items-center  font-bold text-[#5995FF] text-[14px]"
+          >
+            Sign Up
+          </a>
+        </div>
       </div>
     </div>
   );
