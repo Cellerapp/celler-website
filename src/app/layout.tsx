@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   openGraph: {
     images: [
       {
-        url: "../assets/images/thumbnail.png", // Update with the correct path to your thumbnail
+        url: "/thumbnail.png", // Update with the correct path to your thumbnail
         width: 384,
         height: 192,
         alt: "Celler website thumbnail",
