@@ -40,7 +40,7 @@ export const termsContent: SectionContent[] = [
     title: "PART A: BACKGROUND",
     content: [
       "BEFORE YOU START, IT IS IMPORTANT TO NOTE THAT BUYING AND SELLING CRYPTO ASSETS IS INHERENTLY RISKY. YOU SHOULD CONSIDER THE RISKS BEFORE DECIDING TO BUY OR SELL CRYPTO ASSETS.",
-      "IF YOU HAVE QUESTIONS OR CONCERNS REGARDING YOUR CRYPTO CURRENCIES SERVICES, YOUR CRYPTO ASSETS, OUR SERVICE PROVIDER(S), OR RELATED TRANSACTIONS OR ACCOUNT ACTIVITY, PLEASE CONTACT CRYPTPAY CUSTOMER SUPPORT AT SUPPORT@CRYPTPAY.CO YOU CAN ALSO ACCESS SUPPORT VIA IN-APP CHAT.",
+      "IF YOU HAVE QUESTIONS OR CONCERNS REGARDING YOUR CRYPTO CURRENCIES SERVICES, YOUR CRYPTO ASSETS, OUR SERVICE PROVIDER(S), OR RELATED TRANSACTIONS OR ACCOUNT ACTIVITY, PLEASE CONTACT CELLER CUSTOMER SUPPORT AT INFO@CELLER.CO YOU CAN ALSO ACCESS SUPPORT VIA IN-APP CHAT.",
       "PLEASE NOTE THAT THERE MAY BE TAX CONSEQUENCES FROM ANY GAIN OR LOSS YOU INCUR WHEN YOU SELL YOUR CRYPTO ASSETS. WE DO NOT PROVIDE FINANCIAL, INVESTMENT, LEGAL OR TAX ADVICE. PLEASE SEEK ASSISTANCE FROM A QUALIFIED PROFESSIONAL.",
       'This Terms of Use (“Cryptocurrency Terms of Use”) is a contract between you and Tampay by Cq Ltd and the owner of the product and application Celler Application (“Celler”) and governs your use of the portion of your Celler App balance where you can buy, sell, hold, and learn about cryptocurrency (your "Cryptocurrency Services").',
     ],
@@ -98,7 +98,7 @@ export const termsContent: SectionContent[] = [
       },
       {
         subTitle: "",
-        text: "1.11. In the event that an Unsupported Asset is sent to Celler by a third party or user, by error or otherwise, it is effectively lost to such third parties or users. Any such Unsupported Assets will be treated as property of Celler. CRYPTPAY IS NOT RESPONSIBLE FOR THE RECOVERY OR RETURN OF ANY UNSUPPORTED ASSET SENT TO CRYPTPAY BY ANY THIRD PARTY OR USER, REGARDLESS OF THE INTENTION OF THE PERSON SENDING SUCH UNSUPPORTED ASSET OR ATTEMPTS BY CRYPTPAY TO RETURN SUCH UNSUPPORTED ASSET. Celler will not be responsible for or be required to attempt to recover or provide any value with respect to any Unsupported Assets sent to the platform unless it decides to do so in its sole and absolute discretion. Any Asset not listed within the Celler App or website is an Unsupported Asset.",
+        text: "1.11. In the event that an Unsupported Asset is sent to Celler by a third party or user, by error or otherwise, it is effectively lost to such third parties or users. Any such Unsupported Assets will be treated as property of Celler. CELLER IS NOT RESPONSIBLE FOR THE RECOVERY OR RETURN OF ANY UNSUPPORTED ASSET SENT TO CELLER BY ANY THIRD PARTY OR USER, REGARDLESS OF THE INTENTION OF THE PERSON SENDING SUCH UNSUPPORTED ASSET OR ATTEMPTS BY CELLER TO RETURN SUCH UNSUPPORTED ASSET. Celler will not be responsible for or be required to attempt to recover or provide any value with respect to any Unsupported Assets sent to the platform unless it decides to do so in its sole and absolute discretion. Any Asset not listed within the Celler App or website is an Unsupported Asset.",
       },
     ],
   },
@@ -687,7 +687,7 @@ export const policyContent: SectionContent[] = [
 "Providing a crypto asset transfer service."
       ]
     },
-    "Services are provided through our Website www.cryptpay.co  or mobile app (the “Services”). ",
+    "Services are provided through our Website www.celler.app  or mobile app (the “Services”). ",
     "Any information received from you within using our Services is treated as confidential. All information is stored securely and is accessed by authorised personnel only. We implement and maintain appropriate technical, security, and organisational measures to protect personal data against unauthorised or unlawful use, and against accidental loss, destruction, damage, theft, or disclosure. "
     ],
   },
@@ -996,14 +996,14 @@ text:"The personal data are obtained based on legitimate interest or consent. "
         ]
 
       },
-      "All financially sensitive and/or credit information is transmitted via SSL technology and encrypted in our database. Only authorized CRYPTPAY personnel are permitted access to your Personal Information, and this personnel is required to treat the information as highly confidential. The security measures will be reviewed regularly in light of new and relevant legal and technical developments."
+      "All financially sensitive and/or credit information is transmitted via SSL technology and encrypted in our database. Only authorized CELLER personnel are permitted access to your Personal Information, and this personnel is required to treat the information as highly confidential. The security measures will be reviewed regularly in light of new and relevant legal and technical developments."
       
     ]
   },
   {
     title: "13. Access right to your personal information",
     content: [
-      "You have the right to access your Personal Information to correct, update, and block inaccurate and/or incorrect data. To exercise this right, contact us at support@cryptpay.co."
+      "You have the right to access your Personal Information to correct, update, and block inaccurate and/or incorrect data. To exercise this right, contact us at info@celler.co."
     ]
   },
   {

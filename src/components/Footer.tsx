@@ -71,18 +71,19 @@ const Footer = () => {
       }}
       className="w-full bg-[#04050F] footer-bg mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px] pt-16 pb-8 px-4 xs:px-6"
     >
-      <div className="flex justify-start flex-col lgss:gap-20 lgss:flex-row items-center lgss:items-start  ">
-        <div className="w-full lgss:w-[25%]">
+      <div className="flex justify-start flex-col lgss:gap-16 lgss:flex-row items-center lgss:items-start  ">
+        <div className="w-full lgss:w-[30%]">
           <Link href="/">
-            <div>
+            <div className="flex justify-start items-start">
               <Image src={logo} alt="logo" />
             </div>
           </Link>
           <h4 className="text-white text-[14px] mt-6">
-            Tampay by CQ LTD RC-7430244, owners the trademark Tampay, provides
-            Nigerian financial and digital assets management services. Tampay by
-            CQ LTD also operates Tampay App, a banking platform made for your
-            local and global needs.
+            Cellar is a product of &quot;Tampay by CQ LTD&quot; with company
+            number RC-7430244. Tampay by CQ LTD provides Nigerian financial and
+            digital assets management services including &quot;Tampay
+            Finance&quot;, a banking application made for your local and global
+            needs
           </h4>
 
           <h4 className="text-white text-[14px] mt-4">
@@ -93,15 +94,15 @@ const Footer = () => {
             <h4 className="text-[13px]">Lagos, Nigeria </h4>
           </div>
         </div>
-        <div className="w-full lgss:w-[75%] ">
+        <div className="w-full lgss:w-[70%] ">
           <div className="w-full grid-cols-2 md:grid-cols-3 grid gap-10 mt-16 lgss:mt-0 justify-between lgss:grid-cols-4">
             <div className="flex flex-col gap-3">
               <h4 className="text-[20px] font-bold text-white ">Feature</h4>
               <Link href={""} className="text-[16px] text-white ">
-                Buy Cryptocurrency
+                Buy Digital assets
               </Link>
               <Link href={""} className="text-[16px] text-white ">
-                Sell Cryptocurrency
+                Sell Digital assets
               </Link>
             </div>
             <div className="flex flex-col gap-3">
@@ -128,10 +129,10 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
               <h4 className="text-[20px] font-bold text-white ">Contact</h4>
               <Link href={""} className="text-[14px] text-white  ">
-                support@cryptpay.co
+                info@celler.co
               </Link>
               <Link href={""} className="text-[16px] text-white ">
-                +234 501-801 9595
+                +234 916-080-5210
               </Link>
             </div>
           </div>
@@ -174,7 +175,7 @@ const Footer = () => {
       <div className="w-full flex flex-col md:flex-row gap-8  justify-center items-center md:justify-between mt-6">
         <div className="flex justify-center items-center md:justify-start gap-8">
           <a
-            href="https://instagram.com/usecryptpay"
+            href="https://instagram.com/useceller"
             target="_blank"
             rel="noreferrer"
             className="flex justify-center items-center h-[40px] w-[40px] rounded-full border border-white text-white text-[24px]"
@@ -182,7 +183,7 @@ const Footer = () => {
             <FaInstagram />
           </a>
           <a
-            href="https://twitter.com/usecryptpay"
+            href="https://twitter.com/useceller"
             target="_blank"
             rel="noreferrer"
             className="flex justify-center items-center h-[40px] w-[40px] rounded-full border border-white text-white text-[24px]"
@@ -196,8 +197,8 @@ const Footer = () => {
             <FaYoutube />
           </div> */}
         </div>
-        <h4 className="text-[14px] text-white">
-          © 2024, Celler All Rights Reserved.
+        <h4 className="text-[14px] text-white opacity-80">
+          © 2024 - 2025 Tampay by CQ LTD. All rights reserved.
         </h4>
       </div>
     </div>

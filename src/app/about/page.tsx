@@ -298,7 +298,7 @@ export default function AboutUs() {
         >
           <div className="w-full lgss:w-[55%] ">
             <Fade triggerOnce direction="up">
-              <h2 className="text-left text-[24px] md:text-[28px] lgss:text-[35px] w-10/12 lgss:w- font-bold text-white">
+              <h2 className="text-left text-[24px] md:text-[28px] lgss:text-[35px] w-10/12 lgss:w-full font-bold text-white">
                 Transform your cryptocurrency transactions with ease at Celler.
               </h2>
             </Fade>

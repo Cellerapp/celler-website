@@ -4,10 +4,10 @@ import dashboardPhone from "./dashPhone.png"
 import hero1 from "./newHero1.svg"
 import hero2 from "./policyLine.png"
 import hero3 from "./Website.svg"
-import darkAppStore from "./darkAppstore.png"
+import darkAppStore from "./Frame 14339.png"
 import appStore from "./aStore.png"
 import playStore from "./gPlay.png"
-import darkPlayStore from "./googleplay.png"
+import darkPlayStore from "./Frame 14340.png"
 import transacting from "./transactingIcon.svg"
 import verify from "./verifyBadge.svg"
 import userIcon from "./signupIcon.svg"
@@ -23,7 +23,6 @@ import contact from "./contactS.svg"
 import gumBg from "./gumBg.svg"
 import btcc from "./btcc.png"
 import tether from "./tether.png"
-import map from "./map.svg"
 import sellPhone from "./newSell.png"
 import buyPhone from "./newwbuyy.png"
 import kycPhone from "./kycPhone.png"
@@ -39,12 +38,13 @@ import appSt from "./appSt.svg"
 import cellerD from "./cellerD.png"
 import cellerT from "./cellerT.png"
 import cellerC from "./cellerC.png"
+import comingSoonApple from "./comingSoonApple.png"
+import comingSoonGoogle from "./comingSoonPlay.png"
 
 export {
-    sellPhone,rateSwap,thunder,customer,bagg, sellHand, hero3,playSt,appSt,cellerC, cellerD, cellerT,payoutPhone, kycPhone,footerBg,
+    sellPhone,rateSwap,thunder,customer,bagg, sellHand, hero3,playSt,appSt,cellerC, cellerD, cellerT,payoutPhone, kycPhone,footerBg,comingSoonApple,comingSoonGoogle,
     buyPhone,
     btcc,
-    map,
     tether,
     gumBg,
     darkAppStore,

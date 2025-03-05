@@ -173,7 +173,7 @@ export default function Home() {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1, delay: 0.2 }}
             >
-              Trade and Manage Digital Assets That Coins Your Dreams.
+              Experience The magic Of Trading Digital Assets With Celler
             </motion.h2>
 
             <motion.h4
@@ -201,7 +201,7 @@ export default function Home() {
               className="hidden lgss:flex w-1/2 gap-4 rounded-2xl p-4 mx-auto border border-dashed bg-[#04040D] border-[#F5B546] shadow-[#FFBC6C52] shadow-lg mt-16"
               initial={{ opacity: 0, scale: 0.9 }}
               animate={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 1, delay: 1.4 }}
+              transition={{ duration: 1, delay: 0.5 }}
             >
               <QRCode value="" bgColor="#FFFFFF" fgColor="#000000" size={95} />
               <div>
@@ -220,7 +220,7 @@ export default function Home() {
             className="w-10/12 mx-auto mds:w-9/12 md:w-8/12 mt-12 lgss:w-2/3"
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 1.8 }}
+            transition={{ duration: 1, delay: 1 }}
           >
             <Image src={iphoneHand} className="w-full" alt="" />
           </motion.div>
@@ -302,7 +302,7 @@ export default function Home() {
             <h4 className="lgss:hidden font-bold text-[40px] pl-4 text-white">
               0{howTo}
             </h4>
-            <motion.div variants={fadeIn("up", 0.8)}>
+            <motion.div variants={fadeIn("up", 0.5)}>
               <Image
                 src={howTo === 2 ? cellerC : howTo === 1 ? cellerD : cellerT}
                 className="w-full"
@@ -343,7 +343,7 @@ export default function Home() {
                   className="cursor-pointer lgss:w-4/5 "
                   onClick={() => setMessage(msg.id)}
                   variants={fadeInS("up", 0.2)}
-                  whileHover={{ scale: 1.05 }} // Subtle hover effect
+                  whileHover={{ scale: 0.8 }} // Subtle hover effect
                 >
                   <div
                     className={`transition-all duration-300 ${
@@ -369,7 +369,7 @@ export default function Home() {
             className="w-10/12 mx-auto py-10 lgss:py-20 lgss:w-[45%] rounded-xl flex justify-center items-center bg-[#101226]"
             variants={scaleUpS}
           >
-            <motion.div key={message} variants={fadeInS("up", 0.5)}>
+            <motion.div key={message} variants={fadeInS("up", 0.1)}>
               <Image
                 src={
                   message === 2
@@ -448,8 +448,8 @@ export default function Home() {
           </Fade>
           <Fade triggerOnce direction="up">
             <h4 className="text-center  mt-3 text-[14px] lgss:text-[16px] text-secondary ">
-              Celler was built to make your journey easier, safer, and more
-              rewarding. Use Celler to enjoy the followimg
+              Cellar was built to make your journey easier, safer, and more
+              rewarding. Use Cellar to enjoy:
             </h4>
           </Fade>
         </div>
@@ -757,7 +757,7 @@ export default function Home() {
           <Fade triggerOnce direction="up">
             <h4 className="text-center  mt-3 text-[14px] lgss:text-[16px] text-secondary  ">
               Experience seamless cryptocurrency transactions and management
-              anywhere in the world, with CryptPay&apos;s extensive global reach
+              anywhere in the world, with Celler&apos;s extensive global reach
               and support.
             </h4>
           </Fade>
