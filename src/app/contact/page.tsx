@@ -214,16 +214,8 @@ export default function Contact() {
             </motion.div>
 
             <div className="w-full mds:w-1/2 gap-4 mt-8 flex items-center lgss:mx-0 mx-auto justify-start lgss:justify-start">
-              <motion.div
-                initial="hidden"
-                animate="visible"
-                variants={fadeInRight}
-                transition={{ delay: 1.2 }}
-                className="w-2/5 lgss:w-1/2"
-              >
-                <Image src={darkAppStore} className=" w-full" alt="" />
-                <Image src={darkPlayStore} className=" w-full" alt="" />
-              </motion.div>
+              <Image src={darkAppStore} className=" w-full" alt="" />
+              <Image src={darkPlayStore} className=" w-full" alt="" />
             </div>
           </div>
           <div className="w-full lgss:w-[45%] pt-8 px-6 lgss:px-0">

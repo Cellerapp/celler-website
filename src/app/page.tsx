@@ -718,34 +718,44 @@ export default function Home() {
           </motion.div>
         </div>
       </motion.div>
-      <div
-        style={{
-          backgroundImage: `url(${transformBg.src})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-        }}
-        className="relative lgss:py-32 px-4 xs:px-6 mds:px-12 md:px-16 lgss:px-12 xl:px-16 w-full flex flex-col lgss:flex-row gap-6 lgss:justify-between xxxl:px-[250px] bg-[#04050F] min-h-[400px] lgss:min-h-[450px]"
-      >
-        {/* Text Section */}
-        <motion.div
-          initial="hidden"
-          animate="visible"
-          variants={staggerContainer}
-          className="w-full lgss:w-[55%] mt-8 lgss:mt-24 z-10"
+
+      <div className="w-full mt-10 pt-4 px-4 xs:px-6 pb-16 bg-[#0C0D1D] mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px]">
+        <div
+          style={{
+            backgroundImage: `url(${transformBg.src})`,
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+          }}
+          className="w-full rounded-xl bg-[#3A66FF] mt-24 flex flex-col pt-8 lgss:pt-0 justify-center lgss:flex-row items-center px-6 lgss:px-10 lgss:justify-between"
         >
-          <h2 className="text-center lgss:text-left text-[24px] md:text-[28px] lgss:text-[35px] w-10/12 font-bold text-white">
-            Don&apos;t Settle. Start Coining Your Dreams With Celler.
-          </h2>
+          <div className="w-full lgss:w-[55%] ">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInUp}
+              transition={{ delay: 1 }}
+            >
+              <h2 className="text-left text-[24px] md:text-[28px] lgss:text-[32px] w-10/12 lgss:w-full font-bold text-white">
+                Don&apos;t Settle. Start Coining Your Dreams With Celler.
+              </h2>
+            </motion.div>
 
-          <div className="w-full mb-4 lgss:mb-0 xs:w-9/12 md:w-2/3 gap-4 mt-8 flex items-center lgss:mx-0 mx-auto justify-center lgss:justify-start">
-            <Image src={darkAppStore} className="w-full" alt="" />
-            <Image src={darkPlayStore} className="w-full" alt="" />
+            <div className="w-full mds:w-1/2 gap-4 mt-8 flex items-center lgss:mx-0 mx-auto justify-start lgss:justify-start">
+              <Image src={darkAppStore} className=" w-full" alt="" />
+              <Image src={darkPlayStore} className=" w-full" alt="" />
+            </div>
           </div>
-        </motion.div>
-
-        {/* Phone Image Section */}
-        <div className="w-full lgss:w-[45%] lgss:h-full flex justify-center lgss:justify-end lgss:items-end lgss:absolute lgss:bottom-0 lgss:right-0 lgss:pr-0">
-          <Image src={dPhone} className="w-full   object-cover" alt="" />
+          <div className="w-full lgss:w-[45%] pt-8 px-6 lgss:px-0">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInLeft}
+              transition={{ delay: 1.4 }}
+            >
+              <Image src={dPhone} className=" " alt="" />
+            </motion.div>
+          </div>
         </div>
       </div>
 
