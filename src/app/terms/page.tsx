@@ -6,8 +6,9 @@ import Navbar from "@/components/Navbar";
 import Terms from "@/components/Terms";
 import TermsTitle from "@/components/TermsTitle";
 import React, { useState } from "react";
-import { Fade } from "react-awesome-reveal";
+import { motion } from "framer-motion";
 import { termsContent } from "@/constants";
+import { fadeInDown, fadeInUp } from "@/utils/animations";
 
 export default function Termss() {
   const [activeTitle, setActiveTitle] = useState("");
@@ -27,9 +28,14 @@ export default function Termss() {
   return (
     <div className="w-full lgss:min-h-screen">
       <div className="w-full pt-8 px-4 xs:px-6 bg-[#0C0D1D] mds:px-12 md:px-16 lgss:px-12 xl:px-16 xxxl:px-[250px]">
-        <Fade triggerOnce direction="down" duration={2000}>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeInDown}
+          transition={{ duration: 2 }}
+        >
           <Navbar />
-        </Fade>
+        </motion.div>
         <div
           style={{
             backgroundImage: `linear-gradient(rgba(183, 215, 255, 0.5), rgba(183, 215, 255, 0.5)), url(${hero2.src})`,
@@ -41,16 +47,26 @@ export default function Termss() {
           }}
           className="w-full py-[170px] rounded-xl mt-6 lgss:mt-16 bg-[#B7D7FF] flex flex-col justify-center items-center"
         >
-          <Fade triggerOnce direction="up">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInUp}
+            transition={{ delay: 0.2 }}
+          >
             <h4 className="text-[36px] mds:text-[48px] text-[#141D57] text-center font-bold">
               Terms of Service
             </h4>
-          </Fade>
-          <Fade triggerOnce direction="up">
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInUp}
+            transition={{ delay: 0.4 }}
+          >
             <h4 className="text-[15px] mds:text-[18px] text-[#141D57]">
               Last Updated: January 13th, 2025.
             </h4>
-          </Fade>
+          </motion.div>
         </div>
         <div className="w-full  lgss:w-full mx-auto mt-16">
           <div className="w-full pb-24 lgss:gap-12 flex gap-4 justify-center items-start mx-auto mt-8 text-white">
@@ -70,9 +86,14 @@ export default function Termss() {
           </div>
         </div>
       </div>
-      <Fade triggerOnce direction="up">
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={fadeInUp}
+        transition={{ delay: 0.6 }}
+      >
         <Footer />
-      </Fade>
+      </motion.div>
     </div>
   );
 }

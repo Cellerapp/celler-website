@@ -15,7 +15,13 @@ import toast from "react-hot-toast";
 import { API_URL } from "@/constants";
 import axios from "axios";
 import { ClipLoader } from "react-spinners";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { motion } from "framer-motion";
+import {
+  fadeInDown,
+  fadeInLeft,
+  fadeInRight,
+  fadeInUp,
+} from "@/utils/animations";
 
 export default function Contact() {
   const [message, setMessage] = useState<string>("");
@@ -85,28 +91,54 @@ export default function Contact() {
   return (
     <div className="w-full">
       <div className="w-full pt-8 px-4 xs:px-6 pb-16 bg-[#0C0D1D] mds:px-12 md:px-16 lgss:px-18 xl:px-16  xxxl:px-[250px]">
-        <Fade triggerOnce direction="down" duration={2000}>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeInDown}
+          transition={{ duration: 2 }}
+        >
           <Navbar />
-        </Fade>
+        </motion.div>
         <div className="w-4/5 lgss:w-1/2 mx-auto mt-24">
-          <Fade triggerOnce direction="left">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInLeft}
+            transition={{ delay: 0.2 }}
+          >
             <h2 className="text-center text-[20px] md:text-[32px] lgss:text-[40px] font-bold text-white">
               Contact our Support Team
             </h2>
-          </Fade>
-          <Fade triggerOnce direction="up">
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInUp}
+            transition={{ delay: 0.4 }}
+          >
             <h4 className="text-center  mt-1 text-[16px] lgss:text-[18px] text-secondary ">
               Let us know how we can help
             </h4>
-          </Fade>
+          </motion.div>
         </div>
         <div className="w-full flex mt-16 lgss:mt-20 lgss:gap-4 justify-between items-start">
           <div className="w-2/5 hidden bg-[#B7D7FFE5] h-[400px] justify-center items-center rounded-3xl lgss:flex">
-            <Fade triggerOnce direction="left">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInLeft}
+              transition={{ delay: 0.6 }}
+            >
               <Image src={contact} alt="" />
-            </Fade>
+            </motion.div>
           </div>
-          <Fade triggerOnce direction="right" className="w-full lgss:w-2/5">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInRight}
+            transition={{ delay: 0.8 }}
+            className="w-full lgss:w-2/5"
+          >
             <form onSubmit={handleSubmit} className="w-full  mt-8 lgss:mt-8">
               <h4 className="text-[20px] lgss:text-[24px] text-white font-bold ">
                 Submit a Form
@@ -156,7 +188,7 @@ export default function Contact() {
                 {loading ? <ClipLoader color="#FFFFFF" size={30} /> : "Send"}
               </button>
             </form>
-          </Fade>
+          </motion.div>
         </div>
       </div>
       <div className="w-full mt-10 pt-4 px-4 xs:px-6 pb-16 bg-[#0C0D1D] mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px]">
@@ -170,29 +202,50 @@ export default function Contact() {
           className="w-full rounded-xl bg-[#3A66FF] mt-24 flex flex-col pt-8 lgss:pt-0 justify-center lgss:flex-row items-center px-6 lgss:px-10 lgss:justify-between"
         >
           <div className="w-full lgss:w-[55%] ">
-            <Fade triggerOnce direction="up">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInUp}
+              transition={{ delay: 1 }}
+            >
               <h2 className="text-left text-[24px] md:text-[28px] lgss:text-[32px] w-10/12 lgss:w-full font-bold text-white">
                 Transform your cryptocurrency transactions with ease at Celler.
               </h2>
-            </Fade>
+            </motion.div>
 
             <div className="w-full mds:w-1/2 gap-4 mt-8 flex items-center lgss:mx-0 mx-auto justify-start lgss:justify-start">
-              <Zoom className="w-2/5 lgss:w-1/2" triggerOnce>
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={fadeInRight}
+                transition={{ delay: 1.2 }}
+                className="w-2/5 lgss:w-1/2"
+              >
                 <Image src={darkAppStore} className=" w-full" alt="" />
                 <Image src={darkPlayStore} className=" w-full" alt="" />
-              </Zoom>
+              </motion.div>
             </div>
           </div>
           <div className="w-full lgss:w-[45%] pt-8 px-6 lgss:px-0">
-            <Fade triggerOnce direction="up">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInLeft}
+              transition={{ delay: 1.4 }}
+            >
               <Image src={dPhone} className=" " alt="" />
-            </Fade>
+            </motion.div>
           </div>
         </div>
       </div>
-      <Fade triggerOnce direction="up">
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={fadeInUp}
+        transition={{ delay: 1.6 }}
+      >
         <Footer />
-      </Fade>
+      </motion.div>
     </div>
   );
 }

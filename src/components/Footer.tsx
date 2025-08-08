@@ -129,7 +129,7 @@ const Footer = () => {
             <div className="flex flex-col gap-3">
               <h4 className="text-[20px] font-bold text-white ">Contact</h4>
               <Link href={""} className="text-[14px] text-white  ">
-                info@celler.co
+                info@celler.app
               </Link>
               <Link href={""} className="text-[16px] text-white ">
                 +234 916-080-5210

@@ -40,7 +40,7 @@ export const termsContent: SectionContent[] = [
     title: "PART A: BACKGROUND",
     content: [
       "BEFORE YOU START, IT IS IMPORTANT TO NOTE THAT BUYING AND SELLING CRYPTO ASSETS IS INHERENTLY RISKY. YOU SHOULD CONSIDER THE RISKS BEFORE DECIDING TO BUY OR SELL CRYPTO ASSETS.",
-      "IF YOU HAVE QUESTIONS OR CONCERNS REGARDING YOUR CRYPTO CURRENCIES SERVICES, YOUR CRYPTO ASSETS, OUR SERVICE PROVIDER(S), OR RELATED TRANSACTIONS OR ACCOUNT ACTIVITY, PLEASE CONTACT CELLER CUSTOMER SUPPORT AT INFO@CELLER.CO YOU CAN ALSO ACCESS SUPPORT VIA IN-APP CHAT.",
+      "IF YOU HAVE QUESTIONS OR CONCERNS REGARDING YOUR CRYPTO CURRENCIES SERVICES, YOUR CRYPTO ASSETS, OUR SERVICE PROVIDER(S), OR RELATED TRANSACTIONS OR ACCOUNT ACTIVITY, PLEASE CONTACT CELLER CUSTOMER SUPPORT AT INFO@celler.app YOU CAN ALSO ACCESS SUPPORT VIA IN-APP CHAT.",
       "PLEASE NOTE THAT THERE MAY BE TAX CONSEQUENCES FROM ANY GAIN OR LOSS YOU INCUR WHEN YOU SELL YOUR CRYPTO ASSETS. WE DO NOT PROVIDE FINANCIAL, INVESTMENT, LEGAL OR TAX ADVICE. PLEASE SEEK ASSISTANCE FROM A QUALIFIED PROFESSIONAL.",
       'This Terms of Use (“Cryptocurrency Terms of Use”) is a contract between you and Tampay by Cq Ltd and the owner of the product and application Celler Application (“Celler”) and governs your use of the portion of your Celler App balance where you can buy, sell, hold, and learn about cryptocurrency (your "Cryptocurrency Services").',
     ],
@@ -1003,7 +1003,7 @@ text:"The personal data are obtained based on legitimate interest or consent. "
   {
     title: "13. Access right to your personal information",
     content: [
-      "You have the right to access your Personal Information to correct, update, and block inaccurate and/or incorrect data. To exercise this right, contact us at info@celler.co."
+      "You have the right to access your Personal Information to correct, update, and block inaccurate and/or incorrect data. To exercise this right, contact us at info@celler.app."
     ]
   },
   {

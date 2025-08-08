@@ -29,25 +29,16 @@ import { messages, SIGNUP_URL } from "@/constants";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
-import { Fade, Zoom } from "react-awesome-reveal";
 import { IoAdd, IoRemove } from "react-icons/io5";
 
 import QRCode from "react-qr-code";
+import { fadeInLeft, fadeInRight, fadeInUp } from "@/utils/animations";
+
 const staggerContainer = {
   hidden: {},
   show: {
     transition: {
       staggerChildren: 0.3, // Delay each child for a smoother effect
-    },
-  },
-};
-const containerVariants = {
-  hidden: { opacity: 0 },
-  show: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.3, // Delays appearance of each child
-      delayChildren: 0.5,
     },
   },
 };
@@ -312,12 +303,7 @@ export default function Home() {
           </motion.div>
         </div>
       </motion.div>
-      <motion.div
-        className="bg-[#0C0D1D] py-10 px-4 xs:px-6 mds:px-12 md:px-16 lgss:px-12 xl:px-16 xxxl:px-[250px]"
-        variants={containerVariants}
-        initial="hidden"
-        animate="show"
-      >
+      <div className="bg-[#0C0D1D] py-10 px-4 xs:px-6 mds:px-12 md:px-16 lgss:px-12 xl:px-16 xxxl:px-[250px]">
         {/* Title & Description */}
         <motion.div
           className="w-4/5 lgss:w-2/5 mx-auto"
@@ -413,46 +399,31 @@ export default function Home() {
             </motion.div>
           </div>
         </div>
-      </motion.div>
-      {/* <div
-        style={{
-          backgroundImage: `url(${gumBg.src})`,
-          width: "100%",
-          height: "100%",
-          objectFit: "cover",
-        }}
-        className="py-16 lgss:py-32 px-4 xs:px-6 mds:px-12 md:px-16 lgss:px-12 xl:px-16 w-full flex flex-col-reverse gap-6 lgss:justify-between lgss:flex-row   xxxl:px-[250px] bg-[#04050F] "
+      </div>
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={staggerContainer}
+        className="bg-[#0C0D1D] py-24 px-4 xs:px-6 mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px]"
       >
-        <div className="w-full lgss:w-[55%] mt-10 mx-auto lgss:mt-0">
-          <Fade triggerOnce direction="left">
-            <h2 className="text-center  text-[24px] md:text-[30px] lgss:text-[42px] font-bold text-white">
-              Trade all your cryptocurrency seamlessly at competitive rates with
-              Celler
-            </h2>
-          </Fade>
-          <Fade triggerOnce direction="right">
-            <h4 className="text-center  mt-4 text-[15px] lgss:text-[16px] text-secondary mx-auto  w-11/12 lgss:w-10/12">
-              Enjoy fast, seamless transactions with low fees, so you can get
-              the most out of every trade.
-            </h4>
-          </Fade>
-          
-        </div>
-      </div> */}
-      <div className="bg-[#0C0D1D] py-24 px-4 xs:px-6 mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px]">
-        <div className="w-4/5 lgss:w-2/5 mx-auto">
-          <Fade triggerOnce direction="up">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={staggerContainer}
+          className="w-4/5 lgss:w-2/5 mx-auto"
+        >
+          <motion.div variants={fadeInUp} className="text-center">
             <h2 className="text-center text-[20px] md:text-[38px] lgss:text-[32px] font-bold text-white">
               Why Use Celler?
             </h2>
-          </Fade>
-          <Fade triggerOnce direction="up">
+          </motion.div>
+          <motion.div variants={fadeInUp} className="text-center">
             <h4 className="text-center  mt-3 text-[14px] lgss:text-[16px] text-secondary ">
               Cellar was built to make your journey easier, safer, and more
               rewarding. Use Cellar to enjoy:
             </h4>
-          </Fade>
-        </div>
+          </motion.div>
+        </motion.div>
         <div
           // style={{
           //   backgroundImage: `url(${hero1.src})`,
@@ -462,18 +433,23 @@ export default function Home() {
           // }}
           className="px-4 xs:px-6 mds:px-12  py-12 w-full md:px-16 lgss:px-12 xl:px-16 flex rounded-2xl flex-col lgss:flex-row gap-6 justify-center items-center lgss:justify-between  xxxl:px-[250px]  bg-gradient-to-br mt-16 from-[#11214A] via-[#101226] to-[#112555]"
         >
-          <div className="w-full lgss:w-[50%] ">
-            <Fade triggerOnce direction="left">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={staggerContainer}
+            className="w-full lgss:w-[50%]"
+          >
+            <motion.div variants={fadeInLeft}>
               <h2 className="text-center  lgss:text-left text-[20px] md:text-[28px] lgss:text-[32px] font-bold text-white">
                 Complete and secure ownership of your digital assets.
               </h2>
-            </Fade>
-            <Fade triggerOnce direction="right">
+            </motion.div>
+            <motion.div variants={fadeInRight}>
               <h4 className="text-center  lgss:text-left mt-4 text-[15px] lgss:text-[16px] text-secondary mx-auto lgss:mx-0 w-11/12 ">
                 Control your assets with confidence and peace of mind because
                 they are locked in our multi layered security.
               </h4>
-            </Fade>
+            </motion.div>
             <div className="flex justify-center items-center lgss:justify-start w-full">
               <a
                 href={SIGNUP_URL}
@@ -482,15 +458,25 @@ export default function Home() {
                 Get Started
               </a>
             </div>
-          </div>
+          </motion.div>
           <div className="w-full lgss:w-[45%] mx-auto">
-            <Zoom className=" mx-auto">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInUp}
+              className="mx-auto"
+            >
               <Image src={lock} className=" mx-auto" alt="" />
-            </Zoom>
+            </motion.div>
           </div>
         </div>
-        <div className="grid grid-cols-1 lgss:grid-cols-3 w-full mt-12 mx-auto gap-6">
-          <Fade triggerOnce direction="up">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={staggerContainer}
+          className="grid grid-cols-1 lgss:grid-cols-3 w-full mt-12 mx-auto gap-6"
+        >
+          <motion.div variants={fadeInUp}>
             <div className="bg-gradient-to-tr from-[#101226] px-6 pt-6 pb-12 border border-[#2D2D2D] to-[#121F46] rounded-xl">
               {/* <h4 className="text-[28px] lgss:text-[40px] text-[#D9D9D9]">01</h4> */}
               <div className="flex flex-col items-center justify-center gap-4 mt-4 ">
@@ -504,8 +490,8 @@ export default function Home() {
                 </h4>
               </div>
             </div>
-          </Fade>
-          <Fade triggerOnce direction="up">
+          </motion.div>
+          <motion.div variants={fadeInUp}>
             <div className=" bg-gradient-to-tr from-[#101226] px-4 pt-6 pb-12 border border-[#2D2D2D] to-[#121F46] rounded-xl">
               {/* <h4 className="text-[28px] lgss:text-[40px] text-[#D9D9D9]">02</h4> */}
               <div className="flex flex-col items-center justify-center gap-4 mt-4 ">
@@ -519,258 +505,253 @@ export default function Home() {
                 </h4>
               </div>
             </div>
-          </Fade>
-          <Fade triggerOnce direction="up">
+          </motion.div>
+          <motion.div variants={fadeInUp}>
             <div className="bg-gradient-to-tr from-[#101226] px-6 pt-6 pb-12 border border-[#2D2D2D] to-[#121F46] rounded-xl">
               {/* <h4 className="text-[28px] lgss:text-[40px] text-[#D9D9D9]">03</h4> */}
               <div className="flex flex-col items-center justify-center gap-4 mt-4 ">
                 <Image src={rateSwap} alt="" />
-
-                <h4 className="text-center  text-[20px] font-semibold text-white px-12">
-                  Competitive & Best Rates
+                <h4 className="text-center  text-[18px]  font-semibold text-white px-12">
+                  Competitive Rates
                 </h4>
                 <h4 className="text-center  text-[15px]  text-white px-4">
-                  Enjoy the best rates in the market. We offer competitive
-                  pricing to maximize your value.
+                  Get the best rates for your cryptocurrency transactions with
+                  our competitive pricing.
                 </h4>
               </div>
             </div>
-          </Fade>
-        </div>
-      </div>
-      <div
-        id="faq"
+          </motion.div>
+        </motion.div>
+      </motion.div>
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={staggerContainer}
         className="bg-[#0C0D1D] py-24 px-4 xs:px-6 mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px]"
       >
-        <div className="w-4/5 lgss:w-2/5 mx-auto">
-          <Fade triggerOnce direction="up">
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={staggerContainer}
+          className="w-4/5 lgss:w-2/5 mx-auto"
+        >
+          <motion.div variants={fadeInUp} className="text-center">
             <h2 className="text-center text-[20px] md:text-[38px] lgss:text-[32px] font-bold text-white">
               Got any question?
             </h2>
-          </Fade>
-          <Fade triggerOnce direction="up">
+          </motion.div>
+          <motion.div variants={fadeInUp} className="text-center">
             <h4 className="text-center  mt-3 text-[14px] lgss:text-[16px] text-secondary ">
               Get answers to all the questions bothering you
             </h4>
-          </Fade>
-        </div>
+          </motion.div>
+        </motion.div>
         <div className="w-full mt-8 ">
-          <div className="w-full lgss:w-1/2 xxxl:w-2/5 mx-auto ">
-            <Fade triggerOnce direction="left" duration={1500}>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={staggerContainer}
+            className="w-full lgss:w-1/2 xxxl:w-2/5 mx-auto"
+          >
+            <motion.div variants={fadeInLeft} transition={{ duration: 1.5 }}>
               <div
                 onClick={() => toggleQuestion(1)}
-                className={
-                  activeQuestion === 1
-                    ? "py-4  bg-[#191A27] px-4 rounded-xl"
-                    : "py-4 border-b border-gray-200 dark:border-gray-600"
-                }
+                className="w-full border border-[#2D2D2D] bg-[#191B29] rounded-xl p-4 cursor-pointer"
               >
                 <div className="flex justify-between items-center">
-                  <h4 className="text-white font-bold text-[14px]">
+                  <h4 className="text-white text-[16px] font-semibold">
                     What is Celler?
                   </h4>
                   {activeQuestion === 1 ? (
-                    <IoRemove className="text-white text-[24px]" />
+                    <IoRemove className="text-white text-xl" />
                   ) : (
-                    <IoAdd className="text-white text-[24px]" />
+                    <IoAdd className="text-white text-xl" />
                   )}
                 </div>
                 {activeQuestion === 1 && (
-                  <Fade triggerOnce direction="up">
+                  <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={fadeInUp}
+                  >
                     <h4 className="text-center lgss:text-left text-secondary mt-4 text-[14px]">
                       Celler is a comprehensive cryptocurrency platform that
-                      allows users to buy and sell various cryptocurrencies. It
-                      also provides advanced features for managing and tracking
-                      your digital assets.
+                      allows you to buy, sell, and manage your digital assets
+                      with ease. We provide secure, fast, and user-friendly
+                      services for all your cryptocurrency needs, ensuring you
+                      have complete control over your digital assets.
                     </h4>
-                  </Fade>
+                  </motion.div>
                 )}
               </div>
-            </Fade>
-            <Fade triggerOnce direction="right" duration={1500}>
+            </motion.div>
+            <motion.div variants={fadeInRight} transition={{ duration: 1.5 }}>
               <div
                 onClick={() => toggleQuestion(2)}
-                className={
-                  activeQuestion === 2
-                    ? "py-4 mt-4   bg-[#191A27] px-4 rounded-xl"
-                    : "py-6 mt-4 border-b border-gray-200 dark:border-gray-600"
-                }
+                className="w-full border border-[#2D2D2D] bg-[#191B29] rounded-xl p-4 cursor-pointer mt-4"
               >
                 <div className="flex justify-between items-center">
-                  <h4 className="text-white font-bold text-[14px]">
-                    How do I create an account on Celler?
+                  <h4 className="text-white text-[16px] font-semibold">
+                    How do I get started with Celler?
                   </h4>
                   {activeQuestion === 2 ? (
-                    <IoRemove className="text-white text-[24px]" />
+                    <IoRemove className="text-white text-xl" />
                   ) : (
-                    <IoAdd className="text-white text-[24px]" />
+                    <IoAdd className="text-white text-xl" />
                   )}
                 </div>
                 {activeQuestion === 2 && (
-                  <Fade triggerOnce direction="up">
+                  <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={fadeInUp}
+                  >
                     <h4 className="text-center lgss:text-left text-secondary mt-4 text-[14px]">
                       Visit our website or open the mobile app, then click
-                      &apos;Sign Up&apos; and enter your email, phone number,
-                      and password. Verify your email or phone through the
-                      received verification link or code.
+                      &quot;Sign Up&quot; to create your account. You&apos;ll
+                      need to provide some basic information and verify your
+                      email address. Once verified, you can start buying and
+                      selling cryptocurrencies by linking your payment method
+                      and following the simple verification process.
                     </h4>
-                  </Fade>
+                  </motion.div>
                 )}
               </div>
-            </Fade>
-            <Fade triggerOnce direction="left" duration={1500}>
+            </motion.div>
+            <motion.div variants={fadeInLeft} transition={{ duration: 1.5 }}>
               <div
                 onClick={() => toggleQuestion(3)}
-                className={
-                  activeQuestion === 3
-                    ? "py-4 mt-4   bg-[#191A27] px-4 rounded-xl"
-                    : "py-4 mt-4 border-b border-gray-200 dark:border-gray-600"
-                }
+                className="w-full border border-[#2D2D2D] bg-[#191B29] rounded-xl p-4 cursor-pointer mt-4"
               >
                 <div className="flex justify-between items-center">
-                  <h4 className="text-white font-bold text-[14px]">
+                  <h4 className="text-white text-[16px] font-semibold">
                     What cryptocurrencies can I trade on Celler?
                   </h4>
                   {activeQuestion === 3 ? (
-                    <IoRemove className="text-white text-[24px]" />
+                    <IoRemove className="text-white text-xl" />
                   ) : (
-                    <IoAdd className="text-white text-[24px]" />
+                    <IoAdd className="text-white text-xl" />
                   )}
                 </div>
                 {activeQuestion === 3 && (
-                  <Fade triggerOnce direction="up">
+                  <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={fadeInUp}
+                  >
                     <h4 className="text-center lgss:text-left text-secondary mt-4 text-[14px]">
                       On Celler, you can trade a variety of popular
-                      cryptocurrencies, including Bitcoin (BTC), Ethereum (ETH),
-                      Tether (USDT), and Solana (SOL), among others. We
-                      continuously update our list to include new and emerging
+                      cryptocurrencies including Bitcoin (BTC), Ethereum (ETH),
+                      Litecoin (LTC), and many others. We regularly add new
+                      cryptocurrencies to our platform to give you more options
+                      for diversifying your portfolio and trading your favorite
                       cryptocurrencies.
                     </h4>
-                  </Fade>
+                  </motion.div>
                 )}
               </div>
-            </Fade>
-            <Fade triggerOnce direction="right" duration={1500}>
+            </motion.div>
+            <motion.div variants={fadeInRight} transition={{ duration: 1.5 }}>
               <div
                 onClick={() => toggleQuestion(4)}
-                className={
-                  activeQuestion === 4
-                    ? "py-4 mt-4   bg-[#191A27] px-4 rounded-xl"
-                    : "py-4 mt-4 border-b border-gray-200 dark:border-gray-600"
-                }
+                className="w-full border border-[#2D2D2D] bg-[#191B29] rounded-xl p-4 cursor-pointer mt-4"
               >
                 <div className="flex justify-between items-center">
-                  <h4 className="text-white font-bold text-[14px]">
-                    Are my funds safe with Celler?
+                  <h4 className="text-white text-[16px] font-semibold">
+                    Is my money safe with Celler?
                   </h4>
                   {activeQuestion === 4 ? (
-                    <IoRemove className="text-white text-[24px]" />
+                    <IoRemove className="text-white text-xl" />
                   ) : (
-                    <IoAdd className="text-white text-[24px]" />
+                    <IoAdd className="text-white text-xl" />
                   )}
                 </div>
                 {activeQuestion === 4 && (
-                  <Fade triggerOnce direction="up">
+                  <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={fadeInUp}
+                  >
                     <h4 className="text-center lgss:text-left text-secondary mt-4 text-[14px]">
                       Yes, your funds are safe with Celler. We prioritize the
-                      security of your assets by employing advanced encryption
-                      protocols, secure storage solutions, and regular security
-                      audits. Additionally, we adhere to industry best practices
-                      to protect your information and transactions. For added
-                      security, we recommend enabling two-factor authentication
-                      on your account.
+                      security of your assets through advanced encryption,
+                      secure storage solutions, and compliance with regulatory
+                      standards. Our platform uses industry-leading security
+                      measures to protect your funds and personal information at
+                      all times.
                     </h4>
-                  </Fade>
+                  </motion.div>
                 )}
               </div>
-            </Fade>
-            <Fade triggerOnce direction="left" duration={1500}>
+            </motion.div>
+            <motion.div variants={fadeInLeft} transition={{ duration: 1.5 }}>
               <div
                 onClick={() => toggleQuestion(5)}
-                className={
-                  activeQuestion === 5
-                    ? "py-4 mt-4   bg-[#191A27] px-4 rounded-xl"
-                    : "py-4 mt-4 border-b border-gray-200 dark:border-gray-600"
-                }
+                className="w-full border border-[#2D2D2D] bg-[#191B29] rounded-xl p-4 cursor-pointer mt-4"
               >
                 <div className="flex justify-between items-center">
-                  <h4 className="text-white font-bold text-[14px]">
-                    What are the fees associated with using Celler?
+                  <h4 className="text-white text-[16px] font-semibold">
+                    What are the fees for using Celler?
                   </h4>
                   {activeQuestion === 5 ? (
-                    <IoRemove className="text-white text-[24px]" />
+                    <IoRemove className="text-white text-xl" />
                   ) : (
-                    <IoAdd className="text-white text-[24px]" />
+                    <IoAdd className="text-white text-xl" />
                   )}
                 </div>
                 {activeQuestion === 5 && (
-                  <Fade triggerOnce direction="up">
+                  <motion.div
+                    initial="hidden"
+                    animate="visible"
+                    variants={fadeInUp}
+                  >
                     <h4 className="text-center lgss:text-left text-secondary mt-4 text-[14px]">
                       Celler charges fees for certain transactions and services.
-                      These may include trading fees, withdrawal fees, and
-                      deposit fees, which vary depending on the type of
-                      transaction and the cryptocurrency involved.
+                      These fees are transparent and competitive, typically
+                      ranging from 1% to 3% depending on the type of transaction
+                      and the cryptocurrency involved.
                     </h4>
-                  </Fade>
+                  </motion.div>
                 )}
               </div>
-            </Fade>
-          </div>
+            </motion.div>
+          </motion.div>
         </div>
-        <div
-          style={{
-            backgroundImage: `url(${transformBg.src})`,
-            width: "100%",
-            height: "100%",
-            objectFit: "cover",
-          }}
-          className="w-full rounded-xl bg-[#3A66FF] mt-24 flex flex-col pt-8 lgss:pt-0 justify-center lgss:flex-row items-start px-6 lgss:px-10 lgss:justify-between"
+      </motion.div>
+      <div
+        style={{
+          backgroundImage: `url(${transformBg.src})`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+        className="relative lgss:py-32 px-4 xs:px-6 mds:px-12 md:px-16 lgss:px-12 xl:px-16 w-full flex flex-col lgss:flex-row gap-6 lgss:justify-between xxxl:px-[250px] bg-[#04050F] min-h-[400px] lgss:min-h-[450px]"
+      >
+        {/* Text Section */}
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={staggerContainer}
+          className="w-full lgss:w-[55%] mt-8 lgss:mt-24 z-10"
         >
-          <div className="w-full lgss:w-[55%] mt-8 lgss:mt-24">
-            <Fade triggerOnce direction="left">
-              <h2 className="text-center lgss:text-left text-[24px] md:text-[28px] lgss:text-[35px] w-10/12 lgss:w- font-bold text-white">
-                Don’t Settle. Start Coining Your Dreams With Celler.
-              </h2>
-            </Fade>
+          <h2 className="text-center lgss:text-left text-[24px] md:text-[28px] lgss:text-[35px] w-10/12 font-bold text-white">
+            Don&apos;t Settle. Start Coining Your Dreams With Celler.
+          </h2>
 
-            <div className="w-full md:w-2/3 gap-4 mt-8 flex items-center lgss:mx-0 mx-auto justify-center lgss:justify-start">
-              <Fade triggerOnce direction="left" className="w-2/5">
-                <Image src={darkAppStore} className=" w-full" alt="" />
-                <Image src={darkPlayStore} className=" w-full" alt="" />
-              </Fade>
-            </div>
+          <div className="w-full mb-4 lgss:mb-0 xs:w-9/12 md:w-2/3 gap-4 mt-8 flex items-center lgss:mx-0 mx-auto justify-center lgss:justify-start">
+            <Image src={darkAppStore} className="w-full" alt="" />
+            <Image src={darkPlayStore} className="w-full" alt="" />
           </div>
-          <div className="w-full lgss:w-[50%] pt-8 px-6 lgss:px-0 mt-12">
-            <Fade triggerOnce direction="up">
-              <Image src={dPhone} className=" " alt="" />
-            </Fade>
-          </div>
+        </motion.div>
+
+        {/* Phone Image Section */}
+        <div className="w-full lgss:w-[45%] lgss:h-full flex justify-center lgss:justify-end lgss:items-end lgss:absolute lgss:bottom-0 lgss:right-0 lgss:pr-0">
+          <Image src={dPhone} className="w-full   object-cover" alt="" />
         </div>
       </div>
-      {/* <div className="bg-[#12132A] py-24 px-4 xs:px-6 mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px]">
-        <div className="w-4/5 lgss:w-[55%] mx-auto">
-          <Fade triggerOnce direction="up">
-            <h2 className="text-center text-[28px] md:text-[38px] lgss:text-[52px] font-bold text-white">
-              Celler is Global
-            </h2>
-          </Fade>
-          <Fade triggerOnce direction="up">
-            <h4 className="text-center  mt-3 text-[14px] lgss:text-[16px] text-secondary  ">
-              Experience seamless cryptocurrency transactions and management
-              anywhere in the world, with Celler&apos;s extensive global reach
-              and support.
-            </h4>
-          </Fade>
-        </div>
-        <div className="w-full mt-20">
-          <Zoom triggerOnce duration={2500}>
-            <Image src={map} alt="" />
-          </Zoom>
-        </div>
-      </div> */}
-      <Fade triggerOnce direction="up">
+
+      <motion.div initial="hidden" animate="visible" variants={fadeInUp}>
         <Footer />
-      </Fade>
+      </motion.div>
     </div>
   );
 }

@@ -13,8 +13,14 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Image from "next/image";
 import { useState } from "react";
-import { Fade, Zoom } from "react-awesome-reveal";
+import { motion } from "framer-motion";
 import { SlArrowUp, SlArrowDown } from "react-icons/sl";
+import {
+  fadeInDown,
+  fadeInLeft,
+  fadeInRight,
+  fadeInUp,
+} from "@/utils/animations";
 
 export default function AboutUs() {
   const [activeQuestion, setActiveQuestion] = useState<number | null>(null);
@@ -37,17 +43,32 @@ export default function AboutUs() {
         }}
         className="w-full pt-8 px-4 xs:px-6 pb-32 bg-[#0C0D1D]  mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px]"
       >
-        <Fade triggerOnce direction="down" duration={2000}>
+        <motion.div
+          initial="hidden"
+          animate="visible"
+          variants={fadeInDown}
+          transition={{ duration: 2 }}
+        >
           <Navbar />
-        </Fade>
+        </motion.div>
         <div className="mt-12 lgss:mt-32 w-full flex flex-col lgss:flex-row lgss:justify-between gap-16 lgss:gap-6">
           <div className="w-full lgss:w-[75%] mx-auto">
-            <Fade triggerOnce direction="left">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInLeft}
+              transition={{ delay: 0.2 }}
+            >
               <h2 className="text-center text-[28px] md:text-[30px] lgss:text-[48px] font-bold text-white">
                 Your Gateway to Crypto with Easy, Fast, and Secure Transactions
               </h2>
-            </Fade>
-            <Fade triggerOnce direction="right">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInRight}
+              transition={{ delay: 0.4 }}
+            >
               <h4 className="text-center  mt-6 text-[15px] xs:text-[16px] lgss:text-[18px] text-secondary lgss:w-10/12 lgss:mx-auto">
                 Celler is a cutting-edge financial technology platform that
                 provides advanced payment solutions for the cryptocurrency
@@ -56,7 +77,7 @@ export default function AboutUs() {
                 supporting a wide range of payment methods including debit and
                 credit cards, bank transfers, and digital wallets
               </h4>
-            </Fade>
+            </motion.div>
             {/* <div className="w-full border border-[#2D2D2D] bg-gradient-to-tl p-6 lgss:p-8  from-[#0F2B63] via-[#1845A3]   to-[#101226] mt-16 gap-5 lgss:gap-4 rounded-xl grid grid-cols-2 lgss:grid-cols-4">
               <div className="flex flex-col justify-center items-center">
                 <h4 className="font-bold text-[30px] lgss:text-[40px] text-white">
@@ -90,67 +111,112 @@ export default function AboutUs() {
           </div>
         </div>
       </div>
-      <div className="w-full  px-4 xs:px-6 pb-16 bg-[#0C0D1D] mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px] flex flex-col gap-6 justify-center items-start lgss:gap-10 lgss:flex-row">
-        <div className="w-full lgss:w-1/2 bg-[#191B29] rounded-xl ">
+      <div className="w-full  px-4 xs:px-6 pb-16 bg-[#0C0D1D] mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px] flex flex-col gap-6 justify-center items-start lgss:gap-10 lgss:flex-row pt-10">
+        <div className="w-full  lgss:w-1/2 bg-[#191B29] rounded-xl ">
           <div className="pt-4 px-4 mds:px-6 lgss:px-8 mds:pt-6 md:pt-8">
-            <Fade triggerOnce direction="left">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInLeft}
+              transition={{ delay: 0.2 }}
+            >
               <h4 className="text-[20px] lgss:text-[24px] text-white font-bold ">
                 Our Mission
               </h4>
-            </Fade>
-            <Fade triggerOnce direction="left">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInLeft}
+              transition={{ delay: 0.4 }}
+            >
               <h4 className="text-[13px] mds:text-[15px] leading-[28px] tracking-wide lgss:text-[16px] text-white mt-4 text-left ">
                 Our mission is to provide secure, user-friendly, and reliable
                 virtual cards and crypto solutions that help individuals and
                 businesses, seamlessly manage finances, grow assets, and connect
                 to global markets
               </h4>
-            </Fade>
+            </motion.div>
           </div>
           <div className="w-full flex justify-end  lgss:pt-8 ">
-            <Zoom triggerOnce className="w-2/3">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInUp}
+              transition={{ delay: 0.6 }}
+            >
               <Image src={mission} alt="" className="w-full rounded-br-xl" />
-            </Zoom>
+            </motion.div>
           </div>
         </div>
         <div className="w-full lgss:w-1/2 bg-[#191B29] rounded-xl ">
           <div className="pt-4 px-4 mds:px-6 lgss:px-8 mds:pt-6 md:pt-8">
-            <Fade triggerOnce direction="right">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInRight}
+              transition={{ delay: 0.2 }}
+            >
               <h4 className="text-[20px] lgss:text-[24px] text-white font-bold ">
                 Our Vision
               </h4>
-            </Fade>
-            <Fade triggerOnce direction="right">
+            </motion.div>
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInRight}
+              transition={{ delay: 0.4 }}
+            >
               <h4 className="text-[13px] mds:text-[15px] leading-[28px] tracking-wide lgss:text-[16px] text-white mt-4 text-left  ">
                 Our Vision is to ensure global financial freedom through secure,
                 accessible, and innovative virtual USD cards and crypto
                 solutions.
               </h4>
-            </Fade>
+            </motion.div>
           </div>
           <div className="w-full flex justify-end  pt-16 lgss:pt-20">
-            <Zoom triggerOnce className="w-2/3">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInUp}
+              transition={{ delay: 0.6 }}
+            >
               <Image src={vision} alt="" className="w-full rounded-br-xl" />
-            </Zoom>
+            </motion.div>
           </div>
         </div>
       </div>
       <div className="w-full mt-10 pt-8 lgss:pt-16 px-4 xs:px-6 pb-16 bg-[#3A66FF] mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px]  flex flex-col gap-6 lgss:gap-10 lgss:justify-between lgss:flex-row">
         <div className="w-full lgss:w-1/2">
-          <Fade triggerOnce direction="left">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInLeft}
+            transition={{ delay: 0.2 }}
+          >
             <h4 className="text-[24px] lgss:text-[36px] text-white font-bold ">
               Our Core Values
             </h4>
-          </Fade>
-          <Fade triggerOnce direction="left">
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInLeft}
+            transition={{ delay: 0.4 }}
+          >
             <h4 className="text-[14px] mds:text-[16px] leading-[27px]  lgss:text-[18px] text-white mt-2 text-left w-11/12 md:w-10/12 ">
               Our core values shape every aspect of our operations, ensuring
               transparency, excellence, and trust in all our interactions.
             </h4>
-          </Fade>
+          </motion.div>
         </div>
         <div className="w-full lgss:w-2/5">
-          <Fade triggerOnce direction="right">
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInRight}
+            transition={{ delay: 0.2 }}
+          >
             <div
               onClick={() => toggleQuestion(1)}
               className={
@@ -175,8 +241,13 @@ export default function AboutUs() {
                 </h4>
               )}
             </div>
-          </Fade>
-          <Fade triggerOnce direction="right">
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInRight}
+            transition={{ delay: 0.4 }}
+          >
             <div
               onClick={() => toggleQuestion(2)}
               className={
@@ -201,8 +272,13 @@ export default function AboutUs() {
                 </h4>
               )}
             </div>
-          </Fade>
-          <Fade triggerOnce direction="right">
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInRight}
+            transition={{ delay: 0.6 }}
+          >
             <div
               onClick={() => toggleQuestion(3)}
               className={
@@ -229,8 +305,13 @@ export default function AboutUs() {
                 </h4>
               )}
             </div>
-          </Fade>
-          <Fade triggerOnce direction="right">
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInRight}
+            transition={{ delay: 0.8 }}
+          >
             <div
               onClick={() => toggleQuestion(4)}
               className={
@@ -255,8 +336,13 @@ export default function AboutUs() {
                 </h4>
               )}
             </div>
-          </Fade>
-          <Fade triggerOnce direction="right">
+          </motion.div>
+          <motion.div
+            initial="hidden"
+            animate="visible"
+            variants={fadeInRight}
+            transition={{ delay: 1 }}
+          >
             <div
               onClick={() => toggleQuestion(5)}
               className={
@@ -283,7 +369,7 @@ export default function AboutUs() {
                 </h4>
               )}
             </div>
-          </Fade>
+          </motion.div>
         </div>
       </div>
       <div className="w-full mt-10 pt-4 px-4 xs:px-6 pb-16 bg-[#0C0D1D] mds:px-12 md:px-16 lgss:px-12 xl:px-16  xxxl:px-[250px]">
@@ -297,29 +383,49 @@ export default function AboutUs() {
           className="w-full rounded-xl bg-[#3A66FF] mt-24 flex flex-col pt-8 lgss:pt-0 justify-center lgss:flex-row items-center px-6 lgss:px-10 lgss:justify-between"
         >
           <div className="w-full lgss:w-[55%] ">
-            <Fade triggerOnce direction="up">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInUp}
+              transition={{ delay: 0.2 }}
+            >
               <h2 className="text-left text-[24px] md:text-[28px] lgss:text-[35px] w-10/12 lgss:w-full font-bold text-white">
                 Transform your cryptocurrency transactions with ease at Celler.
               </h2>
-            </Fade>
+            </motion.div>
 
             <div className="w-full mds:w-1/2 gap-4 mt-8 flex items-center lgss:mx-0 mx-auto justify-start lgss:justify-start">
-              <Zoom className="w-2/5 lgss:w-1/2" triggerOnce>
+              <motion.div
+                initial="hidden"
+                animate="visible"
+                variants={fadeInUp}
+                transition={{ delay: 0.4 }}
+              >
                 <Image src={darkAppStore} className=" w-full" alt="" />
                 <Image src={darkPlayStore} className=" w-full" alt="" />
-              </Zoom>
+              </motion.div>
             </div>
           </div>
           <div className="w-full lgss:w-[45%] pt-8 px-6 lgss:px-0">
-            <Fade triggerOnce direction="up">
+            <motion.div
+              initial="hidden"
+              animate="visible"
+              variants={fadeInUp}
+              transition={{ delay: 0.6 }}
+            >
               <Image src={dPhone} className=" " alt="" />
-            </Fade>
+            </motion.div>
           </div>
         </div>
       </div>
-      <Fade triggerOnce direction="up">
+      <motion.div
+        initial="hidden"
+        animate="visible"
+        variants={fadeInUp}
+        transition={{ delay: 0.8 }}
+      >
         <Footer />
-      </Fade>{" "}
+      </motion.div>{" "}
     </div>
   );
 }
