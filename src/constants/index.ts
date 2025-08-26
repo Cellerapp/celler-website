@@ -772,7 +772,7 @@ text:"Our Website may contain links to other websites, such as (but not limited 
   },
 
   {
-    title: "8. Personal data processing breakdown for users of our Services",
+    title: "8. Data We Collect",
     content: [
        {
       subTitle:"Personal data we collect during registration ",
@@ -789,6 +789,11 @@ text:"Our Website may contain links to other websites, such as (but not limited 
     "Our services are not intended for children under 18 and we do not knowingly collect data from minors.",
     "Legal grounds for personal data processing: ",
     "The Personal Data are obtained on the grounds of entering into a business relationship with us. ",
+    {
+      subTitle:"",
+      text:'We use facial recognition technology via the TrueDepth API solely to verify user identity and liveness during onboarding. This data is used for compliance with KYC requirements, processed securely, and never shared. We do not use face data for advertising or profiling.',
+    
+    },
 
     {
       subTitle:"Personal data we collect during registration ",
