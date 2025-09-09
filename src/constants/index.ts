@@ -625,426 +625,151 @@ export const policyContent: SectionContent[] = [
   {
     title: "1. Introduction",
     content: [
-     
-     "This is our Privacy Policy!",
-
-"We value and respect your privacy, and we are committed to transparently communicating how we handle your Personal Data.",
- 
-"Your privacy is of paramount importance to Tampay by Cq Ltd, located at 14 A, Alternative route, Chevron Close, Lekki, with company number 7430244 (referred to as Tampay, “we,” and “us“) which operates the website  (the “Website”) and Celler application (both together referred as the “Website”). ",
-
-"We are a data controller of your personal data, meaning we determine the purposes and means of the processing when you visit our Website, our application, and/or use our Services,",
-"This Privacy Policy (the “Policy”) provides information to whom it applies, grounds for data processing, data processing description, regulatory requirements and specifics, and other information to transparently and comprehensively inform you about all aspects of privacy, including your limitations and rights. ",
-
-"If this Policy does not meet your needs, we kindly ask you not to use our Service. By continuing to visit our Website it will be considered that you accept this Policy. As a user of our Services, you will be informed about this Policy when registering. If you do not accept it, you will not be able to register and/or use our Services. Should you have any questions please reach out to our legal team at compliance@tampay.co or our data privacy officer at privacy@tampay.co. ",
-
-"This Privacy Policy may be revised, modified, updated, or supplemented at any time, without prior notice, at our sole discretion. When we make changes to this Privacy Policy, we will notify all users on our Website, and make the amended Privacy Policy available on our Website. By further using our Services it will be considered you accept with the implied changes. ",
-
-"This privacy policy is an integral part of Celler Terms of Service and is of informative nature."
-     
+      "Effective Date: September 8, 2025",
+      "Celler (“we,” “our,” or “us”) is committed to protecting your privacy.",
+      "We are a data controller of your personal data, meaning we determine the purposes and means of the processing when you visit our Website, our application, and/or use our Services.",
+      "This Privacy Policy (the “Policy”) provides information to whom it applies, grounds for data processing, data processing description, regulatory requirements and specifics, and other information to transparently and comprehensively inform you about all aspects of privacy, including your limitations and rights.",
+      "If this Policy does not meet your needs, we kindly ask you not to use our Service. By continuing to visit our Website it will be considered that you accept this Policy. As a user of our Services, you will be informed about this Policy when registering. If you do not accept it, you will not be able to register and/or use our Services. Should you have any questions please reach out to our legal team at compliance@celler.app or our data privacy officer at privacy@celler.app.",
+      "This Privacy Policy may be revised, modified, updated, or supplemented at any time, without prior notice, at our sole discretion. When we make changes to this Privacy Policy, we will notify all users on our Website, and make the amended Privacy Policy available on our Website. By further using our Services it will be considered you accept with the implied changes.",
+      "This privacy policy is an integral part of Celler Terms of Service and is of informative nature.",
     ],
   },
   {
     title: "2. What is Personal Data?",
     content: [
-     
-     "This is our Privacy Policy!",
-
-"Personal data means any information relating to an identified or identifiable natural person (‘data subject’). An identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, and similar, or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.",
-
-"As we receive personal identification data, such as ID documents, as well as certain economic data, it is important for you to understand how we treat your data and the purposes for which we process it.",
-"Processing of personal data means any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.",
-     "Through this Policy, we aim to inform you about how we process the personal data collected through our website and application. This includes details about the personal data we collect, the reasons for collecting it, the legal grounds for the collection, how we use and disclose it, your choices, and your obligations and rights considering privacy matters. Through this Policy, we aim to inform you about how we process the personal data collected through our website and application. This includes details about the personal data we collect, the reasons for collecting it, the legal grounds for the collection, how we use and disclose it, your choices, and your obligations and rights considering privacy matters. "
+      "Personal data means any information relating to an identified or identifiable natural person (‘data subject’). An identifiable natural person is one who can be identified, directly or indirectly, in particular by reference to an identifier such as a name, an identification number, location data, and similar, or to one or more factors specific to the physical, physiological, genetic, mental, economic, cultural or social identity of that natural person.",
+      "As we receive personal identification data, such as ID documents, as well as certain economic data, it is important for you to understand how we treat your data and the purposes for which we process it.",
+      "Processing of personal data means any operation or set of operations which is performed on personal data or on sets of personal data, whether or not by automated means, such as collection, recording, organisation, structuring, storage, adaptation or alteration, retrieval, consultation, use, disclosure by transmission, dissemination or otherwise making available, alignment or combination, restriction, erasure or destruction.",
+      "Through this Policy, we aim to inform you about how we process the personal data collected through our website and application. This includes details about the personal data we collect, the reasons for collecting it, the legal grounds for the collection, how we use and disclose it, your choices, and your obligations and rights considering privacy matters.",
     ],
   },
- 
   {
     title: "3. Contact Information",
     content: [
-     "If you have any questions concerning this Policy or the processing of your personal data, you can contact our Data Protection Officer via the email privacy@tampay.co."
-    ],
-  },
-  {
-    title: "4. Validity and Termination ",
-    content: [
-     "By confirming  “I confirm that I am at least 18 years old and I agree to the User Agreement and accept the Privacy Policy” during the registration process button you confirm you accept to this Policy which is mandatory for using our Services and becoming our customer.",
-     "This Policy applies to you either as an individual user or as a legal or authorised representative, or ultimate beneficial owner (and altogether “User”, and/or “You”). ",
-"In the scope of solely visiting the Website, our Cooky Policy applies to all Website visitors. Our Cooky Policy includes information on the different types of cookies we are using and your active consent will be required for all non-essential cookies.  We use cookies and other tracking technologies to ensure the Website and our application are working smoothly, and for other purposes, for example, to improve or enhance user experience, for marketing or analytical purposes, and similar.",
-"This policy is valid for as long as you use our Services, and ceases to be valid when you stop using our Services.",
-"Since we are subjected to Money Laundry Act, we have certain reporting and data retention obligations even after the termination of the business relationship with you, and some of your rights (e.g. to deletion) may also be limited."
-    ],
-  },
-  {
-    title: "5. About us ",
-    content: [
-    "Celler is a crypto asset service provider, providing its business in Nigeria, across Africa, the globe and, a product of Tampay by cq ltd, a company registered in Nigeria by the Corporate Affairs Commission CAC for the provision of the following services (the “Services”):",
-    {
-      subTitle:"",
-      text:'',
-      bulletPoints:[
-        "Providing services for exchanging crypto assets against a fiat currency",
-"Providing services for exchanging crypto assets against other crypto assets;",
-"Providing a crypto asset wallet service;",
-"Providing a crypto asset transfer service."
-      ]
-    },
-    "Services are provided through our Website www.celler.app  or mobile app (the “Services”). ",
-    "Any information received from you within using our Services is treated as confidential. All information is stored securely and is accessed by authorised personnel only. We implement and maintain appropriate technical, security, and organisational measures to protect personal data against unauthorised or unlawful use, and against accidental loss, destruction, damage, theft, or disclosure. "
-    ],
-  },
-  {
-    title: "6. Legal grounds for collecting personal data ",
-    content: [
-"We process your Personal Data on the following grounds:",
-    {
-      subTitle:"",
-      text:'',
-      bulletPoints:[
-      " Processing is necessary for the performance of Services and entering into a business relationship with us;",
-"To assure compliance with legal obligations to which we are subject, especially, but not exclusively, anti-money laundering and counter-terrorist financing legislation;",
-"We have a legitimate interest;",
-"You have given consent to the processing of your personal data for specific purposes."
-      ]
-    },
-    "We collect your Personal data  ",
-    {
-      subTitle:"",
-      text:'',
-      bulletPoints:[
-      " Directly from you during the registration and identification verification process (know-your-customer process), or when using our Services, and by communicating with you;",
-"From third-party sources (e.g. automatic data extraction regarding political exposure, reputation, sanctions …)",
-"By automatic collection when using our Services (device information, IP address, location detection.",
-      ]
-    },
-"Upon processing Personal Data we follow the following principles: ",
-{
-      subTitle:"",
-      text:'',
-      bulletPoints:[
-      " legality and fairness – personal data are processed legally and fairly;",
-"purposefulness – personal data are collected for specified, explicit, and legitimate purposes and they shall not be processed in any manner that is incompatible with these purposes;",
-"quality – personal data must be adequate and appropriate and must not be excessive given the purposes of the data processing;",
-"accuracy – personal data must be accurate and, if necessary, kept up to date;",
-"retention – personal data are retained in the format that enables identification of the data subject until this is necessary for the achievement of the purpose for which the personal data is processed;",
-"security – personal data are processed in a manner that ensures appropriate security thereof, including protection against unauthorised or unlawful processing and against accidental loss, destruction, or damage."
-      ]
-    },
+      "If you have questions or concerns about this Privacy Policy or your personal data, please contact us: Celler Support Email: support@celler.app Website: https://www.celler.app",
 
-  ],
-  },
 
+    ],
+  },
   {
-    title: "7. Personal data processing for Website visitors",
+    title: "4. Validity and Termination",
     content: [
-      "This section applies if you are visiting our Services as well as if you are a user of our Services in the scope of collecting personal data when visiting our Website. ",
-      "We may collect, record, and analyze information about our Website Visitors, the breakdown of the collected personal data, information on the purpose, and other important information on the processing of personal data collected during your Website visit. ",
+      "By confirming “I confirm that I am at least 18 years old and I agree to the User Agreement and accept the Privacy Policy” during the registration process button you confirm you accept to this Policy which is mandatory for using our Services and becoming our customer.",
+      "This Policy applies to you either as an individual user or as a legal or authorised representative, or ultimate beneficial owner (and altogether “User”, and/or “You”).",
+      "In the scope of solely visiting the Website, our Cooky Policy applies to all Website visitors. Our Cooky Policy includes information on the different types of cookies we are using and your active consent will be required for all non-essential cookies. We use cookies and other tracking technologies to ensure the Website and our application are working smoothly, and for other purposes, for example, to improve or enhance user experience, for marketing or analytical purposes, and similar.",
+      "This policy is valid for as long as you use our Services, and ceases to be valid when you stop using our Services.",
+      "Since we are subjected to Money Laundry Act, we have certain reporting and data retention obligations even after the termination of the business relationship with you, and some of your rights (e.g. to deletion) may also be limited.",
+    ],
+  },
+  {
+    title: "5. The Categories of Personal Data We Process",
+    content: [
       {
-        subTitle:"",
-      text:'',
-      bulletPoints:[
-"Personal data: Your IP address geographical location browser type and version operating system referral source length of visit page views, and website navigation paths information about the timing, frequency, and pattern of using the Website personal data that was voluntarily and with your consent given to us through our Website’s forms, such as when you sign up for information and newsletters. The source of the usage data is our analytics tracking system. ",
-"Purpose of processing personal data: Analysing the use of the Website and improving users’ experience, performance, and future development communicating with Website visitors customize contents how ads on other websites improve our Website by analyzing how visitors navigate the Website",
-"Legal basis: Our legitimate interest in monitoring and improving our Website and Services and/or your consent ",
-"Sharing and storing personal data: We may also share information with service vendors or contractors to provide a requested service or transaction or to analyze the Visitor behaviour on its website.",
-
-      ]
+        subTitle: "We may collect and process the following personal data:",
+        text: "",
+        bulletPoints: [
+          "Identification data (full name, date of birth, gender, nationality, government-issued ID, selfie/liveness verification data).",
+          "Contact data (email address, phone number, residential address).",
+          "Financial data (bank account details, transaction history, wallet addresses).",
+          "Device and usage data (IP address, browser type, operating system, device identifiers, app usage logs, crash reports).",
+          "Compliance data (KYC verification results, AML checks, sanctions screening).",
+        ],
       },
-      "The source of the usage data is our analytics tracking system. ",
-      "You can unsubscribe from the newsletter anytime by clicking the unsubscribe button at the bottom of the email. You can also send us an e-mail to privacy@tampay.co and ask us to unsubscribe you or contact our customer support team via our Website directly.",
-      "If you provide us with your social media details, we may retrieve publicly available information about you from social media. We use such information for a better user experience, enabling a user to make a login to our Website with the user’s Facebook or Google profile.",
-
-      { subTitle:"Cookies",
-      text:'Cookies are files (small pieces of data) sent by web servers to web browsers that are downloaded to users` hard disks, serving to improve their experience and ensure the website and apps are working smoothly to provide you with the functionalities you need (necessary cookies) or select. Cookies cannot be used to run programs or deliver viruses to your computer. By using our Website, you agree to the placement of cookies on your device. If you choose not to accept our cookies, we cannot guarantee that your experience will be as fulfilling as it would otherwise be. We may also place cookies from third parties for functional and marketing purposes. The use of cookies is widespread and benefits the Website user. ',
-    
-    },
-
-      { subTitle:"Links to other websites",
-text:"Our Website may contain links to other websites, such as (but not limited to) Facebook, Instagram, Linkedin, Github, Twitter, and other third-party websites. If you click on such a link, you will be directed to that site. Note, that these external sites are not operated by us. We strongly advise you to review the Privacy Policy of the third-party websites that you visit. We have no control over and assume no responsibility for the content, privacy policies, or practices of any third-party sites or services.",
-
-    },
-
-    {
-      subTitle:"Geographical location of collection and storing Personal Data",
-      text:"We may share such information with service vendors or contractors to analyze the Visitor behaviour on the Website."
-    },
-   "Our Website runs on servers in Nigeria, Africa and other approved data regions where our users reside except for restricted regions not allowed to use Crytpo currencies. Our “Data Region” is a set of data centres located within a defined geographical area where user data is stored. Personal data is not transmitted to unapproved Data Regions where our users do not reside. For our Website visitors, all visitors’ personal data are located in the Nigeria Data Region, and all Personal Data is processed Nigeria. Automatically collected data (Google Analytics) by third parties may be stored outside Nigeria."
-
     ],
   },
-
   {
-    title: "8. Data We Collect",
+    title: "6. Purposes of Processing",
     content: [
-       {
-      subTitle:"Personal data we collect during registration ",
-      text:"The first step in becoming our client is registering – creating an account. During the registration, you provide us with the following personal data:",
-      bulletPoints:[
-        "Name and Surname",
-        "Email address",
-        "Password (you create during the registration process)",
-        "Account actions activity log",
-        "IP address",
-        "Mobile phone number "
-      ]
-    },
-    "Our services are not intended for children under 18 and we do not knowingly collect data from minors.",
-    "Legal grounds for personal data processing: ",
-    "The Personal Data are obtained on the grounds of entering into a business relationship with us. ",
-    {
-      subTitle:"",
-      text:'We use facial recognition technology via the TrueDepth API solely to verify user identity and liveness during onboarding. This data is used for compliance with KYC requirements, processed securely, and never shared. We do not use face data for advertising or profiling.',
-    
-    },
-
-    {
-      subTitle:"Personal data we collect during registration ",
-      text:"To be able to use our Services you are required to complete our identity verification process during which you provide us with the following Personal Data:",
-      bulletPoints:[
-        "Colour photo of a personal ID document and ID document details",
-        "Full name and address",
-        "Account actions activity log",
-        "Date of birth",
-        "Country and Place of Birth",
-        "Nationality ",
-        "Picture or Liveness video (biometric data)",
-        "Device IP address",
-        "Account actions activity log",
-        "Background screening check data performed by background check providers (outcome data from screening for identification with Politically Exposed Persons, their Relative and Close Associates, Persons and Entities of Special Interest, persons on Sanction list and Adverse Media)",
-        "Data from Client Information Questionnaire(among others the purpose of opening an account with us, estimated transaction value per certain period, source of funds.) "
-      ]
-    },
-    {
-      subTitle:"Legal grounds for Personal Data processing",
-      text:"The Personal Data are obtained to ensure compliance with legal requirements. "
-    }, 
-    {
-      subTitle:"Personal data we collect for account set-up, management purposes, and providing various features within the account ",
-      text: "In the scope of account set-up, account management, and providing various services/features within the account (such as price alert notification, auto buy and auto sell feature, vault, intelligent portfolios, and others as offered by Celler from time to time), we process the following personal data:",
-      bulletPoints:[
-        "IP Address ",
-        "Email address",
-        "Logging into the Account",
-        "Two-factor authentication management ",
-        "Account functionality management (updating information, disabling and re-enabling account features",
-        "Account Termination",
-        "New device detection and new device confirmation process",
-        "Password reset "
-      ]
-    },
-    "The personal data are obtained on the grounds of providing our contractual obligations.",
-    {
-subTitle:"Personal data we collect for transaction implementation & monitoring",
-text:"In the framework of transaction implementation, either deposit and withdraw of fiat or crypto assets, and purchase or sell of crypto assets, we process the following Personal Data subject to the type of payment and transaction:",
-bulletPoints:[
-  "Name and surname",
-  "Bank account information (BVN etc)",
-  "Your dedicated Account reference number ",
-  "Deposit and withdrawal crypto wallet address",
-  "Transaction details",
-  "Credit card data (credit card holder name, credit card number, expiry date, CVC Code) ",
-  "ID confirmation photo (selfie photo in which you confirm you do not cooperate with third parties and that you are making the transaction on your initiative)",
-  "Data from the Client Information Questionnaire",
-  "Transaction information, including information obtained with Blockchain analytic transaction monitoring tools (Blockchain transaction reports)",
-  "Computer or mobile device information (IP address, operating system, browser type, settings)",
-  "Information on the geolocation ",
-  "Background check (managed through background check providers, ongoing monitoring)",
-  "ID device detection and new device detection",
-  "Remote access detection data",
-  "Birth date and age ",
-  "ID document, validity ",
-  "Address ",
-  "Source of income information ",
-  "Under the scope of monitoring, we process your personal data in the following way:",
-  "Data exchange with payment service providers",
-  "Withdrawal address whitelisting and blacklisting",
-  "Email address",
-  "Sending and receiving information from counterparty exchanges (travel rule)",
-  "Sending your full name or crypto wallet address to our blockchain analytical transaction monitoring partners for fraud prevention purposes (reporting fraud-related information for prevention and identification)",
-  "On-going monitoring for background checks, ID document validity  "
-]
-    }, 
-    {
-      subTitle:"Legal grounds for personal data processing",
-      text:"The personal data are obtained on the grounds of providing our contractual obligations and compliance with legal obligations. "},
-    {
-      subTitle:"Personal data we collect and process for Travel Rule",
-      text:"Following the Travel Rule, we are required to pass on the following information to the next crypto asset service provider: originator name, type (individual person or legal entity, transaction identified, and residential address. "
-    },
-    {
-      subTitle:"Personal data we collect for providing customer support and managing  complaints ",
-      text:"Under the scope of customer support and complaint management, we process data as required based on your support request or complaint, and thus we may process any personal data obtained from you based on a legal basis of providing contractual or legal obligations. "
-    },
-    {
-      subTitle:"Personal data we collect for internal control, fraud prevention, Internal and external audit",
-      text:"Following regulatory requirements as well as internal policies, we may process your personal data for the implementation of control measures, internal and external audits, and prevention of fraud and financial crime, and is based on legal requirements or legitimate interest. As part of an audit, we may do sample checks, in which case we might access your data on a random basis with the purpose of internal control or external audit. Under the scope above the following personal data are processed:",
-      bulletPoints:[
-        "Name and Surname",
-        "Address",
-        "Country",
-        "Transaction data",
-        "Device ID",
-        "Information on the crypto portfolio held with us",
-        "Login data ",
-        "All the data obtained during the know-your-customer process and ongoing monitoring",
-        "Transaction monitoring data",
-        "Computer or mobile device information (IP address, operating system, browser type, settings)",
-        "Information on the geolocation ",
-        "ID device detection and new device detection",
-        "Remote access detection data"
-      ]
-    },
-    {
-      subTitle:"Reporting to competent authorities and providing information based on disclosure requests",
-      text:"We are required to submit reports on suspicious transactions to the competent financial authority, as well as provide regular or ad-hoc reports as required by competent authorities. Further, we receive disclosure requests from law enforcement authorities and lawyers or others based on the power of authority. In the scope of the above the following Personal Data may be processed subject to individual reporting requirements or disclosure requests:",
-      bulletPoints:[
-        "Name and surname",
-        "Email address",
-        "Date of birth",
-        "Nationality ",
-        "Phone number",
-        "Selfies photo provided during the onboarding process",
-        "Copy of ID document",
-        "Bank account details",
-        "Deposit and withdrawal crypto wallet address",
-        "All the data obtained during the identification process ",
-        "Transaction data"
-      ]
-    },
-    {
-subTitle:"Legal grounds for personal data processing",
-text:"The personal data are obtained based on legitimate interest or consent. "
-    }, {
-      subTitle:"Internal Analytics ",
-      text:"To provide you with the best user experience and evaluate our services we are processing your data, where possible your data is pseudomized. "
-    }, {
-      subTitle:"Reporting to competent authorities and providing information based on disclosure requests",
-      text:"In cases where we do not have a legal basis for processing personal data, we will ask for your explicit consent, which shall be collected via our Website. Kindly note that any consent will be entirely voluntary. However, if you do not grant the requested consent to the processing of your Personal Data, the use of this website may not be possible or may be limited\nIn some cases disclosure of your personal data is requested from third parties, in such a case such consent is actively required to be given by you for that specific purpose and you can always revoke it. However, all such personal data is processed by those third parties in accordance with their Privacy Policy.",
-
-    },
-    {
-      subTitle:"Contractual obligation as the basis for processing personal data ",
-      text:"In case you wish to use certain services or products offered by third parties, your personal data may be processed on a contractual basis, namely, data will be processed in the course of implementing contractual obligations and for the purpose of delivering the agreed services."
-    },
-    "This includes transactions via banks and other financial institutions, and they might require disclosure of personal data involved in the transaction."
-
-    ]
-  },
-  {
-    title: "9. Disclosing your personal data",
-    content: [
-      "We may disclose your data to the processors of personal data that are performing services on our behalf and that includes processing with personal data.  ",
-      "We cooperate with the following processors of personal data:",
       {
-        subTitle:"",
-        text:"",
-        bulletPoints:[
-          "Companies performing know-your-customer verification processes, background checks, and adverse media checks;",
-          "Companies performing transaction monitoring services;",
-          "Companies performing payment processing (card acquiring, banking partners, payment orchestration)",
-          "Cloud service providers;",
-          "IT maintenance service providers;",
-          "Customer Support Software solution providers and other companies providing technical solutions, which involve the processing of Personal Data;",
-          "Audit service providers in the scope of implementing audit services."
-        ]
-      }
-    ]
-  },
-  {
-    title: "10. Retention and deletion of Personal Information",
-    content: [
-      "This Policy aligns with NDPA, detailing the types of personal data subject to retention and deletion and the processes involved. We will not retain data longer than is necessary to fulfil the purposes for which it was obtained or as required by applicable laws.  ",
-      "You can request the deletion of their personal data through specified channels such as email privacy@tampay.co or customer support platforms. The DPO will verify the identity of the requester and process the request within regulatory timeframes, typically 10 working days. Communication regarding the status of the request will be provided to the client, including reasons for any delays or partial deletions due to legal obligations.",
-      {
-        subTitle:"Data Retention Periods",
-        text:"The Company retains personal data only as long as necessary for the purposes for which it was collected, to comply with legal obligations, or to fulfil legitimate business interests. The retention periods for different categories of data are as follows:",
-        bulletPoints:[
-          "KYC Data: Retained for 5 years following the termination of the business relationship or until the resolution of any ongoing legal proceedings, whichever is longer.",
-          " Transactional Data: Retained for 10 years, aligning with the maximum statutory limitation period under the Laws.",
-          "Technical and Operational Data: Retained for 5 years following the end of the business relationship.",
-          "Marketing Data: Retained for 2 years for inactive clients and promptly deleted upon withdrawal of consent.",
-         
-        ]
+        subTitle: "We process your personal data for the following purposes:",
+        text: "",
+        bulletPoints: [
+          "To provide, operate, and improve our Services.",
+          "To verify your identity (KYC/AML compliance).",
+          "To process transactions (deposits, withdrawals, payments).",
+          "To prevent fraud, financial crime, and unauthorized activity.",
+          "To comply with legal obligations under applicable laws (e.g. AML/CFT regulations).",
+          "To provide customer support and communicate with you.",
+        ],
       },
-      {
-        subTitle:"Data Deletion Process",
-        text:"The Company will implement a process to ensure that all personal data is automatically deleted upon reaching the end of the specified data retention period. This automation will help ensure compliance with data protection regulations and minimise the risk of retaining data longer than necessary."
-      }
-    ]
+    ],
   },
   {
-    title: "11. Location of your personal data",
+    title: "7. Legal Grounds for Processing",
     content: [
-      "All Personal Data, which will be collected and processed within the KYC procedure are stored on servers in Nigeria data regions.",
-      "Our services are provided in accordance with Money Laundering Act,  meaning you will not be able to delete it or invoke the right to be forgotten. Your data are encrypted, meaning they are coded (anonymized). ",
-      "You acknowledge and expressly accept that by the nature of the blockchain technology, it is not possible to delete personal data from the blockchain and invoke the right to be forgotten. ",
-      "Information shared through our support channel is stored outside Africa, etc in accordance with requirements applicable to the transfer of data to third countries."
-      
-    ]
-  },
-  {
-    title: "12. Security of Personal Information",
-    content: [
-      "We use a variety of security measures to ensure the confidentiality, integrity, availability, and privacy of your Personal Information and to protect your Personal Information from loss, theft, unauthorised access, misuse, alteration, or destruction.\nThese security measures include, among others:",
       {
-        subTitle:"",
-        text:"",
-        bulletPoints:[
-          "Password-protected directories and databases.",
-          "Secure Sockets Layered (SSL) technology to ensure that your information is fully encrypted and sent across the Internet securely.",
-          "Vulnerability Scanning to protect our servers from hackers and other vulnerabilities actively.",
-          "Regular penetration testing.",
-          "Secure coding principles.",
-          "Encryption of sensitive data during transfer and at rest.",
-          "2-factor authentication.",
-          "Logging of activities performed in the platform.",
-          "Access controls and",
-          "other measures to mitigate risks identified during the risk assessment process."
-        ]
-
+        subTitle: "We rely on the following legal bases:",
+        text: "",
+        bulletPoints: [
+          "Your consent (for non-essential processing such as marketing).",
+          "Performance of a contract (to deliver Services you requested).",
+          "Compliance with legal obligations (AML/CFT, reporting requirements).",
+          "Our legitimate interests (fraud prevention, service improvement).",
+        ],
       },
-      "All financially sensitive and/or credit information is transmitted via SSL technology and encrypted in our database. Only authorized CELLER personnel are permitted access to your Personal Information, and this personnel is required to treat the information as highly confidential. The security measures will be reviewed regularly in light of new and relevant legal and technical developments."
-      
-    ]
+    ],
   },
   {
-    title: "13. Access right to your personal information",
+    title: "8. Sharing of Personal Data",
     content: [
-      "You have the right to access your Personal Information to correct, update, and block inaccurate and/or incorrect data. To exercise this right, contact us at info@celler.app."
-    ]
+      "We do not sell your personal data. We may share it with:",
+      {
+        subTitle: "",
+        text: "",
+        bulletPoints: [
+          "Licensed Payout Partners & Service Providers (e.g., Quidax, licensed payment processors) for processing transactions and compliance.",
+          "Regulatory and law enforcement authorities when required by law.",
+          "Third-party service providers (e.g., hosting, analytics, identity verification).",
+        ],
+      },
+    ],
   },
   {
-    title: "14. Definitions",
+    title: "9. International Use",
     content: [
-        "To help you understand this Privacy Policy, we have provided definitions for some of the terms used throughout the document:",
-  "Account: Your personalised interface on the Celler platform, allowing you to access our Services.",
-  "Adverse Media: Negative news or information about an individual or entity that may indicate involvement in criminal activity or other risks.",
-  "Blockchain: A decentralised digital ledger that records transactions across a network of computers.",
-  "CCO: Chief Compliance Officer, the person responsible for ensuring that Celler complies with relevant laws and regulations.",
-  "Cookies: Small text files placed on your device by websites to improve your experience and collect information about your usage.",
-  "Crypto Asset: A digital representation of value that uses cryptography for security and operates on a blockchain.",
-  "Data Controller: The entity (in this case, Celler) that determines the purposes and means of processing your personal data.",
-  "Data Processor: A third-party entity that processes personal data on behalf of Celler.",
-  "Data Region: A set of data centres located within a defined geographical area where user data is stored.",
-  "Data Subject: An identified or identifiable natural person (individual) to whom Personal Data relates and who has registered him/herself via the Website.",
-  "DPO: Data Protection Officer, the person responsible for overseeing Celler’s data protection practices and ensuring compliance with NDPA.",
-  "Money Laundering Act: National legislation transposing the Nigeria’s anti-money laundering directives, which requires specific data retention and reporting obligations for financial institutions.",
-  "EFCC: Financial Intelligence Unit, the Nigeria Economic Financial Crimes Commission and authority responsible for combating money laundering and terrorist financing.",
-  "Fiat Currency: A government-issued currency which is supported by Celler.",
-  "NDPA: The Nigeria Data Protection Act, the legal framework for data protection in Nigeria.",
-  "Identity Verification (KYC) Process: The process of verifying the identity of a customer to comply with anti-money laundering (AML) and counter-terrorism financing (CTF) regulations.",
-  "Celler, We, Our: Tampay by Cq Ltd, the company operating the Celler platform and providing the Services.",
-  "KYC: Know Your Customer, the process of verifying the identity of our customers to comply with anti-money laundering regulations.",
-  "Legitimate Interest: A lawful basis for processing Personal Data when it is necessary for the purposes of the legitimate interests pursued by Celler or by a third party, except where such interests are overridden by the interests or fundamental rights and freedoms of the Data Subject.",
-  "Personal Data: Any information that can be used to directly or indirectly identify you as an individual. This includes your name, email address, identification documents, transaction history, and other information you provide while using our Services.",
-  "Politically Exposed Person (PEP): An individual who holds a prominent public function or has been entrusted with a prominent public position.",
-  "Processing: Any operation performed on Personal Data, such as collection, storage, use, disclosure, or deletion.",
-  "Sanctions List: A list of individuals or entities subject to restrictions or prohibitions due to their involvement in activities such as terrorism, money laundering, or human rights abuses.",
-  "Services: The services provided by Celler, include the exchange of crypto assets for fiat currency or other crypto assets, the provision of a crypto-asset wallet, and crypto-asset transfer services.",
-  "Transaction Monitoring: The process of monitoring customer transactions to detect and prevent suspicious activity that may be indicative of money laundering or other financial crimes.",
-  "Travel Rule: A regulatory requirement that obliges us to share specific information about crypto-asset transfers with other service providers.",
-  "User, You: Refers to you as a user of Celler’s services.",
-  "Website: The Celler website and mobile application through which our Services are provided."
-
-    ]
+      "Currently, our Services are only available in Nigeria. If you access our app from outside Nigeria, you do so at your own discretion.",
+    ],
   },
- 
+  {
+    title: "10. Data Retention",
+    content: [
+      "We retain personal data as long as your account is active or as required by law/regulations (e.g., AML/KYC obligations). When no longer required, we securely delete or anonymize your data.",
+    ],
+  },
+  {
+    title: "11. Security of Personal Data",
+    content: [
+      "We implement industry-standard security measures, including encryption and access controls, to protect your information. However, no method of transmission or storage is 100% secure.",
+    ],
+  },
+  {
+    title: "12. Your Rights",
+    content: [
+      {
+        subTitle: "You have the right to:",
+        text: "",
+        bulletPoints: [
+          "Access your personal data.",
+          "Request correction of inaccurate or incomplete data.",
+          "Request deletion of your data (subject to legal obligations).",
+          "Object to or restrict certain types of processing.",
+          "Withdraw consent for processing where applicable.",
+        ],
+      },
+      "To exercise your rights, contact us at support@celler.app.",
+    ],
+  },
+  {
+    title: "13. Children’s Privacy",
+    content: [
+      "Our Services are not directed at individuals under 18 years of age. We do not knowingly collect data from children.",
+    ],
+  },
+  {
+    title: "14. Updates to this Policy",
+    content: [
+      "We may update this Policy from time to time. Updates will be posted on this page with a revised effective date. Continued use of our Services constitutes acceptance of the updated Policy.",
+    ],
+  },
 ];
+
