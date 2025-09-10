@@ -661,7 +661,7 @@ export const policyContent: SectionContent[] = [
     ],
   },
   {
-    title: "5. Information We Collect",
+    title: "5. Data We Collect",
     content: [
       {
         subTitle: "We may collect and process the following personal data:",
