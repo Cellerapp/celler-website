@@ -662,13 +662,13 @@ export const policyContent: SectionContent[] = [
     ],
   },
   {
-    title: "5. The Categories of Personal Data We Process",
+    title: "5. Information We Collect",
     content: [
       {
         subTitle: "We may collect and process the following personal data:",
         text: "",
         bulletPoints: [
-          "Identification data (full name, date of birth, gender, nationality, government-issued ID, selfie/liveness verification data).",
+          "Identification data (full name, date of birth, gender, nationality, government-issued ID, selfie/liveness verification data ).",
           "Contact data (email address, phone number, residential address).",
           "Financial data (bank account details, transaction history, wallet addresses).",
           "Device and usage data (IP address, browser type, operating system, device identifiers, app usage logs, crash reports).",
