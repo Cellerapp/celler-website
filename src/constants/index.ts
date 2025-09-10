@@ -625,7 +625,6 @@ export const policyContent: SectionContent[] = [
   {
     title: "1. Introduction",
     content: [
-      "Effective Date: September 8, 2025",
       "Celler (“we,” “our,” or “us”) is committed to protecting your privacy.",
       "We are a data controller of your personal data, meaning we determine the purposes and means of the processing when you visit our Website, our application, and/or use our Services.",
       "This Privacy Policy (the “Policy”) provides information to whom it applies, grounds for data processing, data processing description, regulatory requirements and specifics, and other information to transparently and comprehensively inform you about all aspects of privacy, including your limitations and rights.",
