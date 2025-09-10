@@ -672,6 +672,7 @@ export const policyContent: SectionContent[] = [
           "Financial data (bank account details, transaction history, wallet addresses).",
           "Device and usage data (IP address, browser type, operating system, device identifiers, app usage logs, crash reports).",
           "Compliance data (KYC verification results, AML checks, sanctions screening).",
+          "We use facial recognition technology via the TrueDepth API solely to verify user identity and liveness during onboarding. This data is used for compliance with KYC requirements, processed securely, and never shared. We do not use face data for advertising or profiling"
         ],
       },
     ],
