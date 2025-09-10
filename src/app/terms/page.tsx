@@ -5,7 +5,7 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import Terms from "@/components/Terms";
 import TermsTitle from "@/components/TermsTitle";
-import React, { useState } from "react";
+import React, { useCallback, useState } from "react";
 import { motion } from "framer-motion";
 import { termsContent } from "@/constants";
 import { fadeInDown, fadeInUp } from "@/utils/animations";
@@ -15,13 +15,13 @@ export default function Termss() {
   const [scrollToSectionFn, setScrollToSectionFn] = useState<
     ((title: string) => void) | null
   >(null);
-  const handleContentAtTop = (title: string) => {
+  const handleContentAtTop = useCallback((title: string) => {
     setActiveTitle(title);
-  };
+  }, []);
 
-  const handleScrollToSection = (fn: (title: string) => void) => {
+  const handleScrollToSection = useCallback((fn: (title: string) => void) => {
     setScrollToSectionFn(() => fn);
-  };
+  }, []);
 
   const allTitles = termsContent.map((section) => section.title);
 

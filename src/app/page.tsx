@@ -34,7 +34,9 @@ import { IoAdd, IoRemove } from "react-icons/io5";
 import QRCode from "react-qr-code";
 import { fadeInLeft, fadeInRight, fadeInUp } from "@/utils/animations";
 
-const staggerContainer = {
+import { Variants } from "framer-motion";
+
+const staggerContainer: Variants = {
   hidden: {},
   show: {
     transition: {
@@ -43,37 +45,42 @@ const staggerContainer = {
   },
 };
 
-const fadeIn = (direction = "up", delay = 0) => ({
+const fadeIn = (
+  direction: "up" | "down" | "left" | "right" = "up",
+  delay = 0
+): Variants => ({
   hidden: {
     opacity: 0,
     y: direction === "up" ? 40 : direction === "down" ? -40 : 0,
+    x: direction === "left" ? 40 : direction === "right" ? -40 : 0,
   },
   show: {
     opacity: 1,
+    x: 0,
     y: 0,
-    transition: { duration: 1, ease: "easeOut", delay },
+    transition: { duration: 1, ease: ["easeOut"], delay }, // ✅ wrapped in array
   },
 });
 
-const scaleUp = {
+const scaleUp: Variants = {
   hidden: { opacity: 0, scale: 0.8, rotate: -5 },
   show: {
     opacity: 1,
     scale: 1,
     rotate: 0,
-    transition: { duration: 1.2, ease: "easeOut" },
+    transition: { duration: 1.2, ease: ["easeOut"] }, // ✅ fixed
   },
 };
 
-const progressVariant = {
+const progressVariant: Variants = {
   hidden: { width: "0%" },
   show: {
     width: "100%",
-    transition: { duration: 1.2, ease: "easeOut" },
+    transition: { duration: 1.2, ease: ["easeOut"] }, // ✅ fixed
   },
 };
 
-const fadeInS = (direction = "up", delay = 0) => ({
+const fadeInS = (direction: "up" | "down" = "up", delay = 0): Variants => ({
   hidden: {
     opacity: 0,
     y: direction === "up" ? 40 : -40,
@@ -83,26 +90,26 @@ const fadeInS = (direction = "up", delay = 0) => ({
     y: 0,
     transition: {
       duration: 0.6,
-      ease: "easeOut",
+      ease: ["easeOut"], // ✅ fixed
       delay,
     },
   },
 });
 
-const scaleUpS = {
+const scaleUpS: Variants = {
   hidden: { opacity: 0, scale: 0.9 },
   show: {
     opacity: 1,
     scale: 1,
-    transition: { duration: 0.5, ease: "easeOut" },
+    transition: { duration: 0.5, ease: ["easeOut"] }, // ✅ fixed
   },
 };
 
-const progressVariantS = {
+const progressVariantS: Variants = {
   hidden: { width: "0%" },
   show: {
     width: "100%",
-    transition: { duration: 0.5, ease: "easeInOut" },
+    transition: { duration: 0.5, ease: ["easeInOut"] }, // ✅ fixed
   },
 };
 
