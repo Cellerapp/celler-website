@@ -1,6 +1,7 @@
 import { termsContent } from "@/constants";
 import { SectionContent } from "@/types/termsType";
 import React, { useEffect, useRef } from "react";
+import { parseTextWithLinks } from "@/utils/urlParser";
 
 const Terms: React.FC<{
   onContentAtTop: (activeTitle: string) => void;
@@ -96,7 +97,7 @@ const Terms: React.FC<{
                   {item.bulletPoints && (
                     <ul className="list-disc ml-6 mt-2">
                       {item.bulletPoints.map((bullet, i) => (
-                        <li key={i}>{bullet}</li>
+                        <li key={i}>{parseTextWithLinks(bullet)}</li>
                       ))}
                     </ul>
                   )}

@@ -1,6 +1,7 @@
 import { policyContent } from "@/constants";
 import { SectionpolContent } from "@/types/termsType";
 import React, { useEffect, useRef } from "react";
+import { parseTextWithLinks } from "@/utils/urlParser";
 
 const Privacy: React.FC<{
   onContentAtTop: (activeTitle: string) => void;
@@ -95,7 +96,7 @@ const Privacy: React.FC<{
                 {item.bulletPoints && (
                   <ul className="list-disc ml-6 mt-2">
                     {item.bulletPoints.map((bullet, i) => (
-                      <li key={i}>{bullet}</li>
+                      <li key={i}>{parseTextWithLinks(bullet)}</li>
                     ))}
                   </ul>
                 )}
