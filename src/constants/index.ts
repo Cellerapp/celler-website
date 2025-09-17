@@ -685,6 +685,8 @@ export const policyContent: SectionContent[] = [
         text: "",
         bulletPoints: [
          "We use facial recognition technology via the TrueDepth API solely to verify user identity and liveness during onboarding.",
+         "This Data is securely transmitted to our identity verification provider, SmileID, for the duration of the verification process (up to one hour) and is permanently deleted immediately after the verification process is completed.",
+         "For more information on SmileID's handling of biometric data, please see their documentation: https://docs.usesmileid.com",
         "This data is used for compliance with KYC requirements, processed securely, and never shared.",
         "We do not use face data for advertising or profiling.",
         ],
