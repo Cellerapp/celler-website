@@ -64,7 +64,7 @@ export default function Termss() {
             transition={{ delay: 0.4 }}
           >
             <h4 className="text-[15px] mds:text-[18px] text-[#141D57]">
-              Last Updated: September 8th, 2025.
+              Last Updated: September 17th, 2025.
             </h4>
           </motion.div>
         </div>

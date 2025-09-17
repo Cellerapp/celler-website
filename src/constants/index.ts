@@ -672,13 +672,27 @@ export const policyContent: SectionContent[] = [
           "Financial data (bank account details, transaction history, wallet addresses).",
           "Device and usage data (IP address, browser type, operating system, device identifiers, app usage logs, crash reports).",
           "Compliance data (KYC verification results, AML checks, sanctions screening).",
-          "We use facial recognition technology via the TrueDepth API solely to verify user identity and liveness during onboarding. This data is used for compliance with KYC requirements, processed securely, and never shared. We do not use face data for advertising or profiling"
         ],
       },
     ],
   },
   {
-    title: "6. Purposes of Processing",
+    title: "6. Use of TrueDepth API",
+    content: [
+    
+      {
+        subTitle: "",
+        text: "",
+        bulletPoints: [
+         "We use facial recognition technology via the TrueDepth API solely to verify user identity and liveness during onboarding.",
+        "This data is used for compliance with KYC requirements, processed securely, and never shared.",
+        "We do not use face data for advertising or profiling.",
+        ],
+      },
+    ],
+  },
+  {
+    title: "7. Purposes of Processing",
     content: [
       {
         subTitle: "We process your personal data for the following purposes:",
@@ -695,7 +709,7 @@ export const policyContent: SectionContent[] = [
     ],
   },
   {
-    title: "7. Legal Grounds for Processing",
+    title: "8. Legal Grounds for Processing",
     content: [
       {
         subTitle: "We rely on the following legal bases:",
@@ -710,7 +724,7 @@ export const policyContent: SectionContent[] = [
     ],
   },
   {
-    title: "8. Sharing of Personal Data",
+    title: "9. Sharing of Personal Data",
     content: [
       "We do not sell your personal data. We may share it with:",
       {
@@ -725,25 +739,25 @@ export const policyContent: SectionContent[] = [
     ],
   },
   {
-    title: "9. International Use",
+    title: "10. International Use",
     content: [
       "Currently, our Services are only available in Nigeria. If you access our app from outside Nigeria, you do so at your own discretion.",
     ],
   },
   {
-    title: "10. Data Retention",
+    title: "11. Data Retention",
     content: [
       "We retain personal data as long as your account is active or as required by law/regulations (e.g., AML/KYC obligations). When no longer required, we securely delete or anonymize your data.",
     ],
   },
   {
-    title: "11. Security of Personal Data",
+    title: "12. Security of Personal Data",
     content: [
       "We implement industry-standard security measures, including encryption and access controls, to protect your information. However, no method of transmission or storage is 100% secure.",
     ],
   },
   {
-    title: "12. Your Rights",
+    title: "13. Your Rights",
     content: [
       {
         subTitle: "You have the right to:",
@@ -760,13 +774,13 @@ export const policyContent: SectionContent[] = [
     ],
   },
   {
-    title: "13. Children’s Privacy",
+    title: "14. Children’s Privacy",
     content: [
       "Our Services are not directed at individuals under 18 years of age. We do not knowingly collect data from children.",
     ],
   },
   {
-    title: "14. Updates to this Policy",
+    title: "15. Updates to this Policy",
     content: [
       "We may update this Policy from time to time. Updates will be posted on this page with a revised effective date. Continued use of our Services constitutes acceptance of the updated Policy.",
     ],
