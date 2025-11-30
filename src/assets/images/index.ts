@@ -40,10 +40,11 @@ import cellerT from "./cellerT.png"
 import cellerC from "./cellerC.png"
 import comingSoonApple from "./comingSoonApple.png"
 import comingSoonGoogle from "./comingSoonPlay.png"
+import downloadQr from "./download-qr.png"
 
 export {
     sellPhone,rateSwap,thunder,customer,bagg, sellHand, hero3,playSt,appSt,cellerC, cellerD, cellerT,payoutPhone, kycPhone,footerBg,comingSoonApple,comingSoonGoogle,
-    buyPhone,
+    buyPhone,downloadQr,
     btcc,
     tether,
     gumBg,

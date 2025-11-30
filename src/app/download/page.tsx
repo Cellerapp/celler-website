@@ -1,46 +1,18 @@
 "use client";
 
-import {
-  logo,
-  comingSoonApple,
-  comingSoonGoogle,
-  hero1,
-} from "@/assets/images";
+import { logo, comingSoonGoogle, hero1 } from "@/assets/images";
 import { motion } from "framer-motion";
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useCallback } from "react";
-import { ClipLoader } from "react-spinners";
+
 import { staggerContainer, scaleIn, fadeInUp } from "@/utils/animations";
 
 const DownloadPage = () => {
-  const [isLoading, setIsLoading] = useState(false);
-
-  const downloadApk = useCallback(async () => {
-    setIsLoading(true);
-    try {
-      const filePath = "/cryptpay-7th-Jan.apk";
-      const response = await fetch(filePath);
-      if (!response.ok) throw new Error("Download failed");
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = "Celler.apk";
-      link.click();
-      window.URL.revokeObjectURL(url);
-    } catch (error) {
-      console.error("Download error:", error);
-    } finally {
-      setIsLoading(false);
-    }
-  }, []);
-
   return (
     <motion.div
       initial="hidden"
       animate="visible"
-      className="min-h-screen w-full flex flex-col items-center"
+      className="h-screen w-full flex flex-col items-center"
     >
       <motion.div
         variants={staggerContainer}
@@ -77,23 +49,15 @@ const DownloadPage = () => {
               ANDROID
             </div>
             <div className="mt-4 flex justify-center">
-              <button
-                className="text-[#3A66FF] uppercase text-[18px] font-bold hover:text-[#5A86FF] text-center block underline"
-                onClick={downloadApk}
-              >
-                {isLoading ? (
-                  <div className="w-full flex gap-3 justify-center items-center">
-                    <div className="flex justify-center items-center">
-                      <ClipLoader color="#3A66FF" size={20} />
-                    </div>
-                    <h4 className="font-semibold text-white text-center text-[14px]">
-                      Hold on while your Apk downloads
-                    </h4>
-                  </div>
-                ) : (
-                  "Download APK"
-                )}
-              </button>
+              <p className="text-sm text-gray-300">
+                Click the link to download our{" "}
+                <Link
+                  href="https://drive.google.com/file/d/1RTER9htZM0GE1k8M6oHdCofD7RItrLih/view"
+                  className="text-[#3A66FF] hover:text-[#5A86FF]"
+                >
+                  APK
+                </Link>{" "}
+              </p>
             </div>
           </div>
 
@@ -110,27 +74,12 @@ const DownloadPage = () => {
                 <p className="text-sm text-gray-300">
                   Click the link to install{" "}
                   <Link
-                    href="#"
+                    href="https://apps.apple.com/ng/app/celler/id6749920384"
                     className="text-[#3A66FF] hover:text-[#5A86FF]"
                   >
-                    Testflight
+                    Our App
                   </Link>{" "}
                   on Appstore
-                </p>
-              </div>
-              <div className="flex items-start gap-3">
-                <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-sm flex-shrink-0 text-white">
-                  2
-                </span>
-                <p className="text-sm text-gray-300">
-                  After installing Testflight, come back to this{" "}
-                  <Link
-                    href="#"
-                    className="text-[#3A66FF] hover:text-[#5A86FF]"
-                  >
-                    link
-                  </Link>{" "}
-                  to install the Celler App
                 </p>
               </div>
             </div>
@@ -202,11 +151,6 @@ const DownloadPage = () => {
           <Image
             src={comingSoonGoogle}
             alt="Play Store"
-            className="h-12 w-auto"
-          />
-          <Image
-            src={comingSoonApple}
-            alt="App Store"
             className="h-12 w-auto"
           />
         </motion.div>

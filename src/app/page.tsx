@@ -142,6 +142,8 @@ export default function Home() {
     // Clear the interval when the component unmounts
     return () => clearInterval(intervalId);
   }, []);
+
+  const qrCode = "https://www.celler.app/download";
   return (
     <div className={`  w-full`}>
       <div
@@ -201,7 +203,12 @@ export default function Home() {
               animate={{ opacity: 1, scale: 1 }}
               transition={{ duration: 1, delay: 0.5 }}
             >
-              <QRCode value="" bgColor="#FFFFFF" fgColor="#000000" size={95} />
+              <QRCode
+                value={qrCode}
+                bgColor="#FFFFFF"
+                fgColor="#000000"
+                size={95}
+              />
               <div>
                 <h4 className="text-center lgss:text-left text-white text-[14px]">
                   Scan to download app. Available on Appstore and Playstore.
