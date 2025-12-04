@@ -52,7 +52,7 @@ const DownloadPage = () => {
               <p className="text-sm text-gray-300">
                 Click the link to download our{" "}
                 <Link
-                  href="https://drive.google.com/file/d/1RTER9htZM0GE1k8M6oHdCofD7RItrLih/view"
+                  href="https://drive.google.com/drive/folders/1TQBSx9U2aW76YtVP3EUxxYwahegs_Jyk?usp=share_link"
                   className="text-[#3A66FF] hover:text-[#5A86FF]"
                 >
                   APK
@@ -77,7 +77,7 @@ const DownloadPage = () => {
                     href="https://apps.apple.com/ng/app/celler/id6749920384"
                     className="text-[#3A66FF] hover:text-[#5A86FF]"
                   >
-                    Our App
+                    Celler App
                   </Link>{" "}
                   on Appstore
                 </p>
