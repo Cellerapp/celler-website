@@ -52,7 +52,7 @@ const DownloadPage = () => {
               <p className="text-sm text-gray-300">
                 Click the link to download our{" "}
                 <Link
-                  href="https://drive.google.com/drive/folders/1TQBSx9U2aW76YtVP3EUxxYwahegs_Jyk?usp=share_link"
+                  href="https://drive.google.com/file/d/1RTER9htZM0GE1k8M6oHdCofD7RItrLih/view"
                   className="text-[#3A66FF] hover:text-[#5A86FF]"
                 >
                   APK
