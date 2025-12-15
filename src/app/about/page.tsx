@@ -21,6 +21,7 @@ import {
   fadeInRight,
   fadeInUp,
 } from "@/utils/animations";
+import Link from "next/link";
 
 export default function AboutUs() {
   const [activeQuestion, setActiveQuestion] = useState<number | null>(null);
@@ -394,16 +395,24 @@ export default function AboutUs() {
               </h2>
             </motion.div>
 
-            <div className="w-full mds:w-1/2 gap-4 mt-8 flex items-center lgss:mx-0 mx-auto justify-start lgss:justify-start">
-              <motion.div
-                initial="hidden"
-                animate="visible"
-                variants={fadeInUp}
-                transition={{ delay: 0.4 }}
+            <div className="w-full mds:w-1/2 h-[120px]  gap-4 mt-8 flex items-center lgss:mx-0 mx-auto justify-start lgss:justify-start">
+              <Link href="/download" className="w-1/2">
+                <Image
+                  src={darkAppStore}
+                  className=" w-full h-full object-contain"
+                  alt=""
+                />
+              </Link>
+              <Link
+                href="https://apps.apple.com/ng/app/celler/id6749920384"
+                className="w-1/2"
               >
-                <Image src={darkAppStore} className=" w-full" alt="" />
-                <Image src={darkPlayStore} className=" w-full" alt="" />
-              </motion.div>
+                <Image
+                  src={darkPlayStore}
+                  className=" w-full h-full object-contain"
+                  alt=""
+                />
+              </Link>
             </div>
           </div>
           <div className="w-full lgss:w-[45%] pt-8 px-6 lgss:px-0">

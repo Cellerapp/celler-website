@@ -35,6 +35,7 @@ import QRCode from "react-qr-code";
 import { fadeInLeft, fadeInRight, fadeInUp } from "@/utils/animations";
 
 import { Variants } from "framer-motion";
+import Link from "next/link";
 
 const staggerContainer: Variants = {
   hidden: {},
@@ -755,9 +756,24 @@ export default function Home() {
               </h2>
             </motion.div>
 
-            <div className="w-full mds:w-1/2 gap-4 mt-8 flex items-center lgss:mx-0 mx-auto justify-start lgss:justify-start">
-              <Image src={darkAppStore} className=" w-full" alt="" />
-              <Image src={darkPlayStore} className=" w-full" alt="" />
+            <div className="w-full mds:w-1/2 h-[120px]  gap-4 mt-8 flex items-center lgss:mx-0 mx-auto justify-start lgss:justify-start">
+              <Link href="/download" className="w-1/2">
+                <Image
+                  src={darkAppStore}
+                  className=" w-full h-full object-contain"
+                  alt=""
+                />
+              </Link>
+              <Link
+                href="https://apps.apple.com/ng/app/celler/id6749920384"
+                className="w-1/2"
+              >
+                <Image
+                  src={darkPlayStore}
+                  className=" w-full h-full object-contain"
+                  alt=""
+                />
+              </Link>
             </div>
           </div>
           <div className="w-full lgss:w-[45%] pt-8 px-6 lgss:px-0">

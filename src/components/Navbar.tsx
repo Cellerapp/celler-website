@@ -135,6 +135,17 @@ export default function Navbar() {
         >
           Contact Us
         </Link>
+        <Link
+          href="/download"
+          className={
+            currentPath === "/download" && !openDrop
+              ? "text-secondary text-[16px]"
+              : "text-white text-[14px]"
+          }
+        >
+          Download
+        </Link>
+
         <div className="hidden px-4 lgss:flex bg-[#454545] rounded-full py-3 items-center justify-center gap-4">
           <a
             href={LOGIN_URL}
@@ -276,6 +287,17 @@ export default function Navbar() {
               }
             >
               Contact Us
+            </Link>
+            <Link
+              href="/download"
+              onClick={() => setMobileMenuOpen(false)}
+              className={
+                currentPath === "/download"
+                  ? "text-secondary text-[16px] font-semibold transition-colors duration-200"
+                  : "text-white text-[16px] hover:text-secondary transition-colors duration-200"
+              }
+            >
+              Download
             </Link>
 
             {/* Sign In/Sign Up Buttons */}
