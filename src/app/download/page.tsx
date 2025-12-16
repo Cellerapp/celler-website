@@ -1,5 +1,7 @@
 "use client";
 
+import { useState } from "react";
+
 import { logo, comingSoonGoogle, hero1 } from "@/assets/images";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -8,6 +10,28 @@ import Link from "next/link";
 import { staggerContainer, scaleIn, fadeInUp } from "@/utils/animations";
 
 const DownloadPage = () => {
+  const [isDownloadingApk, setIsDownloadingApk] = useState(false);
+
+  const handleApkDownload = () => {
+    if (isDownloadingApk) return;
+
+    setIsDownloadingApk(true);
+
+    // Programmatically trigger download from the public folder
+    const link = document.createElement("a");
+    link.href = "/cellerAPK";
+    link.download = "celler.apk";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // We can't reliably know when the browser finishes downloading,
+    // so fall back to a short timeout to reset the loading state.
+    setTimeout(() => {
+      setIsDownloadingApk(false);
+    }, 2500);
+  };
+
   return (
     <motion.div
       initial="hidden"
@@ -51,12 +75,19 @@ const DownloadPage = () => {
             <div className="mt-4 flex justify-center">
               <p className="text-sm text-gray-300">
                 Click the link to download our{" "}
-                <Link
-                  href="https://drive.google.com/file/d/1RTER9htZM0GE1k8M6oHdCofD7RItrLih/view"
-                  className="text-[#3A66FF] hover:text-[#5A86FF]"
+                <button
+                  type="button"
+                  onClick={handleApkDownload}
+                  disabled={isDownloadingApk}
+                  className="inline-flex items-center gap-2 text-[#3A66FF] hover:text-[#5A86FF] disabled:opacity-60 disabled:cursor-not-allowed"
                 >
-                  APK
-                </Link>{" "}
+                  {isDownloadingApk && (
+                    <span className="inline-flex h-4 w-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
+                  )}
+                  <span>
+                    {isDownloadingApk ? "Preparing download..." : "APK"}
+                  </span>
+                </button>
               </p>
             </div>
           </div>
