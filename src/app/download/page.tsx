@@ -19,7 +19,8 @@ const DownloadPage = () => {
 
     // Programmatically trigger download from the public folder
     const link = document.createElement("a");
-    link.href = "/cellerAPK";
+    link.href =
+      "https://drive.usercontent.google.com/download?id=1zHukbf-loBu4bxHZ40Rye9mvSzK7h_Jq&export=download&authuser=0";
     link.download = "celler.apk";
     document.body.appendChild(link);
     link.click();
@@ -69,7 +70,10 @@ const DownloadPage = () => {
 
           {/* Android Section */}
           <div className="bg-[#252750] border border-[#474B7A]  rounded-2xl p-6 relative">
-            <div className="absolute left-1/2 -translate-x-1/2 -top-4 bg-[#3A66FF] text-white text-center py-2 px-4 rounded text-[12px] font-bold tracking-widest">
+            <div
+              onClick={handleApkDownload}
+              className="absolute left-1/2 -translate-x-1/2 cursor-pointer -top-4 bg-[#3A66FF] text-white text-center py-2 px-4 rounded text-[12px] font-bold tracking-widest"
+            >
               ANDROID
             </div>
             <div className="mt-4 flex justify-center">
@@ -84,7 +88,11 @@ const DownloadPage = () => {
                   {isDownloadingApk && (
                     <span className="inline-flex h-4 w-4 border-2 border-current border-t-transparent rounded-full animate-spin" />
                   )}
-                  <span>
+                  <span
+                    className={`${
+                      !isDownloadingApk && "font-bold text-[16px] underline "
+                    }`}
+                  >
                     {isDownloadingApk ? "Preparing download..." : "APK"}
                   </span>
                 </button>
@@ -94,9 +102,12 @@ const DownloadPage = () => {
 
           {/* iOS Section */}
           <div className="bg-[#252750] border border-[#474B7A]   rounded-2xl p-6 relative">
-            <div className="absolute left-1/2 -translate-x-1/2 -top-4 bg-[#3A66FF] text-white text-center py-2 px-4 rounded text-[12px] font-bold tracking-widest">
+            <Link
+              href="https://apps.apple.com/ng/app/celler/id6749920384"
+              className="absolute left-1/2 -translate-x-1/2 -top-4 bg-[#3A66FF] text-white text-center py-2 px-4 rounded text-[12px] font-bold tracking-widest"
+            >
               IOS
-            </div>
+            </Link>
             <div className="space-y-4 mt-3">
               <div className="flex items-start gap-3">
                 <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-sm flex-shrink-0 text-white">
@@ -106,7 +117,7 @@ const DownloadPage = () => {
                   Click the link to install{" "}
                   <Link
                     href="https://apps.apple.com/ng/app/celler/id6749920384"
-                    className="text-[#3A66FF] hover:text-[#5A86FF]"
+                    className="text-[#3A66FF] font-bold text-[16px] uppercase hover:text-[#5A86FF] underline"
                   >
                     Celler App
                   </Link>{" "}
@@ -118,9 +129,12 @@ const DownloadPage = () => {
 
           {/* PWA Section */}
           <div className="bg-[#252750] border border-[#474B7A]   rounded-2xl p-6 relative">
-            <div className="absolute left-1/2 -translate-x-1/2 -top-4 bg-[#3A66FF] text-white text-center py-2 px-4 rounded text-[12px] font-bold tracking-widest">
+            <Link
+              href="https://web.celler.app"
+              className="absolute left-1/2 -translate-x-1/2 -top-4 bg-[#3A66FF] text-white text-center py-2 px-4 rounded text-[12px] font-bold tracking-widest"
+            >
               PWA
-            </div>
+            </Link>
             <div className="space-y-4 mt-3">
               <div className="flex items-start gap-3">
                 <span className="w-6 h-6 rounded-full bg-white/20 flex items-center justify-center text-sm flex-shrink-0 text-white">
@@ -130,7 +144,7 @@ const DownloadPage = () => {
                   Got to{" "}
                   <Link
                     href="https://web.celler.app"
-                    className="text-[#3A66FF] hover:text-[#5A86FF]"
+                    className="text-[#3A66FF] font-bold text-[16px]  hover:text-[#5A86FF] underline"
                   >
                     web.celler.app
                   </Link>{" "}
