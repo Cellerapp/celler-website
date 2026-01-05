@@ -3,6 +3,7 @@ import { Sora } from "@next/font/google";
 
 import "./globals.css";
 import ThemeProvider from "@/components/utils/ThemeProvider";
+import Script from "next/script";
 
 const sora = Sora({
   weight: ["400", "500", "600", "700", "800"],
@@ -70,6 +71,22 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        {/* Google Analytics (GA4) */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-J8N4VR4BTT"
+          strategy="afterInteractive"
+        />
+
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-J8N4VR4BTT');
+          `}
+        </Script>
+      </head>
       <body className={` ${sora.className} bg-[#0C0D1D]`}>
         <ThemeProvider />
         {children}
