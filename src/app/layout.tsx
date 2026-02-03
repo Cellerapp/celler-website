@@ -86,6 +86,29 @@ export default function RootLayout({
             gtag('config', 'G-J8N4VR4BTT');
           `}
         </Script>
+
+        {/* x (twitter) conversion tracking */}
+        <Script id="x-conversion" strategy="afterInteractive">
+          {`
+            !function(e,t,n,s,u,a){e.twq||(s=e.twq=function(){s.exe?s.exe.apply(s,arguments):s.queue.push(arguments);
+            },s.version='1.1',s.queue=[],u=t.createElement(n),u.async=!0,u.src='https://static.ads-twitter.com/uwt.js',
+            a=t.getElementsByTagName(n)[0],a.parentNode.insertBefore(u,a))}(window,document,'script');
+            twq('config','r2adg');
+          `}
+        </Script>
+
+        {/* snap pixel */}
+        <Script id="snap-pixel" strategy="afterInteractive">
+          {`
+            (function(e,t,n){if(e.snaptr)return;var a=e.snaptr=function()
+            {a.handleRequest?a.handleRequest.apply(a,arguments):a.queue.push(arguments)};
+            a.queue=[];var s='script';r=t.createElement(s);r.async=!0;
+            r.src=n;var u=t.getElementsByTagName(s)[0];
+            u.parentNode.insertBefore(r,u);})(window,document,'https://sc-static.net/scevent.min.js');
+            snaptr('init', 'd0b0c9f4-719b-4874-b296-c76366bbbbd1', {});
+            snaptr('track', 'PAGE_VIEW');
+          `}
+        </Script>
       </head>
       <body className={` ${sora.className} bg-[#0C0D1D]`}>
         <ThemeProvider />
