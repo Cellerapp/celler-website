@@ -17,11 +17,11 @@ const DownloadPage = () => {
 
     setIsDownloadingApk(true);
 
-    // Programmatically trigger download from the public folder
+    // programmatically trigger download (apk hosted on drive; too large for repo)
     const link = document.createElement("a");
     link.href =
       "https://drive.usercontent.google.com/download?id=1zHukbf-loBu4bxHZ40Rye9mvSzK7h_Jq&export=download&authuser=0";
-    link.download = "celler.apk";
+    link.download = "Celler.apk";
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
