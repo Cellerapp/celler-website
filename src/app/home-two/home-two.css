@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=Inter:wght@400;500&display=swap');
+
+.ht-page {
+  font-family: 'Space Grotesk', sans-serif;
+  background-color: #ffffff;
+  overflow-x: hidden;
+  color: #1d2739;
+}
+
+/* ===== Design Tokens ===== */
+.ht-page {
+  --ht-blue: #3a66ff;
+  --ht-dark-navy: #1d2739;
+  --ht-body-gray: #475367;
+  --ht-light-bg: #f9fafb;
+  --ht-card-bg: #fcfdfd;
+  --ht-card-border: #f0f2f5;
+  --ht-black: #000000;
+  --ht-green: #18cf2d;
+  --ht-dark-faq: #09244b;
+  --ht-shadow-card: 0px 1.5px 4px rgba(16, 25, 40, 0.07);
+  --ht-heading-xl: 96px;
+  --ht-heading-lg: 52px;
+  --ht-heading-md: 32px;
+}
+
+/* ===== Layout ===== */
+.ht-container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 80px;
+}
+
+.ht-section {
+  width: 100%;
+}
+
+/* ===== Card Styles ===== */
+.ht-card {
+  background: var(--ht-card-bg);
+  border: 1px solid var(--ht-card-border);
+  border-radius: 18px;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.ht-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(58, 102, 255, 0.1);
+}
+
+.ht-feature-icon-wrap {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: rgba(58, 102, 255, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+/* ===== Skeleton loader rows ===== */
+.ht-skeleton {
+  background: #f0f2f5;
+  border-radius: 100px;
+}
+
+/* ===== Navbar ===== */
+.ht-navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: #ffffff;
+  border-bottom: 1px solid #f0f2f5;
+  padding: 0 80px;
+}
+
+.ht-navbar-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ===== Hero ===== */
+.ht-hero {
+  background-color: var(--ht-blue);
+  background-image: url("data:image/svg+xml,%3Csvg width='1440' height='900' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='rgba(255,255,255,0.04)'%3E%3Ccircle cx='100' cy='100' r='200'/%3E%3Ccircle cx='1300' cy='600' r='300'/%3E%3Ccircle cx='700' cy='200' r='150'/%3E%3C/g%3E%3C/svg%3E");
+  background-size: cover;
+  position: relative;
+  overflow: hidden;
+}
+
+.ht-hero-inner {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 80px 80px 0;
+  display: flex;
+  align-items: flex-start;
+  min-height: 820px;
+}
+
+/* ===== FAQ Accordion ===== */
+.ht-faq-item {
+  border-bottom: 1px solid #e4e7ec;
+  padding: 28px 0;
+  cursor: pointer;
+}
+
+.ht-faq-item:last-child {
+  border-bottom: none;
+}
+
+/* ===== Testimonials ===== */
+.ht-testimonial-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  flex: 1;
+}
+
+.ht-testimonial-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 20px 24px;
+  background: rgba(60, 50, 40, 0.55);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 976px) {
+  .ht-navbar {
+    padding: 0 24px;
+  }
+  .ht-container {
+    padding: 0 24px;
+  }
+  .ht-hero-inner {
+    padding: 60px 24px 0;
+    flex-direction: column;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .ht-navbar {
+    padding: 0 16px;
+  }
+  .ht-container {
+    padding: 0 16px;
+  }
+}

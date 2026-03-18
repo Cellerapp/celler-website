@@ -1,0 +1,74 @@
+import Image from 'next/image';
+
+const steps = [
+  {
+    num: '1',
+    title: 'Create Your Account',
+    desc: 'Sign up and verify in 5 minutes',
+  },
+  {
+    num: '2',
+    title: 'Send Your Digital Assets',
+    desc: 'Deposit your digital assets safely.',
+  },
+  {
+    num: '3',
+    title: 'Convert & Withdraw',
+    desc: 'Get paid directly to your bank.',
+  },
+];
+
+export default function HowItWorks() {
+  return (
+    <section
+      id="how-it-works"
+      className="ht-section py-20"
+      style={{ borderTop: '2px dashed #e8e8e8' }}
+    >
+      <div className="ht-container">
+        {/* Section header */}
+        <div className="text-center mb-14">
+          <h2 className="font-bold text-[#000000] leading-[52px] tracking-[-2.08px] text-[36px] mds:text-[44px] lgss:text-[52px]">
+            Get started in 60 seconds.
+          </h2>
+          <p className="mt-2 text-[#475367] text-[18px]">No middleman. No unnecessary talk.</p>
+        </div>
+
+        {/* Blue rounded container */}
+        <div
+          className="bg-[#3a66ff] rounded-[40px] overflow-hidden flex flex-col lgss:flex-row items-center lgss:items-stretch"
+          style={{ minHeight: 600 }}
+        >
+          {/* Steps — left */}
+          <div className="flex-1 px-12 lgss:px-16 py-14 flex flex-col justify-center gap-16">
+            {steps.map((step) => (
+              <div key={step.num} className="flex flex-col gap-2">
+                {/* Number circle */}
+                <div className="w-10 h-10 rounded-full bg-white flex items-center justify-center mb-1">
+                  <span className="text-[#000000] font-bold text-[24px] leading-none tracking-[-0.48px]">
+                    {step.num}
+                  </span>
+                </div>
+                <h3 className="text-white font-bold text-[24px] tracking-[-0.48px] leading-[28.8px]">
+                  {step.title}
+                </h3>
+                <p className="text-white text-[16px] font-normal">{step.desc}</p>
+              </div>
+            ))}
+          </div>
+
+          {/* Phone mockup — right */}
+          <div className="hidden lgss:flex flex-shrink-0 items-end justify-center px-8">
+            <Image
+              src="/home-two/steps-phone.png"
+              alt="Celler app create account screen"
+              width={420}
+              height={500}
+              className="object-contain max-h-[560px] w-auto"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
