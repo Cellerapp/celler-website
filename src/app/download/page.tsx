@@ -19,8 +19,10 @@ const DownloadPage = () => {
 
     // programmatically trigger download (apk hosted on drive; too large for repo)
     const link = document.createElement("a");
+    // link.href =
+    //   "https://drive.usercontent.google.com/download?id=1peekXVcACFHJpiV_8Hj1v6sipLGe2H0r&export=download";
     link.href =
-      "https://drive.usercontent.google.com/download?id=1peekXVcACFHJpiV_8Hj1v6sipLGe2H0r&export=download";
+      "https://www.dropbox.com/scl/fi/b5rcmmjdasspz0rri3x1b/Cellerv2.apk?rlkey=jdqn5c5cztgupf1o4vwnld21h&st=3dkg4d4r&dl=1";
     link.download = "Celler.apk";
     document.body.appendChild(link);
     link.click();
