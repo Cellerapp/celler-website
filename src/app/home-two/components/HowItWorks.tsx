@@ -34,13 +34,14 @@ export default function HowItWorks() {
           <p className="mt-2 text-[#475367] text-[18px]">No middleman. No unnecessary talk.</p>
         </div>
 
-        {/* Blue rounded container */}
+        {/* Blue rounded container — phone bottom clipped by overflow (figma) */}
         <div
-          className="bg-[#3a66ff] rounded-[40px] overflow-hidden flex flex-col lgss:flex-row items-center lgss:items-stretch"
+          className="bg-[#3a66ff] rounded-[40px] overflow-hidden flex flex-col lgss:flex-row items-stretch relative"
           style={{ minHeight: 600 }}
         >
+          <div className="ht-chevron-overlay rounded-[40px]" aria-hidden />
           {/* Steps — left */}
-          <div className="flex-1 px-12 lgss:px-16 py-14 flex flex-col justify-center gap-16">
+          <div className="relative z-10 flex-1 px-12 lgss:px-16 py-14 flex flex-col justify-center gap-16">
             {steps.map((step) => (
               <div key={step.num} className="flex flex-col gap-2">
                 {/* Number circle */}
@@ -57,15 +58,20 @@ export default function HowItWorks() {
             ))}
           </div>
 
-          {/* Phone mockup — right */}
-          <div className="hidden lgss:flex flex-shrink-0 items-end justify-center px-8">
-            <Image
-              src="/home-two/steps-phone.png"
-              alt="Celler app create account screen"
-              width={420}
-              height={500}
-              className="object-contain max-h-[560px] w-auto"
-            />
+          {/* Phone — sits on bottom edge, lower part clipped by container */}
+          <div className="hidden lgss:block relative z-10 flex-shrink-0 w-[min(42%,400px)] min-h-[600px] overflow-hidden">
+            <div
+              className="absolute bottom-0 w-[min(380px,90%)] h-[min(620px,92%)] max-h-[640px]"
+              style={{ right: 'max(-4rem, -8vw)' }}
+            >
+              <Image
+                src="/home-two/steps-phone.png"
+                alt="Celler app create account screen"
+                fill
+                sizes="380px"
+                className="object-cover object-[center_28%]"
+              />
+            </div>
           </div>
         </div>
       </div>

@@ -98,16 +98,17 @@ export default function PainPoints() {
             </div>
           </motion.div>
 
-          {/* You need control — blue promo card */}
+          {/* You need control — blue promo card (phone clipped at bottom like figma) */}
           <motion.div
             custom={4}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className="rounded-2xl bg-[#3a66ff] p-8 flex items-center justify-between overflow-hidden relative min-h-[247px]"
+            className="rounded-[24px] bg-[#3a66ff] p-8 flex items-center overflow-hidden relative min-h-[min(280px,320px)] mds:min-h-[247px]"
           >
-            <div className="flex flex-col gap-2 z-10">
+            <div className="ht-chevron-overlay opacity-80 rounded-[24px]" aria-hidden />
+            <div className="flex flex-col gap-2 z-10 max-w-[min(100%,58%)] pr-4">
               <h3 className="text-white font-bold text-[32px] tracking-[-0.64px] leading-[38.4px]">
                 You need control.
               </h3>
@@ -115,14 +116,16 @@ export default function PainPoints() {
                 Celler gives you control, simply and reliably.
               </p>
             </div>
-            <div className="absolute right-0 bottom-0 h-full flex items-end">
-              <Image
-                src="/home-two/hero-phone.png"
-                alt="Celler app"
-                width={220}
-                height={207}
-                className="object-contain max-h-[207px]"
-              />
+            <div className="pointer-events-none absolute inset-y-0 right-0 w-[min(52%,280px)] overflow-hidden">
+              <div className="absolute bottom-[-24px] right-[-40px] h-[300px] w-[300px] relative">
+                <Image
+                  src="/home-two/pain-phone-thumb.png"
+                  alt="Celler app"
+                  fill
+                  sizes="280px"
+                  className="object-contain object-bottom object-right scale-[1.3] origin-bottom-right"
+                />
+              </div>
             </div>
           </motion.div>
         </div>

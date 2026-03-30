@@ -16,18 +16,19 @@ const fadeUp = {
 export default function Hero() {
   return (
     <section className="ht-hero ht-section">
-      {/* Subtle radial overlay */}
+      <div className="ht-chevron-overlay" aria-hidden />
+      {/* subtle radial overlay */}
       <div
-        className="absolute inset-0 pointer-events-none"
+        className="absolute inset-0 pointer-events-none z-[1]"
         style={{
           background:
             'radial-gradient(ellipse 60% 70% at 80% 40%, rgba(255,255,255,0.06) 0%, transparent 70%)',
         }}
       />
 
-      <div className="ht-hero-inner">
+      <div className="ht-hero-inner relative z-[2]">
         {/* Left column */}
-        <div className="flex-1 flex flex-col gap-0 pt-4 pb-12 lgss:pb-0 z-10">
+        <div className="flex-1 flex flex-col gap-0 pt-4 pb-12 lgss:pb-8 z-10">
           <motion.h1
             custom={0}
             initial="hidden"
@@ -121,28 +122,32 @@ export default function Hero() {
           </motion.div>
         </div>
 
-        {/* Right column — phone image */}
+        {/* Right — phone bleeds past bottom/right; section clips (figma) */}
         <motion.div
           custom={0.2}
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="hidden lgss:flex flex-shrink-0 items-end self-end"
-          style={{ marginBottom: 0 }}
+          className="hidden lgss:block self-end flex-shrink-0 relative w-[min(44vw,520px)] h-[min(720px,78vh)] mt-4"
         >
-          <Image
-            src="/home-two/hero-phone.png"
-            alt="Celler app on iPhone showing total wallet"
-            width={580}
-            height={650}
-            className="object-contain max-h-[730px] w-auto"
-            priority
-          />
+          <div
+            className="absolute bottom-0 w-[min(560px,48vw)] h-[min(900px,96vh)] max-h-[920px]"
+            style={{ right: 'max(-7rem, -12vw)' }}
+          >
+            <Image
+              src="/home-two/hero-phone.png"
+              alt="Celler app on iPhone showing total wallet"
+              fill
+              sizes="560px"
+              className="object-cover object-[18%_52%]"
+              priority
+            />
+          </div>
         </motion.div>
       </div>
 
       {/* Wave separator */}
-      <div className="w-full mt-4 lgss:mt-0">
+      <div className="w-full mt-4 lgss:mt-0 relative z-[2]">
         <img
           src="/home-two/wave-bg.svg"
           alt=""

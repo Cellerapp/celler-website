@@ -1,12 +1,14 @@
 import { SectionContent } from "@/types/termsType";
 
 export const API_URL = process.env.NEXT_PUBLIC_API_URL;
+
 const BASE_URL = API_URL?.includes("staging")
   ? "https://web.celler.app"
   : "https://web.celler.app";
 
 export const LOGIN_URL = `${BASE_URL}/login`;
 export const SIGNUP_URL = `${BASE_URL}/sign-up`;
+
 export const messages = [
   {
     id: 1,
@@ -33,7 +35,6 @@ export const messages = [
       "Our safety is our priority. Complete our trusted KYC process to protect your account and enable secure transactions.",
   },
 ];
-
 
 export const termsContent: SectionContent[] = [
   {
@@ -406,198 +407,195 @@ export const termsContent: SectionContent[] = [
     ],
   },
   {
-    title:"11. Fees",
-    content:[
-         {
-        subTitle: "",
-        text: "11.1. Each Cryptocurrency Transaction could be subject to a fee, which we will display in-app prior to each Cryptocurrency Transaction."
-      },
-         {
-        subTitle: "",
-        text: "11.2. Customers that send cryptocurrency out of the Celler ecosystem are charged a fee to facilitate the transaction on the blockchain. Celler does not set the fee and the customer is informed of the fee before sending their cryptocurrency out."
-     },
-         {
-        subTitle: "",
-        text: "11.3. Fees which are not charged, credited or paid by Celler shall be announced at the time of buy or sell. "
-     },
-         {
-        subTitle: "",
-        text: "11.4. Celler is not responsible for fees which are charged by a third party or network."
-     },
-         {
-        subTitle: "",
-        text: "11.5. Celler is not responsible for fees which, by error, are not charged or credited to the customer. "
-     },
-         {
-        subTitle: "",
-        text: "11.6. Celler reserves the right to amend or cancel any cryptocurrency fees at any time. "
-     },
-    ]
-  },
-  {
-    title:"12. Termination; suspension; refusal",
-    content:[
-         {
-        subTitle: "",
-        text: "12.1. You may terminate your access to the Cryptocurrency Services with us at any time by sending us notice in writing."
-      },
-         {
-        subTitle: "",
-        text: "12.2. We may terminate your access to the Cryptocurrency Services at any time in our sole discretion by giving you notice, which may take effect immediately or on a later date as may be specified in the notice."
-      },
-         {
-        subTitle: "",
-        text: "12.3. We may at any time suspend or terminate your use of the Cryptocurrency Services without notice if:",
-        bulletPoints:[
-            "we are required to take such action by a Cryptocurrency Exchange;",
-            "you breach any condition of these Cryptocurrency Terms of Use;",
-            "you violate or we have reason to believe that you are in violation of any law or regulation that is applicable to your use of the Cryptocurrency Services;",
-            "we have reason to believe that you are in any way involved in any fraudulent activity, money laundering, terrorism financing or other illegal or criminal activity;",
-            "it is reasonably necessary for us to do so to prevent you or us contravening any applicable law or regulatory requirements;",
-            "it is necessary for security reasons; or",
-            "if we reasonably suspect the Cryptocurrency Services have been or are being used without your authorisation or fraudulently; and we shall notify you either prior to the suspension or, if prior notification is not possible under the circumstances, promptly after the suspension unless we are prohibited by law to notify you; or",
-            "if the direct or indirect inherent risk attributed to your crypto activity falls outside of Celler’s risk appetite.",
-            "Celler retains the right to determine the appropriate risk level it is willing to accept in regards to any Crypto Currency activity."
-        ]
-     },
-       {
-        subTitle: "",
-        text: "12.4. We may refuse to submit an Order Instruction where:",
-        bulletPoints:[
-            "we are, in our reasonable opinion, required to do so by applicable law, regulation or any court or other authority to which we are subject in any jurisdiction; and",
-            "We have concerns about the security of your Celler Account or we suspect the Cryptocurrency Services are being used in a fraudulent or unauthorized manner.",
-            ""
-        ]
-     },
-       {
-        subTitle: "",
-        text: "12.5. We will try to give you advance notice of any suspension or refusal. Where advance notice is not possible, we will provide you with notice as soon as reasonably practicable thereafter. Unless we are prevented by law (or unless the relevant Cryptocurrency Exchange does not provide us with details), we will try to provide you with details of the nature of the suspension or refusal, the anticipated duration and anything you have to do to remedy any error or circumstances which have led to the suspension or refusal.",
-        
-     },
-       {
-        subTitle: "",
-        text: "12.6. Whilst your use of the Cryptocurrency Services is suspended, we may (using our reasonable discretion) sell off all or some of your interests by providing notice to you in certain circumstances, for example;",
-        bulletPoints:[
-            "if you fail to provide any information we have requested or any warranty/representation you have given us is or becomes, in our opinion, materially inaccurate, incorrect or misleading;",
-            "if you take some action (or refrain from doing something) which places us in breach of our legal or regulatory obligations;",
-            "if you breach these Cryptocurrency Terms of Use or those of your Celler Account; or",
-            "for any other reason which we may specify in our notice to you."
-        ]
-     },
+    title: "11. Fees",
+    content: [
       {
         subTitle: "",
-        text: "12.7. If we sell off your interests in Supported Cryptocurrencies, we will buy back the interest(s) at prevailing market rates. If the value of the Supported Cryptocurrency has weakened, this means that you may incur a loss relative to the amount you initially paid. We will credit the sale proceeds (in your preferred currency) to your Celler Account."
-     },
+        text: "11.1. Each Cryptocurrency Transaction could be subject to a fee, which we will display in-app prior to each Cryptocurrency Transaction.",
+      },
+      {
+        subTitle: "",
+        text: "11.2. Customers that send cryptocurrency out of the Celler ecosystem are charged a fee to facilitate the transaction on the blockchain. Celler does not set the fee and the customer is informed of the fee before sending their cryptocurrency out.",
+      },
+      {
+        subTitle: "",
+        text: "11.3. Fees which are not charged, credited or paid by Celler shall be announced at the time of buy or sell. ",
+      },
+      {
+        subTitle: "",
+        text: "11.4. Celler is not responsible for fees which are charged by a third party or network.",
+      },
+      {
+        subTitle: "",
+        text: "11.5. Celler is not responsible for fees which, by error, are not charged or credited to the customer. ",
+      },
+      {
+        subTitle: "",
+        text: "11.6. Celler reserves the right to amend or cancel any cryptocurrency fees at any time. ",
+      },
+    ],
+  },
+  {
+    title: "12. Termination; suspension; refusal",
+    content: [
+      {
+        subTitle: "",
+        text: "12.1. You may terminate your access to the Cryptocurrency Services with us at any time by sending us notice in writing.",
+      },
+      {
+        subTitle: "",
+        text: "12.2. We may terminate your access to the Cryptocurrency Services at any time in our sole discretion by giving you notice, which may take effect immediately or on a later date as may be specified in the notice.",
+      },
+      {
+        subTitle: "",
+        text: "12.3. We may at any time suspend or terminate your use of the Cryptocurrency Services without notice if:",
+        bulletPoints: [
+          "we are required to take such action by a Cryptocurrency Exchange;",
+          "you breach any condition of these Cryptocurrency Terms of Use;",
+          "you violate or we have reason to believe that you are in violation of any law or regulation that is applicable to your use of the Cryptocurrency Services;",
+          "we have reason to believe that you are in any way involved in any fraudulent activity, money laundering, terrorism financing or other illegal or criminal activity;",
+          "it is reasonably necessary for us to do so to prevent you or us contravening any applicable law or regulatory requirements;",
+          "it is necessary for security reasons; or",
+          "if we reasonably suspect the Cryptocurrency Services have been or are being used without your authorisation or fraudulently; and we shall notify you either prior to the suspension or, if prior notification is not possible under the circumstances, promptly after the suspension unless we are prohibited by law to notify you; or",
+          "if the direct or indirect inherent risk attributed to your crypto activity falls outside of Celler’s risk appetite.",
+          "Celler retains the right to determine the appropriate risk level it is willing to accept in regards to any Crypto Currency activity.",
+        ],
+      },
+      {
+        subTitle: "",
+        text: "12.4. We may refuse to submit an Order Instruction where:",
+        bulletPoints: [
+          "we are, in our reasonable opinion, required to do so by applicable law, regulation or any court or other authority to which we are subject in any jurisdiction; and",
+          "We have concerns about the security of your Celler Account or we suspect the Cryptocurrency Services are being used in a fraudulent or unauthorized manner.",
+          "",
+        ],
+      },
+      {
+        subTitle: "",
+        text: "12.5. We will try to give you advance notice of any suspension or refusal. Where advance notice is not possible, we will provide you with notice as soon as reasonably practicable thereafter. Unless we are prevented by law (or unless the relevant Cryptocurrency Exchange does not provide us with details), we will try to provide you with details of the nature of the suspension or refusal, the anticipated duration and anything you have to do to remedy any error or circumstances which have led to the suspension or refusal.",
+      },
+      {
+        subTitle: "",
+        text: "12.6. Whilst your use of the Cryptocurrency Services is suspended, we may (using our reasonable discretion) sell off all or some of your interests by providing notice to you in certain circumstances, for example;",
+        bulletPoints: [
+          "if you fail to provide any information we have requested or any warranty/representation you have given us is or becomes, in our opinion, materially inaccurate, incorrect or misleading;",
+          "if you take some action (or refrain from doing something) which places us in breach of our legal or regulatory obligations;",
+          "if you breach these Cryptocurrency Terms of Use or those of your Celler Account; or",
+          "for any other reason which we may specify in our notice to you.",
+        ],
+      },
+      {
+        subTitle: "",
+        text: "12.7. If we sell off your interests in Supported Cryptocurrencies, we will buy back the interest(s) at prevailing market rates. If the value of the Supported Cryptocurrency has weakened, this means that you may incur a loss relative to the amount you initially paid. We will credit the sale proceeds (in your preferred currency) to your Celler Account.",
+      },
       {
         subTitle: "",
         text: "12.8. On termination, unless prohibited by applicable law or by any court or other order to which we are subject in any jurisdiction, for a period of 10 days following the date of termination:",
-        bulletPoints:[
-            "you will continue to be able to view the balance of your interest(s) in Supported Cryptocurrencies on your Celler Account dashboard;",
-            "you will not be permitted to buy any further interests in Supported Cryptocurrencies; and",
-            "you may – at our sole discretion – sell your interests in Supported Cryptocurrencies back to us."
-        ]
+        bulletPoints: [
+          "you will continue to be able to view the balance of your interest(s) in Supported Cryptocurrencies on your Celler Account dashboard;",
+          "you will not be permitted to buy any further interests in Supported Cryptocurrencies; and",
+          "you may – at our sole discretion – sell your interests in Supported Cryptocurrencies back to us.",
+        ],
       },
       {
         subTitle: "",
-        text: "12.9. If at the end of the 14 day period you have not sold down all your interests in Supported Cryptocurrencies, you authorise us to buy back your interests at the best available price via the relevant Cryptocurrency Exchange. The proceeds of such buy back will be credited to the e-money balance in your Celler Account."
-     },
+        text: "12.9. If at the end of the 14 day period you have not sold down all your interests in Supported Cryptocurrencies, you authorise us to buy back your interests at the best available price via the relevant Cryptocurrency Exchange. The proceeds of such buy back will be credited to the e-money balance in your Celler Account.",
+      },
       {
         subTitle: "",
-        text: "12.10. For the avoidance of doubt, if your Celler Account is terminated or suspended your access to the Cryptocurrency Services will also be terminated or suspended (as applicable)."
-    },
+        text: "12.10. For the avoidance of doubt, if your Celler Account is terminated or suspended your access to the Cryptocurrency Services will also be terminated or suspended (as applicable).",
+      },
       {
         subTitle: "",
-        text: "12.11. Except where prohibited by law or regulation, as security for the performance of your obligations under these Cryptocurrency Terms, you grant to Celler a lien on, and security interest in and to, your Crypto Assets."
-     },
+        text: "12.11. Except where prohibited by law or regulation, as security for the performance of your obligations under these Cryptocurrency Terms, you grant to Celler a lien on, and security interest in and to, your Crypto Assets.",
+      },
       {
         subTitle: "",
-        text: "12.12. If the balance in your Celler Account (including your Cryptocurrencies Services) becomes negative for any reason, that negative balance represents an amount that you owe to Celler. In addition to any rights we have under the Celler Terms of Use, you authorize Celler to sell your Crypto Assets and use the proceeds to pay a negative balance you owe to us in any Celler account you own at our sole discretion."
-     },
+        text: "12.12. If the balance in your Celler Account (including your Cryptocurrencies Services) becomes negative for any reason, that negative balance represents an amount that you owe to Celler. In addition to any rights we have under the Celler Terms of Use, you authorize Celler to sell your Crypto Assets and use the proceeds to pay a negative balance you owe to us in any Celler account you own at our sole discretion.",
+      },
       {
         subTitle: "",
-        text: "12.13. If we sell your Crypto Assets to pay amounts you owe to us, we will value the Crypto Assets using the price that otherwise applies to the sale of Crypto Assets at that time, or another reasonable price determined by Celler in its reasonable discretion. You understand that the value of Crypto Assets may rise or fall quickly and that we have no obligation to sell at a time that provides the best price for you. While Celler will notify you if you have a negative balance, regardless of how quickly we sell your Crypto Assets, we have no obligation to give you notice before we sell."
-    },
+        text: "12.13. If we sell your Crypto Assets to pay amounts you owe to us, we will value the Crypto Assets using the price that otherwise applies to the sale of Crypto Assets at that time, or another reasonable price determined by Celler in its reasonable discretion. You understand that the value of Crypto Assets may rise or fall quickly and that we have no obligation to sell at a time that provides the best price for you. While Celler will notify you if you have a negative balance, regardless of how quickly we sell your Crypto Assets, we have no obligation to give you notice before we sell.",
+      },
       {
         subTitle: "",
-        text: "12.14. Error in Receiving Cryptocurrency. In the event of an error, you give Company permission, subject to Company’s compliance with applicable law, to make appropriate corrections by debiting or crediting your Celler balance, or debiting or crediting your primary or alternate funding sources as applicable. We may also, in our sole discretion, block, freeze, or deny access to these funds, associated wallets, or services."
-    },
-     
+        text: "12.14. Error in Receiving Cryptocurrency. In the event of an error, you give Company permission, subject to Company’s compliance with applicable law, to make appropriate corrections by debiting or crediting your Celler balance, or debiting or crediting your primary or alternate funding sources as applicable. We may also, in our sole discretion, block, freeze, or deny access to these funds, associated wallets, or services.",
+      },
+
       {
         subTitle: "",
-        text: "12.15. If your account is dormant for a period of (12) consecutive months, Celler reserves the right to terminate the relationship to include selling your crypto assets into your local currency and/or transferring funds to a verified payment method. "
-    },
+        text: "12.15. If your account is dormant for a period of (12) consecutive months, Celler reserves the right to terminate the relationship to include selling your crypto assets into your local currency and/or transferring funds to a verified payment method. ",
+      },
       {
         subTitle: "",
-        text: "12.16. Prior to the termination of your account due to dormancy, Celler will make an honest best effort to contact you in regards to your Crypto assets."
-    },
+        text: "12.16. Prior to the termination of your account due to dormancy, Celler will make an honest best effort to contact you in regards to your Crypto assets.",
+      },
       {
         subTitle: "",
-        text: "12.17. Celler reserves the right to liquidate all crypto positions after (12) consecutive months of dormancy at current market rates. Any gain or loss of value due to this action is the responsibility of the User. Celler is not liable for any lost value nor any tax implication which may arise. "
-    },
+        text: "12.17. Celler reserves the right to liquidate all crypto positions after (12) consecutive months of dormancy at current market rates. Any gain or loss of value due to this action is the responsibility of the User. Celler is not liable for any lost value nor any tax implication which may arise. ",
+      },
       {
         subTitle: "",
         text: "12.18. Liquidation of Crypto Positions, In addition to the termination rights outlined in above, Celler reserves the right, at its sole discretion, to liquidate all crypto positions held in your account at the prevailing market rate under the following circumstances:",
-        bulletPoints:[
-            "Failure to Comply with Applicable Laws: If we, in our reasonable judgment, determine that your actions or use of our services violate Applicable Laws, or if you fail to comply with any legal obligations as specified in this Agreement.",
-            " Failure to Provide Necessary Information: In the event that you fail to provide information or documentation necessary for us to perform due diligence measures to our full satisfaction, including but not limited to identifying the purpose of using our services, verifying your identity, and obtaining relevant information about the origin of your funds or wealth.",
-            "Suspicion of Illegal Activities: If we reasonably suspect your involvement in money laundering, terrorist financing, fraud, or any other illegal activities, and we are unable to alleviate such suspicions through further investigation.",
-            "Risk Assessment: If circumstances related to you or a person affiliated with you indicate a higher risk of money laundering, terrorist financing, fraud, or any other illegal activity, and providing services to you is deemed undesirable by us.",
-            "International Sanctions: If you or a person affiliated with you is or has been the subject of an international financial sanction.",
-            "Overdue Payables: In the event of overdue payables to Celler for which we have the right to claim interest for late payment.",
-            "Lawful Orders: Upon receipt of a lawful order from a competent public authority or another competent authority, including but not limited to law enforcement, supervision, tax authority, court, bailiff, or any international clearing system administrator, demanding termination of your account or restriction of services provided to you.",
-            "Non-Compliance with Applicable Law: If we determine that, under Applicable Law, we are prohibited from providing services to you or have the right to refuse services or terminate the Agreement with you."
-        ]
-    },
-    
-     
-    ]
+        bulletPoints: [
+          "Failure to Comply with Applicable Laws: If we, in our reasonable judgment, determine that your actions or use of our services violate Applicable Laws, or if you fail to comply with any legal obligations as specified in this Agreement.",
+          " Failure to Provide Necessary Information: In the event that you fail to provide information or documentation necessary for us to perform due diligence measures to our full satisfaction, including but not limited to identifying the purpose of using our services, verifying your identity, and obtaining relevant information about the origin of your funds or wealth.",
+          "Suspicion of Illegal Activities: If we reasonably suspect your involvement in money laundering, terrorist financing, fraud, or any other illegal activities, and we are unable to alleviate such suspicions through further investigation.",
+          "Risk Assessment: If circumstances related to you or a person affiliated with you indicate a higher risk of money laundering, terrorist financing, fraud, or any other illegal activity, and providing services to you is deemed undesirable by us.",
+          "International Sanctions: If you or a person affiliated with you is or has been the subject of an international financial sanction.",
+          "Overdue Payables: In the event of overdue payables to Celler for which we have the right to claim interest for late payment.",
+          "Lawful Orders: Upon receipt of a lawful order from a competent public authority or another competent authority, including but not limited to law enforcement, supervision, tax authority, court, bailiff, or any international clearing system administrator, demanding termination of your account or restriction of services provided to you.",
+          "Non-Compliance with Applicable Law: If we determine that, under Applicable Law, we are prohibited from providing services to you or have the right to refuse services or terminate the Agreement with you.",
+        ],
+      },
+    ],
   },
   {
-    title:"13. Limitation of Liability",
-    content:[
-        {
+    title: "13. Limitation of Liability",
+    content: [
+      {
         subTitle: "",
-        text: "13.1. Nothing in these Cryptocurrency Terms of Use shall operate to exclude liability for death or personal injury due to negligence or for fraud or fraudulent misrepresentation or for any statutory liability that cannot be excluded or amended according to applicable laws."
+        text: "13.1. Nothing in these Cryptocurrency Terms of Use shall operate to exclude liability for death or personal injury due to negligence or for fraud or fraudulent misrepresentation or for any statutory liability that cannot be excluded or amended according to applicable laws.",
       },
-        {
+      {
         subTitle: "",
         text: "13.2. Subject to section 16.1, we shall not be liable for:",
-        bulletPoints:[
-            "any disruption or impairment of our service or for disruptions or impairments of intermediary services on which we rely for the performance of our obligations hereunder, provided that such disruption or impairment is due to abnormal and unforeseeable circumstances beyond our reasonable control or the control of the intermediary affected;",
-            "any indirect or consequential losses including but not limited to loss of profit, loss of business and loss of reputation;",
-            "any losses arising from our compliance with legal and regulatory requirements;",
-            "the assessment or payment of any taxes, duties or other charges that arise from your use of the Cryptocurrency Services;",
-            "any losses arising from the inaccuracy or incompleteness of any market data provided to you in the course of us providing the Cryptocurrency Services (whether such data is provided to us by a Cryptocurrency Exchange or otherwise);",
-            "any losses arising from any act or failure to act by a Cryptocurrency Exchange or the provider of any Cryptocurrency Wallet; and",
-            "any losses arising from incorrect instructions received by us from you.",
-            "Any loss arising from unauthorized access to your account due to loss of gadgets, fraud or your loss of access to your account without our knowledge",
-        ]
-     },
-       {
+        bulletPoints: [
+          "any disruption or impairment of our service or for disruptions or impairments of intermediary services on which we rely for the performance of our obligations hereunder, provided that such disruption or impairment is due to abnormal and unforeseeable circumstances beyond our reasonable control or the control of the intermediary affected;",
+          "any indirect or consequential losses including but not limited to loss of profit, loss of business and loss of reputation;",
+          "any losses arising from our compliance with legal and regulatory requirements;",
+          "the assessment or payment of any taxes, duties or other charges that arise from your use of the Cryptocurrency Services;",
+          "any losses arising from the inaccuracy or incompleteness of any market data provided to you in the course of us providing the Cryptocurrency Services (whether such data is provided to us by a Cryptocurrency Exchange or otherwise);",
+          "any losses arising from any act or failure to act by a Cryptocurrency Exchange or the provider of any Cryptocurrency Wallet; and",
+          "any losses arising from incorrect instructions received by us from you.",
+          "Any loss arising from unauthorized access to your account due to loss of gadgets, fraud or your loss of access to your account without our knowledge",
+        ],
+      },
+      {
         subTitle: "",
-        text: "13.3. No Liability for Liquidation: If Celler exercises its right to liquidate crypto positions under Section 12.18, we shall not be liable to you for any costs, losses, claims, or expenses incurred as a result of such liquidation." 
-    },
-    ]
+        text: "13.3. No Liability for Liquidation: If Celler exercises its right to liquidate crypto positions under Section 12.18, we shall not be liable to you for any costs, losses, claims, or expenses incurred as a result of such liquidation.",
+      },
+    ],
   },
   {
-    title:"14. Complaints",
-    content:[
-        {
+    title: "14. Complaints",
+    content: [
+      {
         subTitle: "",
-        text: "14.1. If you have a complaint in relation to the Cryptocurrency Services you should contact Customer Operations at.. You should clearly indicate that you are wishing to make a complaint to us. This helps us to distinguish a complaint from a mere query. "
-    },
-    ]
+        text: "14.1. If you have a complaint in relation to the Cryptocurrency Services you should contact Customer Operations at.. You should clearly indicate that you are wishing to make a complaint to us. This helps us to distinguish a complaint from a mere query. ",
+      },
+    ],
   },
   {
-    title:"15. General Disclosures",
-    content:[
-        "Legislative and regulatory changes or actions at the state, federal, or international level may adversely affect the use, transfer, exchange and value of cryptocurrency.Transactions in cryptocurrency may be irreversible, and accordingly, losses due to fraudulent or accidental transactions may not be recoverable.Some cryptocurrency transactions shall be deemed to be made when recorded on the public ledger, which is not necessarily the date or time the customer initiates the transaction.The volatility and unpredictability of the price of cryptocurrency relative to fiat currency may result in significant loss over a short period of time.The nature of cryptocurrency may lead to an increased risk of fraud or cyberattack.The nature of cryptocurrency means that any technical difficulties experienced by Celler may prevent the access or use of a customer's cryptocurrency.Any bond or trust account maintained by Celler for the benefit of its customers may not be sufficient to cover all losses incurred by customers.Rhode Island Disclosures Information on fees and pricing can be obtained upon request to …… Your Crypto Assets are not insured or guaranteed by the FDIC, Securities Investor Protection Corporation (SIPC) or any other public or private insurer, including against cyber theft or theft by other means.The transfer, purchase and sale of cryptocurrency is irrevocable.Information about unauthorized transactions and error-resolution can be obtained from ……..You may update your contact information through your personal Celler account.The date or time when a transaction is executed, and your funding device is charged may differ from the date or time when you provided the instruction to authorize the transaction.You will receive an email receipt with respect to your purchase and sale of Crypto Assets.You have the right to at least thirty (30) days' prior notice of a change in our fee schedule or changes to these terms and conditions.Cryptocurrency is not legal tender Washington Disclosures Information on fees and pricing can be obtained upon request to…………………..Your Crypto Assets are not insured or guaranteed by the FDIC, Securities Investor Protection Corporation (SIPC) or any other public or private insurer, including against cyber theft or theft by other means.The transfer, purchase and sale of cryptocurrency is irrevocable.Information about unauthorized transactions and error-resolution can be obtained from ……...The nature of cryptocurrency may lead to an increased risk of fraud or cyber-attack and your cryptocurrency value may be irretrievably stolen."
-    ]
+    title: "15. General Disclosures",
+    content: [
+      "Legislative and regulatory changes or actions at the state, federal, or international level may adversely affect the use, transfer, exchange and value of cryptocurrency.Transactions in cryptocurrency may be irreversible, and accordingly, losses due to fraudulent or accidental transactions may not be recoverable.Some cryptocurrency transactions shall be deemed to be made when recorded on the public ledger, which is not necessarily the date or time the customer initiates the transaction.The volatility and unpredictability of the price of cryptocurrency relative to fiat currency may result in significant loss over a short period of time.The nature of cryptocurrency may lead to an increased risk of fraud or cyberattack.The nature of cryptocurrency means that any technical difficulties experienced by Celler may prevent the access or use of a customer's cryptocurrency.Any bond or trust account maintained by Celler for the benefit of its customers may not be sufficient to cover all losses incurred by customers.Rhode Island Disclosures Information on fees and pricing can be obtained upon request to …… Your Crypto Assets are not insured or guaranteed by the FDIC, Securities Investor Protection Corporation (SIPC) or any other public or private insurer, including against cyber theft or theft by other means.The transfer, purchase and sale of cryptocurrency is irrevocable.Information about unauthorized transactions and error-resolution can be obtained from ……..You may update your contact information through your personal Celler account.The date or time when a transaction is executed, and your funding device is charged may differ from the date or time when you provided the instruction to authorize the transaction.You will receive an email receipt with respect to your purchase and sale of Crypto Assets.You have the right to at least thirty (30) days' prior notice of a change in our fee schedule or changes to these terms and conditions.Cryptocurrency is not legal tender Washington Disclosures Information on fees and pricing can be obtained upon request to…………………..Your Crypto Assets are not insured or guaranteed by the FDIC, Securities Investor Protection Corporation (SIPC) or any other public or private insurer, including against cyber theft or theft by other means.The transfer, purchase and sale of cryptocurrency is irrevocable.Information about unauthorized transactions and error-resolution can be obtained from ……...The nature of cryptocurrency may lead to an increased risk of fraud or cyber-attack and your cryptocurrency value may be irretrievably stolen.",
+    ],
   },
   {
-    title:"16. Definitions",
-    content:[
-    `
+    title: "16. Definitions",
+    content: [
+      `
     Any capitalized terms which are not defined in these Cryptocurrency Terms of Use shall have the meaning given in the Celler Account Terms of Use.
 “Buy Order” means an instruction submitted by us to a Cryptocurrency Exchange to buy Supported Cryptocurrencies in accordance with an Order Instruction.
 “Buy Price” means the price payable by you to us (plus applicable Fees) for the purchase of interests in Supported Cryptocurrencies;
@@ -617,8 +615,8 @@ export const termsContent: SectionContent[] = [
 “Supported Country” means a country in which we currently offer the Cryptocurrency Service.
 “Supported Cryptocurrencies” means the cryptocurrencies listed in the Celler App (as may be amended by us in our sole discretion from time to time). 
 
-    `   
-    ]
+    `,
+    ],
   },
 ];
 export const policyContent: SectionContent[] = [
@@ -646,8 +644,6 @@ export const policyContent: SectionContent[] = [
     title: "3. Contact Information",
     content: [
       "If you have questions or concerns about this Privacy Policy or your personal data, please contact us: Celler Support Email: support@celler.app Website: https://www.celler.app",
-
-
     ],
   },
   {
@@ -679,16 +675,15 @@ export const policyContent: SectionContent[] = [
   {
     title: "6. Use of TrueDepth API",
     content: [
-    
       {
         subTitle: "",
         text: "",
         bulletPoints: [
-         "We use facial recognition technology via the TrueDepth API solely to verify user identity and liveness during onboarding.",
-         "This Data is securely transmitted to our identity verification provider, SmileID, for the duration of the verification process (up to one hour) and is permanently deleted immediately after the verification process is completed.",
-         "For more information on SmileID's handling of biometric data, please see their documentation: https://docs.usesmileid.com",
-        "This data is used for compliance with KYC requirements, processed securely, and never shared.",
-        "We do not use face data for advertising or profiling.",
+          "We use facial recognition technology via the TrueDepth API solely to verify user identity and liveness during onboarding.",
+          "This Data is securely transmitted to our identity verification provider, SmileID, for the duration of the verification process (up to one hour) and is permanently deleted immediately after the verification process is completed.",
+          "For more information on SmileID's handling of biometric data, please see their documentation: https://docs.usesmileid.com",
+          "This data is used for compliance with KYC requirements, processed securely, and never shared.",
+          "We do not use face data for advertising or profiling.",
         ],
       },
     ],
@@ -788,4 +783,3 @@ export const policyContent: SectionContent[] = [
     ],
   },
 ];
-
