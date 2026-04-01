@@ -22,7 +22,7 @@ const DownloadPage = () => {
     // link.href =
     //   "https://drive.usercontent.google.com/download?id=1peekXVcACFHJpiV_8Hj1v6sipLGe2H0r&export=download";
     link.href =
-      "https://www.dropbox.com/scl/fi/b5rcmmjdasspz0rri3x1b/Cellerv2.apk?rlkey=jdqn5c5cztgupf1o4vwnld21h&st=3dkg4d4r&dl=1";
+      "https://www.dropbox.com/scl/fi/mwwy77wi1qwb11halb2j8/Cellerv2.apk?rlkey=96948jkaar159f8o5ln348ckj&st=gfoss0kl&dl=0";
     link.download = "Celler.apk";
     document.body.appendChild(link);
     link.click();
