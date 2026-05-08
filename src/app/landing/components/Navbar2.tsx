@@ -13,9 +13,9 @@ export default function Navbar2() {
     <header className="ht-navbar">
       <div className="ht-navbar-inner">
         {/* Logo */}
-        <Link href="/home-two" aria-label="Celler home">
+        <Link href="/landing" aria-label="Celler home">
           <img
-            src="/home-two/celler-logo.svg"
+            src="/home-two/figma-logo.svg"
             alt="Celler"
             width={61}
             height={42}
@@ -24,22 +24,29 @@ export default function Navbar2() {
         </Link>
 
         {/* Desktop nav */}
-        <nav className="hidden lgss:flex items-center gap-10" aria-label="Main navigation">
+        <nav
+          className="hidden lgss:flex items-center gap-10"
+          aria-label="Main navigation"
+          style={{ gap: 16 }}
+        >
           <Link
             href="#features"
-            className="text-[16px] font-medium text-[#1d2739] hover:text-[#3a66ff] transition-colors"
+            className="text-[16px] font-medium hover:text-[#3a66ff] transition-colors"
+            style={{ fontFamily: "'Space Grotesk', sans-serif", color: '#000000' }}
           >
             Features
           </Link>
           <Link
             href="#faq"
-            className="text-[16px] font-medium text-[#1d2739] hover:text-[#3a66ff] transition-colors"
+            className="text-[16px] font-medium hover:text-[#3a66ff] transition-colors"
+            style={{ fontFamily: "'Space Grotesk', sans-serif", color: '#000000' }}
           >
             FAQ
           </Link>
           <Link
             href="#how-it-works"
-            className="text-[16px] font-medium text-[#1d2739] hover:text-[#3a66ff] transition-colors"
+            className="text-[16px] font-medium hover:text-[#3a66ff] transition-colors"
+            style={{ fontFamily: "'Space Grotesk', sans-serif", color: '#000000' }}
           >
             How it works
           </Link>
@@ -51,8 +58,9 @@ export default function Navbar2() {
           target="_blank"
           rel="noreferrer"
           className="hidden lgss:inline-flex items-center justify-center bg-[#09244b] text-white text-[14px] font-medium px-6 py-[10px] rounded-full hover:bg-[#0a2f63] transition-colors"
+          style={{ fontFamily: "'Space Grotesk', sans-serif" }}
         >
-          Sign up now
+          Get Started
         </a>
 
         {/* Mobile burger */}
@@ -95,7 +103,7 @@ export default function Navbar2() {
             rel="noreferrer"
             className="inline-flex items-center justify-center bg-[#09244b] text-white text-[14px] font-medium px-6 py-3 rounded-full w-fit"
           >
-            Sign up now
+            Get Started
           </a>
         </div>
       )}

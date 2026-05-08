@@ -13,28 +13,32 @@ const fadeUp = {
   }),
 };
 
+const trustBadges = [
+  { icon: '/home-two/icon-trust-check.svg', label: 'Fast approvals' },
+  { icon: '/home-two/icon-trust-check2.svg', label: 'Transparent rates' },
+  { icon: '/home-two/icon-trust-check2.svg', label: 'Built for Nigerians' },
+];
+
 export default function Hero() {
   return (
     <section className="ht-hero ht-section">
-      <div className="ht-chevron-overlay" aria-hidden />
-      {/* subtle radial overlay */}
-      <div
-        className="absolute inset-0 pointer-events-none z-[1]"
-        style={{
-          background:
-            'radial-gradient(ellipse 60% 70% at 80% 40%, rgba(255,255,255,0.06) 0%, transparent 70%)',
-        }}
-      />
-
       <div className="ht-hero-inner relative z-[2]">
         {/* Left column */}
-        <div className="flex-1 flex flex-col gap-0 pt-4 pb-12 lgss:pb-8 z-10">
+        <div className="flex-1 flex flex-col pt-4 pb-12 lgss:pb-8 z-10" style={{ gap: 12 }}>
           <motion.h1
             custom={0}
             initial="hidden"
             animate="visible"
             variants={fadeUp}
-            className="text-white font-bold leading-[1.04] tracking-[-1.92px] text-[54px] mds:text-[72px] lgss:text-[96px] max-w-[680px]"
+            className="text-white font-bold"
+            style={{
+              fontFamily: "'Space Grotesk', sans-serif",
+              fontSize: 'clamp(48px, 7vw, 96px)',
+              fontWeight: 700,
+              letterSpacing: '-1.92px',
+              lineHeight: '100px',
+              maxWidth: 711,
+            }}
           >
             Convert Your Digital Assets to Cash in{' '}
             <span className="whitespace-nowrap">3 Minutes.</span>
@@ -45,115 +49,124 @@ export default function Hero() {
             initial="hidden"
             animate="visible"
             variants={fadeUp}
-            className="mt-6 text-white text-[18px] font-bold max-w-[500px]"
+            className="text-white"
+            style={{
+              fontFamily: "'Space Grotesk', sans-serif",
+              fontSize: 16,
+              fontWeight: 500,
+              lineHeight: '24px',
+              maxWidth: 519,
+              marginTop: 12,
+            }}
           >
-            Buy, sell, swap and withdraw your digital assets instantly.
+            Send, swap and withdraw your digital assets instantly. Built for Nigerians who are tired of &ldquo;network is holding it&rdquo;.
           </motion.p>
 
+          {/* CTA Buttons */}
           <motion.div
             custom={0.25}
             initial="hidden"
             animate="visible"
             variants={fadeUp}
-            className="mt-8"
+            className="flex flex-wrap items-center"
+            style={{ gap: 32, marginTop: 20 }}
           >
+            {/* Convert Now */}
             <a
               href={SIGNUP_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex items-center justify-center bg-white text-[#020513] text-[16px] font-bold px-7 py-3 rounded-full hover:bg-gray-50 transition-colors shadow-lg"
+              className="inline-flex items-center justify-center text-[#000000] hover:opacity-90 transition-opacity"
+              style={{
+                fontFamily: "'Space Grotesk', sans-serif",
+                fontSize: 16,
+                fontWeight: 700,
+                background: '#ffffff',
+                borderRadius: 9999,
+                padding: '12px 28px',
+              }}
             >
-              Sign up now
+              Convert Now
+            </a>
+
+            {/* Download button */}
+            <a
+              href={SIGNUP_URL}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center text-white hover:opacity-90 transition-opacity"
+              style={{
+                fontFamily: "'Space Grotesk', sans-serif",
+                fontSize: 16,
+                fontWeight: 500,
+                background: '#000000',
+                borderRadius: 12,
+                padding: '18px 24px',
+                gap: 8,
+              }}
+            >
+              <span>Download</span>
+              <img src="/home-two/icon-apple.svg" alt="Apple" width={17} height={20} className="invert" />
+              {/* Divider */}
+              <span style={{ width: 1, height: 29, background: '#ffffff', display: 'inline-block', margin: '0 2px' }} />
+              <img src="/home-two/icon-playstore.svg" alt="Google Play" width={18} height={20} className="invert" />
             </a>
           </motion.div>
 
-          {/* App store badges */}
+          {/* Trust badges */}
           <motion.div
             custom={0.35}
             initial="hidden"
             animate="visible"
             variants={fadeUp}
-            className="mt-8"
+            className="flex flex-wrap items-center"
+            style={{ gap: 32, marginTop: 8 }}
           >
-            <img
-              src="/home-two/app-badges-hero.svg"
-              alt="Download on App Store and Google Play"
-              className="h-10 w-auto"
-            />
-          </motion.div>
-
-          {/* Trust badges */}
-          <motion.div
-            custom={0.45}
-            initial="hidden"
-            animate="visible"
-            variants={fadeUp}
-            className="mt-6 flex flex-wrap items-center gap-6"
-          >
-            {(['Fast approvals', 'Transparent rates', 'Built for Nigerians'] as const).map(
-              (label) => (
-                <div key={label} className="flex items-center gap-2">
-                  <img
-                    src="/home-two/icon-sad-1.svg"
-                    alt=""
-                    className="hidden"
-                  />
-                  <svg
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    className="flex-shrink-0"
-                    aria-hidden="true"
-                  >
-                    <circle cx="7" cy="7" r="6.5" stroke="white" strokeOpacity="0.6" />
-                    <path
-                      d="M4.5 7L6.5 9L9.5 5"
-                      stroke="white"
-                      strokeWidth="1.5"
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                    />
-                  </svg>
-                  <span className="text-white text-[14px] font-bold">{label}</span>
-                </div>
-              )
-            )}
+            {trustBadges.map((badge) => (
+              <div key={badge.label} className="flex items-center" style={{ gap: 8 }}>
+                <img src={badge.icon} alt="" width={13} height={13} aria-hidden="true" />
+                <span
+                  style={{
+                    fontFamily: "'Space Grotesk', sans-serif",
+                    fontSize: 14,
+                    fontWeight: 700,
+                    color: '#ffffff',
+                  }}
+                >
+                  {badge.label}
+                </span>
+              </div>
+            ))}
           </motion.div>
         </div>
 
-        {/* Right — phone bleeds past bottom/right; section clips (figma) */}
+        {/* Right — phone image */}
         <motion.div
           custom={0.2}
           initial="hidden"
           animate="visible"
           variants={fadeUp}
-          className="hidden lgss:block self-end flex-shrink-0 relative w-[min(44vw,520px)] h-[min(720px,78vh)] mt-4"
+          className="hidden lgss:block self-end flex-shrink-0 relative"
+          style={{ width: 448, height: 813 }}
         >
-          <div
-            className="absolute bottom-0 w-[min(560px,48vw)] h-[min(900px,96vh)] max-h-[920px]"
-            style={{ right: 'max(-7rem, -12vw)' }}
-          >
-            <Image
-              src="/home-two/hero-phone.png"
-              alt="Celler app on iPhone showing total wallet"
-              fill
-              sizes="560px"
-              className="object-cover object-[18%_52%]"
-              priority
-            />
-          </div>
+          <Image
+            src="/home-two/figma-hero-phone.png"
+            alt="Celler app on iPhone showing total wallet"
+            fill
+            sizes="448px"
+            className="object-cover"
+            priority
+          />
         </motion.div>
       </div>
 
       {/* Wave separator */}
-      <div className="w-full mt-4 lgss:mt-0 relative z-[2]">
+      <div className="w-full relative z-[2]" style={{ marginTop: -2 }}>
         <img
-          src="/home-two/wave-bg.svg"
+          src="/home-two/figma-wave.svg"
           alt=""
           aria-hidden="true"
           className="w-full block"
-          style={{ marginBottom: -4 }}
         />
       </div>
     </section>

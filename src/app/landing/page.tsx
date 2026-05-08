@@ -17,7 +17,7 @@ export const metadata: Metadata = {
     'Buy, sell, swap and withdraw your digital assets instantly. Fast approvals, transparent rates, built for Nigerians.',
 };
 
-export default function HomeTwoPage() {
+export default function Landing() {
   return (
     <main className="ht-page">
       <Navbar2 />

@@ -3,26 +3,21 @@
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
-const painPoints = [
+const topCards = [
   {
-    icon: '/home-two/icon-sad-1.svg',
+    icon: '/home-two/icon-shield-blue.svg',
     title: 'Network delay.',
-    desc: 'Transactions that take longer than they should, leaving you hanging',
+    desc: 'Transactions that take longer than they should, leaving you in the dark.',
   },
   {
-    icon: '/home-two/icon-sad-2.svg',
+    icon: '/home-two/icon-shield-blue.svg',
     title: 'Buyer disappeared.',
-    desc: 'Your vendor ghosting you mid transaction',
+    desc: "You did everything right, but the other side\njust wasn\u2019t reliable.",
   },
   {
-    icon: '/home-two/icon-sad-3.svg',
+    icon: '/home-two/icon-shield-alt.svg',
     title: 'P2P stories.',
-    desc: 'Unnecessary back and forth with unreliable apps and vendors',
-  },
-  {
-    icon: '/home-two/icon-sad-4.svg',
-    title: 'Funds on hold for days.',
-    desc: 'Waiting days to access your money after a "successful" transaction',
+    desc: 'Too many back-and-forth, and never quite knowing if things will work out.',
   },
 ];
 
@@ -35,25 +30,59 @@ const fadeUp = {
   }),
 };
 
+function ShieldIconWrap({ src }: { src: string }) {
+  return (
+    <div
+      className="flex items-center justify-center"
+      style={{
+        width: 40,
+        height: 40,
+        borderRadius: '50%',
+        background: 'rgba(52, 111, 255, 0.1)',
+      }}
+    >
+      <img src={src} alt="" width={18} height={20} />
+    </div>
+  );
+}
+
 export default function PainPoints() {
   return (
-    <section id="features" className="ht-section bg-[#f9fafb] py-20">
+    <section id="features" className="ht-section py-20" style={{ background: '#f9fafb' }}>
       <div className="ht-container">
         {/* Heading */}
-        <div className="text-center mb-14">
+        <div className="text-center" style={{ marginBottom: 40 }}>
           <h2
-            className="font-bold text-[#1d2739] leading-[62.4px] tracking-[-2.08px] text-[36px] mds:text-[44px] lgss:text-[52px]"
+            style={{
+              fontFamily: "'Space Grotesk', sans-serif",
+              fontSize: 'clamp(32px, 4vw, 52px)',
+              fontWeight: 700,
+              letterSpacing: '-2.08px',
+              lineHeight: '62.40px',
+              color: '#1d2739',
+            }}
           >
             Tired of Hearing &ldquo;It&rsquo;s Still Pending&rdquo;?
           </h2>
-          <p className="mt-3 text-[#475367] text-[18px] font-normal">
+          <p
+            style={{
+              fontFamily: "'Space Grotesk', sans-serif",
+              fontSize: 18,
+              fontWeight: 400,
+              color: '#475367',
+              marginTop: 8,
+            }}
+          >
             We know how frustrating the wait can be.
           </p>
         </div>
 
         {/* Row 1 — 3 equal cards */}
-        <div className="grid grid-cols-1 mds:grid-cols-3 gap-6 mb-6">
-          {painPoints.slice(0, 3).map((item, i) => (
+        <div
+          className="grid grid-cols-1 mds:grid-cols-3"
+          style={{ gap: 24, marginBottom: 24 }}
+        >
+          {topCards.map((item, i) => (
             <motion.div
               key={item.title}
               custom={i}
@@ -61,23 +90,45 @@ export default function PainPoints() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeUp}
-              className="ht-card p-7 flex flex-col gap-6 shadow-[0px_1.5px_4px_rgba(16,25,40,0.07)]"
+              className="bg-white flex flex-col"
+              style={{
+                borderRadius: 16,
+                padding: '28px',
+                boxShadow: '0px 1.5px 4px rgba(16, 25, 40, 0.07)',
+                gap: 120,
+              }}
             >
-              <div className="w-10 h-10 rounded-full bg-[rgba(52,111,255,0.12)] flex items-center justify-center">
-                <img src={item.icon} alt="" width={20} height={20} />
-              </div>
-              <div className="mt-auto flex flex-col gap-1.5">
-                <h3 className="font-bold text-[24px] tracking-[-0.48px] text-[#161616]">
+              <ShieldIconWrap src={item.icon} />
+              <div className="flex flex-col" style={{ gap: 6 }}>
+                <h3
+                  style={{
+                    fontFamily: "'Space Grotesk', sans-serif",
+                    fontSize: 24,
+                    fontWeight: 700,
+                    letterSpacing: '-0.48px',
+                    color: '#161616',
+                  }}
+                >
                   {item.title}
                 </h3>
-                <p className="text-[#484848] text-[16px] leading-[23.68px]">{item.desc}</p>
+                <p
+                  style={{
+                    fontFamily: "'Space Grotesk', sans-serif",
+                    fontSize: 16,
+                    fontWeight: 400,
+                    lineHeight: '23.68px',
+                    color: '#484848',
+                  }}
+                >
+                  {item.desc}
+                </p>
               </div>
             </motion.div>
           ))}
         </div>
 
-        {/* Row 2 — half card + promo card */}
-        <div className="grid grid-cols-1 mds:grid-cols-2 gap-6">
+        {/* Row 2 — funds card + you need control card */}
+        <div className="grid grid-cols-1 mds:grid-cols-2" style={{ gap: 24 }}>
           {/* Funds on hold */}
           <motion.div
             custom={3}
@@ -85,45 +136,89 @@ export default function PainPoints() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className="ht-card p-7 flex flex-col gap-6 border border-[#f0f2f5] shadow-[0px_1.5px_4px_rgba(16,25,40,0.07)]"
+            className="bg-white flex flex-col"
+            style={{
+              borderRadius: 16,
+              padding: '28px',
+              border: '1px solid #f0f2f5',
+              boxShadow: '0px 1.5px 4px rgba(16, 25, 40, 0.07)',
+              gap: 80,
+            }}
           >
-            <div className="w-10 h-10 rounded-full bg-[rgba(52,111,255,0.12)] flex items-center justify-center">
-              <img src={painPoints[3].icon} alt="" width={20} height={20} />
-            </div>
-            <div className="mt-auto flex flex-col gap-1.5">
-              <h3 className="font-bold text-[24px] tracking-[-0.48px] text-[#161616]">
-                {painPoints[3].title}
+            <ShieldIconWrap src="/home-two/icon-shield-blue.svg" />
+            <div className="flex flex-col" style={{ gap: 6 }}>
+              <h3
+                style={{
+                  fontFamily: "'Space Grotesk', sans-serif",
+                  fontSize: 24,
+                  fontWeight: 700,
+                  letterSpacing: '-0.48px',
+                  color: '#161616',
+                }}
+              >
+                Funds on hold for 3 days.
               </h3>
-              <p className="text-[#484848] text-[16px] leading-[23.68px]">{painPoints[3].desc}</p>
+              <p
+                style={{
+                  fontFamily: "'Space Grotesk', sans-serif",
+                  fontSize: 16,
+                  fontWeight: 400,
+                  lineHeight: '23.68px',
+                  color: '#484848',
+                }}
+              >
+                Waiting days to access money that&rsquo;s already yours can be really unsettling.
+              </p>
             </div>
           </motion.div>
 
-          {/* You need control — blue promo card (phone clipped at bottom like figma) */}
+          {/* You need control — blue promo card */}
           <motion.div
             custom={4}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className="rounded-[24px] bg-[#3a66ff] p-8 flex items-center overflow-hidden relative min-h-[min(280px,320px)] mds:min-h-[247px]"
+            className="rounded-[16px] flex items-center overflow-hidden relative"
+            style={{
+              background: '#3a66ff',
+              borderRadius: 16,
+              minHeight: 247,
+            }}
           >
-            <div className="ht-chevron-overlay opacity-80 rounded-[24px]" aria-hidden />
-            <div className="flex flex-col gap-2 z-10 max-w-[min(100%,58%)] pr-4">
-              <h3 className="text-white font-bold text-[32px] tracking-[-0.64px] leading-[38.4px]">
+            <div className="flex flex-col z-10 flex-1" style={{ gap: 8, padding: '32px' }}>
+              <h3
+                style={{
+                  fontFamily: "'Space Grotesk', sans-serif",
+                  fontSize: 32,
+                  fontWeight: 700,
+                  letterSpacing: '-0.64px',
+                  lineHeight: '38.40px',
+                  color: '#ffffff',
+                }}
+              >
                 You need control.
               </h3>
-              <p className="text-white text-[16px] font-normal">
-                Celler gives you control, simply and reliably.
+              <p
+                style={{
+                  fontFamily: "'Space Grotesk', sans-serif",
+                  fontSize: 16,
+                  fontWeight: 400,
+                  color: '#ffffff',
+                  lineHeight: '23.68px',
+                }}
+              >
+                And you deserve a platform that gives it to you simply and reliably.
               </p>
             </div>
-            <div className="pointer-events-none absolute inset-y-0 right-0 w-[min(52%,280px)] overflow-hidden">
-              <div className="absolute bottom-[-24px] right-[-40px] h-[300px] w-[300px] relative">
+            <div className="pointer-events-none absolute inset-y-0 right-0 overflow-hidden" style={{ width: '45%' }}>
+              <div className="absolute bottom-0 right-0 w-full h-full">
                 <Image
-                  src="/home-two/pain-phone-thumb.png"
+                  src="/home-two/figma-hero-phone.png"
                   alt="Celler app"
                   fill
-                  sizes="280px"
-                  className="object-contain object-bottom object-right scale-[1.3] origin-bottom-right"
+                  sizes="312px"
+                  className="object-cover object-top"
                 />
               </div>
             </div>
