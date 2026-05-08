@@ -13,46 +13,36 @@ const fadeUp = {
 };
 
 /* ── Inner UI Mockups ── */
+const walletCurrencies = [
+  { flag: '/home-two/flag-ng.svg', code: 'NGN', name: 'Nigerian Naira', amount: '₦5000.000' },
+  { flag: '/home-two/flag-us.svg', code: 'USD', name: 'United States Dollars', amount: '$5000.00' },
+  { flag: '/home-two/flag-gb.svg', code: 'GBP', name: 'Great Britain Pounds', amount: '£798.80' },
+  { flag: '/home-two/flag-de.svg', code: 'Euros', name: 'Euros', amount: '€179.07' },
+];
+
 function WalletMockup() {
   return (
     <div className="bg-white rounded-xl p-4 mt-4 shadow-sm border border-[#f0f2f5]">
       <div className="flex items-center justify-between mb-3">
-        <span className="text-[#101928] font-medium text-[17px]">Trade coins</span>
+        <span className="text-[#101928] font-medium text-[17px]" style={{ letterSpacing: '-0.40px' }}>Wallet</span>
         <div className="w-8 h-8 bg-[#3a66ff] rounded-full flex items-center justify-center">
           <span className="text-white text-xl leading-none font-light">+</span>
         </div>
       </div>
-      {/* NGN row */}
-      <div className="flex items-center justify-between py-3 border-b border-[#f0f2f5]">
-        <div className="flex items-center gap-2">
-          <Image
-            src="/home-two/ngn-coin.png"
-            alt="NGN"
-            width={30}
-            height={30}
-            className="rounded-full flex-shrink-0"
-          />
-          <div className="flex items-center gap-1">
-            <span className="text-[#1d2739] text-[14px] font-medium">NGN</span>
-            <span className="text-[#667185] text-[9px]">Nigerian Naira</span>
-          </div>
-        </div>
-        <span className="text-[#475367] text-[14px]">1.975400</span>
-      </div>
-      {/* Skeleton rows */}
-      {[0, 1, 2].map((i) => (
-        <div key={i} className="flex items-center justify-between py-3">
+      {/* Currency rows */}
+      {walletCurrencies.map((c, i) => (
+        <div
+          key={c.code}
+          className={`flex items-center justify-between py-3 ${i < walletCurrencies.length - 1 ? 'border-b border-[#f0f2f5]' : ''}`}
+        >
           <div className="flex items-center gap-2">
-            <div className="w-8 h-8 rounded-full ht-skeleton flex-shrink-0" />
-            <div>
-              <div className="ht-skeleton h-2 w-20 rounded-full mb-1" />
-              <div className="ht-skeleton h-2 w-12 rounded-full" />
+            <img src={c.flag} alt={c.name} width={30} height={30} className="rounded-full flex-shrink-0 object-cover" />
+            <div className="flex items-center gap-1">
+              <span className="text-[#1d2739] text-[14px] font-medium">{c.code}</span>
+              <span className="text-[#667185] text-[9px]">{c.name}</span>
             </div>
           </div>
-          <div>
-            <div className="ht-skeleton h-2 w-16 rounded-full mb-1" />
-            <div className="ht-skeleton h-2 w-10 rounded-full" />
-          </div>
+          <span className="text-[#475367] text-[14px]">{c.amount}</span>
         </div>
       ))}
     </div>
@@ -176,7 +166,7 @@ function ReferMockup() {
           Total Earned
         </p>
         <p className="text-[#3a66ff] font-bold text-[20px] tracking-[-0.4px] text-center mt-1">
-          $1,000
+          ₦60,000
         </p>
         <div className="text-center mt-3">
           <span className="text-[#3a66ff] text-[14px] font-bold underline cursor-pointer">
@@ -196,13 +186,13 @@ function ReferMockup() {
 
 const featureCards = [
   {
-    title: 'Digital Asset Wallet',
+    title: 'Asset wallet',
     desc: 'Buy, sell, and manage your digital assets in one place',
     mockup: <WalletMockup />,
   },
   {
-    title: 'Swap coins',
-    desc: 'Swap between digital assets at the best rates no delays, no hidden fees',
+    title: 'Instant Swap',
+    desc: 'Swap between Digital Asset at the best rates no delays, no hidden fees',
     mockup: <SwapMockup />,
   },
   {
@@ -211,8 +201,8 @@ const featureCards = [
     mockup: <DepositMockup />,
   },
   {
-    title: 'Refer And Get Paid',
-    desc: "Earn 0.5% on your friend's first trade. You can get up to $1,000 a month!",
+    title: 'Earn Rewards',
+    desc: 'Share your referral link, and earn rewards once your friend signs up and completes their first trade',
     mockup: <ReferMockup />,
   },
 ];

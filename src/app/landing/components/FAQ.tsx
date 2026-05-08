@@ -6,7 +6,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 const faqs = [
   {
     q: 'Is Celler safe?',
-    a: 'Yes, we use secure systems to protect your funds and transactions.',
+    a: 'Celler is a comprehensive digital assets platform that allows users to buy, sell, swap, and deposit various digital assets. It also provides advanced features for managing and tracking your digital assets.',
   },
   {
     q: 'How fast will I receive my payment?',
@@ -26,6 +26,20 @@ const faqs = [
   },
 ];
 
+function ChevronIcon() {
+  return (
+    <svg width="13" height="8" viewBox="0 0 13 8" fill="none" aria-hidden="true">
+      <path
+        d="M1 1L6.5 6.5L12 1"
+        stroke="#09244b"
+        strokeWidth="1.8"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+}
+
 export default function FAQ() {
   const [open, setOpen] = useState<number>(0);
 
@@ -33,39 +47,73 @@ export default function FAQ() {
     <section id="faq" className="ht-section py-20 bg-white">
       <div className="ht-container">
         {/* Heading */}
-        <h2 className="font-bold text-[#101828] text-center leading-[52px] tracking-[-2.08px] text-[36px] mds:text-[44px] lgss:text-[52px] mb-14">
-          Frequently Asked Questions
-        </h2>
+        <div className="text-center" style={{ marginBottom: 64 }}>
+          <h2
+            style={{
+              fontFamily: "'Space Grotesk', sans-serif",
+              fontSize: 'clamp(32px, 4vw, 52px)',
+              fontWeight: 700,
+              letterSpacing: '-2.08px',
+              lineHeight: '52px',
+              color: '#101828',
+            }}
+          >
+            Frequently asked questions
+          </h2>
+          <p
+            className="mt-5"
+            style={{
+              fontFamily: 'Inter, sans-serif',
+              fontSize: 20,
+              fontWeight: 400,
+              letterSpacing: '-0.40px',
+              lineHeight: '24px',
+              color: '#475467',
+            }}
+          >
+            Everything you need to know about{' '}
+            <span style={{ fontWeight: 700, color: '#101828' }}>CELLER</span>
+          </p>
+        </div>
 
-        {/* Accordion */}
-        <div className="max-w-[800px] mx-auto border border-[#e4e7ec] rounded-2xl overflow-hidden divide-y divide-[#e4e7ec]">
+        {/* Accordion — no outer border, just dividers between items */}
+        <div className="max-w-[700px] mx-auto">
           {faqs.map((faq, i) => (
-            <div key={faq.q} className="ht-faq-item px-7" role="region">
+            <div
+              key={faq.q}
+              className="border-b border-[#e4e7ec]"
+              role="region"
+              aria-labelledby={`faq-q-${i}`}
+            >
               <button
-                className="w-full flex items-center justify-between gap-4 py-1"
+                id={`faq-q-${i}`}
+                className="w-full flex items-center justify-between py-6"
+                style={{ gap: 24 }}
                 onClick={() => setOpen(open === i ? -1 : i)}
                 aria-expanded={open === i}
               >
-                <span className="text-left font-medium text-[18px] text-[#101828]">{faq.q}</span>
-                {/* Chevron */}
-                <motion.div
-                  animate={{ rotate: open === i ? 180 : 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="flex-shrink-0"
+                <span
+                  className="text-left"
+                  style={{
+                    fontFamily: "'Space Grotesk', sans-serif",
+                    fontSize: 18,
+                    fontWeight: 500,
+                    color: '#101828',
+                  }}
                 >
-                  <div className="w-7 h-7 rounded-full bg-[#09244b] flex items-center justify-center">
-                    <svg width="13" height="8" viewBox="0 0 13 8" fill="none" aria-hidden="true">
-                      <path
-                        d="M1 1L6.5 6.5L12 1"
-                        stroke="white"
-                        strokeWidth="1.5"
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                      />
-                    </svg>
-                  </div>
-                </motion.div>
+                  {faq.q}
+                </span>
+
+                {/* Rotating chevron */}
+                <motion.span
+                  animate={{ rotate: open === i ? 180 : 0 }}
+                  transition={{ duration: 0.25 }}
+                  className="flex-shrink-0 flex items-center justify-center"
+                >
+                  <ChevronIcon />
+                </motion.span>
               </button>
+
               <AnimatePresence initial={false}>
                 {open === i && (
                   <motion.div
@@ -73,10 +121,19 @@ export default function FAQ() {
                     initial={{ height: 0, opacity: 0 }}
                     animate={{ height: 'auto', opacity: 1 }}
                     exit={{ height: 0, opacity: 0 }}
-                    transition={{ duration: 0.3 }}
+                    transition={{ duration: 0.28 }}
                     className="overflow-hidden"
                   >
-                    <p className="text-[#475467] text-[16px] font-normal pb-4 pt-1 leading-relaxed">
+                    <p
+                      className="pb-6 pt-0"
+                      style={{
+                        fontFamily: 'Inter, sans-serif',
+                        fontSize: 16,
+                        fontWeight: 400,
+                        lineHeight: '23.68px',
+                        color: '#475467',
+                      }}
+                    >
                       {faq.a}
                     </p>
                   </motion.div>

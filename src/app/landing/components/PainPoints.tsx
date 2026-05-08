@@ -214,7 +214,7 @@ export default function PainPoints() {
             <div className="pointer-events-none absolute inset-y-0 right-0 overflow-hidden" style={{ width: '45%' }}>
               <div className="absolute bottom-0 right-0 w-full h-full">
                 <Image
-                  src="/home-two/figma-hero-phone.png"
+                  src="/home-two/figma-pain-phone.png"
                   alt="Celler app"
                   fill
                   sizes="312px"
