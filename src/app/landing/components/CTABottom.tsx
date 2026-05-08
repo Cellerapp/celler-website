@@ -24,18 +24,18 @@ export default function CTABottom() {
           </div>
         </div>
 
-        {/* Right — hand + phone bleeds bottom/right (figma) */}
-        <div className="hidden lgss:block relative flex-shrink-0 h-[min(520px,55vh)] w-[min(44vw,480px)] overflow-hidden">
+        {/* Right — hand + phone bleeds bottom/right */}
+        <div className="hidden lgss:flex relative flex-shrink-0 items-end self-stretch" style={{ width: 'min(480px, 42vw)' }}>
           <div
-            className="absolute bottom-[-12px] w-[min(560px,50vw)] h-[min(620px,95vh)] max-h-[680px]"
-            style={{ right: 'max(-6rem, -11vw)' }}
+            className="absolute bottom-0"
+            style={{ right: 'max(-80px, -6vw)', width: 'min(560px, 50vw)', height: 'min(640px, 100%)' }}
           >
             <Image
               src="/home-two/hand-phone.png"
               alt="Hand holding phone with Celler app"
               fill
               sizes="560px"
-              className="object-cover object-[54%_52%]"
+              className="object-contain object-bottom"
             />
           </div>
         </div>

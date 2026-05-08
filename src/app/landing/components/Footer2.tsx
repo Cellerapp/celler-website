@@ -27,7 +27,7 @@ export default function Footer2() {
               <img src="/home-two/celler-logo-white.svg" alt="Celler" className="h-10 w-auto" />
             </Link>
             <p className="text-white text-[14px] leading-[21px] opacity-80">
-              Cellar is a product of &ldquo;Tampay by CQ LTD&rdquo; with company number RC-7430244.
+              Celler is a product of &ldquo;Tampay by CQ LTD&rdquo; with company number RC-7430244.
               Tampay by CQ LTD provides Nigerian financial and digital assets management services
               including &ldquo;Tampay Finance&rdquo;, a banking application made for your local and
               global needs
@@ -55,15 +55,6 @@ export default function Footer2() {
                 {link.label}
               </Link>
             ))}
-            <div className="w-full lgss:w-auto">
-              <a
-                href="mailto:support@celler.app"
-                className="text-[#cdc4c4] text-[16px] font-medium hover:text-white transition-colors"
-                style={{ fontFamily: 'Inter, sans-serif' }}
-              >
-                support@celler.app
-              </a>
-            </div>
           </div>
         </div>
 

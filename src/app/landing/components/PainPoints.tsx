@@ -179,14 +179,18 @@ export default function PainPoints() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className="rounded-[16px] flex items-center overflow-hidden relative"
+            className="rounded-[16px] flex items-center relative"
             style={{
               background: '#3a66ff',
               borderRadius: 16,
-              minHeight: 247,
+              minHeight: 280,
+              overflow: 'visible',
             }}
           >
-            <div className="flex flex-col z-10 flex-1" style={{ gap: 8, padding: '32px' }}>
+            <div
+              className="flex flex-col z-10"
+              style={{ gap: 8, padding: '40px 0 40px 40px', maxWidth: '55%' }}
+            >
               <h3
                 style={{
                   fontFamily: "'Space Grotesk', sans-serif",
@@ -211,16 +215,24 @@ export default function PainPoints() {
                 And you deserve a platform that gives it to you simply and reliably.
               </p>
             </div>
-            <div className="pointer-events-none absolute inset-y-0 right-0 overflow-hidden" style={{ width: '45%' }}>
-              <div className="absolute bottom-0 right-0 w-full h-full">
-                <Image
-                  src="/home-two/figma-pain-phone.png"
-                  alt="Celler app"
-                  fill
-                  sizes="312px"
-                  className="object-cover object-top"
-                />
-              </div>
+            {/* Phone — overflows card bottom, tilted */}
+            <div
+              className="pointer-events-none absolute"
+              style={{
+                right: -24,
+                bottom: -20,
+                width: 260,
+                height: 380,
+              }}
+            >
+              <Image
+                src="/home-two/figma-pain-phone.png"
+                alt="Celler app"
+                fill
+                sizes="260px"
+                className="object-contain object-bottom"
+                style={{ transform: 'rotate(12deg)', transformOrigin: 'bottom right' }}
+              />
             </div>
           </motion.div>
         </div>
