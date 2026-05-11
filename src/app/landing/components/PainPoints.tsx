@@ -48,19 +48,19 @@ export default function PainPoints() {
   return (
     <section
       id="features"
-      className="ht-section py-20"
+      className="ht-section py-12 lgss:py-20"
       style={{ background: "#f9fafb" }}
     >
       <div className="ht-container">
         {/* Heading */}
-        <div className="text-center" style={{ marginBottom: 40 }}>
+        <div className="text-center lgss:mb-10" style={{ marginBottom: 32 }}>
           <h2
             style={{
               fontFamily: "'Space Grotesk', sans-serif",
-              fontSize: "clamp(32px, 4vw, 52px)",
+              fontSize: "clamp(26px, 6vw, 52px)",
               fontWeight: 700,
               letterSpacing: "-2.08px",
-              lineHeight: "62.40px",
+              lineHeight: 1.15,
               color: "#1d2739",
             }}
           >
@@ -92,12 +92,11 @@ export default function PainPoints() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeUp}
-              className="bg-white flex flex-col"
+              className="flex flex-col gap-8 bg-white mds:gap-[60px] mds:px-7 mds:py-7"
               style={{
                 borderRadius: 16,
-                padding: "28px",
-              boxShadow: "0px 1.5px 4px rgba(16, 25, 40, 0.07)",
-                gap: 60,
+                padding: "24px",
+                boxShadow: "0px 1.5px 4px rgba(16, 25, 40, 0.07)",
               }}
             >
               <ShieldIconWrap />
@@ -182,16 +181,11 @@ export default function PainPoints() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className="rounded-[16px] flex items-center relative overflow-hidden"
-            style={{
-              background: "#3a66ff",
-              borderRadius: 16,
-              minHeight: 280,
-            }}
+            className="relative flex min-h-[300px] flex-col overflow-hidden rounded-[16px] bg-[#3a66ff] mds:min-h-[280px] mds:flex-row mds:items-center"
           >
             <div
-              className="flex flex-col z-10"
-              style={{ gap: 8, padding: "40px 0 40px 40px", maxWidth: "55%" }}
+              className="z-10 flex w-full max-w-none flex-col px-6 pb-4 pt-8 mds:max-w-[55%] mds:py-10 mds:pl-10 mds:pr-0"
+              style={{ gap: 8 }}
             >
               <h3
                 style={{
@@ -218,15 +212,9 @@ export default function PainPoints() {
                 reliably.
               </p>
             </div>
-            {/* Phone — contained within card, slightly tilted */}
+            {/* Phone — below copy on narrow screens, absolute on mds+ */}
             <div
-              className="pointer-events-none absolute"
-              style={{
-                right: -8,
-                top: 8,
-                width: 230,
-                height: 350,
-              }}
+              className="pointer-events-none relative mx-auto mt-2 h-[240px] w-[200px] flex-shrink-0 mds:absolute mds:right-[-8px] mds:top-2 mds:mx-0 mds:mt-0 mds:h-[350px] mds:w-[230px]"
             >
               <Image
                 src="/landing/figma-pain-phone.png"

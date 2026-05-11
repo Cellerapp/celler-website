@@ -50,21 +50,24 @@ export default function FAQ() {
   const [open, setOpen] = useState<number>(0);
 
   return (
-    <section id="faq" className="ht-section py-20 bg-white">
+    <section id="faq" className="ht-section bg-white py-12 lgss:py-20">
       <div className="ht-container">
         {/* Heading */}
         <div className="text-center" style={{ marginBottom: 64 }}>
           <h2
             style={{
               fontFamily: "'Space Grotesk', sans-serif",
-              fontSize: "clamp(32px, 4vw, 52px)",
+              fontSize: "clamp(28px, 6vw, 52px)",
               fontWeight: 700,
               letterSpacing: "-2.08px",
-              lineHeight: "52px",
+              lineHeight: "1.15",
               color: "#101828",
             }}
           >
-            Frequently asked questions
+            Frequently asked{" "}
+            <span className="border-b-[3px] border-[#3a66ff] pb-0.5">
+              questions
+            </span>
           </h2>
           <p
             className="mt-5"

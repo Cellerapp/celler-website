@@ -4,29 +4,40 @@ export default function CTABottom() {
   return (
     <section className="ht-section bg-[#3a66ff] relative overflow-hidden">
       <div className="ht-chevron-overlay" aria-hidden />
-      <div className="ht-container flex flex-col lgss:flex-row items-center lgss:items-end gap-10 lgss:gap-0 py-16 lgss:py-0 lgss:min-h-[560px] relative z-[2]">
+      <div className="ht-container relative z-[2] flex flex-col items-center gap-10 py-12 lgss:min-h-[560px] lgss:flex-row lgss:items-end lgss:gap-0 lgss:py-0">
         {/* Left — text */}
-        <div className="flex-1 z-10 py-0 lgss:py-20">
-          <h2 className="text-white font-bold leading-[1.05] tracking-[-0.02em] text-[36px] mds:text-[52px] lgss:text-[64px] max-w-[680px]">
+        <div className="z-10 w-full flex-1 py-0 text-center lgss:py-20 lgss:text-left">
+          <h2 className="mx-auto max-w-[680px] text-[32px] font-bold leading-[1.05] tracking-[-0.02em] text-white mds:text-[44px] lgss:mx-0 lgss:text-[64px]">
             Take control of your money, your way.
           </h2>
-          <p className="mt-6 text-white text-[18px] lgss:text-[20px] leading-[1.35] max-w-[700px] opacity-90">
+          <p className="mx-auto mt-5 max-w-[700px] text-[17px] leading-[1.35] text-white opacity-90 lgss:mx-0 lgss:mt-6 lgss:text-[20px]">
             Built for beginners, trusted by professionals.
             <br />
             Everything you need to manage your digital assets in one place
           </p>
-          <div className="mt-8 lgss:mt-10">
+          <div className="mt-8 flex justify-center lgss:mt-10 lgss:justify-start">
             <img
               src="/landing/app-badges-footer.svg"
               alt="Download on Google Play and App Store"
-              className="h-10 lgss:h-14 w-auto"
+              className="h-10 w-auto lgss:h-14"
             />
           </div>
         </div>
 
-        {/* Right — hand + phone bleeds bottom/right */}
+        {/* mobile — hand + phone */}
+        <div className="relative h-[280px] w-full max-w-[380px] lgss:hidden">
+          <Image
+            src="/landing/take-control.png"
+            alt="Hand holding phone with Celler app"
+            fill
+            sizes="380px"
+            className="object-contain object-bottom"
+          />
+        </div>
+
+        {/* desktop — hand + phone bleeds bottom/right */}
         <div
-          className="hidden lgss:flex relative flex-shrink-0 items-end self-stretch"
+          className="relative hidden flex-shrink-0 items-end self-stretch lgss:flex"
           style={{ width: "min(620px, 46vw)" }}
         >
           <div
@@ -38,7 +49,7 @@ export default function CTABottom() {
             }}
           >
             <Image
-              src="/landing/hand-phone.png"
+              src="/landing/take-control.png"
               alt="Hand holding phone with Celler app"
               fill
               sizes="700px"

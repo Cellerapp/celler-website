@@ -305,17 +305,17 @@ const featureCards = [
 
 export default function Features() {
   return (
-    <section id="trade" className="ht-section bg-white py-20 lgss:py-24">
+    <section id="trade" className="ht-section bg-white py-12 lgss:py-24">
       <div className="ht-container">
         <div className="w-full">
           {/* Heading */}
           <div className="text-center mb-12 lgss:mb-14 px-4">
-            <h2 className="font-bold text-[#000000] leading-[52px] tracking-[-2.08px] text-[36px] mds:text-[44px] lgss:text-[52px]">
-              Everything you need
-              <br className="hidden mds:block" /> to trade
+            <h2 className="text-[28px] font-bold leading-tight tracking-[-2.08px] text-[#000000] mds:text-[40px] lgss:text-[52px] lgss:leading-[52px]">
+              Everything you need to trade
             </h2>
-            <p className="mt-3 text-[#475367] text-[18px] max-w-[400px] mx-auto leading-[27.72px]">
-              Powerful tools designed for beginners and professional traders.
+            <p className="mx-auto mt-3 max-w-[420px] px-2 text-[16px] leading-relaxed text-[#475367] lgss:text-[18px] lgss:leading-[27.72px]">
+              Powerful tools designed for both beginners and professional
+              traders.
             </p>
           </div>
 
