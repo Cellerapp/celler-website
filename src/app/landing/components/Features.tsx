@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import { HiArrowDown, HiArrowUp } from "react-icons/hi";
+import { BsCheckCircleFill } from "react-icons/bs";
 
 const fadeUp = {
   hidden: { opacity: 0, y: 28 },
@@ -250,15 +251,16 @@ function DepositMockup() {
 
 function ReferMockup() {
   return (
-    <div className="mt-4 space-y-3">
-      <div className="bg-[#f7f9fc] rounded-2xl p-5">
+    <div className="mt-4">
+      {/* Inner earnings card — spacious vertical layout */}
+      <div className="bg-[#f7f9fc] rounded-2xl px-5 pt-10 pb-5">
         <p className="text-[#98a2b3] text-[10px] font-bold uppercase tracking-[1.6px] text-center">
           Total Earned
         </p>
         <p className="text-[#3a66ff] font-bold text-[20px] tracking-[-0.4px] text-center mt-1">
           ₦60,000
         </p>
-        <div className="mt-3">
+        <div className="mt-14">
           <div className="bg-white rounded-xl px-4 py-2.5 text-center cursor-pointer">
             <span className="text-[#3a66ff] text-[14px] font-bold underline">
               Withdraw Earning
@@ -266,13 +268,10 @@ function ReferMockup() {
           </div>
         </div>
       </div>
-      <div className="flex items-center gap-2 bg-white rounded-xl px-3 py-2.5 shadow-sm border border-[#f0f2f5]">
-        <img
-          src="/landing/icon-check-circle.svg"
-          alt=""
-          width={18}
-          height={18}
-        />
+      {/* Floating toast notification */}
+      <div className="flex items-center gap-2 bg-white rounded-xl px-3 py-2.5 mt-3 mx-2 border border-[#f0f2f5]"
+        style={{ boxShadow: '0 4px 20px rgba(16, 25, 40, 0.10)' }}>
+        <BsCheckCircleFill size={18} color="#3a66ff" />
         <p className="text-[#98a2b3] text-[12px] font-medium">
           Referral Earning has been deposited into your wallet
         </p>
