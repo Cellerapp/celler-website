@@ -96,8 +96,8 @@ export default function PainPoints() {
               style={{
                 borderRadius: 16,
                 padding: "28px",
-                boxShadow: "0px 1.5px 4px rgba(16, 25, 40, 0.07)",
-                gap: 120,
+              boxShadow: "0px 1.5px 4px rgba(16, 25, 40, 0.07)",
+                gap: 60,
               }}
             >
               <ShieldIconWrap />
@@ -144,7 +144,7 @@ export default function PainPoints() {
               padding: "28px",
               border: "1px solid #f0f2f5",
               boxShadow: "0px 1.5px 4px rgba(16, 25, 40, 0.07)",
-              gap: 80,
+              gap: 44,
             }}
           >
             <ShieldIconWrap />

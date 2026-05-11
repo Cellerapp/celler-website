@@ -307,7 +307,7 @@ export default function Features() {
   return (
     <section id="trade" className="ht-section bg-white py-20 lgss:py-24">
       <div className="ht-container">
-        <div className="mx-auto w-full max-w-[1540px]">
+        <div className="w-full">
           {/* Heading */}
           <div className="text-center mb-12 lgss:mb-14 px-4">
             <h2 className="font-bold text-[#000000] leading-[52px] tracking-[-2.08px] text-[36px] mds:text-[44px] lgss:text-[52px]">

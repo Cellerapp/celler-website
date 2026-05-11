@@ -10,7 +10,7 @@ export default function CTABottom() {
           <h2 className="text-white font-bold leading-[1.05] tracking-[-0.02em] text-[36px] mds:text-[52px] lgss:text-[64px] max-w-[680px]">
             Take control of your money, your way.
           </h2>
-          <p className="mt-6 text-white text-[18px] lgss:text-[30px] leading-[1.35] max-w-[700px] opacity-90">
+          <p className="mt-6 text-white text-[18px] lgss:text-[20px] leading-[1.35] max-w-[700px] opacity-90">
             Built for beginners, trusted by professionals.
             <br />
             Everything you need to manage your digital assets in one place

@@ -6,7 +6,7 @@ export default function Hero() {
   return (
     <section className="ht-section relative" style={{ background: "#3a66ff" }}>
       {/* Full-fidelity Figma hero visual (includes background, text, phone, wave) */}
-      <div className="relative w-full">
+      <div className="relative w-full max-w-[1240px] mx-auto">
         <img
           src="/landing/figma-hero-full.svg"
           alt="Convert Your Digital Assets to Cash in 3 Minutes — Celler"

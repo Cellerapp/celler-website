@@ -23,7 +23,7 @@
 
 /* ===== Layout ===== */
 .ht-container {
-  max-width: none;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   padding: 0 80px;
@@ -63,7 +63,7 @@
 }
 
 .ht-navbar-inner {
-  max-width: none;
+  max-width: 1280px;
   width: 100%;
   margin: 0 auto;
   height: 70px;

@@ -27,25 +27,33 @@ export default function Footer2() {
   return (
     <footer className="ht-section bg-black pt-14 pb-12 lgss:pt-16 lgss:pb-14">
       <div className="ht-container">
-        <div className="flex flex-col lgss:flex-row gap-10 lgss:gap-14 justify-between items-start">
-          <div className="max-w-[420px] flex flex-col gap-6">
+        {/* Top row: logo+desc | nav links */}
+        <div className="flex flex-col lgss:flex-row gap-10 lgss:gap-16 justify-between items-start">
+          {/* Left — logo + description + address */}
+          <div className="flex flex-col gap-5 flex-shrink-0" style={{ maxWidth: 320 }}>
             <Link href="/landing" aria-label="Celler home">
               <img
                 src="/landing/celler-logo-white.svg"
                 alt="Celler"
-                className="h-11 w-auto"
-                style={{ filter: 'brightness(0) invert(1)' }}
+                className="h-9 w-auto"
+                style={{ filter: "brightness(0) invert(1)" }}
               />
             </Link>
-            <p className="text-white text-[18px] leading-[1.55] opacity-80 max-w-[410px]">
-              Celler is a product of &ldquo;Tampay by CQ LTD&rdquo; with company
-              number RC-7430244. Tampay by CQ LTD provides Nigerian financial
-              and digital assets management services including &ldquo;Tampay
-              Finance&rdquo;, a banking application made for your local and
-              global needs
+            <p
+              className="text-white leading-relaxed opacity-80"
+              style={{ fontSize: 14 }}
+            >
+              Celler is a product of &ldquo;Tampay by CQ LTD&rdquo; with
+              company number RC-7430244. Tampay by CQ LTD provides Nigerian
+              financial and digital assets management services including
+              &ldquo;Tampay Finance&rdquo;, a banking application made for your
+              local and global needs
             </p>
-            <div className="flex flex-col gap-2">
-              <p className="text-white text-[18px] leading-[1.55] opacity-80 max-w-[380px]">
+            <div className="flex flex-col gap-1">
+              <p
+                className="text-white opacity-80 leading-relaxed"
+                style={{ fontSize: 14 }}
+              >
                 14A Alternative Route, Chevron Close, Lekki, Eti-Osa, Lagos
                 State.
               </p>
@@ -53,41 +61,47 @@ export default function Footer2() {
                 <img
                   src="/landing/icon-location.svg"
                   alt=""
-                  width={12}
-                  height={18}
-                  className="opacity-70"
-                  style={{ filter: 'brightness(0) invert(1)' }}
+                  width={10}
+                  height={14}
+                  className="opacity-70 flex-shrink-0"
+                  style={{ filter: "brightness(0) invert(1)" }}
                 />
-                <span className="text-white text-[18px]">Lagos, Nigeria</span>
+                <span className="text-white opacity-80" style={{ fontSize: 14 }}>
+                  Lagos, Nigeria
+                </span>
               </div>
             </div>
           </div>
 
-          <div className="flex flex-wrap lgss:flex-nowrap gap-x-10 gap-y-5 lgss:gap-x-14 items-start w-full lgss:w-auto lgss:pt-2">
-            {navLinks.map((link) => (
-              <Link
-                key={link.label}
-                href={link.href}
-                className="text-[#cdc4c4] text-[23px] font-medium hover:text-white transition-colors whitespace-nowrap"
-                style={{ fontFamily: "Inter, sans-serif" }}
-              >
-                {link.label}
-              </Link>
-            ))}
+          {/* Right — nav links row + email below */}
+          <div className="flex flex-col gap-5 lgss:pt-2 flex-1">
+            <div className="flex flex-wrap gap-x-10 gap-y-4 lgss:justify-between">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="text-[#cdc4c4] font-medium hover:text-white transition-colors whitespace-nowrap"
+                  style={{ fontFamily: "Inter, sans-serif", fontSize: 15 }}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
             <a
               href="mailto:support@celler.app"
-              className="text-[#cdc4c4] text-[23px] font-medium hover:text-white transition-colors whitespace-nowrap lgss:ml-[-6px]"
-              style={{ fontFamily: "Inter, sans-serif" }}
+              className="text-[#cdc4c4] font-medium hover:text-white transition-colors"
+              style={{ fontFamily: "Inter, sans-serif", fontSize: 15 }}
             >
               support@celler.app
             </a>
           </div>
         </div>
 
-        <div className="border-t border-white/10 mt-10 lgss:mt-12 mb-8 lgss:mb-10" />
+        <div className="border-t border-white/10 mt-10 mb-8" />
 
-        <div className="flex flex-col mds:flex-row items-start mds:items-center justify-between gap-7 lgss:gap-6">
-          <div className="flex items-center gap-6">
+        {/* Bottom row: social icons | copyright */}
+        <div className="flex flex-col mds:flex-row items-start mds:items-center justify-between gap-5">
+          <div className="flex items-center gap-4">
             {socialLinks.map((s) => (
               <a
                 key={s.label}
@@ -95,14 +109,17 @@ export default function Footer2() {
                 target="_blank"
                 rel="noreferrer"
                 aria-label={s.label}
-                className="w-16 h-16 rounded-full border border-white/20 flex items-center justify-center hover:border-white/50 transition-colors"
+                className="w-10 h-10 rounded-full border border-white/25 flex items-center justify-center hover:border-white/60 transition-colors"
               >
-                <img src={s.icon} alt={s.label} width={28} height={28} />
+                <img src={s.icon} alt={s.label} width={18} height={18} />
               </a>
             ))}
           </div>
 
-          <p className="text-white text-[18px] opacity-70 whitespace-nowrap mds:mt-0 lgss:mr-1">
+          <p
+            className="text-white opacity-70 whitespace-nowrap"
+            style={{ fontSize: 14 }}
+          >
             &copy; 2024 - 2026 Tampay by CQ LTD. All rights reserved.
           </p>
         </div>

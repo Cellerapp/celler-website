@@ -35,6 +35,7 @@ yarn-error.log*
 # large binaries (host elsewhere, e.g. drive)
 /public/*.apk
 /src/assets/apk/*.apk
+.kombai
 
 # typescript
 *.tsbuildinfo
