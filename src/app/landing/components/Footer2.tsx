@@ -1,18 +1,26 @@
-import Link from 'next/link';
+import Link from "next/link";
 
 const socialLinks = [
-  { href: 'https://instagram.com/useceller', icon: '/home-two/icon-instagram.svg', label: 'Instagram' },
-  { href: 'https://twitter.com/useceller', icon: '/home-two/icon-twitter.svg', label: 'Twitter' },
-  { href: '#', icon: '/home-two/icon-tiktok.svg', label: 'TikTok' },
-  { href: '#', icon: '/home-two/icon-youtube.svg', label: 'YouTube' },
+  {
+    href: "https://instagram.com/useceller",
+    icon: "/landing/icon-instagram.svg",
+    label: "Instagram",
+  },
+  {
+    href: "https://twitter.com/useceller",
+    icon: "/landing/icon-twitter.svg",
+    label: "Twitter",
+  },
+  { href: "#", icon: "/landing/icon-tiktok.svg", label: "TikTok" },
+  { href: "#", icon: "/landing/icon-youtube.svg", label: "YouTube" },
 ];
 
 const navLinks = [
-  { label: 'About Celler', href: '/about' },
-  { label: 'How It Works', href: '#how-it-works' },
-  { label: 'Privacy Policy', href: '/privacy' },
-  { label: 'Terms', href: '/terms' },
-  { label: 'Contact Support', href: '#' },
+  { label: "About Celler", href: "/about" },
+  { label: "How It Works", href: "#how-it-works" },
+  { label: "Privacy Policy", href: "/privacy" },
+  { label: "Terms", href: "/terms" },
+  { label: "Contact Support", href: "#" },
 ];
 
 export default function Footer2() {
@@ -21,21 +29,33 @@ export default function Footer2() {
       <div className="ht-container">
         <div className="flex flex-col lgss:flex-row gap-10 lgss:gap-14 justify-between items-start">
           <div className="max-w-[420px] flex flex-col gap-6">
-            <Link href="/home-two" aria-label="Celler home">
-              <img src="/home-two/celler-logo-white.svg" alt="Celler" className="h-11 w-auto" />
+            <Link href="/landing" aria-label="Celler home">
+              <img
+                src="/landing/celler-logo-white.svg"
+                alt="Celler"
+                className="h-11 w-auto"
+              />
             </Link>
             <p className="text-white text-[18px] leading-[1.55] opacity-80 max-w-[410px]">
-              Celler is a product of &ldquo;Tampay by CQ LTD&rdquo; with company number RC-7430244.
-              Tampay by CQ LTD provides Nigerian financial and digital assets management services
-              including &ldquo;Tampay Finance&rdquo;, a banking application made for your local and
+              Celler is a product of &ldquo;Tampay by CQ LTD&rdquo; with company
+              number RC-7430244. Tampay by CQ LTD provides Nigerian financial
+              and digital assets management services including &ldquo;Tampay
+              Finance&rdquo;, a banking application made for your local and
               global needs
             </p>
             <div className="flex flex-col gap-2">
               <p className="text-white text-[18px] leading-[1.55] opacity-80 max-w-[380px]">
-                14A Alternative Route, Chevron Close, Lekki, Eti-Osa, Lagos State.
+                14A Alternative Route, Chevron Close, Lekki, Eti-Osa, Lagos
+                State.
               </p>
               <div className="flex items-center gap-2">
-                <img src="/home-two/icon-location.svg" alt="" width={12} height={18} className="opacity-70" />
+                <img
+                  src="/landing/icon-location.svg"
+                  alt=""
+                  width={12}
+                  height={18}
+                  className="opacity-70"
+                />
                 <span className="text-white text-[18px]">Lagos, Nigeria</span>
               </div>
             </div>
@@ -47,7 +67,7 @@ export default function Footer2() {
                 key={link.label}
                 href={link.href}
                 className="text-[#cdc4c4] text-[23px] font-medium hover:text-white transition-colors whitespace-nowrap"
-                style={{ fontFamily: 'Inter, sans-serif' }}
+                style={{ fontFamily: "Inter, sans-serif" }}
               >
                 {link.label}
               </Link>
@@ -55,7 +75,7 @@ export default function Footer2() {
             <a
               href="mailto:support@celler.app"
               className="text-[#cdc4c4] text-[23px] font-medium hover:text-white transition-colors whitespace-nowrap lgss:ml-[-6px]"
-              style={{ fontFamily: 'Inter, sans-serif' }}
+              style={{ fontFamily: "Inter, sans-serif" }}
             >
               support@celler.app
             </a>

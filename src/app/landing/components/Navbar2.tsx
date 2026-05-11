@@ -1,10 +1,10 @@
-'use client';
+"use client";
 
-import { useState } from 'react';
-import Link from 'next/link';
-import { SIGNUP_URL } from '@/constants';
-import { HiMenuAlt3 } from 'react-icons/hi';
-import { IoClose } from 'react-icons/io5';
+import { useState } from "react";
+import Link from "next/link";
+import { SIGNUP_URL } from "@/constants";
+import { HiMenuAlt3 } from "react-icons/hi";
+import { IoClose } from "react-icons/io5";
 
 export default function Navbar2() {
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -15,7 +15,7 @@ export default function Navbar2() {
         {/* Logo */}
         <Link href="/landing" aria-label="Celler home">
           <img
-            src="/home-two/figma-logo.svg"
+            src="/landing/figma-logo.svg"
             alt="Celler"
             width={61}
             height={42}
@@ -32,21 +32,30 @@ export default function Navbar2() {
           <Link
             href="#features"
             className="text-[16px] font-medium hover:text-[#3a66ff] transition-colors"
-            style={{ fontFamily: "'Space Grotesk', sans-serif", color: '#000000' }}
+            style={{
+              fontFamily: "'Space Grotesk', sans-serif",
+              color: "#000000",
+            }}
           >
             Features
           </Link>
           <Link
             href="#faq"
             className="text-[16px] font-medium hover:text-[#3a66ff] transition-colors"
-            style={{ fontFamily: "'Space Grotesk', sans-serif", color: '#000000' }}
+            style={{
+              fontFamily: "'Space Grotesk', sans-serif",
+              color: "#000000",
+            }}
           >
             FAQ
           </Link>
           <Link
             href="#how-it-works"
             className="text-[16px] font-medium hover:text-[#3a66ff] transition-colors"
-            style={{ fontFamily: "'Space Grotesk', sans-serif", color: '#000000' }}
+            style={{
+              fontFamily: "'Space Grotesk', sans-serif",
+              color: "#000000",
+            }}
           >
             How it works
           </Link>

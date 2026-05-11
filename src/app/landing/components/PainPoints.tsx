@@ -1,23 +1,21 @@
-'use client';
+"use client";
 
-import Image from 'next/image';
-import { motion } from 'framer-motion';
+import Image from "next/image";
+import { motion } from "framer-motion";
+import { RiShieldFill } from "react-icons/ri";
 
 const topCards = [
   {
-    icon: '/home-two/icon-shield-blue.svg',
-    title: 'Network delay.',
-    desc: 'Transactions that take longer than they should, leaving you in the dark.',
+    title: "Network delay.",
+    desc: "Transactions that take longer than they should, leaving you in the dark.",
   },
   {
-    icon: '/home-two/icon-shield-blue.svg',
-    title: 'Buyer disappeared.',
+    title: "Buyer disappeared.",
     desc: "You did everything right, but the other side\njust wasn\u2019t reliable.",
   },
   {
-    icon: '/home-two/icon-shield-alt.svg',
-    title: 'P2P stories.',
-    desc: 'Too many back-and-forth, and never quite knowing if things will work out.',
+    title: "P2P stories.",
+    desc: "Too many back-and-forth, and never quite knowing if things will work out.",
   },
 ];
 
@@ -30,36 +28,40 @@ const fadeUp = {
   }),
 };
 
-function ShieldIconWrap({ src }: { src: string }) {
+function ShieldIconWrap() {
   return (
     <div
       className="flex items-center justify-center"
       style={{
         width: 40,
         height: 40,
-        borderRadius: '50%',
-        background: 'rgba(52, 111, 255, 0.1)',
+        borderRadius: "50%",
+        background: "rgba(58, 102, 255, 0.1)",
       }}
     >
-      <img src={src} alt="" width={18} height={20} />
+      <RiShieldFill size={20} color="#3a66ff" />
     </div>
   );
 }
 
 export default function PainPoints() {
   return (
-    <section id="features" className="ht-section py-20" style={{ background: '#f9fafb' }}>
+    <section
+      id="features"
+      className="ht-section py-20"
+      style={{ background: "#f9fafb" }}
+    >
       <div className="ht-container">
         {/* Heading */}
         <div className="text-center" style={{ marginBottom: 40 }}>
           <h2
             style={{
               fontFamily: "'Space Grotesk', sans-serif",
-              fontSize: 'clamp(32px, 4vw, 52px)',
+              fontSize: "clamp(32px, 4vw, 52px)",
               fontWeight: 700,
-              letterSpacing: '-2.08px',
-              lineHeight: '62.40px',
-              color: '#1d2739',
+              letterSpacing: "-2.08px",
+              lineHeight: "62.40px",
+              color: "#1d2739",
             }}
           >
             Tired of Hearing &ldquo;It&rsquo;s Still Pending&rdquo;?
@@ -69,7 +71,7 @@ export default function PainPoints() {
               fontFamily: "'Space Grotesk', sans-serif",
               fontSize: 18,
               fontWeight: 400,
-              color: '#475367',
+              color: "#475367",
               marginTop: 8,
             }}
           >
@@ -93,20 +95,20 @@ export default function PainPoints() {
               className="bg-white flex flex-col"
               style={{
                 borderRadius: 16,
-                padding: '28px',
-                boxShadow: '0px 1.5px 4px rgba(16, 25, 40, 0.07)',
+                padding: "28px",
+                boxShadow: "0px 1.5px 4px rgba(16, 25, 40, 0.07)",
                 gap: 120,
               }}
             >
-              <ShieldIconWrap src={item.icon} />
+              <ShieldIconWrap />
               <div className="flex flex-col" style={{ gap: 6 }}>
                 <h3
                   style={{
                     fontFamily: "'Space Grotesk', sans-serif",
                     fontSize: 24,
                     fontWeight: 700,
-                    letterSpacing: '-0.48px',
-                    color: '#161616',
+                    letterSpacing: "-0.48px",
+                    color: "#161616",
                   }}
                 >
                   {item.title}
@@ -116,8 +118,8 @@ export default function PainPoints() {
                     fontFamily: "'Space Grotesk', sans-serif",
                     fontSize: 16,
                     fontWeight: 400,
-                    lineHeight: '23.68px',
-                    color: '#484848',
+                    lineHeight: "23.68px",
+                    color: "#484848",
                   }}
                 >
                   {item.desc}
@@ -139,21 +141,21 @@ export default function PainPoints() {
             className="bg-white flex flex-col"
             style={{
               borderRadius: 16,
-              padding: '28px',
-              border: '1px solid #f0f2f5',
-              boxShadow: '0px 1.5px 4px rgba(16, 25, 40, 0.07)',
+              padding: "28px",
+              border: "1px solid #f0f2f5",
+              boxShadow: "0px 1.5px 4px rgba(16, 25, 40, 0.07)",
               gap: 80,
             }}
           >
-            <ShieldIconWrap src="/home-two/icon-shield-blue.svg" />
+            <ShieldIconWrap />
             <div className="flex flex-col" style={{ gap: 6 }}>
               <h3
                 style={{
                   fontFamily: "'Space Grotesk', sans-serif",
                   fontSize: 24,
                   fontWeight: 700,
-                  letterSpacing: '-0.48px',
-                  color: '#161616',
+                  letterSpacing: "-0.48px",
+                  color: "#161616",
                 }}
               >
                 Funds on hold for 3 days.
@@ -163,11 +165,12 @@ export default function PainPoints() {
                   fontFamily: "'Space Grotesk', sans-serif",
                   fontSize: 16,
                   fontWeight: 400,
-                  lineHeight: '23.68px',
-                  color: '#484848',
+                  lineHeight: "23.68px",
+                  color: "#484848",
                 }}
               >
-                Waiting days to access money that&rsquo;s already yours can be really unsettling.
+                Waiting days to access money that&rsquo;s already yours can be
+                really unsettling.
               </p>
             </div>
           </motion.div>
@@ -179,26 +182,25 @@ export default function PainPoints() {
             whileInView="visible"
             viewport={{ once: true }}
             variants={fadeUp}
-            className="rounded-[16px] flex items-center relative"
+            className="rounded-[16px] flex items-center relative overflow-hidden"
             style={{
-              background: '#3a66ff',
+              background: "#3a66ff",
               borderRadius: 16,
               minHeight: 280,
-              overflow: 'visible',
             }}
           >
             <div
               className="flex flex-col z-10"
-              style={{ gap: 8, padding: '40px 0 40px 40px', maxWidth: '55%' }}
+              style={{ gap: 8, padding: "40px 0 40px 40px", maxWidth: "55%" }}
             >
               <h3
                 style={{
                   fontFamily: "'Space Grotesk', sans-serif",
                   fontSize: 32,
                   fontWeight: 700,
-                  letterSpacing: '-0.64px',
-                  lineHeight: '38.40px',
-                  color: '#ffffff',
+                  letterSpacing: "-0.64px",
+                  lineHeight: "38.40px",
+                  color: "#ffffff",
                 }}
               >
                 You need control.
@@ -208,30 +210,34 @@ export default function PainPoints() {
                   fontFamily: "'Space Grotesk', sans-serif",
                   fontSize: 16,
                   fontWeight: 400,
-                  color: '#ffffff',
-                  lineHeight: '23.68px',
+                  color: "#ffffff",
+                  lineHeight: "23.68px",
                 }}
               >
-                And you deserve a platform that gives it to you simply and reliably.
+                And you deserve a platform that gives it to you simply and
+                reliably.
               </p>
             </div>
-            {/* Phone — overflows card bottom, tilted */}
+            {/* Phone — contained within card, slightly tilted */}
             <div
               className="pointer-events-none absolute"
               style={{
-                right: -24,
-                bottom: -20,
-                width: 260,
-                height: 380,
+                right: -8,
+                top: 8,
+                width: 230,
+                height: 350,
               }}
             >
               <Image
-                src="/home-two/figma-pain-phone.png"
+                src="/landing/figma-pain-phone.png"
                 alt="Celler app"
                 fill
-                sizes="260px"
-                className="object-contain object-bottom"
-                style={{ transform: 'rotate(12deg)', transformOrigin: 'bottom right' }}
+                sizes="230px"
+                className="object-contain object-right-top"
+                style={{
+                  transform: "rotate(8deg)",
+                  transformOrigin: "center top",
+                }}
               />
             </div>
           </motion.div>

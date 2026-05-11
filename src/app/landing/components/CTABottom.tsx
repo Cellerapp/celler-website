@@ -1,4 +1,4 @@
-import Image from 'next/image';
+import Image from "next/image";
 
 export default function CTABottom() {
   return (
@@ -17,7 +17,7 @@ export default function CTABottom() {
           </p>
           <div className="mt-8 lgss:mt-10">
             <img
-              src="/home-two/app-badges-footer.svg"
+              src="/landing/app-badges-footer.svg"
               alt="Download on Google Play and App Store"
               className="h-10 lgss:h-14 w-auto"
             />
@@ -25,13 +25,20 @@ export default function CTABottom() {
         </div>
 
         {/* Right — hand + phone bleeds bottom/right */}
-        <div className="hidden lgss:flex relative flex-shrink-0 items-end self-stretch" style={{ width: 'min(620px, 46vw)' }}>
+        <div
+          className="hidden lgss:flex relative flex-shrink-0 items-end self-stretch"
+          style={{ width: "min(620px, 46vw)" }}
+        >
           <div
             className="absolute bottom-0"
-            style={{ right: 'max(-24px, -2vw)', width: 'min(700px, 54vw)', height: 'min(760px, 135%)' }}
+            style={{
+              right: "max(-24px, -2vw)",
+              width: "min(700px, 54vw)",
+              height: "min(760px, 135%)",
+            }}
           >
             <Image
-              src="/home-two/hand-phone.png"
+              src="/landing/hand-phone.png"
               alt="Hand holding phone with Celler app"
               fill
               sizes="700px"
@@ -45,8 +52,9 @@ export default function CTABottom() {
       <div
         className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full pointer-events-none z-[1]"
         style={{
-          background: 'radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%)',
-          transform: 'translate(30%, -30%)',
+          background:
+            "radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%)",
+          transform: "translate(30%, -30%)",
         }}
       />
     </section>
