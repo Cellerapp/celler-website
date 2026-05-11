@@ -4,37 +4,37 @@ export default function CTABottom() {
   return (
     <section className="ht-section bg-[#3a66ff] relative overflow-hidden">
       <div className="ht-chevron-overlay" aria-hidden />
-      <div className="ht-container flex flex-col lgss:flex-row items-center lgss:items-end gap-10 py-20 lgss:py-24 relative z-[2]">
+      <div className="ht-container flex flex-col lgss:flex-row items-center lgss:items-end gap-10 lgss:gap-0 py-16 lgss:py-0 lgss:min-h-[560px] relative z-[2]">
         {/* Left — text */}
-        <div className="flex-1 z-10">
-          <h2 className="text-white font-bold leading-[52px] tracking-[-0.52px] text-[36px] mds:text-[44px] lgss:text-[52px] max-w-[560px]">
+        <div className="flex-1 z-10 py-0 lgss:py-20">
+          <h2 className="text-white font-bold leading-[1.05] tracking-[-0.02em] text-[36px] mds:text-[52px] lgss:text-[64px] max-w-[680px]">
             Take control of your money, your way.
           </h2>
-          <p className="mt-4 text-white text-[18px] leading-[27.72px] max-w-[480px] opacity-90">
+          <p className="mt-6 text-white text-[18px] lgss:text-[30px] leading-[1.35] max-w-[700px] opacity-90">
             Built for beginners, trusted by professionals.
             <br />
             Everything you need to manage your digital assets in one place
           </p>
-          <div className="mt-8">
+          <div className="mt-8 lgss:mt-10">
             <img
               src="/home-two/app-badges-footer.svg"
               alt="Download on Google Play and App Store"
-              className="h-10 w-auto"
+              className="h-10 lgss:h-14 w-auto"
             />
           </div>
         </div>
 
         {/* Right — hand + phone bleeds bottom/right */}
-        <div className="hidden lgss:flex relative flex-shrink-0 items-end self-stretch" style={{ width: 'min(480px, 42vw)' }}>
+        <div className="hidden lgss:flex relative flex-shrink-0 items-end self-stretch" style={{ width: 'min(620px, 46vw)' }}>
           <div
             className="absolute bottom-0"
-            style={{ right: 'max(-80px, -6vw)', width: 'min(560px, 50vw)', height: 'min(640px, 100%)' }}
+            style={{ right: 'max(-24px, -2vw)', width: 'min(700px, 54vw)', height: 'min(760px, 135%)' }}
           >
             <Image
               src="/home-two/hand-phone.png"
               alt="Hand holding phone with Celler app"
               fill
-              sizes="560px"
+              sizes="700px"
               className="object-contain object-bottom"
             />
           </div>

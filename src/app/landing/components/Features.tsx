@@ -1,6 +1,5 @@
 'use client';
 
-import Image from 'next/image';
 import { motion } from 'framer-motion';
 
 const fadeUp = {
@@ -209,10 +208,11 @@ const featureCards = [
 
 export default function Features() {
   return (
-    <section id="trade" className="ht-section bg-white py-20">
+    <section id="trade" className="ht-section bg-white py-20 lgss:py-24">
       <div className="ht-container">
+        <div className="mx-auto w-full max-w-[1540px]">
         {/* Heading */}
-        <div className="text-center mb-14">
+        <div className="text-center mb-12 lgss:mb-14 px-4">
           <h2 className="font-bold text-[#000000] leading-[52px] tracking-[-2.08px] text-[36px] mds:text-[44px] lgss:text-[52px]">
             Everything you need
             <br className="hidden mds:block" /> to trade
@@ -223,7 +223,7 @@ export default function Features() {
         </div>
 
         {/* 2×2 grid */}
-        <div className="grid grid-cols-1 mds:grid-cols-2 gap-6">
+        <div className="grid grid-cols-1 mds:grid-cols-2 gap-6 px-1">
           {featureCards.map((card, i) => (
             <motion.div
               key={card.title}
@@ -232,7 +232,7 @@ export default function Features() {
               whileInView="visible"
               viewport={{ once: true }}
               variants={fadeUp}
-              className="ht-card p-8 border border-[#f0f2f5] bg-[#fcfdfd]"
+              className="ht-card p-7 lgss:p-8 border border-[#f0f2f5] bg-[#fcfdfd]"
             >
               <h3 className="font-bold text-[#374151] text-[28px] lgss:text-[32px] leading-[40px] tracking-[-0.64px]">
                 {card.title}
@@ -241,6 +241,7 @@ export default function Features() {
               {card.mockup}
             </motion.div>
           ))}
+        </div>
         </div>
       </div>
     </section>
