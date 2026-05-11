@@ -34,6 +34,7 @@ export default function Footer2() {
                 src="/landing/celler-logo-white.svg"
                 alt="Celler"
                 className="h-11 w-auto"
+                style={{ filter: 'brightness(0) invert(1)' }}
               />
             </Link>
             <p className="text-white text-[18px] leading-[1.55] opacity-80 max-w-[410px]">
@@ -55,6 +56,7 @@ export default function Footer2() {
                   width={12}
                   height={18}
                   className="opacity-70"
+                  style={{ filter: 'brightness(0) invert(1)' }}
                 />
                 <span className="text-white text-[18px]">Lagos, Nigeria</span>
               </div>
