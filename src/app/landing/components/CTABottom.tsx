@@ -10,10 +10,9 @@ export default function CTABottom() {
           <h2 className="mx-auto max-w-[680px] text-[32px] font-bold leading-[1.05] tracking-[-0.02em] text-white mds:text-[44px] lgss:mx-0 lgss:text-[64px]">
             Take control of your money, your way.
           </h2>
-          <p className="mx-auto mt-5 max-w-[700px] text-[17px] leading-[1.35] text-white opacity-90 lgss:mx-0 lgss:mt-6 lgss:text-[20px]">
-            Built for beginners, trusted by professionals.
-            <br />
-            Everything you need to manage your digital assets in one place
+          <p className="mx-auto mt-5 max-w-[480px] text-[17px] leading-[1.45] text-white opacity-90 lgss:mx-0 lgss:mt-6 lgss:max-w-[700px] lgss:text-[20px]">
+            Built for beginners, trusted by professionals. Everything you need
+            to manage your money is right here, right now
           </p>
           <div className="mt-8 flex justify-center lgss:mt-10 lgss:justify-start">
             <img
@@ -25,7 +24,7 @@ export default function CTABottom() {
         </div>
 
         {/* mobile — hand + phone */}
-        <div className="relative h-[280px] w-full max-w-[380px] lgss:hidden">
+        <div className="relative h-[340px] w-full max-w-[380px] lgss:hidden">
           <Image
             src="/landing/take-control.png"
             alt="Hand holding phone with Celler app"

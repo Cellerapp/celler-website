@@ -29,8 +29,31 @@ export default function Footer2() {
       <div className="ht-container">
         {/* Top row: logo+desc | nav links */}
         <div className="flex flex-col lgss:flex-row gap-10 lgss:gap-16 justify-between items-start">
-          {/* Left — logo + description + address */}
-          <div className="flex flex-col gap-5 flex-shrink-0" style={{ maxWidth: 320 }}>
+          {/* Nav links — first on mobile via order, right column on desktop */}
+          <div className="flex flex-col gap-5 lgss:pt-2 flex-1 order-first lgss:order-last">
+            <div className="flex flex-col lgss:flex-wrap gap-y-4 lgss:flex-row lgss:gap-x-10 lgss:justify-between">
+              {navLinks.map((link) => (
+                <Link
+                  key={link.label}
+                  href={link.href}
+                  className="text-[#cdc4c4] font-medium hover:text-white transition-colors whitespace-nowrap"
+                  style={{ fontFamily: "Inter, sans-serif", fontSize: 15 }}
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
+            <a
+              href="mailto:support@celler.app"
+              className="text-[#cdc4c4] font-medium hover:text-white transition-colors"
+              style={{ fontFamily: "Inter, sans-serif", fontSize: 15 }}
+            >
+              support@celler.app
+            </a>
+          </div>
+
+          {/* Logo + description + address — second on mobile, left on desktop */}
+          <div className="flex flex-col gap-5 flex-shrink-0 order-last lgss:order-first" style={{ maxWidth: 320 }}>
             <Link href="/landing" aria-label="Celler home">
               <img
                 src="/landing/celler-logo-white.svg"
@@ -71,29 +94,6 @@ export default function Footer2() {
                 </span>
               </div>
             </div>
-          </div>
-
-          {/* Right — nav links row + email below */}
-          <div className="flex flex-col gap-5 lgss:pt-2 flex-1">
-            <div className="flex flex-wrap gap-x-10 gap-y-4 lgss:justify-between">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.label}
-                  href={link.href}
-                  className="text-[#cdc4c4] font-medium hover:text-white transition-colors whitespace-nowrap"
-                  style={{ fontFamily: "Inter, sans-serif", fontSize: 15 }}
-                >
-                  {link.label}
-                </Link>
-              ))}
-            </div>
-            <a
-              href="mailto:support@celler.app"
-              className="text-[#cdc4c4] font-medium hover:text-white transition-colors"
-              style={{ fontFamily: "Inter, sans-serif", fontSize: 15 }}
-            >
-              support@celler.app
-            </a>
           </div>
         </div>
 
