@@ -24,10 +24,7 @@ const linkStyle: React.CSSProperties = {
 
 export default function Footer2() {
   return (
-    <footer
-      className="ht-section"
-      style={{ background: "#000000" }}
-    >
+    <footer className="ht-section" style={{ background: "#000000" }}>
       <div className="ht-container pt-14 pb-12 lgss:pt-16 lgss:pb-14">
         {/* Top row: logo+desc+address | nav links */}
         <div className="flex flex-col gap-10 lgss:flex-row lgss:gap-[60px] lgss:items-start">
@@ -54,11 +51,11 @@ export default function Footer2() {
                 color: "#ffffff",
               }}
             >
-              Cellar is a product of &ldquo;Tampay by CQ LTD&rdquo; with
-              company number RC-7430244. Tampay by CQ LTD provides Nigerian
-              financial and digital assets management services including
-              &ldquo;Tampay Finance&rdquo;, a banking application made for
-              your local and global needs
+              Cellar is a product of &ldquo;Tampay by CQ LTD&rdquo; with company
+              number RC-7430244. Tampay by CQ LTD provides Nigerian financial
+              and digital assets management services including &ldquo;Tampay
+              Finance&rdquo;, a banking application made for your local and
+              global needs
             </p>
             <div className="flex flex-col" style={{ gap: 9 }}>
               <p
@@ -137,13 +134,13 @@ export default function Footer2() {
               >
                 Contact Support
               </Link>
-              <a
+              {/* <a
                 href="mailto:support@celler.app"
                 className="hover:text-white transition-colors whitespace-nowrap"
                 style={linkStyle}
               >
                 support@celler.app
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
