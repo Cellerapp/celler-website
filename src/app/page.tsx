@@ -434,8 +434,8 @@ export default function Home() {
           </motion.div>
           <motion.div variants={fadeInUp} className="text-center">
             <h4 className="text-center  mt-3 text-[14px] lgss:text-[16px] text-secondary ">
-              Cellar was built to make your journey easier, safer, and more
-              rewarding. Use Cellar to enjoy:
+              Celler was built to make your journey easier, safer, and more
+              rewarding. Use Celler to enjoy:
             </h4>
           </motion.div>
         </motion.div>

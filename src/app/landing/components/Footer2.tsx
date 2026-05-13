@@ -52,7 +52,7 @@ export default function Footer2() {
                   color: "#ffffff",
                 }}
               >
-                Cellar is a product of &ldquo;Tampay by CQ LTD&rdquo; with
+                Celler is a product of &ldquo;Tampay by CQ LTD&rdquo; with
                 company number RC-7430244. Tampay by CQ LTD provides Nigerian
                 financial and digital assets management services including
                 &ldquo;Tampay Finance&rdquo;, a banking application made for

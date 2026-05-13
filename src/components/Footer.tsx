@@ -79,7 +79,7 @@ const Footer = () => {
             </div>
           </Link>
           <h4 className="text-white text-[14px] mt-6">
-            Cellar is a product of &quot;Tampay by CQ LTD&quot; with company
+            Celler is a product of &quot;Tampay by CQ LTD&quot; with company
             number RC-7430244. Tampay by CQ LTD provides Nigerian financial and
             digital assets management services including &quot;Tampay
             Finance&quot;, a banking application made for your local and global
@@ -177,7 +177,8 @@ const Footer = () => {
           <a
             href="https://instagram.com/useceller"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
+            title="Instagram"
             className="flex justify-center items-center h-[40px] w-[40px] rounded-full border border-white text-white text-[24px]"
           >
             <FaInstagram />
@@ -185,7 +186,8 @@ const Footer = () => {
           <a
             href="https://twitter.com/useceller"
             target="_blank"
-            rel="noreferrer"
+            rel="noopener noreferrer"
+            title="Twitter"
             className="flex justify-center items-center h-[40px] w-[40px] rounded-full border border-white text-white text-[24px]"
           >
             <FaTwitter />

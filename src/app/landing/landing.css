@@ -148,10 +148,14 @@
   inset: 0;
   pointer-events: none;
   z-index: 0;
-  opacity: 0.14;
+  opacity: 0.2;
   background-image: url('/landing/wave-bg.svg');
   background-repeat: repeat;
-  background-size: 120px auto;
+  background-size: 150px auto;
+}
+
+.ht-cta-band {
+  background: #3a66ff;
 }
 
 /* slightly tighter vertical rhythm on small screens */
