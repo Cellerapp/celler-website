@@ -4,19 +4,16 @@ import { motion } from "framer-motion";
 
 const stories = [
   {
-    quote: '"I converted my assets and got paid faster than my bank transfer"',
     name: "Femi, Lagos",
-    photo: "/landing/testimonial-1.jpeg",
+    photo: "/landing/femi-testimonial-mobile.png",
   },
   {
-    quote: '"No more P2P stress. I just use Celler now"',
     name: "Chinedu, Abuja",
-    photo: "/landing/testimonial-2.jpeg",
+    photo: "/landing/chinedu-testimonial-mobile.png",
   },
   {
-    quote: '"Rates are clear. I like that I don\u2019t have to argue"',
     name: "Amaka, Port Harcourt",
-    photo: "/landing/testimonial-3.jpeg",
+    photo: "/landing/amaka-testimonial-mobile.png",
   },
 ];
 
@@ -70,42 +67,14 @@ export default function Testimonials() {
               viewport={{ once: true }}
               transition={{ duration: 0.45, delay: i * 0.08 }}
               className="relative w-full overflow-hidden rounded-[22px] shadow-md"
-              style={{ aspectRatio: "3/4" }}
+              style={{ aspectRatio: "7/10" }}
             >
-              {/* Photo */}
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={s.photo}
                 alt={s.name}
-                className="absolute inset-0 h-full w-full object-cover object-top"
+                className="h-full w-full object-cover object-top"
               />
-              {/* Gradient scrim */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-              {/* Caption */}
-              <div className="absolute inset-x-0 bottom-0 p-5">
-                <div
-                  className="rounded-2xl px-4 py-4"
-                  style={{
-                    background: "rgba(30,20,10,0.52)",
-                    backdropFilter: "blur(12px)",
-                    WebkitBackdropFilter: "blur(12px)",
-                    border: "1px solid rgba(255,255,255,0.12)",
-                  }}
-                >
-                  <p
-                    className="text-[16px] font-bold leading-snug text-white"
-                    style={{ fontFamily: "'Space Grotesk', sans-serif" }}
-                  >
-                    {s.quote}
-                  </p>
-                  <p
-                    className="mt-2 text-[14px] font-bold text-white/90"
-                    style={{ fontFamily: "'Space Grotesk', sans-serif" }}
-                  >
-                    {s.name}
-                  </p>
-                </div>
-              </div>
             </motion.div>
           ))}
         </div>
@@ -120,7 +89,7 @@ export default function Testimonials() {
         >
           {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
-            src="/landing/figma-testimonials.svg"
+            src="/landing/testimonial.png"
             alt="Customer testimonials — Nigerians sharing their Celler experience"
             className="block h-auto w-full"
           />
