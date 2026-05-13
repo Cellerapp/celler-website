@@ -214,18 +214,14 @@ export default function PainPoints() {
             </div>
             {/* Phone — below copy on narrow screens, absolute on mds+ */}
             <div
-              className="pointer-events-none relative mx-auto mt-2 h-[240px] w-[200px] flex-shrink-0 mds:absolute mds:right-[-8px] mds:top-2 mds:mx-0 mds:mt-0 mds:h-[350px] mds:w-[230px]"
+              className="pointer-events-none relative mx-auto mt-2 h-[254px] w-[164px] flex-shrink-0 mds:absolute mds:right-[-8px] mds:top-2 mds:mx-0 mds:mt-0 mds:h-[350px] mds:w-[230px]"
             >
               <Image
                 src="/landing/figma-pain-phone.png"
                 alt="Celler app"
                 fill
                 sizes="230px"
-                className="object-contain object-right-top"
-                style={{
-                  transform: "rotate(8deg)",
-                  transformOrigin: "center top",
-                }}
+              className="object-contain object-right-top"
               />
             </div>
           </motion.div>

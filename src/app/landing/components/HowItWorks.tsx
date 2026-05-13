@@ -60,7 +60,6 @@ export default function HowItWorks() {
     <section
       id="how-it-works"
       className="ht-section py-12 lgss:py-20"
-      style={{ borderTop: "2px dashed #e8e8e8" }}
     >
       <div className="ht-container">
         <div className="mb-10 text-center lgss:mb-14">
@@ -118,8 +117,10 @@ export default function HowItWorks() {
                 className="font-bold text-white"
                 style={{
                   fontFamily: "'Space Grotesk', sans-serif",
-                  fontSize: 18,
-                  letterSpacing: "-0.3px",
+                  fontSize: 24,
+                  fontWeight: 700,
+                  letterSpacing: "-0.48px",
+                  lineHeight: "28.80px",
                 }}
               >
                 {step.title}
@@ -128,8 +129,10 @@ export default function HowItWorks() {
                 className="mt-1"
                 style={{
                   fontFamily: "'Space Grotesk', sans-serif",
-                  fontSize: 13,
+                  fontSize: 16,
+                  fontWeight: 400,
                   color: "rgba(255,255,255,0.68)",
+                  lineHeight: "23.68px",
                 }}
               >
                 {step.desc}
@@ -166,15 +169,15 @@ export default function HowItWorks() {
             className="flex flex-row overflow-hidden rounded-[40px]"
             style={{ background: "#3a66ff" }}
           >
-            <div className="flex min-w-0 flex-1 flex-col justify-center gap-10 p-10 lgss:p-16">
+            <div className="flex min-w-0 flex-1 flex-col justify-center gap-20 p-10 lgss:p-16">
               {steps.map((step) => (
-                <div key={step.n} className="flex flex-col gap-1">
+                <div key={step.n} className="flex flex-col gap-1.5">
                   <div
-                    className="mb-1.5 flex h-8 w-8 flex-shrink-0 items-center justify-center rounded-full bg-white font-bold"
+                    className="mb-2 flex flex-shrink-0 items-center justify-center rounded-full bg-white font-bold"
                     style={{
-                      width: 32,
-                      height: 32,
-                      fontSize: 14,
+                      width: 36,
+                      height: 36,
+                      fontSize: 16,
                       color: "#111",
                     }}
                   >
@@ -184,8 +187,9 @@ export default function HowItWorks() {
                     className="font-bold text-white"
                     style={{
                       fontFamily: "'Space Grotesk', sans-serif",
-                      fontSize: 17,
-                      letterSpacing: "-0.3px",
+                      fontSize: 24,
+                      letterSpacing: "-0.48px",
+                      lineHeight: "28.8px",
                     }}
                   >
                     {step.title}
@@ -193,8 +197,10 @@ export default function HowItWorks() {
                   <p
                     style={{
                       fontFamily: "'Space Grotesk', sans-serif",
-                      fontSize: 13,
+                      fontSize: 16,
+                      fontWeight: 400,
                       color: "rgba(255,255,255,0.68)",
+                      lineHeight: "23.68px",
                     }}
                   >
                     {step.desc}
@@ -212,14 +218,14 @@ export default function HowItWorks() {
               </a>
             </div>
 
-            <div className="flex flex-shrink-0 items-center justify-center p-6 lgss:p-8">
+            <div className="flex flex-shrink-0 items-center justify-center p-6 lgss:p-10">
               <div
                 className="relative overflow-hidden"
                 style={{
                   background: "rgba(255,255,255,0.18)",
                   borderRadius: 28,
-                  width: 360,
-                  height: 520,
+                  width: 440,
+                  height: 580,
                 }}
               >
                 <AnimatePresence custom={direction} mode="wait">

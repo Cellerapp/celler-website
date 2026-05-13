@@ -50,24 +50,21 @@ export default function FAQ() {
   const [open, setOpen] = useState<number>(0);
 
   return (
-    <section id="faq" className="ht-section bg-white py-12 lgss:py-20">
+    <section id="faq" className="ht-section bg-white py-12 lgss:py-24">
       <div className="ht-container">
         {/* Heading */}
         <div className="text-center" style={{ marginBottom: 64 }}>
           <h2
             style={{
               fontFamily: "'Space Grotesk', sans-serif",
-              fontSize: "clamp(28px, 6vw, 52px)",
+              fontSize: "clamp(32px, 6vw, 52px)",
               fontWeight: 700,
-              letterSpacing: "-2.08px",
+              letterSpacing: "-0.64px",
               lineHeight: "1.15",
               color: "#101828",
             }}
           >
-            Frequently asked{" "}
-            <span className="border-b-[3px] border-[#3a66ff] pb-0.5">
-              questions
-            </span>
+            Frequently asked questions
           </h2>
           <p
             className="mt-5"
@@ -86,7 +83,7 @@ export default function FAQ() {
         </div>
 
         {/* Accordion — card highlight for open item, dividers for closed */}
-        <div className="max-w-[700px] mx-auto flex flex-col gap-1">
+        <div className="max-w-[660px] mx-auto flex flex-col gap-1">
           {faqs.map((faq, i) => {
             const isOpen = open === i;
             return (

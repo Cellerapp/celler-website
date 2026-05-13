@@ -4,20 +4,19 @@ import { motion } from "framer-motion";
 
 const stories = [
   {
-    quote:
-      "I converted my assets and got paid faster than my bank transfer",
+    quote: '"I converted my assets and got paid faster than my bank transfer"',
     name: "Femi, Lagos",
-    gradient: "linear-gradient(145deg, #3d5a80 0%, #1e3a5f 100%)",
+    photo: "/landing/testimonial-1.jpeg",
   },
   {
-    quote: "No more P2P stress. I just use Celler now",
+    quote: '"No more P2P stress. I just use Celler now"',
     name: "Chinedu, Abuja",
-    gradient: "linear-gradient(145deg, #5c4d7d 0%, #2d2244 100%)",
+    photo: "/landing/testimonial-2.jpeg",
   },
   {
-    quote: "Rates are clear. I like that I don\u2019t have to argue",
+    quote: '"Rates are clear. I like that I don\u2019t have to argue"',
     name: "Amaka, Port Harcourt",
-    gradient: "linear-gradient(145deg, #8b5a6b 0%, #4a2c3a 100%)",
+    photo: "/landing/testimonial-3.jpeg",
   },
 ];
 
@@ -61,8 +60,8 @@ export default function Testimonials() {
           </p>
         </motion.div>
 
-        {/* mobile — portrait cards with glass caption */}
-        <div className="mx-auto flex max-w-md flex-col gap-5 lgss:hidden">
+        {/* mobile — full-width stacked portrait cards with real photos */}
+        <div className="flex flex-col gap-5 lgss:hidden">
           {stories.map((s, i) => (
             <motion.div
               key={s.name}
@@ -70,27 +69,37 @@ export default function Testimonials() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.45, delay: i * 0.08 }}
-              className="relative aspect-[3/4] max-h-[min(72vh,440px)] w-full overflow-hidden rounded-[22px] shadow-md"
-              style={{ background: s.gradient }}
+              className="relative w-full overflow-hidden rounded-[22px] shadow-md"
+              style={{ aspectRatio: "3/4" }}
             >
-              <div className="absolute inset-0 bg-gradient-to-t from-black/55 via-black/10 to-transparent" />
+              {/* Photo */}
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src={s.photo}
+                alt={s.name}
+                className="absolute inset-0 h-full w-full object-cover object-top"
+              />
+              {/* Gradient scrim */}
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+              {/* Caption */}
               <div className="absolute inset-x-0 bottom-0 p-5">
                 <div
-                  className="rounded-2xl px-4 py-3"
+                  className="rounded-2xl px-4 py-4"
                   style={{
-                    background: "rgba(255,255,255,0.14)",
-                    backdropFilter: "blur(10px)",
-                    WebkitBackdropFilter: "blur(10px)",
+                    background: "rgba(30,20,10,0.52)",
+                    backdropFilter: "blur(12px)",
+                    WebkitBackdropFilter: "blur(12px)",
+                    border: "1px solid rgba(255,255,255,0.12)",
                   }}
                 >
                   <p
-                    className="text-[17px] font-bold leading-snug text-white"
+                    className="text-[16px] font-bold leading-snug text-white"
                     style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                   >
                     {s.quote}
                   </p>
                   <p
-                    className="mt-2 text-sm text-white/85"
+                    className="mt-2 text-[14px] font-bold text-white/90"
                     style={{ fontFamily: "'Space Grotesk', sans-serif" }}
                   >
                     {s.name}

@@ -1,5 +1,6 @@
 "use client";
 
+import React from "react";
 import { motion } from "framer-motion";
 import { HiArrowDown, HiArrowUp } from "react-icons/hi";
 import { BsCheckCircleFill } from "react-icons/bs";
@@ -320,26 +321,61 @@ export default function Features() {
           </div>
 
           {/* 2×2 grid */}
-          <div className="grid grid-cols-1 mds:grid-cols-2 gap-6 px-1">
-            {featureCards.map((card, i) => (
-              <motion.div
-                key={card.title}
-                custom={i}
-                initial="hidden"
-                whileInView="visible"
-                viewport={{ once: true }}
-                variants={fadeUp}
-                className="ht-card p-7 lgss:p-8 border border-[#f0f2f5] bg-[#fcfdfd]"
-              >
-                <h3 className="font-bold text-[#374151] text-[28px] lgss:text-[32px] leading-[40px] tracking-[-0.64px]">
-                  {card.title}
-                </h3>
-                <p className="mt-2 text-[#4b5563] text-[18px] leading-[28px]">
-                  {card.desc}
-                </p>
-                {card.mockup}
-              </motion.div>
-            ))}
+          <div className="grid grid-cols-1 mds:grid-cols-2 gap-8">
+            {/* Mobile-only subtitle separator before card 2 */}
+            {featureCards.map((card, i) =>
+              i === 1 ? (
+                <React.Fragment key={card.title}>
+                  <p
+                    className="mds:hidden text-center px-2"
+                    style={{
+                      fontFamily: "'Space Grotesk', sans-serif",
+                      fontSize: 18,
+                      fontWeight: 400,
+                      lineHeight: "27.72px",
+                      color: "#475367",
+                    }}
+                  >
+                    Powerful tools designed for both beginners and professional
+                    traders.
+                  </p>
+                  <motion.div
+                    custom={i}
+                    initial="hidden"
+                    whileInView="visible"
+                    viewport={{ once: true }}
+                    variants={fadeUp}
+                    className="ht-card p-5 mds:p-7 lgss:p-12 border border-[#f0f2f5] bg-[#fcfdfd]"
+                  >
+                    <h3 className="font-bold text-[#374151] text-[28px] lgss:text-[32px] leading-[40px] tracking-[-0.64px]">
+                      {card.title}
+                    </h3>
+                    <p className="mt-2 text-[#4b5563] text-[18px] font-medium leading-[28px]">
+                      {card.desc}
+                    </p>
+                    {card.mockup}
+                  </motion.div>
+                </React.Fragment>
+              ) : (
+                <motion.div
+                  key={card.title}
+                  custom={i}
+                  initial="hidden"
+                  whileInView="visible"
+                  viewport={{ once: true }}
+                  variants={fadeUp}
+                  className="ht-card p-5 mds:p-7 lgss:p-12 border border-[#f0f2f5] bg-[#fcfdfd]"
+                >
+                  <h3 className="font-bold text-[#374151] text-[28px] lgss:text-[32px] leading-[40px] tracking-[-0.64px]">
+                    {card.title}
+                  </h3>
+                  <p className="mt-2 text-[#4b5563] text-[18px] font-medium leading-[28px]">
+                    {card.desc}
+                  </p>
+                  {card.mockup}
+                </motion.div>
+              )
+            )}
           </div>
         </div>
       </div>

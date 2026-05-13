@@ -58,12 +58,13 @@ export default function WhyCeller() {
             }}
           >
             We&rsquo;ve built Celler to be faster, simpler, and cheaper than
-            anything you&rsquo;ve used before here&rsquo;s how we win every time.
+            anything you&rsquo;ve used before here&rsquo;s how we win every
+            time.
           </p>
         </div>
 
-        {/* mobile — stacked cards */}
-        <div className="flex flex-col gap-4 lgss:hidden">
+        {/* responsive card grid: 1-col on mobile, 2-col on mds+ */}
+        <div className="grid grid-cols-1 mds:grid-cols-2 gap-4 lgss:gap-5">
           {pillars.map((item, i) => (
             <motion.div
               key={item.title}
@@ -71,47 +72,48 @@ export default function WhyCeller() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: i * 0.06 }}
-              className="rounded-2xl border border-[#f0f2f5] bg-white p-5 shadow-sm"
+              className="flex flex-col gap-4 rounded-2xl border border-[#f0f2f5] bg-white p-6 lgss:p-8"
               style={{ boxShadow: "0px 1.5px 4px rgba(16, 25, 40, 0.07)" }}
             >
               <div
-                className="mb-4 flex h-10 w-10 items-center justify-center rounded-full"
+                className="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full"
                 style={{ background: "rgba(58, 102, 255, 0.1)" }}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img src={item.icon} alt="" width={22} height={22} />
+                <img
+                  src={item.icon}
+                  alt=""
+                  width={22}
+                  height={22}
+                  style={{
+                    filter:
+                      "brightness(0) saturate(100%) invert(35%) sepia(99%) saturate(1413%) hue-rotate(215deg) brightness(104%) contrast(101%)",
+                  }}
+                />
               </div>
-              <h3
-                className="text-lg font-bold text-[#1d2739]"
-                style={{ fontFamily: "'Space Grotesk', sans-serif" }}
-              >
-                {item.title}
-              </h3>
-              <p
-                className="mt-2 text-[15px] leading-relaxed text-[#4b5563]"
-                style={{ fontFamily: "'Space Grotesk', sans-serif" }}
-              >
-                {item.body}
-              </p>
+              <div className="flex flex-col gap-2">
+                <h3
+                  className="font-bold text-[#161616]"
+                  style={{
+                    fontFamily: "'Space Grotesk', sans-serif",
+                    fontSize: 24,
+                    fontWeight: 700,
+                    letterSpacing: "-0.48px",
+                    lineHeight: "28.80px",
+                  }}
+                >
+                  {item.title}
+                </h3>
+                <p
+                  className="text-[16px] leading-[23.68px] text-[#484848]"
+                  style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+                >
+                  {item.body}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>
-
-        {/* desktop — full figma strip */}
-        <motion.div
-          className="hidden lgss:block"
-          initial={{ opacity: 0, y: 24 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6 }}
-        >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/landing/figma-why-nigerians.svg"
-            alt="Why Nigerians choose Celler — 3-Minute Conversions, Complete Privacy, Best Rates Always, Instant Cash Out, 2-Minute Support"
-            className="block h-auto w-full"
-          />
-        </motion.div>
       </div>
     </section>
   );

@@ -27,11 +27,13 @@ export default function Hero() {
         </div>
         <div className="relative z-[1] mx-auto max-w-[400px] text-center">
           <h1
-            className="text-white font-bold tracking-[-0.04em] px-1"
+          className="text-white font-bold px-1"
             style={{
               fontFamily: "'Space Grotesk', sans-serif",
-              fontSize: "clamp(24px, 6.2vw, 30px)",
-              lineHeight: 1.18,
+              fontSize: 36,
+              fontWeight: 700,
+              letterSpacing: "-1.44px",
+              lineHeight: "43.20px",
             }}
           >
             Convert Your Digital Assets to Cash in 3 Minutes.
@@ -68,12 +70,12 @@ export default function Hero() {
               />
             </a>
           </div>
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-4 gap-y-2 px-1">
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-x-8 gap-y-2 px-1">
             {trustItems.map((label) => (
               <span
                 key={label}
-                className="inline-flex items-center gap-1.5 text-[12px] font-medium text-white/95"
-                style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+                className="inline-flex items-center gap-1.5 text-[12px] font-bold text-white/95"
+                style={{ fontFamily: "'Space Grotesk', sans-serif", letterSpacing: "-0.06px" }}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img

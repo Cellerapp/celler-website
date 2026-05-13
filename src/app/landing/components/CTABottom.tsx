@@ -2,65 +2,122 @@ import Image from "next/image";
 
 export default function CTABottom() {
   return (
-    <section className="ht-section bg-[#3a66ff] relative overflow-hidden">
+    <section id="cta" className="ht-section bg-[#3a66ff] relative overflow-hidden">
       <div className="ht-chevron-overlay" aria-hidden />
-      <div className="ht-container relative z-[2] flex flex-col items-center gap-10 py-12 lgss:min-h-[560px] lgss:flex-row lgss:items-end lgss:gap-0 lgss:py-0">
-        {/* Left — text */}
-        <div className="z-10 w-full flex-1 py-0 text-center lgss:py-20 lgss:text-left">
-          <h2 className="mx-auto max-w-[680px] text-[32px] font-bold leading-[1.05] tracking-[-0.02em] text-white mds:text-[44px] lgss:mx-0 lgss:text-[64px]">
+
+      {/* ===== Desktop ===== */}
+      <div
+        className="relative z-[2] hidden lgss:flex ht-container"
+        style={{ minHeight: 666 }}
+      >
+        {/* Left — text, vertically centred */}
+        <div
+          className="flex flex-1 flex-col justify-center"
+          style={{ paddingTop: 80, paddingBottom: 80, maxWidth: 580 }}
+        >
+          <h2
+            className="text-white"
+            style={{
+              fontFamily: "'Space Grotesk', sans-serif",
+              fontSize: 64,
+              fontWeight: 700,
+              lineHeight: 1.1,
+              letterSpacing: "-1.5px",
+            }}
+          >
             Take control of your money, your way.
           </h2>
-          <p className="mx-auto mt-5 max-w-[480px] text-[17px] leading-[1.45] text-white opacity-90 lgss:mx-0 lgss:mt-6 lgss:max-w-[700px] lgss:text-[20px]">
+          <p
+            className="mt-5"
+            style={{
+              fontFamily: "'Space Grotesk', sans-serif",
+              fontSize: 18,
+              fontWeight: 400,
+              lineHeight: 1.5,
+              color: "rgba(255,255,255,0.9)",
+              maxWidth: 460,
+            }}
+          >
             Built for beginners, trusted by professionals. Everything you need
             to manage your money is right here, right now
           </p>
-          <div className="mt-8 flex justify-center lgss:mt-10 lgss:justify-start">
+          <div className="mt-8">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src="/landing/app-badges-footer.svg"
               alt="Download on Google Play and App Store"
-              className="h-10 w-auto lgss:h-14"
+              style={{ height: 52, width: "auto" }}
             />
           </div>
         </div>
 
-        {/* mobile — hand + phone */}
-        <div className="relative h-[340px] w-full max-w-[380px] lgss:hidden">
+        {/* Right — phone, fills full section height, anchored to top so status bar is visible */}
+        <div
+          className="relative flex-shrink-0"
+          style={{ width: 537, alignSelf: "stretch" }}
+        >
           <Image
             src="/landing/take-control.png"
             alt="Hand holding phone with Celler app"
             fill
-            sizes="380px"
-            className="object-contain object-bottom"
+            sizes="537px"
+            style={{ objectFit: "contain", objectPosition: "right top" }}
+            priority={false}
           />
         </div>
+      </div>
 
-        {/* desktop — hand + phone bleeds bottom/right */}
-        <div
-          className="relative hidden flex-shrink-0 items-end self-stretch lgss:flex"
-          style={{ width: "min(620px, 46vw)" }}
-        >
-          <div
-            className="absolute bottom-0"
+      {/* ===== Mobile ===== */}
+      <div className="relative z-[2] lgss:hidden ht-container flex flex-col items-center gap-8 py-14">
+        <div className="flex flex-col items-center text-center gap-5">
+          <h2
+            className="text-white"
             style={{
-              right: "max(-24px, -2vw)",
-              width: "min(700px, 54vw)",
-              height: "min(760px, 135%)",
+              fontFamily: "'Space Grotesk', sans-serif",
+              fontSize: 32,
+              fontWeight: 700,
+              lineHeight: "38.40px",
+              letterSpacing: "-0.64px",
             }}
           >
-            <Image
-              src="/landing/take-control.png"
-              alt="Hand holding phone with Celler app"
-              fill
-              sizes="700px"
-              className="object-contain object-bottom"
+            Take control of your money, your way.
+          </h2>
+          <p
+            style={{
+              fontFamily: "'Space Grotesk', sans-serif",
+              fontSize: 14,
+              fontWeight: 400,
+              lineHeight: "20.30px",
+              color: "rgba(255,255,255,0.9)",
+              maxWidth: 380,
+            }}
+          >
+            Built for beginners, trusted by professionals. Everything you need
+            to manage your money is right here, right now
+          </p>
+          <div className="mt-2">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/landing/app-badges-footer.svg"
+              alt="Download on Google Play and App Store"
+              style={{ height: 40, width: "auto" }}
             />
           </div>
+        </div>
+        <div className="relative w-full max-w-[220px]" style={{ height: 300 }}>
+          <Image
+            src="/landing/take-control.png"
+            alt="Hand holding phone with Celler app"
+            fill
+            sizes="220px"
+            style={{ objectFit: "contain", objectPosition: "top" }}
+          />
         </div>
       </div>
 
       {/* Decorative radial */}
       <div
-        className="absolute top-0 right-0 w-[600px] h-[600px] rounded-full pointer-events-none z-[1]"
+        className="pointer-events-none absolute right-0 top-0 z-[1] h-[600px] w-[600px] rounded-full"
         style={{
           background:
             "radial-gradient(circle, rgba(255,255,255,0.08) 0%, transparent 70%)",
