@@ -212,16 +212,27 @@ export default function PainPoints() {
                 reliably.
               </p>
             </div>
-            {/* Phone — below copy on narrow screens, absolute on mds+ */}
+            {/* Mobile image */}
             <div
-              className="pointer-events-none relative mx-auto mt-2 h-[254px] w-[164px] flex-shrink-0 mds:absolute mds:right-[-8px] mds:top-2 mds:mx-0 mds:mt-0 mds:h-[350px] mds:w-[230px]"
+              className="pointer-events-none relative mx-auto mt-3 h-[256px] w-[190px] flex-shrink-0 mds:hidden"
             >
               <Image
-                src="/landing/figma-pain-phone.png"
+                src="/landing/you-need-control-mobile.png"
                 alt="Celler app"
                 fill
-                sizes="230px"
-              className="object-contain object-right-top"
+                sizes="190px"
+                className="object-contain object-top"
+              />
+            </div>
+
+            {/* Desktop image */}
+            <div className="pointer-events-none absolute bottom-0 right-0 hidden h-[235px] w-[325px] mds:block">
+              <Image
+                src="/landing/you-need-control.png"
+                alt="Celler app"
+                fill
+                sizes="325px"
+                className="object-contain object-right-bottom"
               />
             </div>
           </motion.div>
