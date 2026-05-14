@@ -27,7 +27,7 @@ export default function Hero() {
         </div>
         <div className="relative z-[1] mx-auto max-w-[400px] text-center">
           <h1
-          className="text-white font-bold px-1"
+            className="text-white font-bold px-1"
             style={{
               fontFamily: "'Space Grotesk', sans-serif",
               fontSize: 36,
@@ -79,7 +79,10 @@ export default function Hero() {
               <span
                 key={label}
                 className="inline-flex items-center gap-1.5 text-[12px] font-bold text-white/95"
-                style={{ fontFamily: "'Space Grotesk', sans-serif", letterSpacing: "-0.06px" }}
+                style={{
+                  fontFamily: "'Space Grotesk', sans-serif",
+                  letterSpacing: "-0.06px",
+                }}
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
@@ -97,7 +100,7 @@ export default function Hero() {
         <div className="relative z-[1] mx-auto mt-6 flex max-w-[320px] justify-center px-2">
           <div className="relative w-full aspect-[10/11] max-h-[340px]">
             <Image
-              src="/landing/hero-mobile.png"
+              src="/landing/hero-phone-mobile.png"
               alt="Celler app on a phone"
               fill
               sizes="(max-width: 976px) 320px, 0px"
@@ -108,48 +111,112 @@ export default function Hero() {
         </div>
       </div>
 
-      {/* desktop — full-width figma hero + hit targets */}
-      <div className="relative mx-auto hidden w-full max-w-[1240px] lgss:block">
-        {/* eslint-disable-next-line @next/next/no-img-element */}
-        <img
-          src="/landing/hero-desktop.png"
-          alt="Convert Your Digital Assets to Cash in 3 Minutes — Celler"
-          className="block h-auto w-full"
-          // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          {...({ fetchpriority: "high" } as any)}
-        />
-        {/*
-          transparent interactive overlays (svg canvas 1440 × 997)
-          convert now ≈ 80,518 — download ≈ 258,518
-        */}
-        <a
-          href={SIGNUP_URL}
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Convert Now — sign up for Celler"
-          className="absolute"
+      {/* desktop — left-aligned hero layout matching reference composition */}
+      <div className="relative hidden w-full overflow-hidden px-[56px] pt-8 lgss:block">
+        <div
+          className="absolute inset-0 pointer-events-none"
+          aria-hidden
           style={{
-            left: "5.55%",
-            top: "51.95%",
-            width: "11.1%",
-            height: "4.81%",
-            cursor: "pointer",
+            backgroundImage: "url('/landing/wave-bg.svg')",
+            backgroundRepeat: "repeat",
+            backgroundSize: "180px auto",
+            opacity: 0.08,
           }}
-        />
-        <a
-          href={SIGNUP_URL}
-          target="_blank"
-          rel="noreferrer"
-          aria-label="Download the Celler app"
-          className="absolute"
-          style={{
-            left: "17.9%",
-            top: "51.95%",
-            width: "14.86%",
-            height: "4.81%",
-            cursor: "pointer",
-          }}
-        />
+        >
+        </div>
+
+        <div className="relative z-[1] mx-auto grid min-h-[660px] max-w-[1360px] grid-cols-[minmax(0,620px)_minmax(0,1fr)] items-center gap-8">
+          <div className="max-w-[620px]">
+            <h1
+              className="text-white font-bold"
+              style={{
+                fontFamily: "'Space Grotesk', sans-serif",
+                fontSize: 66,
+                fontWeight: 700,
+                letterSpacing: "-2px",
+                lineHeight: "68px",
+              }}
+            >
+              Convert Your Digital Assets to Cash in 3 Minutes.
+            </h1>
+            <p
+              className="mt-5 max-w-[560px] text-white/90"
+              style={{
+                fontFamily: "'Space Grotesk', sans-serif",
+                fontSize: 20,
+                fontWeight: 400,
+                lineHeight: "32px",
+              }}
+            >
+              Send, swap and withdraw your digital assets instantly. Built for
+              Nigerians who are tired of &lsquo;network is holding it&rsquo;.
+            </p>
+
+            <div className="mt-8 flex items-center gap-3">
+              <a
+                href={SIGNUP_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex h-[52px] w-[140px] items-center justify-center"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/landing/convert-mobile.png"
+                  alt="Convert Now"
+                  className="h-full w-auto"
+                />
+              </a>
+              <a
+                href={SIGNUP_URL}
+                target="_blank"
+                rel="noreferrer"
+                className="inline-flex h-[52px] w-[181px] items-center justify-center"
+                aria-label="Download the Celler app"
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/landing/download-mobile.png"
+                  alt="Download"
+                  className="h-full w-auto"
+                />
+              </a>
+            </div>
+
+            <div className="mt-7 flex items-center gap-6">
+              {trustItems.map((label) => (
+                <span
+                  key={label}
+                  className="inline-flex items-center gap-1.5 whitespace-nowrap text-[14px] font-bold text-white/95"
+                  style={{
+                    fontFamily: "'Space Grotesk', sans-serif",
+                    letterSpacing: "-0.08px",
+                  }}
+                >
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/landing/check-circle.png"
+                    alt=""
+                    width={14}
+                    height={14}
+                    className="flex-shrink-0 opacity-95"
+                  />
+                  {label}
+                </span>
+              ))}
+            </div>
+          </div>
+
+          <div className="relative h-[760px] w-full max-w-[560px] justify-self-end self-end">
+            <Image
+              src="/landing/hero-phone-desktop.png"
+              alt="Celler app on a phone"
+              fill
+              sizes="560px"
+              className="object-contain object-right-bottom"
+              priority
+            />
+          </div>
+        </div>
       </div>
     </section>
   );
