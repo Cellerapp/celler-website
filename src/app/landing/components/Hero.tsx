@@ -15,15 +15,15 @@ export default function Hero() {
       {/* mobile — matches iphone-style layout: copy, ctas, trust row, phone */}
       <div className="lgss:hidden relative overflow-hidden px-4 pt-7 pb-0">
         <div
-          className="absolute inset-0 opacity-[0.18] pointer-events-none"
+          className="absolute inset-0 opacity-[0.3] pointer-events-none"
           aria-hidden
+          style={{
+            backgroundImage: "url('/landing/line.png')",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+            backgroundPosition: "top center",
+          }}
         >
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/landing/figma-wave.svg"
-            alt=""
-            className="w-full min-h-full object-cover object-top"
-          />
         </div>
         <div className="relative z-[1] mx-auto max-w-[400px] text-center">
           <h1
