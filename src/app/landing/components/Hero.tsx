@@ -45,28 +45,32 @@ export default function Hero() {
             Send, swap and withdraw your digital assets instantly. Built for
             Nigerians who are tired of &lsquo;network is holding it&rsquo;.
           </p>
-          <div className="mt-6 flex flex-row flex-wrap items-stretch justify-center gap-2">
+          <div className="mt-6 flex flex-row flex-nowrap items-stretch justify-center gap-2">
             <a
               href={SIGNUP_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex min-h-[48px] flex-1 min-w-[130px] max-w-[160px] items-center justify-center rounded-full bg-white px-4 text-[14px] font-semibold text-[#111] shadow-sm"
-              style={{ fontFamily: "'Space Grotesk', sans-serif" }}
+              className="inline-flex h-[50px] w-[160px] items-center justify-center"
             >
-              Convert Now
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/landing/convert-mobile.png"
+                alt="Convert Now"
+                className="h-full w-auto"
+              />
             </a>
             <a
               href={SIGNUP_URL}
               target="_blank"
               rel="noreferrer"
-              className="inline-flex min-h-[48px] flex-1 min-w-[160px] max-w-[220px] items-center justify-center rounded-full bg-black px-3 py-2"
+              className="inline-flex h-[50px] w-[194px] items-center justify-center"
               aria-label="Download the Celler app"
             >
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
-                src="/landing/app-badges-hero.svg"
-                alt=""
-                className="h-[26px] w-auto max-w-full"
+                src="/landing/download-mobile.png"
+                alt="Download"
+                className="h-full w-auto"
               />
             </a>
           </div>
@@ -79,7 +83,7 @@ export default function Hero() {
               >
                 {/* eslint-disable-next-line @next/next/no-img-element */}
                 <img
-                  src="/landing/icon-trust-check.svg"
+                  src="/landing/check-circle.png"
                   alt=""
                   width={14}
                   height={14}
@@ -93,7 +97,7 @@ export default function Hero() {
         <div className="relative z-[1] mx-auto mt-6 flex max-w-[320px] justify-center px-2">
           <div className="relative w-full aspect-[10/11] max-h-[340px]">
             <Image
-              src="/landing/hero-phone.png"
+              src="/landing/hero-mobile.png"
               alt="Celler app on a phone"
               fill
               sizes="(max-width: 976px) 320px, 0px"
@@ -102,23 +106,13 @@ export default function Hero() {
             />
           </div>
         </div>
-        {/* subtle wave line at bottom of blue block */}
-        <div className="relative -mt-2 h-6 w-full overflow-hidden" aria-hidden>
-          {/* eslint-disable-next-line @next/next/no-img-element */}
-          <img
-            src="/landing/figma-wave.svg"
-            alt=""
-            className="absolute bottom-0 left-0 w-[200%] max-w-none opacity-30 -translate-x-1/4 object-cover"
-            style={{ height: 48 }}
-          />
-        </div>
       </div>
 
       {/* desktop — full-width figma hero + hit targets */}
       <div className="relative mx-auto hidden w-full max-w-[1240px] lgss:block">
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
-          src="/landing/figma-hero-full.svg"
+          src="/landing/hero-desktop.png"
           alt="Convert Your Digital Assets to Cash in 3 Minutes — Celler"
           className="block h-auto w-full"
           // eslint-disable-next-line @typescript-eslint/no-explicit-any
