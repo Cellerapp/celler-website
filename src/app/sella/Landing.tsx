@@ -170,7 +170,7 @@ export default function SellaLanding() {
 							</div>
 							<div className="flex flex-col sm:flex-row gap-4">
 								<Link
-									href="/a/signup"
+									href="https://web.celler.app/"
 									className="inline-flex items-center justify-center gap-2 px-6 py-3.5 bg-primary text-primary-foreground rounded-2xl font-semibold hover:opacity-90 transition-opacity"
 								>
 									Start Paying Bills
@@ -500,7 +500,7 @@ export default function SellaLanding() {
 						</p>
 						<div className="flex flex-col sm:flex-row gap-4 justify-center">
 							<Link
-								href="/a/signup"
+								href="https://web.celler.app/"
 								className="inline-flex items-center justify-center gap-2 px-8 py-4 bg-white text-primary rounded-2xl font-semibold hover:bg-white/90 transition-colors"
 							>
 								Create Free Account
